@@ -1,0 +1,20 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-access
+rwc
+/home/20200969/Estimation/rtl/router/hdl/router.v
+/home/20200969/Estimation/rtl/router/hdl/define.v
+/home/20200969/Estimation/rtl/router/hdl/outputc.v
+/home/20200969/Estimation/rtl/router/hdl/arb.v
+/home/20200969/Estimation/rtl/router/hdl/cb.v
+/home/20200969/Estimation/rtl/router/hdl/fifo.v
+/home/20200969/Estimation/rtl/router/hdl/inputc.v
+/home/20200969/Estimation/rtl/router/hdl/mux.v
+/home/20200969/Estimation/rtl/router/hdl/muxcont.v
+/home/20200969/Estimation/rtl/router/hdl/vcmux.v
+/home/20200969/Estimation/rtl/router/hdl/vc.v
+/home/20200969/Estimation/rtl/router/hdl/rtcomp.v
+-timescale
+10ns/10ps

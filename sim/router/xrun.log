@@ -1,0 +1,565 @@
+xrun: 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	19.03-s013: Started on Jul 05, 2022 at 13:47:35 CEST
+/opt/tools/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/bin/xrun
+	-access rwc
+	/home/20200969/Estimation/rtl/router/hdl/router.v
+	/home/20200969/Estimation/rtl/router/hdl/define.v
+	/home/20200969/Estimation/rtl/router/hdl/outputc.v
+	/home/20200969/Estimation/rtl/router/hdl/arb.v
+	/home/20200969/Estimation/rtl/router/hdl/cb.v
+	/home/20200969/Estimation/rtl/router/hdl/fifo.v
+	/home/20200969/Estimation/rtl/router/hdl/inputc.v
+	/home/20200969/Estimation/rtl/router/hdl/mux.v
+	/home/20200969/Estimation/rtl/router/hdl/muxcont.v
+	/home/20200969/Estimation/rtl/router/hdl/vcmux.v
+	/home/20200969/Estimation/rtl/router/hdl/vc.v
+	/home/20200969/Estimation/rtl/router/hdl/rtcomp.v
+	-timescale 10ns/10ps
+file: /home/20200969/Estimation/rtl/router/hdl/router.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/router.v,1|18): cannot open include file 'define.v'.
+input   [`DATAW:0] idata_0;  
+              |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,50|14): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`DATAW:0] idata_0;  
+               |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,50|15): illegal expression primary [4.2(IEEE)].
+input   [`DATAW:0] idata_0;  
+                 |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,50|17): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCHW:0]  ivch_0;   
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,52|13): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCHW:0]  ivch_0;   
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,52|14): illegal expression primary [4.2(IEEE)].
+input   [`VCHW:0]  ivch_0;   
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,52|16): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   oack_0;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,53|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   oack_0;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,53|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   oack_0;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,53|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   ordy_0;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,54|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   ordy_0;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,54|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   ordy_0;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,54|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   olck_0;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,55|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   olck_0;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,55|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   olck_0;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,55|15): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`DATAW:0] idata_1;  
+              |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,57|14): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`DATAW:0] idata_1;  
+               |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,57|15): illegal expression primary [4.2(IEEE)].
+input   [`DATAW:0] idata_1;  
+                 |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,57|17): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCHW:0]  ivch_1;   
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,59|13): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCHW:0]  ivch_1;   
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,59|14): illegal expression primary [4.2(IEEE)].
+input   [`VCHW:0]  ivch_1;   
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,59|16): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   oack_1;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,60|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   oack_1;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,60|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   oack_1;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,60|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   ordy_1;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,61|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   ordy_1;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,61|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   ordy_1;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,61|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   olck_1;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,62|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   olck_1;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,62|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   olck_1;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,62|15): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`DATAW:0] idata_2;  
+              |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,64|14): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`DATAW:0] idata_2;  
+               |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,64|15): illegal expression primary [4.2(IEEE)].
+input   [`DATAW:0] idata_2;  
+                 |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,64|17): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCHW:0]  ivch_2;   
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,66|13): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCHW:0]  ivch_2;   
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,66|14): illegal expression primary [4.2(IEEE)].
+input   [`VCHW:0]  ivch_2;   
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,66|16): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   oack_2;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,67|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   oack_2;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,67|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   oack_2;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,67|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   ordy_2;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,68|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   ordy_2;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,68|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   ordy_2;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,68|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCH:0]   olck_2;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,69|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCH:0]   olck_2;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,69|13): illegal expression primary [4.2(IEEE)].
+output  [`VCH:0]   olck_2;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,69|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`DATAW:0] odata_0;  
+              |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,71|14): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`DATAW:0] odata_0;  
+               |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,71|15): illegal expression primary [4.2(IEEE)].
+output  [`DATAW:0] odata_0;  
+                 |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,71|17): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCHW:0]  ovch_0;   
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,73|13): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCHW:0]  ovch_0;   
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,73|14): illegal expression primary [4.2(IEEE)].
+output  [`VCHW:0]  ovch_0;   
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,73|16): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCH:0]   iack_0;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,74|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCH:0]   iack_0;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,74|13): illegal expression primary [4.2(IEEE)].
+input   [`VCH:0]   iack_0;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,74|15): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCH:0]   ilck_0;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,75|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCH:0]   ilck_0;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,75|13): illegal expression primary [4.2(IEEE)].
+input   [`VCH:0]   ilck_0;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,75|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`DATAW:0] odata_1;  
+              |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,77|14): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`DATAW:0] odata_1;  
+               |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,77|15): illegal expression primary [4.2(IEEE)].
+output  [`DATAW:0] odata_1;  
+                 |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,77|17): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCHW:0]  ovch_1;   
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,79|13): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCHW:0]  ovch_1;   
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,79|14): illegal expression primary [4.2(IEEE)].
+output  [`VCHW:0]  ovch_1;   
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,79|16): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCH:0]   iack_1;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,80|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCH:0]   iack_1;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,80|13): illegal expression primary [4.2(IEEE)].
+input   [`VCH:0]   iack_1;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,80|15): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCH:0]   ilck_1;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,81|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCH:0]   ilck_1;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,81|13): illegal expression primary [4.2(IEEE)].
+input   [`VCH:0]   ilck_1;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,81|15): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`DATAW:0] odata_2;  
+              |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,83|14): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`DATAW:0] odata_2;  
+               |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,83|15): illegal expression primary [4.2(IEEE)].
+output  [`DATAW:0] odata_2;  
+                 |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,83|17): expecting a colon (':') [3.2][3.8(IEEE)].
+output  [`VCHW:0]  ovch_2;   
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,85|13): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+output  [`VCHW:0]  ovch_2;   
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,85|14): illegal expression primary [4.2(IEEE)].
+output  [`VCHW:0]  ovch_2;   
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,85|16): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCH:0]   iack_2;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,86|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCH:0]   iack_2;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,86|13): illegal expression primary [4.2(IEEE)].
+input   [`VCH:0]   iack_2;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,86|15): expecting a colon (':') [3.2][3.8(IEEE)].
+input   [`VCH:0]   ilck_2;   
+            |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,87|12): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input   [`VCH:0]   ilck_2;   
+             |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,87|13): illegal expression primary [4.2(IEEE)].
+input   [`VCH:0]   ilck_2;   
+               |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,87|15): expecting a colon (':') [3.2][3.8(IEEE)].
+input [`ARRAYW:0]  my_xpos; 
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,89|13): `ARRAYW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input [`ARRAYW:0]  my_xpos; 
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,89|14): illegal expression primary [4.2(IEEE)].
+input [`ARRAYW:0]  my_xpos; 
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,89|16): expecting a colon (':') [3.2][3.8(IEEE)].
+input [`ARRAYW:0]  my_ypos; 
+             |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,90|13): `ARRAYW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+input [`ARRAYW:0]  my_ypos; 
+              |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,90|14): illegal expression primary [4.2(IEEE)].
+input [`ARRAYW:0]  my_ypos; 
+                |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,90|16): expecting a colon (':') [3.2][3.8(IEEE)].
+wire [`DATAW:0] ic_odata_0; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,98|11): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`DATAW:0] ic_odata_0; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,98|12): illegal expression primary [4.2(IEEE)].
+wire [`DATAW:0] ic_odata_0; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,98|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`DATAW:0] ic_odata_1; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,99|11): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`DATAW:0] ic_odata_1; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,99|12): illegal expression primary [4.2(IEEE)].
+wire [`DATAW:0] ic_odata_1; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,99|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`DATAW:0] ic_odata_2; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,100|11): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`DATAW:0] ic_odata_2; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,100|12): illegal expression primary [4.2(IEEE)].
+wire [`DATAW:0] ic_odata_2; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,100|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCHW:0]  ic_ovch_0; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,106|10): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCHW:0]  ic_ovch_0; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,106|11): illegal expression primary [4.2(IEEE)].
+wire [`VCHW:0]  ic_ovch_0; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,106|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCHW:0]  ic_ovch_1; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,107|10): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCHW:0]  ic_ovch_1; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,107|11): illegal expression primary [4.2(IEEE)].
+wire [`VCHW:0]  ic_ovch_1; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,107|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCHW:0]  ic_ovch_2; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,108|10): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCHW:0]  ic_ovch_2; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,108|11): illegal expression primary [4.2(IEEE)].
+wire [`VCHW:0]  ic_ovch_2; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,108|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`PORTW:0] ic_port_0; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,110|11): `PORTW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`PORTW:0] ic_port_0; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,110|12): illegal expression primary [4.2(IEEE)].
+wire [`PORTW:0] ic_port_0; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,110|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`PORTW:0] ic_port_1; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,111|11): `PORTW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`PORTW:0] ic_port_1; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,111|12): illegal expression primary [4.2(IEEE)].
+wire [`PORTW:0] ic_port_1; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,111|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`PORTW:0] ic_port_2; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,112|11): `PORTW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`PORTW:0] ic_port_2; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,112|12): illegal expression primary [4.2(IEEE)].
+wire [`PORTW:0] ic_port_2; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,112|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`DATAW:0] cb_odata_0; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,121|11): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`DATAW:0] cb_odata_0; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,121|12): illegal expression primary [4.2(IEEE)].
+wire [`DATAW:0] cb_odata_0; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,121|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`DATAW:0] cb_odata_1; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,122|11): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`DATAW:0] cb_odata_1; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,122|12): illegal expression primary [4.2(IEEE)].
+wire [`DATAW:0] cb_odata_1; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,122|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`DATAW:0] cb_odata_2; 
+           |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,123|11): `DATAW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`DATAW:0] cb_odata_2; 
+            |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,123|12): illegal expression primary [4.2(IEEE)].
+wire [`DATAW:0] cb_odata_2; 
+              |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,123|14): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCHW:0]  cb_ovch_0; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,129|10): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCHW:0]  cb_ovch_0; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,129|11): illegal expression primary [4.2(IEEE)].
+wire [`VCHW:0]  cb_ovch_0; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,129|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCHW:0]  cb_ovch_1; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,130|10): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCHW:0]  cb_ovch_1; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,130|11): illegal expression primary [4.2(IEEE)].
+wire [`VCHW:0]  cb_ovch_1; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,130|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCHW:0]  cb_ovch_2; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,131|10): `VCHW: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCHW:0]  cb_ovch_2; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,131|11): illegal expression primary [4.2(IEEE)].
+wire [`VCHW:0]  cb_ovch_2; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,131|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`PORT:0]  cb_grt_0; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,133|10): `PORT: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`PORT:0]  cb_grt_0; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,133|11): illegal expression primary [4.2(IEEE)].
+wire [`PORT:0]  cb_grt_0; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,133|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`PORT:0]  cb_grt_1; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,134|10): `PORT: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`PORT:0]  cb_grt_1; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,134|11): illegal expression primary [4.2(IEEE)].
+wire [`PORT:0]  cb_grt_1; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,134|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`PORT:0]  cb_grt_2; 
+          |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,135|10): `PORT: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`PORT:0]  cb_grt_2; 
+           |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,135|11): illegal expression primary [4.2(IEEE)].
+wire [`PORT:0]  cb_grt_2; 
+             |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,135|13): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCH:0]   oc_ordy_0; 
+         |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,140|9): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCH:0]   oc_ordy_0; 
+          |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,140|10): illegal expression primary [4.2(IEEE)].
+wire [`VCH:0]   oc_ordy_0; 
+            |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,140|12): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCH:0]   oc_ordy_1; 
+         |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,141|9): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCH:0]   oc_ordy_1; 
+          |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,141|10): illegal expression primary [4.2(IEEE)].
+wire [`VCH:0]   oc_ordy_1; 
+            |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,141|12): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCH:0]   oc_ordy_2; 
+         |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,142|9): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCH:0]   oc_ordy_2; 
+          |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,142|10): illegal expression primary [4.2(IEEE)].
+wire [`VCH:0]   oc_ordy_2; 
+            |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,142|12): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCH:0]   oc_olck_0; 
+         |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,144|9): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCH:0]   oc_olck_0; 
+          |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,144|10): illegal expression primary [4.2(IEEE)].
+wire [`VCH:0]   oc_olck_0; 
+            |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,144|12): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCH:0]   oc_olck_1; 
+         |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,145|9): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCH:0]   oc_olck_1; 
+          |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,145|10): illegal expression primary [4.2(IEEE)].
+wire [`VCH:0]   oc_olck_1; 
+            |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,145|12): expecting a colon (':') [3.2.1][3.8(IEEE)].
+wire [`VCH:0]   oc_olck_2; 
+         |
+xmvlog: *E,NOTDIR (/home/20200969/Estimation/rtl/router/hdl/router.v,146|9): `VCH: not a recognized directive or macro [2.7.3][16.3.1][16(IEEE)].
+wire [`VCH:0]   oc_olck_2; 
+          |
+xmvlog: *E,ILLPRI (/home/20200969/Estimation/rtl/router/hdl/router.v,146|10): illegal expression primary [4.2(IEEE)].
+wire [`VCH:0]   oc_olck_2; 
+            |
+xmvlog: *E,EXPCOL (/home/20200969/Estimation/rtl/router/hdl/router.v,146|12): expecting a colon (':') [3.2.1][3.8(IEEE)].
+	module worklib.router:v
+		errors: 159, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/define.v
+file: /home/20200969/Estimation/rtl/router/hdl/outputc.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/outputc.v,1|18): cannot open include file 'define.v'.
+	module worklib.outputc:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/arb.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/arb.v,1|18): cannot open include file 'define.v'.
+	module worklib.arb:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/cb.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/cb.v,1|18): cannot open include file 'define.v'.
+	module worklib.cb:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/fifo.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/fifo.v,1|18): cannot open include file 'define.v'.
+	module worklib.fifo:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/inputc.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/inputc.v,1|18): cannot open include file 'define.v'.
+	module worklib.inputc:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/mux.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/mux.v,1|18): cannot open include file 'define.v'.
+	module worklib.mux:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/muxcont.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/muxcont.v,1|18): cannot open include file 'define.v'.
+	module worklib.muxcont:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/vcmux.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/vcmux.v,1|18): cannot open include file 'define.v'.
+	module worklib.vcmux:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/vc.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/vc.v,1|18): cannot open include file 'define.v'.
+	module worklib.vc:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/router/hdl/rtcomp.v
+`include "define.v" 
+                  |
+xmvlog: *E,COFILX (/home/20200969/Estimation/rtl/router/hdl/rtcomp.v,1|18): cannot open include file 'define.v'.
+	module worklib.rtcomp:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 11, warnings: 0
+xrun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xrun	19.03-s013: Exiting on Jul 05, 2022 at 13:47:36 CEST  (total: 00:00:01)

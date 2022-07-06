@@ -1,0 +1,30 @@
+xrun: 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	19.03-s013: Started on Jul 05, 2022 at 11:41:27 CEST
+/opt/tools/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/bin/xrun
+	-access rwc
+	/home/20200969/Estimation/rtl/router/characterization/test_router_25percent.v
+	-incdir /home/20200969/Estimation/rtl/router/hdl
+	-timescale 10ns/10ps
+file: /home/20200969/Estimation/rtl/router/characterization/test_router_25percent.v
+        iack_0  <= `VCH_P1'hf;   
+                            |
+xmvlog: *W,INTOVF (/home/20200969/Estimation/rtl/router/characterization/test_router_25percent.v,126|28): bit overflow during conversion from text [2.5(IEEE)] (2 bits).
+        iack_1  <= `VCH_P1'hf;   
+                            |
+xmvlog: *W,INTOVF (/home/20200969/Estimation/rtl/router/characterization/test_router_25percent.v,133|28): bit overflow during conversion from text [2.5(IEEE)] (2 bits).
+        iack_2  <= `VCH_P1'hf;   
+                            |
+xmvlog: *W,INTOVF (/home/20200969/Estimation/rtl/router/characterization/test_router_25percent.v,140|28): bit overflow during conversion from text [2.5(IEEE)] (2 bits).
+                        {2{16{1'b0}}} : inj_data = {{8{1'b0}}, {8{1'b0}}, {8{1'b0}}, {8{1'b1}} };
+                                    |
+xmvlog: *W,NESTMC (/home/20200969/Estimation/rtl/router/characterization/test_router_25percent.v,200|36): IEEE Std 1364-2005 does not allow a multiple concatenation as the expression part of another multiple concatenation.
+	module worklib.noc:v
+		errors: 0, warnings: 4
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+router n0 ( 
+        |
+xmelab: *E,CUVMUR (./characterization/test_router_25percent.v,63|8): instance 'noc_test.noc@noc<module>.n0' of design unit 'router' is unresolved in 'worklib.noc:v'.
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun	19.03-s013: Exiting on Jul 05, 2022 at 11:41:27 CEST  (total: 00:00:00)

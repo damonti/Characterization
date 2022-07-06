@@ -1,0 +1,1 @@
+s1(05Jul2022:11:32:23):  /opt/tools/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/bin/xrun -access rwc /../characterization/test_router_25percent.v -incdir /hdl -timescale 10ns/10ps 
