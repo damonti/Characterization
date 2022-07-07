@@ -50,10 +50,13 @@ xrun -clean -access rwc -timescale 10ns/10ps -ALLOWREDEFINITION -incdir $RTL_PAT
 #POWER
 cd ~/Estimation/work/
 joules -overwrite -batch -execute "set FACTOR ${FACTOR}" -execute "set BW ${BW}" -execute "set PERCENT ${PERCENT}" -files {"./../tcl/power/power_mux.tcl"} -legacy_ui
-#-batch
+
 #done
 done
+
 #CLEAN
+cd ~/Estimation/sim/mux
+rm *.vcd
 #rm ${RTL_PATH}/mux_temp.v
 #rm ${RTL_PATH}/define_temp.v
 
