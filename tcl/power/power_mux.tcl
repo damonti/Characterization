@@ -26,18 +26,20 @@ set_attribute interconnect_mode ple
 ###############################
 #RTL
 ::legacy::set_attribute init_hdl_search_path $RTL_PATH
-read_netlist $RTL_PATH/netlist/mux${FACTOR}_netlist.v
+read_netlist $RTL_PATH/netlist/${DESIGN}_${FACTOR}_${BW}_netlist.v
 
 read_sdc $RTL_PATH/mux.sdc
 #if ck 100Mhx then time windows 130-370; if ck 1GHz then time windows 12-37
-set REPORT_PATH ${SIM_PATH}/reports
-set START 2070
-set END 2260
-set TB "mux_${PERCENT}_${FACTOR}_${BW}"
-read_stimulus -start ${START}ns -end ${END}ns -allow_n_nets -format vcd -file $SIM_PATH/dump_${TB}.vcd -dut_instance /mux_test/mux
-compute_power -mode time_based
-report_power  -levels all -by_hierarchy -indent_inst -levels all -header -cols "cells static internal switching dynamic total" -unit nW > ${REPORT_PATH}/mux.${TB}_payload.rpt
-
+suspend
+foreach PERCENT $listPERCENT {
+    set REPORT_PATH ${SIM_PATH}/reports
+    set START 2070
+    set END 2260
+    set TB "mux_${FACTOR}_${BW}_${PERCENT}percent"
+    read_stimulus -start ${START}ns -end ${END}ns -allow_n_nets -format vcd -file $SIM_PATH/dump_${TB}.vcd -dut_instance /mux_test/mux
+    compute_power -mode time_based
+    report_power  -levels all -by_hierarchy -indent_inst -levels all -header -cols "cells static internal switching dynamic total" -unit nW > ${REPORT_PATH}/mux.${TB}_payload.rpt
+}
 
 
 
