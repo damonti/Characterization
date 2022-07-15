@@ -4,7 +4,6 @@ import copy
 import os.path
 import shutil
 import time
-import math
 
 def compute_next_state(ps):  # n=how many bits to complement;
     """generates one row of the case statement (it toggles n bits from "state" each time it is executed)"""
@@ -20,7 +19,7 @@ def compute_next_state(ps):  # n=how many bits to complement;
 
 def generate_table(toggle, BW):
     """generate the verilog case(inj_data) for the given toggle and BW"""
-    n = int((BW/100)*toggle)  # number of bits to toggle for each transition
+    n = round((BW/100)*toggle)  # number of bits to toggle for each transition
     pattern = []  # list of stimulus
     table = []  # final joint stimulus (returned value)
     present_state = []
@@ -89,12 +88,12 @@ start = time.time()
 FACTOR = "2-1"
 for BW in range(8, 64+1):
     min_step = 100/BW  # minimum percentage step
-    steps = [math.floor(min_step)]
-    for i in range(2, BW+1, 1):  # start at 2, up to BW included, increment 1
-        steps.append(math.floor(min_step*i))
+    steps = [] #steps[] list must remain float so that when we call generate_table, the number of toggling bits (n) is correct. If you round to integer, the chunked reminder may cause errors 
+    for i in range(1, BW+1):  # start at 2, up to BW included, increment 1
+        steps.append(min_step*i)
     for toggle in steps:
         table = generate_table(toggle, BW) #generates the bit transitions (table) for the given BW and toggle activity
-        name_tb = "test_mux_"+FACTOR+"_"+str(BW)+"BW_"+str(toggle)+"percent"
+        name_tb = "test_mux_"+FACTOR+"_"+str(BW)+"BW_"+str(round(toggle))+"percent"
         name_template = "TEMPLATE_"+FACTOR
         write_to_template(table, name_tb, name_template, BW) #generates a file with the testbench for the given table
 end = time.time()

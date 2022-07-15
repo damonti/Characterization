@@ -1,0 +1,23 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1657876521
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx86.19.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.19.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.19.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun	19.03-s013"
+-XLNAME
+./xcelium.d/run.lnx86.19.03.d/es-eda.ele.tue.nl_15826
