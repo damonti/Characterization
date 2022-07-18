@@ -23,6 +23,7 @@ Note: For larger datasets (n_samples >= 10000), please refer to
 
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from sklearn import datasets, ensemble
 from sklearn.inspection import permutation_importance
 from sklearn.metrics import mean_squared_error
@@ -34,34 +35,14 @@ import os
 #
 # First we need to load the data.
 
-def pwr_to_list(CONFIGS):
-    """Returns a list of the dynamic power numbers"""
-    RPT_PATH = os.path.expanduser("~/Estimation/sim/mux/reports")
-    targets = []
-    for CONFIG in range (0, len(CONFIGS)):
-        file_path = RPT_PATH + "/mux.mux_" + str(CONFIGS[CONFIG][0]) + "-1_" + str(CONFIGS[CONFIG][1]) + "BW_" + str(CONFIGS[CONFIG][2]) + "percent_payload.rpt"
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = f.readlines()
-            targets.append(data[17].strip().split()[4]) 
-    return targets
-
-def config_generation():
-    """It returns a list of lists with the 3 parameters of the mux sweeping in order"""
-    MAX_BITWIDTH = 64
-    SUB_LIST = []
-    LIST = []
-    IN = 2
-    for BW in range(8, MAX_BITWIDTH+1): #SWEEP THROUGH BITWIDTHS
-        min_step = 100/BW  # minimum percentage step
-        for i in range(1, BW+1):  # SWEEP THOROUGH PERCENTAGES
-            SUB_LIST = [IN, BW, round(min_step*i)]
-            LIST.append(SUB_LIST)
-    return LIST
+DF_PATH = os.path.expanduser("~/Estimation/sim/mux/DataFrame/mux_configurations.csv")
+df = pd.read_csv(DF_PATH, sep=',')
 
 #DATA GENERATION
-X = config_generation() #generate the mux configurations
-y = pwr_to_list(X) #generate a csv out of the power data. the CONFIGS is needed to find the parametrized report name
-header = ['INPUT', 'BW', 'PERCENTAGE'] 
+X_list = df.drop('POWER [nW]', axis=1) #generate the mux configurations
+y_list = df['POWER [nW]'] #generate a csv out of the power data. the CONFIGS is needed to find the parametrized report name
+
+
 # %%
 # Data preprocessing
 # -------------------------------------
@@ -86,14 +67,14 @@ header = ['INPUT', 'BW', 'PERCENTAGE']
 # :class:`~sklearn.ensemble.GradientBoostingRegressor` ).
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.1, random_state=13
+    X_list, y_list, test_size=0.2, random_state=13
 )
 
 params = {
-    "n_estimators": 500,
+    "n_estimators": 50,
     "max_depth": 4,
     "min_samples_split": 5,
-    "learning_rate": 0.1,
+    "learning_rate": 0.5,
     "loss": "squared_error",
 }
 
@@ -161,7 +142,7 @@ pos = np.arange(sorted_idx.shape[0]) + 0.5
 fig = plt.figure(figsize=(12, 6))
 plt.subplot(1, 2, 1)
 plt.barh(pos, feature_importance[sorted_idx], align="center")
-plt.yticks(pos, np.array(header)[sorted_idx])
+plt.yticks(pos, np.array(df.index)[sorted_idx])
 plt.title("Feature Importance (MDI)")
 
 result = permutation_importance(
@@ -172,7 +153,7 @@ plt.subplot(1, 2, 2)
 plt.boxplot(
     result.importances[sorted_idx].T,
     vert=False,
-    labels=np.array(header)[sorted_idx],
+    labels=np.array(df.index)[sorted_idx],
 )
 plt.title("Permutation Importance (test set)")
 fig.tight_layout()
