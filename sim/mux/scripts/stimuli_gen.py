@@ -1,9 +1,10 @@
 # This is a testbench generator for various toggling activity.
 # Given the bitwidth (BW), input patterns for various % is returned.
 import copy
-import os.path
+import os
 import shutil
 import time
+
 
 def compute_next_state(ps):  # n=how many bits to complement;
     """generates one row of the case statement (it toggles n bits from "state" each time it is executed)"""
@@ -58,9 +59,9 @@ def generate_table(toggle, BW):
 
 def write_to_template(table, name_tb, name_template, BW):
     """Generate the complete testbench for the given table"""
-    path_tb = os.getcwd() + '\\testbench\\'  #target file
+    path_tb = RTL_PATH + '/characterization/'  #target file
     tb = name_tb + '.v'
-    path_template = os.getcwd() + '\\template\\' + name_template + '.v' #original file
+    path_template = RTL_PATH + '/hdl/' + name_template + '.v' #original file
     full_path=os.path.join(path_tb,tb)
     shutil.copyfile(path_template, full_path)
     #file = open(path_tb, "w")
@@ -77,7 +78,7 @@ def write_to_template(table, name_tb, name_template, BW):
         
         elif ('//INJ_DATA' in data[k]):
             if (BW>32):
-                data[k] = "\t\t\tidata_1 <= 2{inj_data};"
+                data[k] = "\t\t\tidata_1 <= {2{inj_data}};"
             else:
                 data[k] = "\t\t\tidata_1 <= inj_data;"
 
@@ -86,6 +87,7 @@ def write_to_template(table, name_tb, name_template, BW):
 
 start = time.time()
 FACTOR = "2-1"
+RTL_PATH = os.path.expanduser("~/Estimation/rtl/mux")
 for BW in range(8, 64+1):
     min_step = 100/BW  # minimum percentage step
     steps = [] #steps[] list must remain float so that when we call generate_table, the number of toggling bits (n) is correct. If you round to integer, the chunked reminder may cause errors 
@@ -94,7 +96,7 @@ for BW in range(8, 64+1):
     for toggle in steps:
         table = generate_table(toggle, BW) #generates the bit transitions (table) for the given BW and toggle activity
         name_tb = "test_mux_"+FACTOR+"_"+str(BW)+"BW_"+str(round(toggle))+"percent"
-        name_template = "TEMPLATE_"+FACTOR
+        name_template = "TB_TEMPLATE_"+FACTOR
         write_to_template(table, name_tb, name_template, BW) #generates a file with the testbench for the given table
 end = time.time()
 print(end - start)
