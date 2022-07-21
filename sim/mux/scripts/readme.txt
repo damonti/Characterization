@@ -1,0 +1,4 @@
+- tb_gen: generate the testbenches to sweep the parameters
+- tb_sim: simulate it to print the power reports
+- parser: build a DataFrame out of the various configurations and corrispondent power result
+- ML_models: use the DataFrame for various ML regression models 

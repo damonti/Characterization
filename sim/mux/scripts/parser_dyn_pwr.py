@@ -17,7 +17,7 @@ def pwr_to_list(CONFIGS):
     return targets_float
 
 
-def config_generation():
+def config_generation(IN):
     """It returns a list of lists with the 3 parameters of the mux sweeping in order"""
     MAX_BITWIDTH = 64
     SUB_LIST = []
@@ -31,8 +31,8 @@ def config_generation():
             LIST.append(SUB_LIST)
     return LIST
 
-
-CONFIGS = config_generation() #generate the mux configurations
+IN=2
+CONFIGS = config_generation(IN) #generate the mux configurations
 TARGETS = pwr_to_list(CONFIGS) #generate a csv out of the power data. the CONFIGS is needed to find the parametrized report name
 
 #DATA FRAME
@@ -42,7 +42,7 @@ df = pd.DataFrame(CONFIGS, columns=header)
 df['POWER [nW]'] = TARGETS
 #print (df)
 PATH = os.path.expanduser("~/Estimation/sim/mux/DataFrame")
-df.to_csv(PATH + '/mux_configurations.csv', index=False)
+df.to_csv(PATH + '/mux_configurations'+str(IN)+'.csv', index=False)
 
 
 #MUX_PATH = os.path.expanduser("~/Estimation/sim/mux")

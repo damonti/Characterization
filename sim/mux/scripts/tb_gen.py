@@ -86,7 +86,7 @@ def write_to_template(table, name_tb, name_template, BW):
         file.writelines(data)
 
 start = time.time()
-FACTOR = "2-1"
+FACTOR = "4-1"
 RTL_PATH = os.path.expanduser("~/Estimation/rtl/mux")
 for BW in range(8, 64+1):
     min_step = 100/BW  # minimum percentage step
