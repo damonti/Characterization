@@ -1,0 +1,1 @@
+here we have different TBs for different inputs (2, 3... 8) because I did not automatize that part of the RTL generation, leading to multiple files for the various cases 

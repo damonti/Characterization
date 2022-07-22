@@ -10,8 +10,8 @@
 `define NULL            0          
 
 /* Data width (64-bit data + 3-bit type) */ 
-`define DATAW           66                  
-`define DATAW_P1        67                  
+`define DATAWx           66                  
+`define DATAW_P1x        67                  
 `define DST_LSB         0                   
 `define DST_MSB         3                  
 `define SRC_LSB         4                  
@@ -39,8 +39,8 @@
 `define PKTLEN_P1       16 
 
 /* Port number (5-port) */        
-`define PORT            4         
-`define PORT_P1         5         
+`define PORTx            4         
+`define PORT_P1x         5         
 `define PORTW           2         
 `define PORTW_P1        3         
 
