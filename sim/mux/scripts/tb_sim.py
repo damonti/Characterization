@@ -9,12 +9,12 @@ RTL_PATH = os.path.expanduser("~/Estimation/rtl/mux")
 # PARAM CONFIGURATION
 #FACTOR = ["2-1", "3-1", "4-1", "5-1"]
 # for PORT in FACTOR:
-INPUT = 4
+INPUT = 2
 
 PORT = INPUT - 1
 PORT_P1 = PORT + 1
 FACTOR = str(INPUT)+"-1"
-for BW in range(8, 64+1):
+for BW in range(8, 65):
 #BW=10
     BW_ = str(BW)+"BW"
     DATAW = BW+2

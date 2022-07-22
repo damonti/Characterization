@@ -76,17 +76,17 @@ def write_to_template(table, name_tb, name_template, BW):
         elif ("//TOGGLE" in data[k]):
             data[k] = table #copy the content of the corresponding activity
         
-        elif ('//INJ_DATA' in data[k]):
-            if (BW>32):
-                data[k] = "\t\t\tidata_1 <= {2{inj_data}};"
-            else:
-                data[k] = "\t\t\tidata_1 <= inj_data;"
+        #elif ('//INJ_DATA' in data[k]):
+            #if (BW>32):
+            #    data[k] = "\t\t\tidata_1 <= {2{inj_data}};"
+            #else:
+            #    data[k] = "\t\t\tidata_1 <= inj_data;"
 
     with open(full_path, 'w', encoding='utf-8') as file:
         file.writelines(data)
 
 start = time.time()
-FACTOR = "4-1"
+FACTOR = "2-1"
 RTL_PATH = os.path.expanduser("~/Estimation/rtl/mux")
 for BW in range(8, 64+1):
     min_step = 100/BW  # minimum percentage step
