@@ -12,7 +12,7 @@ def pwr_to_list(CONFIGS):
         with open(file_path, 'r', encoding='utf-8') as f:
             data = f.readlines()
             targets.append(data[17].strip().split()[4])
-    targets_float = [format(float(i)/1000, ".4f") for i in targets]
+    targets_float = [format(float(i)/100, ".4f") for i in targets] #i is in nW, T_clk is 10ns, to retrieve energy in fJ, simply divide by 100.
     return targets_float
 
 
@@ -34,10 +34,9 @@ CONFIGS = config_generation() #generate the adder configurations
 TARGETS = pwr_to_list(CONFIGS) #generate a csv out of the power data. the CONFIGS is needed to find the parametrized report name
 
 #DATA FRAME
-#header = ['INPUT', 'BW', 'PERCENTAGE']
 header = ['BW', 'PERCENTAGE']
 df = pd.DataFrame(CONFIGS, columns=header)
-df['POWER [nW]'] = TARGETS
+df['Energy [fJ]'] = TARGETS
 #print (df)
 PATH = os.path.expanduser("~/Estimation/sim/adder/dataframe")
 df.to_csv(PATH + '/adder_configurations.csv', index=False)

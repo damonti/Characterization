@@ -1,0 +1,10 @@
+Cross validation avg r-squared: 0.7146918366649585
+Coefficients linear regression: [0.4513463  0.21591996]
+Linear regression MAE: %.2f 4.616089804087296
+Linear regression MSE: %.2f 31.538961074958145
+XGB Cross validation avg r-squared: 0.9955841203042501
+XGB regression MAE: 0.5561517357321594
+XGB regression MSE: 0.5625550714613881
+Random forest Cross validation avg r-squared: 0.9917099108919795
+Random forest regression MAE: 0.6978924108280248
+Random forest regression MSE: 0.9289719121838256

@@ -8,7 +8,7 @@ SIM_PATH = os.path.expanduser("~/Estimation/sim/"+DESIGN)
 RTL_PATH = os.path.expanduser("~/Estimation/rtl/"+DESIGN)
 
 
-for BW in range(62, 68, 2):
+for BW in range(8, 66, 2):
 #BW=10
     BW_ = str(BW)+"BW"
     NETLIST = DESIGN+"_"+BW_+"_netlist"

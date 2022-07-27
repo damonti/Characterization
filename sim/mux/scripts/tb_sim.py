@@ -30,6 +30,7 @@ for BW in range(8, 65):
 
     #RTL SIMULATION
     os.chdir(SIM_PATH)
+    #CHANGE THE DEFINE.V FOR THE CHOSEN CONFIGURATION AND WRITE IT INTO DEFINE_TEMP.V
     with open(RTL_PATH+'/hdl/define.v', 'r') as f:
         lines = f.readlines()
         for k in range(0, len(lines)):
@@ -44,12 +45,12 @@ for BW in range(8, 65):
 
             elif ("define DATAW_P1x" in lines[k]):
                 lines[k] = "`define DATAW_P1        "+ str(DATAW_P1) + "\n"
-
+        
         with open(RTL_PATH+"/define_temp.v", 'w') as wr:
             wr.writelines(lines)
     wr.close()
     f.close()
-
+    #CHANGE THE MUX.V FOR THE CHOSEN CONFIGURATION AND WRITE IT INTO MUX_TEMP.V
     with open(RTL_PATH+'/hdl/mux'+FACTOR+'.v', 'r') as f:
         lines = f.readlines()
         for k in range(0, len(lines)):

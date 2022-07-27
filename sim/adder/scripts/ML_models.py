@@ -18,7 +18,7 @@ from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
 import scikitplot as skplt
 
-DF_PATH = os.path.expanduser("~/Estimation/sim/mux/DataFrame/mux_configurations.csv")
+DF_PATH = os.path.expanduser("~/Estimation/sim/adder/dataframe/adder_configurations.csv")
 df = pd.read_csv(DF_PATH, sep=',')
 
 
@@ -193,3 +193,6 @@ plt.show()
 plt.title("Random forest: Test vs predicted values")
 plt.scatter(y_test, y_pred)
 plt.show()
+
+
+#INSERT LASSO

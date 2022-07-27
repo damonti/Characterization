@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-access
+rwc
+-timescale
+10ns/10ps
+-ALLOWREDEFINITION
+-incdir
+/home/20200969/Estimation/rtl/adder
+/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/verilog/tcbn40lpbwp_120a/tcbn40lpbwp.v
+/home/20200969/Estimation/rtl/adder/netlist/adder_8BW_netlist.v
+/home/20200969/Estimation/rtl/adder/test_adder_temp.v

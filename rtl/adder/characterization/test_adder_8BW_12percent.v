@@ -62,7 +62,7 @@ input [31:0] len; //payload
 integer j;
 //reg   [31:0] ran0;   
 //reg   [31:0] ran1;
-time inj_data;   
+time inj_data;   //"time" is unsigned 64 bit datatype
 begin
             /* data transfer */ 
 	inj_data = {8{1'b0}};
@@ -87,7 +87,7 @@ begin
 		{8'b00000001} : inj_data = {8'b00000000};
 		default : inj_data = {8{1'b0}};
 		endcase
-                
+
         input1 <= inj_data[(N-1):0]; //first half 
         input2 <= inj_data[(N*2)-1:N]; //second half
         

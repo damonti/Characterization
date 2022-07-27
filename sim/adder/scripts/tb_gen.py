@@ -84,7 +84,7 @@ def write_to_template(table, name_tb, name_template, BW):
 
 start = time.time()
 RTL_PATH = os.path.expanduser("~/Estimation/rtl/adder")
-for BW in range(128, 130, 2):
+for BW in range(8, 66, 2):
     min_step = 100/BW  # minimum percentage step
     steps = [] #steps[] list must remain float so that when we call generate_table, the number of toggling bits (n) is correct. If you round to integer, the chunked reminder may cause errors 
     for i in range(1, BW+1):  # start at 2, up to BW included, increment 1
