@@ -1,10 +1,10 @@
-Cross validation avg r-squared: 0.9341084733384664
-Coefficients linear regression: [2.35375212 1.45522936]
-Linear regression MAE: %.2f 10.347526521661864
-Linear regression MSE: %.2f 198.3884248885841
-XGB Cross validation avg r-squared: 0.9991974833960162
-XGB regression MAE: 1.3780218386878997
-XGB regression MSE: 3.0448939395883508
-Random forest Cross validation avg r-squared: 0.9994501311613213
-Random forest regression MAE: 1.1599316525973977
-Random forest regression MSE: 2.3661364649976337
+Cross validation avg r-squared: 0.8284135972729973
+Coefficients linear regression: [22.95339891  2.06392198  1.75945702]
+Linear regression MAE: %.2f 22.133074282770583
+Linear regression MSE: %.2f 839.1982668220214
+XGB Cross validation avg r-squared: 0.994749344760266
+XGB regression MAE: 4.097769871972407
+XGB regression MSE: 29.837313513281604
+Random forest Cross validation avg r-squared: 0.9987260438579806
+Random forest regression MAE: 1.707048386031408
+Random forest regression MSE: 7.246112285560928
