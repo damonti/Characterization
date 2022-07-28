@@ -1,0 +1,5 @@
+- tb_gen: generate the testbenches (from the templates in /rtl/${design}/hdl/ for the various the parameters
+- tb_sim: simulate it to retrieve the power reports of the component from the available testbenches
+- parser_dyn_power.py: build a DataFrame out of the power reports in /reports
+- ML_models: use the DataFrame for various ML regression models 
+- table_gen.py: produces energy tables (.csv) out of the power reports in /reports for Accelergy implementation
