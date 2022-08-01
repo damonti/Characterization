@@ -33,13 +33,13 @@ def config_generation():
     MAX_BITWIDTH = 64
     SUB_LIST = []
     LIST = []
-    PIPELINE = 1
-    #for PIPELINE in range(0, 3):
-    for BW in range(8, MAX_BITWIDTH+1, 2): #SWEEP THROUGH BITWIDTHS
-        min_step = 100/BW  # minimum percentage step
-        for i in range(1, BW+1):  # SWEEP THOROUGH PERCENTAGES
-            SUB_LIST = [PIPELINE, BW, round(min_step*i)] #SUBLIST = [BW, PERCENTAGE]
-            LIST.append(SUB_LIST)
+    #PIPELINE = 1
+    for PIPELINE in range(1, 3):
+      for BW in range(8, MAX_BITWIDTH+1, 2): #SWEEP THROUGH BITWIDTHS
+          min_step = 100/BW  # minimum percentage step
+          for i in range(1, BW+1):  # SWEEP THOROUGH PERCENTAGES
+              SUB_LIST = [PIPELINE, BW, round(min_step*i)] #SUBLIST = [BW, PERCENTAGE]
+              LIST.append(SUB_LIST)
     return LIST
 
 

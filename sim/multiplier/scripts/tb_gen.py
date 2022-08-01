@@ -84,7 +84,7 @@ def write_to_template(table, name_tb, name_template, BW):
 
 start = time.time()
 DESIGN = 'multiplier'
-PIPELINE = 0 #MULTIPLIER PIPELINE STAGES
+PIPELINE = 2 #MULTIPLIER PIPELINE STAGES
 PIPELINE_ = str(int(PIPELINE))+'pip'
 RTL_PATH = os.path.expanduser("~/Estimation/rtl/"+DESIGN)
 for BW in range(8, 65, 2):
