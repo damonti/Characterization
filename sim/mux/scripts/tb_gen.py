@@ -86,18 +86,19 @@ def write_to_template(table, name_tb, name_template, BW):
         file.writelines(data)
 
 start = time.time()
-FACTOR = "2-1"
-RTL_PATH = os.path.expanduser("~/Estimation/rtl/mux")
-for BW in range(8, 64+1):
-    min_step = 100/BW  # minimum percentage step
-    steps = [] #steps[] list must remain float so that when we call generate_table, the number of toggling bits (n) is correct. If you round to integer, the chunked reminder may cause errors 
-    for i in range(1, BW+1):  # start at 2, up to BW included, increment 1
-        steps.append(min_step*i)
-    for toggle in steps:
-        table = generate_table(toggle, BW) #generates the bit transitions (table) for the given BW and toggle activity
-        name_tb = "test_mux_"+FACTOR+"_"+str(BW)+"BW_"+str(round(toggle))+"percent"
-        name_template = "TB_TEMPLATE_"+FACTOR
-        write_to_template(table, name_tb, name_template, BW) #generates a file with the testbench for the given table
+for IN in range(2,5):#= "2-1"
+    FACTOR = str(IN)+"-1"
+    RTL_PATH = os.path.expanduser("~/Estimation/rtl/mux")
+    for BW in range(8, 32+1): #set the BW up to 64
+        min_step = 100/BW  # minimum percentage step
+        steps = [] #steps[] list must remain float so that when we call generate_table, the number of toggling bits (n) is correct. If you round to integer, the chunked reminder may cause errors 
+        for i in range(1, BW+1):  # start at 2, up to BW included, increment 1
+            steps.append(min_step*i)
+        for toggle in steps:
+            table = generate_table(toggle, BW) #generates the bit transitions (table) for the given BW and toggle activity
+            name_tb = "test_mux_"+FACTOR+"_"+str(BW)+"BW_"+str(round(toggle))+"percent"
+            name_template = "TB_TEMPLATE_"+FACTOR
+            write_to_template(table, name_tb, name_template, BW) #generates a file with the testbench for the given table
 end = time.time()
 print(end - start)
     #print ("//toggle = ", toggle)

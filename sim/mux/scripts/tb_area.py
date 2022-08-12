@@ -62,43 +62,13 @@ for INPUT in range(2, 5):
         wr.close()
         f.close()
         #RTL SIM
-        os.chdir(SIM_PATH)
-        os.system('xrun -access rwc '+RTL_PATH+'/mux_temp.v -incdir '+RTL_PATH+' -timescale 10ns/10ps')
+        #os.chdir(SIM_PATH)
+        #os.system('xrun -access rwc '+RTL_PATH+'/mux_temp.v -incdir '+RTL_PATH+' -timescale 10ns/10ps')
 
         #SYNTHESIS
         os.chdir(WORK_PATH)
         os.system('genus -batch -files "./../tcl/synth/synth_mux.tcl" -no_gui -overwrite')
-        shutil.copyfile(WORK_PATH+"/tech40/"+DESIGN+"_10ns_reports/"+DESIGN+"_netlist.v", RTL_PATH+"/netlist/"+DESIGN+"_"+NETLIST+".v")
+        #shutil.copyfile(WORK_PATH+"/tech40/"+DESIGN+"_10ns_reports/"+DESIGN+"_netlist.v", RTL_PATH+"/netlist/"+DESIGN+"_"+NETLIST+".v")
         shutil.copyfile(WORK_PATH+"/tech40/"+DESIGN+"_10ns_reports/"+DESIGN+".area.rpt", SIM_PATH+"/reports/"+NETLIST+".area.rpt")
 
-        #NETLIST SIMULATION
-        min_step = 100/BW  # minimum percentage step
-        steps = []
-        for i in range(1, BW+1):  # start at 2, up to BW included, increment 1
-            steps.append(round(min_step*i))
 
-        for PERCENT in steps:
-            TB = 'test_mux_'+FACTOR+'_'+BW_+'_'+str(PERCENT)+'percent.v'
-            PATH_TB = RTL_PATH+'/characterization/'+TB
-            with open(PATH_TB, 'r') as f:
-                lines = f.readlines()
-                for k in range(0, len(lines)):
-                    if ("define.v" in lines[k]):
-                        lines[k] = "define_temp.v\n"
-                    elif ("dump_mux." in lines[k]):
-                        lines[k] = "        $dumpfile(\""+SIM_PATH+"/dump_mux_"+FACTOR+"_"+BW_+"_"+str(PERCENT)+"percent.vcd\");\n"
-                with open(RTL_PATH+'/test_mux_temp.v', 'w') as wr:
-                    wr.writelines(lines)
-            wr.close()
-            f.close()
-            os.system('xrun -clean -access rwc -timescale 10ns/10ps -ALLOWREDEFINITION -incdir '+RTL_PATH+' /home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/verilog/tcbn40lpbwp_120a/tcbn40lpbwp.v '+RTL_PATH+'/netlist/'+DESIGN+'_'+NETLIST+'.v '+RTL_PATH+'/test_mux_temp.v')
-
-        os.chdir(WORK_PATH)
-        pstr = ""
-        for i in steps: pstr = pstr + str(i) + " "
-        pstr = pstr.strip()
-            # POWER
-        os.system('joules -overwrite -batch -execute "set FACTOR '+FACTOR+'" -execute "set BW '+BW_ +
-                    '" -execute "set listPERCENT {'+pstr+'}" -files {"./../tcl/power/power_mux.tcl"} -legacy_ui')
-        os.chdir(SIM_PATH)
-        os.system('rm *.vcd')

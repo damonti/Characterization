@@ -3,6 +3,18 @@
 import os
 import pandas as pd
 
+def area_to_list(CONFIGS):
+    """Returns a list of the area numbers"""
+    RPT_PATH = os.path.expanduser("~/Estimation/sim/adder/reports")
+    targets = []
+    for CONFIG in range (0, len(CONFIGS)):
+        file_path = RPT_PATH + "/adder_" + str(CONFIGS[CONFIG][0]) + "BW_netlist.area.rpt" #pick the corresponding area for the corresponding configuration
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = f.readlines()
+            targets.append(data[13].strip().split()[12]) #append all the power numbers from the reports in a list
+    targets_float = [format(float(i), ".3f") for i in targets] #i is in nW, T_clk is 10ns, to retrieve energy in fJ, simply divide by 100.
+    return targets_float
+
 def pwr_to_list(CONFIGS):
     """Returns a list of the dynamic power numbers"""
     RPT_PATH = os.path.expanduser("~/Estimation/sim/adder/reports")
@@ -31,12 +43,15 @@ def config_generation():
 
 
 CONFIGS = config_generation() #generate the adder configurations
-TARGETS = pwr_to_list(CONFIGS) #generate a csv out of the power data. the CONFIGS is needed to find the parametrized report name
+ENERGY_TARGETS = pwr_to_list(CONFIGS) #generate a csv out of the power data. the CONFIGS is needed to find the parametrized report name
+AREA_TARGETS = area_to_list(CONFIGS)
 
 #DATA FRAME
 header = ['BW', 'PERCENTAGE']
 df = pd.DataFrame(CONFIGS, columns=header)
-df['Energy [fJ]'] = TARGETS
+df['Area [um^2]'] = AREA_TARGETS
+df['Energy [fJ]'] = ENERGY_TARGETS
+
 #print (df)
 PATH = os.path.expanduser("~/Estimation/sim/adder/dataframe")
 df.to_csv(PATH + '/adder_configurations.csv', index=False)

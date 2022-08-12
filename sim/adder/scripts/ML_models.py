@@ -23,8 +23,8 @@ df = pd.read_csv(DF_PATH, sep=',')
 
 
 
-X_list = df.drop('POWER [nW]', axis=1).values #"BW" and "PERCENTAGE"
-y_list = df['POWER [nW]'].values #"POWER [nW]""
+X_list = df.drop('Energy [fJ]', axis=1).values #"BW" and "PERCENTAGE"
+y_list = df['Energy [fJ]'].values #"POWER [nW]""
 
 
 ####################

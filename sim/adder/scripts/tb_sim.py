@@ -8,7 +8,7 @@ SIM_PATH = os.path.expanduser("~/Estimation/sim/"+DESIGN)
 RTL_PATH = os.path.expanduser("~/Estimation/rtl/"+DESIGN)
 
 
-for BW in range(8, 66, 2):
+for BW in range(10, 66, 2):
 #BW=10
     BW_ = str(BW)+"BW"
     NETLIST = DESIGN+"_"+BW_+"_netlist"
@@ -37,7 +37,8 @@ for BW in range(8, 66, 2):
     os.chdir(WORK_PATH)
     os.system('genus -batch -files "./../tcl/synth/synth_'+DESIGN+'.tcl" -no_gui -overwrite')
     shutil.copyfile(WORK_PATH+"/tech40/"+DESIGN+"_10ns_reports/"+DESIGN+"_netlist.v", RTL_PATH+"/netlist/"+NETLIST+".v")
-
+    shutil.copyfile(WORK_PATH+"/tech40/"+DESIGN+"_10ns_reports/"+DESIGN+".area.rpt", SIM_PATH+"/reports/"+NETLIST+".area.rpt")
+    
     #NETLIST SIMULATION
     min_step = 100/BW  # minimum percentage step
     steps = []
