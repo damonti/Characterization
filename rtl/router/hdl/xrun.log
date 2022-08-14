@@ -1,9 +1,0 @@
-xrun: 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xrun	19.03-s013: Started on Jul 05, 2022 at 11:32:23 CEST
-/opt/tools/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/bin/xrun
-	-access rwc
-	/../characterization/test_router_25percent.v
-	-incdir /hdl
-	-timescale 10ns/10ps
-xrun: *E,FILEMIS: Cannot find the provided file /../characterization/test_router_25percent.v.
-TOOL:	xrun	19.03-s013: Exiting on Jul 05, 2022 at 11:32:23 CEST  (total: 00:00:00)
