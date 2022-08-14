@@ -110,7 +110,7 @@ input [31:0] enable;
 reg   [31:0] ran0;   
 reg   [31:0] ran1;
 reg   [4:0] sel;
-integer inj_data;      
+time inj_data;      
 begin                
         /* Initialization */ 
         if ( n > 0 && enable == 1 ) begin 
@@ -155,8 +155,8 @@ begin
                 if ( n > 0 && enable == 1 ) 
                         idata_0 <= {`TYPE_DATA, ran0, ran1}; 
                 if ( n > 1 && enable == 1 )
-                        //idata_1 <= inj_data;
-			idata_1 <= inj_data;        end                           
+                        idata_1 <= inj_data;
+        end                           
         ran0 <= $random(seed);       
         ran1 <= $random(seed);             
         #(STEP)                       

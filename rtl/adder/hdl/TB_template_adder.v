@@ -2,12 +2,13 @@
 `timescale 10ns/10ps 
 
 module tb_adder;
+
 parameter PAYLOAD = 20; //how many flits per packet
 //parameter_N
 parameter STEP   = 1.0; 
 integer i;
  // Inputs
- reg [N-1:0] input1; //time is unsigned 64 bit integer
+ reg [N-1:0] input1; 
  reg [N-1:0] input2;
  // Outputs
  wire [N-1:0] sum;
@@ -46,7 +47,7 @@ adder adder (
         #(STEP / 2)
         $write("Start clock %d \n", count);
         $dumpon;
-        for (i = 0; i < 10; i = i + 1) begin //10 packets are sent. each packet has 20 data flits (payload, len=20)
+        for (i = 0; i < 10; i = i + 1) begin //10 packets are sent. each packet has $PAYLOAD data flits
                 send_data( PAYLOAD );
                 #(STEP*7)         // Link utilization 4/13=0.30 (flit_rate injection)
                 $write("------------------------\n");

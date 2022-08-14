@@ -30,7 +30,7 @@ read_netlist $RTL_PATH/netlist/${DESIGN}_${FACTOR}_${BW}_netlist.v
 
 read_sdc $RTL_PATH/mux.sdc
 #if ck 100Mhx then time windows 130-370; if ck 1GHz then time windows 12-37
-suspend
+
 foreach PERCENT $listPERCENT {
     set REPORT_PATH ${SIM_PATH}/reports
     set START 2070

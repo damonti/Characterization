@@ -6,7 +6,6 @@ module mux_test;
 
 parameter ENABLE = 1;   
 parameter STEP   = 1.0; 
-//parameter STREAM = __NUM_STREAM__;
 parameter STREAM = 5; 
 
 integer i, j; 
@@ -54,7 +53,7 @@ mux mux (
 
 initial begin                            
 
-        $dumpfile("dump_mux_25percent_2-1_8BW.vcd"); 
+        $dumpfile("/home/20200969/Estimation/sim/mux/dump_mux_2-1_10BW_100percent.vcd");
         $dumpvars(0,mux_test.mux);   
         $dumpoff;                       
         `ifdef __POST_PR__               
@@ -80,7 +79,7 @@ initial begin
         ivch_1  <= `VCHW_P1'b0;  
 
         /* control signals */
-        sel <= `PORT_P1'b00; //'
+        sel <= `PORT_P1'b00;
 
         #(STEP)
         #(STEP / 2)
@@ -111,9 +110,7 @@ input [31:0] enable;
 reg   [31:0] ran0;   
 reg   [31:0] ran1;
 reg   [4:0] sel;
-integer inj_data; //8 bit data    
-//reg   [31:0] ran2;   
-//reg   [31:0] ran3;   
+time inj_data;      
 begin                
         /* Initialization */ 
         if ( n > 0 && enable == 1 ) begin 
@@ -126,35 +123,23 @@ begin
         end 
 
         /* data transfer */ 
-        inj_data = {8{1'b0}};
+	inj_data = {10{1'b0}};
         for (j = 0; j < len; j = j + 1) begin 
                 ran0 <= $random(seed);       
-                ran1 <= $random(seed);       
-                //ran2 <= $random(seed);       
-                //ran3 <= $random(seed);       
+                ran1 <= $random(seed);             
                 #(STEP)
-                /* 25% SWITCHING ACTIVITY; 2 bit interleaving */
 		case(inj_data)
-                        {8{1'b0}} : inj_data = {{2{1'b0}}, {2{1'b0}}, {2{1'b0}}, {2{1'b1}}};
-                        {{2{1'b0}}, {2{1'b0}}, {2{1'b0}}, {2{1'b1}}} : inj_data = {{2{1'b0}}, {2{1'b0}}, {2{1'b1}}, {2{1'b1}}};
-                        {{2{1'b0}}, {2{1'b0}}, {2{1'b1}}, {2{1'b1}}} : inj_data = {{2{1'b0}}, {2{1'b1}}, {2{1'b1}}, {2{1'b1}}};
-                        {{2{1'b0}}, {2{1'b1}}, {2{1'b1}}, {2{1'b1}}} : inj_data = {{2{1'b1}}, {2{1'b1}}, {2{1'b1}}, {2{1'b1}}};
-                        {{2{1'b1}}, {2{1'b1}}, {2{1'b1}}, {2{1'b1}}} : inj_data = {{2{1'b1}}, {2{1'b1}}, {2{1'b1}}, {2{1'b0}}};
-                        {{2{1'b1}}, {2{1'b1}}, {2{1'b1}}, {2{1'b0}}} : inj_data = {{2{1'b1}}, {2{1'b1}}, {2{1'b0}}, {2{1'b0}}};
-                        {{2{1'b1}}, {2{1'b1}}, {2{1'b0}}, {2{1'b0}}} : inj_data = {{2{1'b1}}, {2{1'b0}}, {2{1'b0}}, {2{1'b0}}};
-                        {{2{1'b1}}, {2{1'b0}}, {2{1'b0}}, {2{1'b0}}} : inj_data = {{2{1'b0}}, {2{1'b0}}, {2{1'b0}}, {2{1'b0}}};
-                        default : inj_data = {8{1'b0}};
+		{10'b0000000000} : inj_data = {10'b1111111111};
+		{10'b1111111111} : inj_data = {10'b0000000000};
+		default : inj_data = {10{1'b0}};
 		endcase                           
                 if ( n > 0 && enable == 1 ) 
                         idata_0 <= {`TYPE_DATA, ran0, ran1}; 
                 if ( n > 1 && enable == 1 )
                         idata_1 <= inj_data;
-                //        idata_1 <= {`TYPE_DATA, ran0, ran1}; 
         end                           
         ran0 <= $random(seed);       
-        ran1 <= $random(seed);       
-        //ran2 <= $random(seed);       
-        //ran3 <= $random(seed);       
+        ran1 <= $random(seed);             
         #(STEP)                       
         if ( n > 0 && enable == 1 ) 
                 idata_0 <= {`TYPE_TAIL, ran0, ran1}; 
@@ -162,9 +147,9 @@ begin
                 idata_1 <= {`TYPE_TAIL, ran0, ran1}; 
 
         #(STEP)                               
-        idata_0 <= {`TYPE_NONE, 8'h0}; 
+        idata_0 <= {`TYPE_NONE, 32'h0}; 
         ivalid_0<= `Disable; 
-        idata_1 <= {`TYPE_NONE, 8'h0}; 
+        idata_1 <= {`TYPE_NONE, 32'h0}; 
         ivalid_1<= `Disable; 
 
 end                          
