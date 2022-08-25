@@ -1,17 +1,20 @@
 **ENERGY METRICS**
-Coefficients linear regression: [4.51346298 2.1591994 ]
 Linear Cross validation avg r-squared: 0.7146917626089149
 Linear regression MAE: %.2f 46.160910617857546
 Linear regression MSE: %.2f 3153.899011877941
-XGB Cross validation avg r-squared: 0.9955560131846111
-XGB regression MAE: 5.561513986850288
-XGB regression MSE: 56.255483891803024
+Linear regression MAPE: 0.6730877491201307
+XGB Cross validation avg r-squared: 0.9947633822359816
+XGB regression MAE: 5.271902684965256
+XGB regression MSE: 53.96777839615188
+XGB regression MAPE: 0.04378830692875851
 Random forest Cross validation avg r-squared: 0.9917121889430935
 Random forest regression MAE: 7.00882435987261
 Random forest regression MSE: 93.45753870171993
+Random forest regression MAPE: 0.05012290625931391
 Lasso cross validation avg r-squared: 0.7146919333688018
 Lasso regression MAE: 46.15989507940611
 Lasso regression MSE: 3153.8812501406824
+Lasso regression MAPE: 0.6730735040094535
 
 **AREA METRICS**
 Coefficients linear regression: [3.15579239]

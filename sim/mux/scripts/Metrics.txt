@@ -1,0 +1,40 @@
+**ENERGY METRICS**
+Linear Crossvalidation: 0.9102497088273672
+Linear regression MAE: 8.78753086832233
+Linear regression MSE: 156.95393064179396
+Linear regression MAPE: 0.18440435644149866
+SVG Cross validation 0.9900863317623756
+SVG regression MAE: 2.4625356762335757
+SVG regression MSE: 17.356259509755887
+SVG regression MAPE: 0.02855639010376648
+Decision tree Cross validation 0.9892940285517822
+Decision tree regression MAE: 3.9875294793650786
+Decision tree regression MSE: 22.197302376248402
+Decision tree regression MAPE: 0.057191393897795706
+XGB Cross validation avg r-squared: 0.9993693476555581
+XGB regression MAE: 0.9976805783235853
+XGB regression MSE: 1.8083482226132945
+XGB regression MAPE: 0.014245524441843509
+Random forest Cross validation avg r-squared: 0.9976007049399996
+Random forest regression MAE: 1.4396966549999712
+Random forest regression MSE: 4.779893179653595
+Random forest regression MAPE: 0.019934422700126936
+Lasso cross validation avg r-squared: 0.9102456629650086
+Lasso regression MAE: 8.774633942858943
+Lasso regression MSE: 156.78929582605488
+Lasso regression MAPE: 0.18358400813814002
+
+**AREA METRICS**
+Coefficients linear regression: [60.55618558  5.22481575]
+Linear Cross validation avg r-squared: 0.9491173669811594
+Linear regression MAE: %.2f 11.90961581259237
+Linear regression MSE: %.2f 192.8153095233554
+XGB Cross validation avg r-squared: 0.9999988396819631
+XGB regression MAE: 0.02986940110876497
+XGB regression MSE: 0.0022931744448964806
+Random forest Cross validation avg r-squared: 0.9999999953900222
+Random forest regression MAE: 0.003227222222396572
+Random forest regression MSE: 0.00028580645222160635
+Lasso cross validation avg r-squared: 0.9491199148609443
+Lasso regression MAE: 11.911810893268163
+Lasso regression MSE: 192.77697101605264

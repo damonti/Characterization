@@ -1,10 +1,40 @@
-Cross validation avg r-squared: 0.7146917626089149
-Coefficients linear regression: [4.51346298 2.1591994 ]
-Linear regression MAE: %.2f 46.160910617857546
-Linear regression MSE: %.2f 3153.899011877941
-XGB Cross validation avg r-squared: 0.9955559268211773
-XGB regression MAE: 5.561513986850285
-XGB regression MSE: 56.25548389180298
-Random forest Cross validation avg r-squared: 0.9917121889430935
-Random forest regression MAE: 7.00882435987261
-Random forest regression MSE: 93.45753870171993
+**ENERGY METRICS**
+Linear Crossvalidation: 0.7146917626089149
+Linear regression MAE: 47.39586933874735
+Linear regression MSE: 3278.946227258616
+Linear regression MAPE: 0.667495223406374
+SVG Cross validation 0.9844403250048865
+SVG regression MAE: 6.764468241400101
+SVG regression MSE: 124.97063487886315
+SVG regression MAPE: 0.041286454380111394
+Decision tree Cross validation 0.9859221100320275
+Decision tree regression MAE: 9.975430821751345
+Decision tree regression MSE: 161.53094972994742
+Decision tree regression MAPE: 0.0656560215164066
+XGB Cross validation avg r-squared: 0.9947644786398163
+XGB regression MAE: 4.989865192777768
+XGB regression MSE: 52.61103871229291
+XGB regression MAPE: 0.03593433380898631
+Random forest Cross validation avg r-squared: 0.9918310343374254
+Random forest regression MAE: 6.583749942583791
+Random forest regression MSE: 81.71102405919522
+Random forest regression MAPE: 0.04618950049480055
+Lasso cross validation avg r-squared: 0.7146919333688018
+Lasso regression MAE: 47.394100817276936
+Lasso regression MSE: 3278.8700209350764
+Lasso regression MAPE: 0.6674747334714557
+
+**AREA METRICS**
+Coefficients linear regression: [3.15579239]
+Linear Cross validation avg r-squared: 0.999999999961281
+Linear regression MAE: %.2f 0.0002551543041213645
+Linear regression MSE: %.2f 8.398076503656641e-08
+XGB Cross validation avg r-squared: 0.9999999992075036
+XGB regression MAE: 0.0010558613060535362
+XGB regression MSE: 1.5670331512827005e-06
+Random forest Cross validation avg r-squared: 0.9999999222636207
+Random forest regression MAE: 1.8102999637200006e-13
+Random forest regression MSE: 5.334379942776243e-26
+Lasso cross validation avg r-squared: 0.9999999789358757
+Lasso regression MAE: 0.005519944112222448
+Lasso regression MSE: 4.179242877901235e-05
