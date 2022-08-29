@@ -1,0 +1,2 @@
+model,best_score,best_params
+decision_tree,0.9794768359003132,{'max_depth': 100}

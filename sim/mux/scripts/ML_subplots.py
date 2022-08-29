@@ -19,6 +19,8 @@ from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
 import scikitplot as skplt
+from sklearn.svm import SVR
+from sklearn.tree import DecisionTreeRegressor
 
 DF_PATH = os.path.expanduser("~/Estimation/sim/mux/dataframe/mux_configurations.csv")
 df = pd.read_csv(DF_PATH, sep=',')
@@ -62,7 +64,17 @@ reg_xgb.fit(X_train, y_train)
 y_pred_xgb = reg_xgb.predict(X_test)
 
 
+# ###############################################################
+# #LASSO
+reg_lasso = linear_model.Lasso(alpha=0.1)
+reg_lasso.fit(X_train, y_train)
+y_pred_lasso = reg_lasso.predict(X_test)
 
+############################################
+#DECISION TREE REGRESSOR
+dc_regr = DecisionTreeRegressor(max_depth=10)
+dc_regr.fit(X_train, y_train)
+y_pred_dc = dc_regr.predict(X_test)
 
 ############################################
 #RANDOM FOREST
@@ -70,28 +82,31 @@ reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
 reg_forest.fit(X_train, y_train)
 y_pred_forest = reg_forest.predict(X_test)
 
-
 ############################################
-#LASSO
-
-reg_lasso = linear_model.Lasso(alpha=0.1)
-reg_lasso.fit(X_train, y_train)
-y_pred_lasso = reg_lasso.predict(X_test)
+#SVR
+svr = SVR(kernel='rbf', C=1000, epsilon=1)
+svr.fit(X_train, y_train)
+y_pred_svr = svr.predict(X_test)
 
 #now plot the various predicted against the test data for the various algorithms into 4 subplots
 
-fig, axs = plt.subplots(2, 2)
-fig.suptitle('Energy prediction ML algorithms comparison for MUX component')
-axs[0, 0].scatter(y_test, y_pred_lr, s=10)
+fig, axs = plt.subplots(3, 2)
+s=4
+fig.suptitle('y_test versus y_pred energy plots comparison for MUX')
+axs[0, 0].scatter(y_test, y_pred_lr, s=s)
 axs[0, 0].set_title("Linear regression")
-axs[1, 0].scatter(y_test, y_pred_xgb, s=10)
+axs[1, 0].scatter(y_test, y_pred_xgb, s=s)
 axs[1, 0].set_title("XGB regression")
-axs[0, 1].scatter(y_test, y_pred_lasso, s=10)
-axs[0, 1].set_title("Lasso regression")
-axs[1, 1].scatter(y_test, y_pred_forest, s=10)
+axs[0, 1].scatter(y_test, y_pred_svr, s=s)
+axs[0, 1].set_title("SVR regression")
+axs[1, 1].scatter(y_test, y_pred_forest, s=s)
 axs[1, 1].set_title("Random forest regression")
+axs[2, 0].scatter(y_test, y_pred_lasso, s=s)
+axs[2, 0].set_title("Lasso regression")
+axs[2, 1].scatter(y_test, y_pred_dc, s=s)
+axs[2, 1].set_title("Decision tree regression")
 fig.tight_layout()
-plt.savefig('ML energy mux.pdf')
+plt.savefig('y_test versus y_pred.pdf')
 
 
 ###################################################
@@ -133,11 +148,11 @@ y_pred_forest = reg_forest.predict(X_test)
 
 
 ############################################
-#LASSO
+#SVR
 
-reg_lasso = linear_model.Lasso(alpha=0.1)
-reg_lasso.fit(X_train, y_train)
-y_pred_lasso = reg_lasso.predict(X_test)
+svr = SVR(kernel='rbf', C=1000, epsilon=1)
+svr.fit(X_train, y_train)
+y_pred_svr = svr.predict(X_test)
 
 #now plot the various predicted against the test data for the various algorithms into 4 subplots
 
@@ -147,8 +162,8 @@ axs[0, 0].scatter(y_test, y_pred_lr, s=10)
 axs[0, 0].set_title("Linear regression")
 axs[1, 0].scatter(y_test, y_pred_xgb, s=10)
 axs[1, 0].set_title("XGB regression")
-axs[0, 1].scatter(y_test, y_pred_lasso, s=10)
-axs[0, 1].set_title("Lasso regression")
+axs[0, 1].scatter(y_test, y_pred_svr, s=10)
+axs[0, 1].set_title("SVG regression")
 axs[1, 1].scatter(y_test, y_pred_forest, s=10)
 axs[1, 1].set_title("Random forest regression")
 fig.tight_layout()

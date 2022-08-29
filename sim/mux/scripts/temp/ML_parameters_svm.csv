@@ -1,0 +1,2 @@
+model,best_score,best_params
+svm,0.9046939584596295,"{'C': 10, 'epsilon': 1, 'kernel': 'linear'}"

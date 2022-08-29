@@ -1,0 +1,2 @@
+model,best_score,best_params
+XGB,0.9988980092148477,"{'learning_rate': 0.07, 'loss': 'squared_error', 'max_depth': 4, 'min_samples_split': 4, 'n_estimators': 3000}"

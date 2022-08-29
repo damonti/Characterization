@@ -1,0 +1,8 @@
+Training time with the best parameter tuning
+
+Training time XGB: 1.8765015602111816s
+Training time lasso: 0.00081634521484375s
+Training time random forest: 0.17407584190368652s
+Training time decision tree: 0.0017769336700439453s
+Training time svr: 2.610203981399536s
+Training time linear reg: 0.001436471939086914s

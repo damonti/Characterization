@@ -1,0 +1,8 @@
+Time needed to train models with best parameter tuning:
+
+Training time XGB: 2.328503370285034s
+Training time lasso: 0.0008320808410644531s
+Training time random forest: 0.21267008781433105s
+Training time decision tree: 0.002285480499267578s
+Training time svr: 5.386225938796997s
+Training time linear reg: 0.0015060901641845703s

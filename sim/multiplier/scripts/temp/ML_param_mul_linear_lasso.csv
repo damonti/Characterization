@@ -1,0 +1,3 @@
+model,best_score,best_params
+lasso,0.8094180686138811,{'alpha': 0.1}
+linear,0.8094177532876085,{}

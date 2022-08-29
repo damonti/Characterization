@@ -1,0 +1,17 @@
+ML,Metric,Score
+Linear,Cross-validation,0.910249709
+Linear,MAE,8.787530868
+Linear,MAPE,0.184404356
+Decision tree,Cross-validation,0.990642845
+Decision tree,MAE,3.7198
+Decision tree,MAPE,0.054811682
+XGB,Cross-validation,0.999449079
+XGB,MAE,0.958296383
+XGB,MAPE,0.013943807
+Random forest,Cross-validation,0.997534346
+Random forest,MAE,1.478025327
+Random forest,MAPE,0.020820038
+Lasso,Cross-validation,0.910245663
+Lasso,MAE,8.774633943
+Lasso,MAPE,0.183584008
+SVG,MAPE,0.02855639
