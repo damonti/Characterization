@@ -1,0 +1,12 @@
+28034
+28047
+es-eda.ele.tue.nl
+bdw_work/trace/sim.BASIC_V.s.trace
+2
+253
+0
+0
+1662540022
+1662540025
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/bin/hub_ncverilog -f bdw_work/sims/BASIC_V/siminfo +libext+.v +define+ioConfig_PIN +define+BDW_RTL_fir_BASIC +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/BASIC_V/sim_BASIC_V.so +hubSetOption+bdr=bdw_work/sims/BASIC_V/sim.bdr -l bdw_work/sims/BASIC_V/bdw_sim_verilog.log
+

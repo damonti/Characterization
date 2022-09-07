@@ -5772,11 +5772,11 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_separate_memories</name>
-			<value>off</value>
+			<value>on</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_structure_only</name>
-			<value>off</value>
+			<value>on</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_two_part_fsm</name>

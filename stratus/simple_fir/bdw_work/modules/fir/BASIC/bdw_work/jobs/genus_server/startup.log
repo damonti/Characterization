@@ -1,4 +1,4 @@
-TMPDIR is being set to /tmp/genus_temp_3313_es-eda.ele.tue.nl_20200969_FLEpa5
+TMPDIR is being set to /tmp/genus_temp_25452_es-eda.ele.tue.nl_20200969_5GSYuy
 
 Loading tool scripts...
 
@@ -22,9 +22,9 @@ Finished loading tool scripts (6 seconds elapsed).
 Warning : Partition Based Synthesis (PBS) is turned off. Expect very long runtime. [PBS-3]
   Setting attribute of root '/': 'partition_based_synthesis' = false
   Setting attribute of root '/': 'auto_partition' = false
-Sourcing '/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/tcl/bdw_generic_server.tcl' (Tue Sep 06 17:30:02 CEST 2022)...
-Sourcing '/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/tcl/Messaging.tcl' (Tue Sep 06 17:30:02 CEST 2022)...
+Sourcing '/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/tcl/bdw_generic_server.tcl' (Wed Sep 07 10:39:47 CEST 2022)...
+Sourcing '/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/tcl/Messaging.tcl' (Wed Sep 07 10:39:47 CEST 2022)...
 ##########################################################################
-# Starting in server mode with port 35546@es-eda.ele.tue.nl
-#   client pid = 3293
+# Starting in server mode with port 43189@es-eda.ele.tue.nl
+#   client pid = 25430
 ##########################################################################

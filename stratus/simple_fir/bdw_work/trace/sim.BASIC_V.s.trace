@@ -1,0 +1,78 @@
+simulator_composite = ncverilog15.20
+Operating system Centos 7,
+ GCC 4.8,
+ and Cadence NC/IUS 15.20
+are a supported combination.
+irun(64): 15.20-s038: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+file: bdw_work/sims/top_BASIC_V.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/fir_cosim.v
+	module worklib.fir_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/fir_rtl.v
+	module worklib.fir:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_logic_1.v
+	module worklib.fir_logic_1:v
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fir_logic_1:v <0x6aea39c2>
+			streams:  77, words: 20147
+		worklib.top:v <0x2368c621>
+			streams: 122, words: 101519
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 4       4
+		Registers:             159     159
+		Scalar wires:           28       -
+		Vectored wires:         26       -
+		Always blocks:          36      36
+		Initial blocks:          7       7
+		Cont. assignments:      34      41
+		Pseudo assignments:     13      13
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /opt/tools/cadence/2017-18/RHELx86/INCISIVE_15.20.038/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+
+        SystemC 2.3.1-Accellera --- Jul 18 2019 10:33:46
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.25-s100
+
+Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
+Latency for sample 0 is 3
+Testbench sink thread read 36 values.
+ncsim: ../../../../systemc-2.3.1a/src/sysc/kernel/sc_cor_qt.cpp:109: virtual void sc_core::sc_cor_qt::stack_protect(bool): Assertion `ret == 0' failed.
+ncsim: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 410 NS + 0
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncsim(64)	15.20-s038
+  HOSTNAME: es-eda.ele.tue.nl
+  OPERATING SYSTEM: Linux 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64
+  MESSAGE: Unexpected signal #6, program terminated (null)
+-----------------------------------------------------------------
+System task:  $sslScheduleDelayedAssignments
+  file:  /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/lib/hub.v
+  line:  476
+csi-ncsim - CSI: Cadence Support Investigation, sending details to /home/20200969/Estimation/stratus/simple_fir/ncsim_28121.err
+csi-ncsim - CSI: investigation complete, send /home/20200969/Estimation/stratus/simple_fir/ncsim_28121.err to Cadence Support

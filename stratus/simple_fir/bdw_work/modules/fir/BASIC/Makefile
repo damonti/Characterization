@@ -38,10 +38,29 @@ BDW_fir_BASIC_BUILD_RTL_V =
 # Objects for RTL C++ simulation.
 #
 
-BDW_fir_BASIC_RTL_O =
+BDW_fir_BASIC_RTL_O = $(addprefix objs/,  \
+	 fir_logic_1.o)
 #
 # Build RTL Verilog models with stratus_vlg
 #
+
+v_rtl/%.v : $(BDW_fir_BASIC_SRCLIB)/c_parts/%.cc
+	@mkdir -p v_rtl 
+	@$(BDW_CCDEP) -E -I$(BDW_fir_BASIC_SRCLIB)/c_parts $(BDW_CCFLAGS) -DBDW_RTL $< 2>&1 | cksum > v_rtl/$(<F).vcs.new
+	@if [ -f $@ -a -f v_rtl/$(<F).vcs ] ; then \
+		if diff v_rtl/$(<F).vcs v_rtl/$(<F).vcs.new 2>&1 > /dev/null ; then \
+			touch $@; \
+		else \
+			echo $(CYNTHVLG) -I. -I../../../../bdw_work/modules/fir/BASIC/c_parts -I../../../.. $(VLG_FLAGS) -o $@ $< ; \
+			$(CYNTHVLG) -I. -I../../../../bdw_work/modules/fir/BASIC/c_parts -I../../../.. $(VLG_FLAGS) -o $@ $< ; \
+		fi; \
+	else \
+		echo $(CYNTHVLG) -I. -I../../../../bdw_work/modules/fir/BASIC/c_parts -I../../../.. $(VLG_FLAGS) -o $@ $< ; \
+		$(CYNTHVLG) -I. -I../../../../bdw_work/modules/fir/BASIC/c_parts -I../../../.. $(VLG_FLAGS) -o $@ $< ; \
+	fi
+	@rm -f v_rtl/$(<F).vcs
+	@mv v_rtl/$(<F).vcs.new v_rtl/$(<F).vcs
+
 
 #
 # The 'prep' target is used to prepare the archive library for C++ RTL simulation
@@ -80,6 +99,23 @@ $(BDW_fir_BASIC_C_PARTS_A) : $(BDW_fir_BASIC_RTL_O)
 #
 # Build models for RTL BEH and C++ simulation.
 #
+
+objs/%.o : $(BDW_fir_BASIC_SRCLIB)/c_parts/%.cc
+	@$(BDW_CCDEP) -E -I$(BDW_fir_BASIC_SRCLIB)/c_parts $(BDW_CCFLAGS) -DBDW_RTL=1 -DBDW_HUB $< 2>&1 | cksum > objs/$(<F).ocs.new
+	@if [ -f $@ -a -f objs/$(<F).ocs ] ; then \
+		if diff objs/$(<F).ocs objs/$(<F).ocs.new 2>&1 > /dev/null ; then \
+			touch $@; \
+		else \
+			echo $(BDW_CC)  -I$(BDW_fir_BASIC_SRCLIB)/c_parts $(BDW_CCFLAGS) -DBDW_RTL=1 -DBDW_HUB  -o $@  $< ; \
+			$(BDW_CC)  -I$(BDW_fir_BASIC_SRCLIB)/c_parts $(BDW_CCFLAGS) -DBDW_RTL=1 -DBDW_HUB  -o $@  $< ; \
+		fi; \
+	else \
+		echo $(BDW_CC)  -I$(BDW_fir_BASIC_SRCLIB)/c_parts $(BDW_CCFLAGS) -DBDW_RTL=1 -DBDW_HUB  -o $@  $< ; \
+		$(BDW_CC)  -I$(BDW_fir_BASIC_SRCLIB)/c_parts $(BDW_CCFLAGS) -DBDW_RTL=1 -DBDW_HUB  -o $@  $< ; \
+	fi
+	@rm -f objs/$(<F).ocs
+	@mv objs/$(<F).ocs.new objs/$(<F).ocs
+
 
 
 obj_dir:

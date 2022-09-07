@@ -71,9 +71,9 @@ Copyright (c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
         00481: --output_style_reset_all_async is set to "on".
         00481: --output_style_reset_all_sync is set to "off".
         00481: --output_style_separate_behaviors is set to "off".
-        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_separate_memories is set to "on".
         00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
-        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_structure_only is set to "on".
         00481: --output_style_two_part_fsm is set to "on".
         00481: --output_style_ungroup_parts is set to "on".
         00481: --parts_effort is set to "high".
@@ -1650,8 +1650,11 @@ WARNING 03169.   only synchronous resets. This flag will have no effect.
 
 
         00195: Writing RTL files:
+        01766:   bdw_work/modules/fir/BASIC/c_parts/fir_logic_1.h
+        01767:   bdw_work/modules/fir/BASIC/c_parts/fir_logic_1.cc
         01766:   bdw_work/modules/fir/BASIC/fir_rtl.h
         01767:   bdw_work/modules/fir/BASIC/fir_rtl.cc
+        01768:   bdw_work/modules/fir/BASIC/v_rtl/fir_logic_1.v
         01768:   bdw_work/modules/fir/BASIC/fir_rtl.v
 
         01445: Summary of messages of severity WARNING or greater:

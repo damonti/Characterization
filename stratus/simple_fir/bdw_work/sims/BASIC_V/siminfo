@@ -1,0 +1,5 @@
+bdw_work/sims/top_BASIC_V.v
+bdw_work/wrappers/fir_cosim.v
+bdw_work/modules/fir/BASIC/fir_rtl.v
+bdw_work/modules/fir/BASIC/v_rtl/fir_logic_1.v
+

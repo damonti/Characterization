@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INCDIR
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/lib
+-INCDIR
+bdw_work/wrappers
+-LIBEXT
+.v
+-DEFINE
+ioConfig_PIN
+-DEFINE
+BDW_RTL_fir_BASIC

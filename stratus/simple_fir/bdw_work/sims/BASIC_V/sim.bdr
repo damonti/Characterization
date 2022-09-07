@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<tool_log>
+	<tool_kind>LogicSimulator</tool_kind>
+	<tool_name>NC Verilog</tool_name>
+	<hostname>es-eda.ele.tue.nl</hostname>
+	<uname>Linux 3.10.0-1160.15.2.el7.x86_64 x86_64</uname>
+	<cwd>/home/20200969/Estimation/stratus/simple_fir</cwd>
+	<user>20200969</user>
+	<gen_time>Wed Sep  7 10:40:25 2022</gen_time>
+	<module_inst>
+		<module_name>fir</module_name>
+		<inst_path>System.fir_wrapper</inst_path>
+		<representation>RTL_V</representation>
+	</module_inst>
+	<end_time>Wed Sep  7 10:40:25 2022</end_time>
+	<passed>1</passed>
+</tool_log>

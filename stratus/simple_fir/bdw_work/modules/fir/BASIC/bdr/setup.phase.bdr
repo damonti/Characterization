@@ -2,7 +2,7 @@
 <tool_log>
 	<tool_kind>BehavioralSynthesis</tool_kind>
 	<tool_name>stratus_hls</tool_name>
-	<gen_time>Tue Sep  6 17:29:55 2022</gen_time>
+	<gen_time>Wed Sep  7 10:39:40 2022</gen_time>
 	<version>19.25-s100  (93142.260418)</version>
 	<hostname>es-eda.ele.tue.nl</hostname>
 	<uname>Linux es-eda.ele.tue.nl 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64</uname>
@@ -94,8 +94,12 @@
 		<value>off</value>
 	</option>
 	<option>
+		<name>output_style_separate_memories</name>
+		<value>on</value>
+	</option>
+	<option>
 		<name>output_style_structure_only</name>
-		<value>off</value>
+		<value>on</value>
 	</option>
 	<option>
 		<name>path_delay_limit</name>

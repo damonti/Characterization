@@ -53,10 +53,10 @@ set_attr path_delay_limit       120
 set_attr prints                 off
 set_attr rtl_annotation			op,stack
 
-set_attr output_style_structure_only off
+set_attr output_style_structure_only on
 set_attr output_style_mux expl_case
 set_attr output_style_reset_all_async on
-#set_attr output_style_separate_memories on
+set_attr output_style_separate_memories on
 
 set_attr flatten_arrays all
 set_attr unroll_loops off

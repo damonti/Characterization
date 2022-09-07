@@ -1,5 +1,5 @@
  Starting Stratus DPOpt (Linux)
-  Time: September 06, 2022. 17:29:55
+  Time: September 07, 2022. 10:39:40
   Host: es-eda.ele.tue.nl
   User: 20200969
   Args: --dofile /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/tcl/bdw_cmd_shell.tcl --locallogfile /dev/null -x bdw_server_start
@@ -19,6 +19,6 @@ INFO: Using installation at: /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/to
   Info: Script "/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/tcl/bdw_cmd_shell.tcl" run successfully
 
 ##########################################################################
-# Starting in server mode with port 35278
-#   client pid = 3293
+# Starting in server mode with port 39343
+#   client pid = 25430
 ##########################################################################

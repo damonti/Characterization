@@ -1,0 +1,898 @@
+$date
+    Sep  7, 2022  10:40:25
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s038
+$end
+$timescale
+    1 ps
+$end
+
+$scope module top $end
+
+$scope module fir0 $end
+$var reg       1 !    clk  $end
+$var reg       1 "    rst  $end
+$var reg       8 #    coeffs_table_0 [7:0] $end
+$var reg       8 $    coeffs_table_1 [7:0] $end
+$var reg       8 %    coeffs_table_2 [7:0] $end
+$var reg       8 &    coeffs_table_3 [7:0] $end
+$var reg       8 '    coeffs_table_4 [7:0] $end
+$var reg       8 (    coeffs_table_5 [7:0] $end
+$var reg       8 )    coeffs_table_6 [7:0] $end
+$var reg       8 *    coeffs_table_7 [7:0] $end
+$var wire      1 +    din_busy  $end
+$var reg       1 ,    din_vld  $end
+$var reg       8 -    din_data [7:0] $end
+$var reg       1 .    dout_busy  $end
+$var wire      1 /    dout_vld  $end
+$var wire     11 0    dout_data [10:0] $end
+
+$scope module fir0 $end
+$var wire      1 1    clk  $end
+$var wire      1 2    rst  $end
+$var wire      8 3    coeffs_table_0 [7:0] $end
+$var wire      8 4    coeffs_table_1 [7:0] $end
+$var wire      8 5    coeffs_table_2 [7:0] $end
+$var wire      8 6    coeffs_table_3 [7:0] $end
+$var wire      8 7    coeffs_table_4 [7:0] $end
+$var wire      8 8    coeffs_table_5 [7:0] $end
+$var wire      8 9    coeffs_table_6 [7:0] $end
+$var wire      8 :    coeffs_table_7 [7:0] $end
+$var wire      1 ;    din_vld  $end
+$var wire      8 <    din_data [7:0] $end
+$var wire      1 =    dout_busy  $end
+$var wire      1 +    din_busy  $end
+$var wire      1 /    dout_vld  $end
+$var wire     11 0    dout_data [10:0] $end
+
+$scope module fir_logic_1_1 $end
+$var wire      1 1    clk  $end
+$var wire      1 2    rst  $end
+$var wire      8 4    coeffs_table_1 [7:0] $end
+$var wire      8 3    coeffs_table_0 [7:0] $end
+$var wire      8 5    coeffs_table_2 [7:0] $end
+$var wire      8 6    coeffs_table_3 [7:0] $end
+$var wire      8 7    coeffs_table_4 [7:0] $end
+$var wire      8 8    coeffs_table_5 [7:0] $end
+$var wire      8 9    coeffs_table_6 [7:0] $end
+$var wire      8 <    din_data [7:0] $end
+$var wire      8 :    coeffs_table_7 [7:0] $end
+$var wire      1 ;    din_vld  $end
+$var wire      1 =    dout_busy  $end
+$var wire      1 +    din_busy  $end
+$var wire      1 /    dout_vld  $end
+$var wire     11 0    dout_data [10:0] $end
+$var reg       1 >    dout_m_req_m_prev_trig_req  $end
+$var reg       1 ?    dout_m_unacked_req  $end
+$var wire      1 @    fir_Xor_1Ux1U_1U_1_4_out1  $end
+$var wire      1 A    fir_Or_1Ux1U_1U_4_5_out1  $end
+$var wire      1 B    fir_And_1Ux1U_1U_4_27_out1  $end
+$var wire      1 C    fir_And_1Ux1U_1U_4_25_out1  $end
+$var wire      1 D    fir_Not_1U_1U_4_24_out1  $end
+$var wire      1 E    fir_And_1Ux1U_1U_4_26_out1  $end
+$var reg       1 F    fir_N_Muxb_1_2_8_4_1_out1  $end
+$var reg       1 G    din_m_unvalidated_req  $end
+$var wire      1 H    fir_gen_busy_r_1_2_gnew_req  $end
+$var wire      1 I    fir_gen_busy_r_1_2_gnew_busy  $end
+$var wire      1 J    fir_gen_busy_r_1_2_gdiv  $end
+$var wire      1 K    fir_gen_busy_r_1_2_gen_busy_din_m_data_is_invalid_next  $end
+$var wire      1 L    din_m_data_is_valid  $end
+$var wire      1 M    t_18  $end
+$var wire      1 N    t_15  $end
+$var wire      1 O    rdy_0  $end
+$var reg       1 P    vld_0  $end
+$var reg       1 Q    rdy_1  $end
+$var wire      3 R    fir_gen_busy_r_1_2_out1 [2:0] $end
+$var wire      1 S    t_11  $end
+$var reg       1 T    vld_1  $end
+$var reg       1 U    rdy_2  $end
+$var wire      1 V    fir_And_1Ux1U_1U_1_6_out1  $end
+$var reg       1 W    cycle2_state  $end
+$var wire      1 X    t_13  $end
+$var reg       1 Y    global_state  $end
+$var wire     11 Z    fir_Mul_8Ux8U_11U_4_22_out1 [10:0] $end
+$var reg       8 [    din_m_stall_reg [7:0] $end
+$var reg       1 \    din_m_stall_reg_full  $end
+$var wire     11 ]    fir_Mul_8Ux8U_11U_4_19_out1 [10:0] $end
+$var wire     11 ^    fir_Add_11Ux11U_11U_4_18_out1 [10:0] $end
+$var wire     11 _    fir_Mul_8Ux8U_11U_4_17_out1 [10:0] $end
+$var wire     11 `    fir_Add_11Ux11U_11U_4_16_out1 [10:0] $end
+$var wire     11 a    fir_Mul_8Ux8U_11U_4_15_out1 [10:0] $end
+$var wire     11 b    fir_Add_11Ux11U_11U_4_14_out1 [10:0] $end
+$var wire     11 c    fir_Mul_8Ux8U_11U_4_13_out1 [10:0] $end
+$var wire     11 d    fir_Add_11Ux11U_11U_4_12_out1 [10:0] $end
+$var wire     11 e    fir_Mul_8Ux8U_11U_4_11_out1 [10:0] $end
+$var wire     11 f    fir_Add_11Ux11U_11U_4_10_out1 [10:0] $end
+$var wire     11 g    fir_Mul_8Ux8U_11U_4_9_out1 [10:0] $end
+$var wire     11 h    fir_Mul_8Ux8U_11U_4_8_out1 [10:0] $end
+$var reg       8 i    s_reg_9 [7:0] $end
+$var reg       8 j    s_reg_8 [7:0] $end
+$var wire     11 k    fir_Add_11Ux11U_11U_4_20_out1 [10:0] $end
+$var reg      11 l    s_reg_14 [10:0] $end
+$var reg       1 m    en_0  $end
+$var reg       8 n    s_reg_13 [7:0] $end
+$var reg       8 o    s_reg_12 [7:0] $end
+$var reg       8 p    s_reg_11 [7:0] $end
+$var reg       8 q    s_reg_10 [7:0] $end
+$var reg       8 r    shift_reg_7_mi12 [7:0] $end
+$var reg       8 s    fir_N_Mux_8_2_10_4_21_out1 [7:0] $end
+$var reg       1 t    cycle1_state  $end
+$var wire      1 u    fir_Not_1U_1U_1_7_out1  $end
+$var reg       1 v    dout_m_req_m_trig_req  $end
+$var reg       1 w    din_m_stalling  $end
+$var wire      1 x    t_3  $end
+$var wire      1 y    t_2  $end
+$var wire      1 z    t_1  $end
+$var wire      1 {    t_0  $end
+$var reg       1 |    din_m_busy_req_0  $end
+$var wire     11 }    fir_Add_11Ux11U_11U_4_23_out1 [10:0] $end
+$var reg       7 ~    dout_data_slice [6:0] $end
+$var reg       1 !!   en_1  $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+1!
+0"
+b0 #
+b0 $
+b0 %
+b0 &
+b0 '
+b0 (
+b0 )
+b0 *
+1+
+0,
+b0 -
+1.
+0/
+b0xxxxxxx 0
+11
+02
+b0 3
+b0 4
+b0 5
+b0 6
+b0 7
+b0 8
+b0 9
+b0 :
+0;
+b0 <
+1=
+0>
+0?
+0@
+0A
+0B
+0C
+1D
+0E
+1F
+1G
+1H
+1I
+0J
+1K
+0L
+0M
+1N
+xO
+xP
+0Q
+b101 R
+xS
+xT
+0U
+0V
+xW
+xX
+0Y
+b0 Z
+bx [
+0\
+b0 ]
+b0 ^
+b0 _
+b0 `
+b0 a
+b0 b
+b0 c
+b0 d
+b0 e
+b0 f
+b0 g
+b0 h
+b0 i
+b0 j
+b0 k
+bx l
+0m
+b0 n
+b0 o
+b0 p
+b0 q
+b0 r
+b0 s
+xt
+1u
+0v
+1w
+1x
+0y
+0z
+0{
+1|
+bx }
+bx ~
+0!!
+$end
+#5000
+0!
+01
+#10000
+1!
+11
+1W
+1t
+0P
+0T
+1O
+0S
+0X
+#15000
+0!
+01
+#20000
+1!
+11
+1"
+12
+#25000
+0!
+01
+#30000
+1!
+11
+1Y
+1U
+1Q
+1m
+0N
+1z
+1,
+b1 #
+b10 $
+b11 %
+b100 &
+b100 '
+b11 (
+b10 )
+b1 *
+0.
+b101 -
+b101 <
+0=
+b1 :
+b10 9
+b11 8
+b100 7
+b100 6
+b11 5
+b10 4
+b1 3
+1;
+b101 s
+b101 Z
+#35000
+0!
+01
+#40000
+1!
+11
+0t
+1P
+b0 l
+0|
+b101 r
+1!!
+1M
+0x
+1y
+b1010 ]
+0H
+b101 }
+1S
+0w
+0Q
+0!!
+0M
+1x
+0y
+0O
+1J
+0I
+b1010 k
+0K
+1w
+0m
+0z
+b10 R
+1Q
+1!!
+1M
+0x
+1y
+1{
+1O
+1L
+0+
+0w
+1m
+1z
+0{
+#45000
+0!
+01
+#50000
+1!
+11
+0W
+1T
+b1010 l
+b101 n
+1v
+b0 ~
+b0 0
+0u
+1@
+b1111 _
+b1111 }
+1X
+b1111 ^
+1A
+1/
+b11001 k
+#55000
+0!
+01
+#60000
+1!
+11
+1>
+b11001 l
+b101 o
+0v
+1u
+b10100 a
+b11110 }
+b10100 `
+b100011 ^
+b101101 k
+#65000
+0!
+01
+#70000
+1!
+11
+0>
+b101101 l
+1v
+b101 p
+b1 ~
+b1 0
+b10100 c
+0u
+b110010 }
+b10100 b
+b101000 `
+b110111 ^
+b1000001 k
+#75000
+0!
+01
+#80000
+1!
+11
+1>
+b1000001 l
+0v
+b101 q
+b11 ~
+b11 0
+b1111 e
+1u
+b1000110 }
+b1111 d
+b100011 b
+b110111 `
+b1000110 ^
+b1010000 k
+#85000
+0!
+01
+#90000
+1!
+11
+0>
+b101 i
+b1010000 l
+1v
+b100 ~
+b100 0
+0u
+b1010101 }
+b1010 h
+b1010 f
+b11001 d
+b101101 b
+b1000001 `
+b1010000 ^
+b1011010 k
+#95000
+0!
+01
+#100000
+1!
+11
+1>
+b1011010 l
+b101 j
+0v
+b101 ~
+b101 0
+1u
+b101 g
+b1011111 }
+b1111 f
+b11110 d
+b110010 b
+b1000110 `
+b1010101 ^
+b1011111 k
+#105000
+0!
+01
+#110000
+1!
+11
+0>
+b1011111 l
+1v
+0u
+b1100100 }
+#115000
+0!
+01
+#120000
+1!
+11
+1>
+0v
+b110 ~
+b110 0
+1u
+#125000
+0!
+01
+#130000
+1!
+11
+0>
+1v
+0u
+#135000
+0!
+01
+#140000
+1!
+11
+1>
+0v
+1u
+#145000
+0!
+01
+#150000
+1!
+11
+0>
+1v
+0u
+#155000
+0!
+01
+#160000
+1!
+11
+1>
+0v
+1u
+b1010 -
+b1010 <
+b1010 s
+b1010 r
+b10100 ]
+b1010 Z
+b1101001 }
+b1101001 k
+#165000
+0!
+01
+#170000
+1!
+11
+0>
+b1101001 l
+b1010 n
+1v
+0u
+b11110 _
+b1110011 }
+b1100100 ^
+b1111000 k
+#175000
+0!
+01
+#180000
+1!
+11
+1>
+b1111000 l
+b1010 o
+0v
+b111 ~
+b111 0
+1u
+b101000 a
+b10000010 }
+b1011010 `
+b1111000 ^
+b10001100 k
+#185000
+0!
+01
+#190000
+1!
+11
+0>
+b10001100 l
+1v
+b1010 p
+b1000 ~
+b1000 0
+b101000 c
+0u
+b10010110 }
+b1000110 b
+b1101110 `
+b10001100 ^
+b10100000 k
+#195000
+0!
+01
+#200000
+1!
+11
+1>
+b10100000 l
+0v
+b1010 q
+b1001 ~
+b1001 0
+b11110 e
+1u
+b10101010 }
+b101101 d
+b1010101 b
+b1111101 `
+b10011011 ^
+b10101111 k
+#205000
+0!
+01
+#210000
+1!
+11
+0>
+b1010 i
+b10101111 l
+1v
+b1010 ~
+b1010 0
+0u
+b10111001 }
+b10100 h
+b11001 f
+b110111 d
+b1011111 b
+b10000111 `
+b10100101 ^
+b10111001 k
+#215000
+0!
+01
+#220000
+1!
+11
+1>
+b10111001 l
+b1010 j
+0v
+b1011 ~
+b1011 0
+1u
+b1010 g
+b11000011 }
+b11110 f
+b111100 d
+b1100100 b
+b10001100 `
+b10101010 ^
+b10111110 k
+#225000
+0!
+01
+#230000
+1!
+11
+0>
+b10111110 l
+1v
+b1100 ~
+b1100 0
+0u
+b11001000 }
+#235000
+0!
+01
+#240000
+1!
+11
+1>
+0v
+1u
+#245000
+0!
+01
+#250000
+1!
+11
+0>
+1v
+0u
+#255000
+0!
+01
+#260000
+1!
+11
+1>
+0v
+1u
+#265000
+0!
+01
+#270000
+1!
+11
+0>
+1v
+0u
+#275000
+0!
+01
+#280000
+1!
+11
+1>
+0v
+1u
+b101 -
+b101 <
+b101 s
+b101 r
+b1010 ]
+b101 Z
+b11000011 }
+b10110100 k
+#285000
+0!
+01
+#290000
+1!
+11
+0>
+b10110100 l
+b101 n
+1v
+0u
+b1111 _
+b10111001 }
+b10011011 ^
+b10100101 k
+#295000
+0!
+01
+#300000
+1!
+11
+1>
+b10100101 l
+b101 o
+0v
+b1011 ~
+b1011 0
+1u
+b10100 a
+b10101010 }
+b1111000 `
+b10000111 ^
+b10010001 k
+#305000
+0!
+01
+#310000
+1!
+11
+0>
+b10010001 l
+1v
+b101 p
+b1010 ~
+b1010 0
+b10100 c
+0u
+b10010110 }
+b1010000 b
+b1100100 `
+b1110011 ^
+b1111101 k
+#315000
+0!
+01
+#320000
+1!
+11
+1>
+b1111101 l
+0v
+b101 q
+b1001 ~
+b1001 0
+b1111 e
+1u
+b10000010 }
+b101101 d
+b1000001 b
+b1010101 `
+b1100100 ^
+b1101110 k
+#325000
+0!
+01
+#330000
+1!
+11
+0>
+b101 i
+b1101110 l
+1v
+b1000 ~
+b1000 0
+0u
+b1110011 }
+b1010 h
+b10100 f
+b100011 d
+b110111 b
+b1001011 `
+b1011010 ^
+b1100100 k
+#335000
+0!
+01
+#340000
+1!
+11
+1>
+b1100100 l
+b101 j
+0v
+b111 ~
+b111 0
+1u
+b101 g
+b1101001 }
+b1111 f
+b11110 d
+b110010 b
+b1000110 `
+b1010101 ^
+b1011111 k
+#345000
+0!
+01
+#350000
+1!
+11
+0>
+b1011111 l
+1v
+b110 ~
+b110 0
+0u
+b1100100 }
+#355000
+0!
+01
+#360000
+1!
+11
+1>
+0v
+1u
+#365000
+0!
+01
+#370000
+1!
+11
+0>
+1v
+0u
+#375000
+0!
+01
+#380000
+1!
+11
+1>
+0v
+1u
+#385000
+0!
+01
+#390000
+1!
+11
+0>
+1v
+0u
+#395000
+0!
+01
+#400000
+1!
+11
+1>
+0v
+1u
+0,
+0;
+0F
+0J
+1K
+b1 R
+0Q
+0!!
+0M
+1x
+0y
+0O
+0L
+1w
+0m
+0z
+#405000
+0!
+01
+#410000

@@ -1,11 +1,9 @@
-make[1]: Warning: File `Makefile.prj' has modification time 239 s in the future
+make[3]: Warning: File `Makefile.prj' has modification time 259 s in the future
 Generating dependencies for HLS config BASIC of fir.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/bin/bdw_wrapgen -project project.tcl -module fir "-Ibdw_work/wrappers   -DCLOCK_PERIOD=10  "
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/bin/bdw_tracegen -module fir -vcd 
-make[1]: Warning: File `bdw_work/modules/fir/BASIC/fir.d' has modification time 257 s in the future
+make[3]: Warning: File `bdw_work/modules/fir/BASIC/fir.d' has modification time 260 s in the future
 BDW_HLS_CONFIG=BASIC BDW_CYNTH_CONFIG=BASIC \
 bdw_exec -jobproject project.tcl -job hls.fir.BASIC.s \
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include   --tl=/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib -DCLOCK_PERIOD=10 --clock_period=10.000 --default_input_delay=0.100 --dpopt_auto=op --flatten_arrays=all --message_detail=2 --output_style_mux=expl_case --output_style_reset_all_async=on --output_style_separate_behaviors=off --output_style_structure_only=off --path_delay_limit=120.000 --prints=off --rtl_annotation=op,stack --unroll_loops=off -DBASIC=1 -DBDW_RTL_fir_BASIC=1 -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  \
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include   --tl=/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib -DCLOCK_PERIOD=10 --clock_period=10.000 --default_input_delay=0.100 --dpopt_auto=op --flatten_arrays=all --message_detail=2 --output_style_mux=expl_case --output_style_reset_all_async=on --output_style_separate_behaviors=off --output_style_separate_memories=on --output_style_structure_only=on --path_delay_limit=120.000 --prints=off --rtl_annotation=op,stack --unroll_loops=off -DBASIC=1 -DBDW_RTL_fir_BASIC=1 -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  \
 	-d bdw_work/modules/fir/BASIC -o fir_rtl.cc \
 	--hls_module=fir --hls_config=BASIC --project=project.tcl \
 	 \
@@ -86,9 +84,9 @@ Copyright (c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
         00481: --output_style_reset_all_async is set to "on".
         00481: --output_style_reset_all_sync is set to "off".
         00481: --output_style_separate_behaviors is set to "off".
-        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_separate_memories is set to "on".
         00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
-        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_structure_only is set to "on".
         00481: --output_style_two_part_fsm is set to "on".
         00481: --output_style_ungroup_parts is set to "on".
         00481: --parts_effort is set to "high".
@@ -1665,8 +1663,11 @@ WARNING 03169.   only synchronous resets. This flag will have no effect.
 
 
         00195: Writing RTL files:
+        01766:   bdw_work/modules/fir/BASIC/c_parts/fir_logic_1.h
+        01767:   bdw_work/modules/fir/BASIC/c_parts/fir_logic_1.cc
         01766:   bdw_work/modules/fir/BASIC/fir_rtl.h
         01767:   bdw_work/modules/fir/BASIC/fir_rtl.cc
+        01768:   bdw_work/modules/fir/BASIC/v_rtl/fir_logic_1.v
         01768:   bdw_work/modules/fir/BASIC/fir_rtl.v
 
         01445: Summary of messages of severity WARNING or greater:
@@ -1675,4 +1676,4 @@ WARNING 03169.   only synchronous resets. This flag will have no effect.
 
 stratus_hls succeeded with 0 errors and 1 warning.
 
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: warning:  Clock skew detected.  Your build may be incomplete.
