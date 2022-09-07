@@ -1,0 +1,16 @@
+              #################################################################
+              #                                                               #
+  ERROR 02525:# Error reading project file                                    #
+  ERROR 02525.#   '/home/20200969/Estimation/stratus/simple_fir/project.tcl': #
+  ERROR 02525.#   invalid command name "output_style_reset_all_async"         #
+  ERROR 02525.#   while executing                                             #
+  ERROR 02525.#   "output_style_reset_all_async on"                           #
+  ERROR 02525.#   (file "/home/20200969/Estimation/stratus/simple_fir/project.tcl"      #
+  ERROR 02525.#   line 57)                                                    #
+  ERROR 02525.#   invoked from within                                         #
+  ERROR 02525.#   "source /home/20200969/Estimation/stratus/simple_fir/project.tcl" #
+  ERROR 02525.#   ("uplevel" body line 1)                                     #
+  ERROR 02525.#   invoked from within                                         #
+              #                                                               #
+              #################################################################
+Loading project failed.

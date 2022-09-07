@@ -1,0 +1,12 @@
+4379
+4391
+es-eda.ele.tue.nl
+bdw_work/trace/hlsv.fir.DPOPT.trace
+2
+0
+0
+0
+1662478231
+1662478233
+make --no-print-directory -f Makefile CWBExec=1 hls_fir_DPOPT
+

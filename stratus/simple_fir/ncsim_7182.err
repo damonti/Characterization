@@ -1,0 +1,55 @@
+csi-ncsim - CSI: Command line:
+ncsim
+    -f /home/20200969/Estimation/stratus/simple_fir/bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc/es-eda.ele.tue.nl_7182/ncsim.args
+        +hubSetOption+libdef=bdw_work/sims/BASIC_V/sim_BASIC_V.so
+        +hubSetOption+bdr=bdw_work/sims/BASIC_V/sim.bdr
+        +nc64bit
+        +incdir+/opt/tools/cadence/2020-21/RHELx86/STRATUS_20.12.100/tools.lnx86/stratus/lib
+        +incdir+bdw_work/wrappers
+        +access+rw
+        +loadpli1=/opt/tools/cadence/2020-21/RHELx86/STRATUS_20.12.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+        +ncinput+bdw_work/sims/BASIC_V/ncverilog.do
+        +nclibdirname+bdw_work/sims/BASIC_V
+        +libext+.v
+        +define+ioConfig_PIN
+        +define+BDW_RTL_fir_BASIC
+        +nowarn+LIBNOU
+        -INPUT bdw_work/sims/BASIC_V/ncverilog.do
+        -NOWARN LIBNOU
+        -MESSAGES
+        +EMGRLOG bdw_work/sims/BASIC_V/bdw_sim_verilog.log
+        -XLSTIME 1662449573
+        -XLKEEP
+        -XLMODE bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc
+        -RUNMODE
+        -CDSLIB bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc/cds.lib
+        -HDLVAR bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc/hdl.var
+        -XLNAME irun
+        -XLVERSION TOOL:	irun(64)	15.20-s038
+        -XLNAME ./bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc/es-eda.ele.tue.nl_7182
+    -CHECK_VERSION TOOL:	irun(64)	15.20-s038
+    -LOG_FD 4
+    -LOG_FD_NAME bdw_work/sims/BASIC_V/bdw_sim_verilog.log
+    -cmdnopsim
+    -runlock /home/20200969/Estimation/stratus/simple_fir/bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc/.nclib.lock
+    -runscratch /home/20200969/Estimation/stratus/simple_fir/bdw_work/sims/BASIC_V/irun.lnx8664.15.20.nc/es-eda.ele.tue.nl_7182
+
+csi-ncsim - CSI: *F,INTERR: INTERNAL EXCEPTION
+Observed simulation time : 410 NS + 0
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncsim(64)	15.20-s038
+  HOSTNAME: es-eda.ele.tue.nl
+  OPERATING SYSTEM: Linux 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64
+  MESSAGE: Unexpected signal #6, program terminated (null)
+-----------------------------------------------------------------
+
+csi-ncsim - CSI: Cadence Support Investigation, recording details
+External Code in function: <unavailable> offset -65503
+External Code in function: <unavailable> offset -65536
+Simulator Snap Shot: gd (SSS_GD) in snapshot worklib.top:v (SSS)
+External Code in function: <unavailable> offset -65534
+csi-ncsim - CSI: investigation complete took 0.010 secs, send this file to Cadence Support

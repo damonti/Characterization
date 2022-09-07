@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>FirThread</module_name>
+	<signal>
+		<name>MUX_N739</name>
+		<source_loc>5506</source_loc>
+		<datatype W="8">sc_uint</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N739</name>
+		<async/>
+		<lhs>
+			<name>MUX_N739</name>
+		</lhs>
+		<rhs>
+			<name>u_g_n_523</name>
+			<name>ioread001</name>
+		</rhs>
+		<cond>
+			<name>amtmp001</name>
+		</cond>
+		<mux_area>15.5938</mux_area>
+		<mux_delay>0.0814</mux_delay>
+		<control_delay>0.0814</control_delay>
+	</thread>
+</netlist>

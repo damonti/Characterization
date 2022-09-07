@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>gen_do_reg_vld</module_name>
+	<signal>
+		<name>MUX_N61</name>
+		<source_loc>5625</source_loc>
+		<datatype W="1">bool</datatype>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N61</name>
+		<async/>
+		<lhs>
+			<name>MUX_N61</name>
+		</lhs>
+		<rhs>
+			<name>gen_do_reg_vld_din_m_vld_reg_next</name>
+			<name>ioread020</name>
+		</rhs>
+		<cond>
+			<name>amtmp003</name>
+		</cond>
+		<mux_area>1.9492</mux_area>
+		<mux_delay>0.0812</mux_delay>
+		<control_delay>0.0812</control_delay>
+	</thread>
+</netlist>

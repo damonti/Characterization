@@ -1,0 +1,12 @@
+3857
+3869
+es-eda.ele.tue.nl
+bdw_work/trace/hls.fir.DPOPT.trace
+2
+0
+0
+0
+1662478213
+1662478231
+make --no-print-directory -f Makefile bdw_work/modules/fir/DPOPT/fir_rtl.cc BDW_DEP_CYNTH_CONFIG=DPOPT BDW_MODULE=fir BDW_HLS_CONFIG=DPOPT
+

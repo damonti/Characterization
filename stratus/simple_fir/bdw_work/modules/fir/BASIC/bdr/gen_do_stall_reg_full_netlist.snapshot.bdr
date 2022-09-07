@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>gen_do_stall_reg_full</module_name>
+</netlist>
