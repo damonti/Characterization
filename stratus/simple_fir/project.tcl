@@ -26,15 +26,14 @@
 #
 # Technology Libraries
 #
-#set LIB_PATH "[get_install_path]/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing"
-#set LIB_LEAF "slow_vdd1v2_basicCells.lib"
-#use_tech_lib    "$LIB_PATH/$LIB_LEAF"
-use_tech_lib "/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib"
+set LIB_PATH "[get_install_path]/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing"
+set LIB_LEAF "slow_vdd1v2_basicCells.lib"
+use_tech_lib    "$LIB_PATH/$LIB_LEAF"
 
 #####################################################################
 # c++ compiler options
 ######################################################################
-set CLOCK_PERIOD 10
+set CLOCK_PERIOD 6
 set_attr cc_options " -DCLOCK_PERIOD=$CLOCK_PERIOD"
 set_attr hls_cc_options " -DCLOCK_PERIOD=$CLOCK_PERIOD"
 
@@ -45,23 +44,16 @@ set_attr hls_cc_options " -DCLOCK_PERIOD=$CLOCK_PERIOD"
 #
 # Global synthesis attributes.
 #
-
 set_attr clock_period           $CLOCK_PERIOD
-set_attr message_detail         2
+#set_attr message_detail         2
 set_attr default_input_delay    0.1
-set_attr path_delay_limit       120
-set_attr prints                 off
-set_attr rtl_annotation			op,stack
-
-set_attr output_style_structure_only on
-set_attr output_style_mux expl_case
-set_attr output_style_reset_all_async on
-set_attr output_style_separate_memories on
-
-set_attr flatten_arrays all
+#set_attr path_delay_limit       120
+#set_attr prints                 off
+#set_attr rtl_annotation			op,stack
+#set_attr output_style_structure_only on
+set_attr output_style_ungroup_parts off
+set_attr flatten_arrays off
 set_attr unroll_loops off
-
-set_attr output_style_separate_behaviors off
 
 # Control automatic creation of custom datapath components
 # op creates non-square parts, expr creates components for design-specific expressions

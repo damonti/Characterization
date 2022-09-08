@@ -2,7 +2,7 @@
 /*****************************************************************************
     Verilog RTL Description
     
-    Configured at: 16:19:01 CEST (+0200), Tuesday 06 September 2022
+    Configured at: timestamp information is unavailable.
     Configured on: es-eda.ele.tue.nl
     Configured by: 20200969 (Dario Monticelli, Manil)
     
@@ -13,54 +13,42 @@ module fir_gen_busy_r_1_0 (
 	in1,
 	in2,
 	in3,
-	in4,
 	out1
 	); /* architecture "behavioural" */ 
 input  in1,
 	in2,
-	in3,
-	in4;
+	in3;
 output [2:0] out1;
-wire  asc004,
-	asc005,
-	asc007,
-	asc009,
-	asc010,
-	asc012,
-	asc014;
-wire [2:0] asc015;
+wire  asc003,
+	asc004,
+	asc006,
+	asc008,
+	asc010;
+wire [2:0] asc011;
 
-assign asc005 = 
+assign asc004 = 
 	(in3)
 	|(in1);
 
-assign asc004 = 
+assign asc003 = 
 	(in2)
-	&(asc005);
+	&(asc004);
 
-assign asc007 = 
-	(asc004)
-	|(in4);
+assign asc008 = 
+	((~asc003));
 
-assign asc012 = 
-	((~asc004));
+assign asc006 = 
+	(in1)
+	&(asc008);
 
 assign asc010 = 
-	(in1)
-	&(asc012);
+	((~asc006));
 
-assign asc009 = 
-	(asc010)
-	|(in4);
+assign asc011 = {asc003,asc006,asc010};
 
-assign asc014 = 
-	((~asc009));
-
-assign asc015 = {asc007,asc009,asc014};
-
-assign out1 = asc015;
+assign out1 = asc011;
 endmodule
 
-/* CADENCE  v7nwTw4= : u9/ySgnWtBlWxVbRXgEd4Og= ** DO NOT EDIT THIS LINE ******/
+/* CADENCE  uLn1QwA= : u9/ySgnWtBlWxVbRXgAU4eg= ** DO NOT EDIT THIS LINE ******/
 
 

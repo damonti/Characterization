@@ -1,60 +1,9 @@
-[General]
-SplitterPos=@ByteArray(\0\0\0\xff\0\0\0\0\0\0\0\x2\0\0\x2\xcc\xff\xff\xff\xff\x1\0\0\0\x1\x1\0\0\0\x2)
-
 [tree]
-Selection=simple_fir, Sim Configs, BASIC_V
-OpenTopLevel=Modules, Sim Configs
+Selection=simple_fir, Modules
+OpenTopLevel=Modules
 OpenModules=fir
 OpenLibTypes=Resources
 OpenLibs=@Invalid()
 
 [analysis]
 %2B\NIL\context=(nil)
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\context=simple_fir::Modules::fir::BASIC
-Index\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\accessAtOptimize=true
-Index\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\accessAtSchedule=true
-Index\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\accessAtRTL=true
-HLSConfigSummary\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\context=simple_fir::Modules::fir::BASIC
-HLSConfigSummary\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\scrollPos=5
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\context=simple_fir::Modules::fir::BASIC
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\header="@ByteArray(\0\0\0\xff\0\0\0\0\0\0\0\x1\0\0\0\x1\0\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\x16\x18\x83\x4\0\0\0\x6\0\0\0\xf\0\0\0\x6\0\0\0\t\0\0\0\x6\0\0\0\b\0\0\0\0\0\0\0\x4\0\0\0\x6\0\0\0\x3\0\0\0\x6\0\0\0\x12\0\0\0\x6\0\0\x5;\0\0\0\x16\x1\x1\0\x1\0\0\0\0\0\0\0\0\0\0\0\0\x64\xff\xff\xff\xff\0\0\0\x81\0\0\0\0\0\0\0\x13\0\0\0\xb8\0\0\0\x1\0\0\0\0\0\0\0\x8f\0\0\0\x1\0\0\0\0\0\0\0x\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\x2\0\0\0\0\0\0\0v\0\0\0\x2\0\0\0\0\0\0\0\x32\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\x2\0\0\0\0\0\0\0\x32\0\0\0\x1\0\0\0\0\0\0\0@\0\0\0\x1\0\0\0\0\0\0\0:\0\0\0\x1\0\0\0\0\0\0\0M\0\0\0\x1\0\0\0\0\0\0\0\x36\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\x1\0\0\0\0\0\0\0S\0\0\0\x1\0\0\0\0\0\0\0]\0\0\0\x1\0\0\0\0\0\0\0\0\0\0\0\x1\0\0\0\0\0\0\0\x30\0\0\0\x1\0\0\0\0\0\0\0M\0\0\0\x1\0\0\0\0\0\0\0x\0\0\0\x1\0\0\0\0)"
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\selRow=36, 0
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\treeExpandedItems=@Variant(\0\0\0\t\0\0\0\x1\0\0\0\x2\0\0\0\f), @Variant(\0\0\0\t\0\0\0\x1\0\0\0\x2\0\0\0\xf), @Variant(\0\0\0\t\0\0\0\x1\0\0\0\x2\0\0\0\x10), @Variant(\0\0\0\t\0\0\0\x1\0\0\0\x2\0\0\0$)
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\scrollPos=30
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\visible=false
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\collapsed=true
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\filterString=*
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\incEx=false
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\areaVal=0
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\delVal=0
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\showControl=2
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\showMemories=2
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\showMuxes=2
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\showRegisters=2
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\filter\showResources=2
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\visible=false
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\collapsed=true
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\columnsControl\listEntries=Name, Part Kind, Purpose, Word Size, # Words, Area, Comb. Area, Seq. Area, Unit Area, # Mults, # FFs, # Inputs, Output Width, Data Input Widths, Speed Grade, Max Latency, Setup Time (ns), Output Delay (ns), Worst Slack (ns), # Src Locs, # Children, Thread
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\columnsControl\listEntriesChecked=Name, Part Kind, Purpose, Area, Comb. Area, Seq. Area, # FFs, # Inputs, Output Width, Data Input Widths, Speed Grade, Setup Time (ns), Output Delay (ns), # Src Locs, # Children, Thread
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\dualList\leftList=@Invalid()
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\dualList\leftListChecked=@Invalid()
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\dualList\rightList=Behavior, Category, Hierarchy, Part kind
-RTL%20Contents\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\dualList\rightListChecked=@Invalid()
-Schematic\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\context=simple_fir::Modules::fir::BASIC
-Schematic\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\visible=false
-Schematic\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\settings\collapsed=true
-Schematic\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\currentIndex=1
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\shownTabs=Dashboard, RTL Summary, RTL Contents, Schematic, Sources
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\tornOffTabs=@Invalid()
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\splitTabs=@Invalid()
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\selTab=Dashboard
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\selSplitTab=-1
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\TopSplitterPos=@ByteArray(\0\0\0\xff\0\0\0\0\0\0\0\x2\0\0\x1\xd0\xff\xff\xff\xff\x1\0\0\0\b\x1\0\0\0\x1)
-HLSConfig\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\TopSplitOrientation=false
-BEH_C\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\context=simple_fir::Modules::fir::BASIC
-BEH_C\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\curFile=0
-BEH_C\simple_fir%3A%3AModules%3A%3Afir%3A%3ABASIC\editor%3Abdw_work\modules\fir\BASIC\src_cache\fir.cc=@ByteArray(\0\0\0\x1\0\0\0\x1e\0\0\0\0\0\0\0\x1\0\0\0\0\0\0\0\0)
-
-[settings]
-visible=false
-collapsed=true

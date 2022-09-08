@@ -1,19 +1,7 @@
-make[1]: Warning: File `Makefile.prj' has modification time 228 s in the future
-make[2]: Warning: File `Makefile.prj' has modification time 227 s in the future
 make[2]: Nothing to be done for `bdw_work/wrappers/fir_wrap.h'.
-make[2]: warning:  Clock skew detected.  Your build may be incomplete.
 make --no-print-directory -f Makefile -j1 hls_fir_BASIC
-make[2]: Warning: File `Makefile.prj' has modification time 227 s in the future
-make[3]: Warning: File `bdw_work/modules/fir/BASIC/fir.d' has modification time 228 s in the future
 make[3]: `bdw_work/modules/fir/BASIC/fir_rtl.cc' is up to date.
-make[3]: warning:  Clock skew detected.  Your build may be incomplete.
-make[3]: Warning: File `bdw_work/modules/fir/BASIC/fir.d' has modification time 228 s in the future
 make[3]: `bdw_work/modules/fir/BASIC/fir_rtl.v' is up to date.
-make[4]: Warning: File `Makefile' has modification time 249 s in the future
-make[4]: warning:  Clock skew detected.  Your build may be incomplete.
-make[3]: warning:  Clock skew detected.  Your build may be incomplete.
-make[2]: warning:  Clock skew detected.  Your build may be incomplete.
-make[2]: Warning: File `bdw_work/modules/fir/BASIC/fir.d' has modification time 227 s in the future
 Generating dependencies for fir.cc 
 Generating dependencies for system config PIN of tb.cc
 Generating dependencies for system config PIN of system.cc
@@ -25,19 +13,17 @@ make[2]: Warning: File `bdw_work/objs/fir.d' has modification time 258 s in the 
 make[3]: Warning: File `bdw_work/objs/fir.d' has modification time 258 s in the future
 make[3]: Nothing to be done for `bdw_work/wrappers/fir_wrap.h'.
 make[3]: warning:  Clock skew detected.  Your build may be incomplete.
-make[3]: Warning: File `bdw_work/objs/fir.d' has modification time 257 s in the future
+make[3]: Warning: File `bdw_work/objs/fir.d' has modification time 258 s in the future
 make[3]: `bdw_work/modules/fir/BASIC/fir_rtl.v' is up to date.
 make[3]: warning:  Clock skew detected.  Your build may be incomplete.
 make[3]: Warning: File `bdw_work/objs/fir.d' has modification time 257 s in the future
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/fir/BASIC -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/fir/BASIC/c_parts -DBASIC=1 -DBDW_RTL_fir_BASIC=1 -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN    -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/fir/BASIC/fir.o  bdw_work/wrappers/fir_wrap.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/System/PIN -I./ -I./ -Ibdw_work/wrappers    -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/System/PIN/system.o  system.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/main/PIN -I./ -I./ -Ibdw_work/wrappers    -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/main/PIN/main.o  main.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/tb/PIN -I./ -I./ -Ibdw_work/wrappers    -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/PIN/tb.o  tb.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -TP -I./ -Ibdw_work/wrappers    -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/libesc.o /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/source/libesc.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -TP -I./ -Ibdw_work/wrappers    -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/esc_elab.o /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/source/esc_elab.cc
-/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -TP -I./ -Ibdw_work/wrappers    -c -DCLOCK_PERIOD=10    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/esc_cleanup.o /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/source/esc_cleanup.cc
-make[4]: Warning: File `Makefile' has modification time 242 s in the future
-make[4]: warning:  Clock skew detected.  Your build may be incomplete.
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/fir/BASIC -I./ -I./ -Ibdw_work/wrappers  -DBDW_CC_SPEC=1 -Ibdw_work/modules/fir/BASIC/c_parts -DBASIC=1 -DBDW_RTL_fir_BASIC=1 -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN    -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/fir/BASIC/fir.o  bdw_work/wrappers/fir_wrap.cc
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/main/PIN -I./ -I./ -Ibdw_work/wrappers    -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/main/PIN/main.o  main.cc
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/System/PIN -I./ -I./ -Ibdw_work/wrappers    -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/System/PIN/system.o  system.cc
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++  -Ibdw_work/modules/tb/PIN -I./ -I./ -Ibdw_work/wrappers    -DioConfig_PIN -D_p_ioConfig_PIN -DioConfig=PIN -D_wrap_ioConfig=PIN  -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/modules/tb/PIN/tb.o  tb.cc
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -TP -I./ -Ibdw_work/wrappers    -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/libesc.o /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/source/libesc.cc
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -TP -I./ -Ibdw_work/wrappers    -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/esc_elab.o /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/source/esc_elab.cc
+/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -TP -I./ -Ibdw_work/wrappers    -c -DCLOCK_PERIOD=6    -fPIC  -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include -I/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/systemc/2.3.1/include  -DBDW_HUB=1    -DBDW_USE_SCV=0 -o bdw_work/libesc/esc_cleanup.o /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/source/esc_cleanup.cc
 /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/bin/bdw_wrapgen -project project.tcl -simconfig BASIC_V -top top
 /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/ar rc bdw_work/libesc/libesc.a bdw_work/libesc/libesc.o bdw_work/libesc/esc_elab.o bdw_work/libesc/esc_cleanup.o
 /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/gcc/4.8/bin/g++ -shared -Wl,-Bsymbolic  \
@@ -57,9 +43,7 @@ make[3]: warning:  Clock skew detected.  Your build may be incomplete.
 make[2]: warning:  Clock skew detected.  Your build may be incomplete.
 make[2]: Warning: File `bdw_work/objs/fir.d' has modification time 252 s in the future
 make --no-print-directory -f Makefile incisive
-make[3]: Warning: File `bdw_work/objs/fir.d' has modification time 251 s in the future
-make[4]: Warning: File `Makefile' has modification time 239 s in the future
-make[4]: warning:  Clock skew detected.  Your build may be incomplete.
+make[3]: Warning: File `bdw_work/objs/fir.d' has modification time 252 s in the future
 
 BDW_SIM_CONFIG_DIR=bdw_work/sims/BASIC_V \
 bdw_exec -jobproject project.tcl -job sim.BASIC_V.s \
@@ -84,8 +68,44 @@ file: bdw_work/wrappers/fir_cosim.v
 file: bdw_work/modules/fir/BASIC/fir_rtl.v
 	module worklib.fir:v
 		errors: 0, warnings: 0
-file: bdw_work/modules/fir/BASIC/v_rtl/fir_logic_1.v
-	module worklib.fir_logic_1:v
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Mul_8Ux8U_11U_4.v
+	module worklib.fir_Mul_8Ux8U_11U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_N_Mux_8_8_12_4.v
+	module worklib.fir_N_Mux_8_8_12_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Add_11Ux11U_11U_4.v
+	module worklib.fir_Add_11Ux11U_11U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_gen_busy_r_1.v
+	module worklib.fir_gen_busy_r_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Add_3U_4_4.v
+	module worklib.fir_Add_3U_4_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Add_3Ux1U_4U_4.v
+	module worklib.fir_Add_3Ux1U_4U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_And_1Ux1U_1U_1.v
+	module worklib.fir_And_1Ux1U_1U_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Xor_1Ux1U_1U_1.v
+	module worklib.fir_Xor_1Ux1U_1U_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Not_1U_1U_1.v
+	module worklib.fir_Not_1U_1U_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_N_Muxb_1_2_11_4.v
+	module worklib.fir_N_Muxb_1_2_11_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_LessThan_1U_10_4.v
+	module worklib.fir_LessThan_1U_10_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Or_1Ux1U_1U_4.v
+	module worklib.fir_Or_1Ux1U_1U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_RAM_8X8_1.v
+	module worklib.fir_RAM_8X8_1:v
 		errors: 0, warnings: 0
 ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
 	Total errors/warnings found outside modules and primitives:
@@ -97,22 +117,48 @@ ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
 		top
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.fir_logic_1:v <0x6aea39c2>
-			streams:  77, words: 20147
-		worklib.top:v <0x2368c621>
+		worklib.fir:v <0x7b7d36c5>
+			streams:  37, words: 18054
+		worklib.fir_Add_11Ux11U_11U_4:v <0x73e67895>
+			streams:   2, words:   296
+		worklib.fir_Add_3U_4_4:v <0x2fc15a88>
+			streams:   2, words:   256
+		worklib.fir_Add_3Ux1U_4U_4:v <0x069fdc5b>
+			streams:   2, words:   296
+		worklib.fir_And_1Ux1U_1U_1:v <0x0b181419>
+			streams:   0, words:     0
+		worklib.fir_LessThan_1U_10_4:v <0x43fd7193>
+			streams:   1, words:   151
+		worklib.fir_Mul_8Ux8U_11U_4:v <0x028e9f46>
+			streams:   2, words:   322
+		worklib.fir_N_Mux_8_8_12_4:v <0x5e02913f>
+			streams:   2, words:   613
+		worklib.fir_N_Muxb_1_2_11_4:v <0x590b8cc7>
+			streams:   1, words:   261
+		worklib.fir_Not_1U_1U_1:v <0x3c9dfa28>
+			streams:   0, words:     0
+		worklib.fir_Or_1Ux1U_1U_4:v <0x56a35764>
+			streams:   0, words:     0
+		worklib.fir_RAM_8X8_1:v <0x389c2b06>
+			streams:   2, words:   702
+		worklib.fir_Xor_1Ux1U_1U_1:v <0x6641df9a>
+			streams:   0, words:     0
+		worklib.fir_gen_busy_r_1:v <0x20971381>
+			streams:   1, words:   118
+		worklib.top:v <0x4f6e51c3>
 			streams: 122, words: 101519
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                 4       4
-		Registers:             159     159
-		Scalar wires:           28       -
-		Vectored wires:         26       -
-		Always blocks:          36      36
+		Modules:                17      16
+		Registers:             157     157
+		Scalar wires:           34       -
+		Vectored wires:         32       -
+		Always blocks:          33      33
 		Initial blocks:          7       7
-		Cont. assignments:      34      41
-		Pseudo assignments:     13      13
+		Cont. assignments:      15      41
+		Pseudo assignments:     21      21
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.top:v
 Loading snapshot worklib.top:v .................... Done
@@ -127,11 +173,11 @@ ncsim> run
 NOTE: Cadence Design Systems Hub Simulation Platform : version 19.25-s100
 
 Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
-Latency for sample 0 is 3
+Latency for sample 0 is 40
 Testbench sink thread read 36 values.
 ncsim: ../../../../systemc-2.3.1a/src/sysc/kernel/sc_cor_qt.cpp:109: virtual void sc_core::sc_cor_qt::stack_protect(bool): Assertion `ret == 0' failed.
 ncsim: *F,INTERR: INTERNAL EXCEPTION
-Observed simulation time : 410 NS + 0
+Observed simulation time : 6978 NS + 0
 -----------------------------------------------------------------
 The tool has encountered an unexpected condition and must exit.
 Contact Cadence Design Systems customer support about this
@@ -145,12 +191,12 @@ including the logfile that contains this error message.
 System task:  $sslScheduleDelayedAssignments
   file:  /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/lib/hub.v
   line:  476
-csi-ncsim - CSI: Cadence Support Investigation, sending details to /home/20200969/Estimation/stratus/simple_fir/ncsim_28121.err
-csi-ncsim - CSI: investigation complete, send /home/20200969/Estimation/stratus/simple_fir/ncsim_28121.err to Cadence Support
+csi-ncsim - CSI: Cadence Support Investigation, sending details to /home/20200969/Estimation/stratus/simple_fir/ncsim_25441.err
+csi-ncsim - CSI: investigation complete, send /home/20200969/Estimation/stratus/simple_fir/ncsim_25441.err to Cadence Support
 BDW_SIM_CONFIG_DIR=bdw_work/sims/BASIC_V make cmp_result 2>&1 | tee -a bdw_work/sims/BASIC_V/bdw_sim.log
 make[4]: Warning: File `bdw_work/objs/fir.d' has modification time 247 s in the future
 ****************************************
-Wed Sep 7 10:40:25 CEST 2022
+Wed Sep 7 16:44:10 CEST 2022
 Performing Simulation Results Comparison
 for BASIC_V Simulation...
   BASIC_V: SIMULATION PASSED
@@ -158,4 +204,3 @@ for BASIC_V Simulation...
 make[4]: warning:  Clock skew detected.  Your build may be incomplete.
 make[3]: warning:  Clock skew detected.  Your build may be incomplete.
 make[2]: warning:  Clock skew detected.  Your build may be incomplete.
-make[1]: warning:  Clock skew detected.  Your build may be incomplete.

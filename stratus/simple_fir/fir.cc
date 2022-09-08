@@ -39,8 +39,8 @@ void fir::FirThread()
 
     while (1)
     {
-        HLS_PIPELINE_LOOP( SOFT_STALL, 1, "main_loop");
-        HLS_CONSTRAIN_LATENCY(0 , HLS_ACHIEVABLE,"main_loop");
+        //HLS_PIPELINE_LOOP( SOFT_STALL, 1, "main_loop");
+        //HLS_CONSTRAIN_LATENCY(0 , HLS_ACHIEVABLE,"main_loop");
 
         for (unsigned i = 0; i < (TAPS-1); i++)
             shift_reg[i] = shift_reg[i + 1];

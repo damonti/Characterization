@@ -2,13 +2,13 @@
 <tool_log>
 	<tool_kind>BehavioralSynthesis</tool_kind>
 	<tool_name>stratus_hls</tool_name>
-	<gen_time>Wed Sep  7 10:39:40 2022</gen_time>
+	<gen_time>Wed Sep  7 16:24:42 2022</gen_time>
 	<version>19.25-s100  (93142.260418)</version>
 	<hostname>es-eda.ele.tue.nl</hostname>
 	<uname>Linux es-eda.ele.tue.nl 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64</uname>
 	<user>20200969</user>
 	<cwd>/home/20200969/Estimation/stratus/simple_fir</cwd>
-	<tech_lib>/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib</tech_lib>
+	<tech_lib>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</tech_lib>
 	<env_var>
 		<name>STRATUS_HOME</name>
 		<value>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25</value>
@@ -59,11 +59,11 @@
 	</option>
 	<option>
 		<name>tech_lib</name>
-		<value>/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib</value>
+		<value>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
 	</option>
 	<option>
 		<name>clock_period</name>
-		<value>10.000</value>
+		<value>6.000</value>
 	</option>
 	<option>
 		<name>default_input_delay</name>
@@ -75,43 +75,11 @@
 	</option>
 	<option>
 		<name>flatten_arrays</name>
-		<value>all</value>
+		<value>none</value>
 	</option>
 	<option>
-		<name>message_detail</name>
-		<value>2</value>
-	</option>
-	<option>
-		<name>output_style_mux</name>
-		<value>expl_case</value>
-	</option>
-	<option>
-		<name>output_style_reset_all_async</name>
-		<value>on</value>
-	</option>
-	<option>
-		<name>output_style_separate_behaviors</name>
+		<name>output_style_ungroup_parts</name>
 		<value>off</value>
-	</option>
-	<option>
-		<name>output_style_separate_memories</name>
-		<value>on</value>
-	</option>
-	<option>
-		<name>output_style_structure_only</name>
-		<value>on</value>
-	</option>
-	<option>
-		<name>path_delay_limit</name>
-		<value>120.000</value>
-	</option>
-	<option>
-		<name>prints</name>
-		<value>off</value>
-	</option>
-	<option>
-		<name>rtl_annotation</name>
-		<value>op,stack</value>
 	</option>
 	<option>
 		<name>unroll_loops</name>
@@ -163,7 +131,7 @@
 	</option>
 	<option>
 		<name>define_macro</name>
-		<value>CLOCK_PERIOD=10</value>
+		<value>CLOCK_PERIOD=6</value>
 	</option>
 	<option>
 		<name>define_macro</name>

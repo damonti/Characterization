@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <snapshot>
 	<name>sched</name>
+	<array>
+		<name>shift_reg</name>
+		<source_loc>2469</source_loc>
+		<datatype>
+			<array>8</array>
+			<datatype W="8">sc_uint</datatype>
+		</datatype>
+	</array>
 	<port>
 		<name>clk</name>
 		<source_loc>1057</source_loc>
@@ -16,85 +24,85 @@
 	</port>
 	<port>
 		<name>coeffs_table_0</name>
-		<source_loc>15767</source_loc>
+		<source_loc>15323</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_1</name>
-		<source_loc>15768</source_loc>
+		<source_loc>15325</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_2</name>
-		<source_loc>15769</source_loc>
+		<source_loc>15327</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_3</name>
-		<source_loc>15770</source_loc>
+		<source_loc>15329</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_4</name>
-		<source_loc>15771</source_loc>
+		<source_loc>15331</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_5</name>
-		<source_loc>15772</source_loc>
+		<source_loc>15333</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_6</name>
-		<source_loc>15773</source_loc>
+		<source_loc>15335</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_7</name>
-		<source_loc>15774</source_loc>
+		<source_loc>15337</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>din_busy</name>
-		<source_loc>14664</source_loc>
+		<source_loc>14650</source_loc>
 		<direction>out</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>din_vld</name>
-		<source_loc>14663</source_loc>
+		<source_loc>14649</source_loc>
 		<direction>in</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>din_data</name>
-		<source_loc>14662</source_loc>
+		<source_loc>14648</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>dout_busy</name>
-		<source_loc>14661</source_loc>
+		<source_loc>14647</source_loc>
 		<direction>in</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>dout_vld</name>
-		<source_loc>14660</source_loc>
+		<source_loc>14646</source_loc>
 		<direction>out</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>dout_data</name>
-		<source_loc>14659</source_loc>
+		<source_loc>14645</source_loc>
 		<direction>out</direction>
 		<datatype W="11">sc_uint</datatype>
 	</port>
@@ -102,61 +110,27 @@
 		<thread>FirThread</thread>
 		<port>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.4341</value>
+				<value>0.3</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.229</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_stall_reg</name>
-			<source_loc>14701</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.2072</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_data</name>
-			<source_loc>14662</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.1</value>
-			</ns_attrib>
-			<ns_attrib>
-				<name>preserve_io</name>
-				<value>1</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.1334</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>coeffs_table_7</name>
-			<source_loc>15774</source_loc>
+			<source_loc>15337</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -169,18 +143,8 @@
 			</ns_attrib>
 		</port>
 		<port>
-			<name>din_m_data_is_invalid</name>
-			<source_loc>14706</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.3471</value>
-			</ns_attrib>
-		</port>
-		<port>
 			<name>coeffs_table_6</name>
-			<source_loc>15773</source_loc>
+			<source_loc>15335</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -194,7 +158,7 @@
 		</port>
 		<port>
 			<name>coeffs_table_5</name>
-			<source_loc>15772</source_loc>
+			<source_loc>15333</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -208,7 +172,7 @@
 		</port>
 		<port>
 			<name>coeffs_table_4</name>
-			<source_loc>15771</source_loc>
+			<source_loc>15331</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -222,7 +186,7 @@
 		</port>
 		<port>
 			<name>coeffs_table_3</name>
-			<source_loc>15770</source_loc>
+			<source_loc>15329</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -236,21 +200,7 @@
 		</port>
 		<port>
 			<name>coeffs_table_2</name>
-			<source_loc>15769</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.1</value>
-			</ns_attrib>
-			<ns_attrib>
-				<name>preserve_io</name>
-				<value>1</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>coeffs_table_0</name>
-			<source_loc>15767</source_loc>
+			<source_loc>15327</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -264,7 +214,7 @@
 		</port>
 		<port>
 			<name>coeffs_table_1</name>
-			<source_loc>15768</source_loc>
+			<source_loc>15325</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 			<ns_attrib>
@@ -277,13 +227,51 @@
 			</ns_attrib>
 		</port>
 		<port>
+			<name>coeffs_table_0</name>
+			<source_loc>15323</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>0.1</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>din_data</name>
+			<source_loc>14648</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>0.1</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>din_m_data_is_invalid</name>
+			<source_loc>14692</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>0.2152</value>
+			</ns_attrib>
+		</port>
+		<port>
 			<name>clk</name>
 			<source_loc>1057</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>preserve_io</name>
@@ -306,7 +294,7 @@
 		</port>
 		<port>
 			<name>dout_data</name>
-			<source_loc>14659</source_loc>
+			<source_loc>14645</source_loc>
 			<direction>out</direction>
 			<datatype W="11">sc_uint</datatype>
 			<ns_attrib>
@@ -319,19 +307,83 @@
 			</ns_attrib>
 		</port>
 		<port>
+			<name>shift_reg_RW</name>
+			<source_loc>2469</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+			<ns_attrib>
+				<name>output_options</name>
+				<value>ASYNC_LOW</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>stall_value</name>
+				<value>0</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>shift_reg_CE</name>
+			<source_loc>2469</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+			<ns_attrib>
+				<name>output_options</name>
+				<value>ASYNC_LOW</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>stall_value</name>
+				<value>0</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>shift_reg_DIN</name>
+			<source_loc>0</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+			<ns_attrib>
+				<name>output_options</name>
+				<value>ASYNC_HOLD</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>shift_reg_in1</name>
+			<source_loc>2469</source_loc>
+			<direction>out</direction>
+			<datatype W="3">sc_uint</datatype>
+			<ns_attrib>
+				<name>output_options</name>
+				<value>ASYNC_HOLD</value>
+			</ns_attrib>
+			<ns_attrib>
+				<name>preserve_io</name>
+				<value>1</value>
+			</ns_attrib>
+		</port>
+		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.48467</value>
+				<value>5.6385</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -344,7 +396,7 @@
 		</port>
 		<port>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -352,48 +404,48 @@
 	<ios>
 		<thread>gen_busy</thread>
 		<port>
-			<name>din_m_vld_reg</name>
-			<source_loc>14728</source_loc>
+			<name>din_m_stall_reg_full</name>
+			<source_loc>14695</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
+			</ns_attrib>
+		</port>
+		<port>
+			<name>din_m_vld_reg</name>
+			<source_loc>14714</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+			<ns_attrib>
+				<name>input_delay</name>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>din_m_unvalidated_req</name>
-			<source_loc>14729</source_loc>
+			<source_loc>14715</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
@@ -407,12 +459,12 @@
 		</port>
 		<port>
 			<name>din_m_data_is_invalid</name>
-			<source_loc>14706</source_loc>
+			<source_loc>14692</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.6529</value>
+				<value>5.7848</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -421,12 +473,12 @@
 		</port>
 		<port>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.6529</value>
+				<value>5.7848</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -435,12 +487,12 @@
 		</port>
 		<port>
 			<name>din_busy</name>
-			<source_loc>14664</source_loc>
+			<source_loc>14650</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.6529</value>
+				<value>5.7848</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -453,12 +505,12 @@
 		</port>
 		<port>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.6529</value>
+				<value>5.7848</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -475,7 +527,7 @@
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>preserve_io</name>
@@ -484,7 +536,7 @@
 		</port>
 		<port>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
@@ -498,12 +550,12 @@
 		</port>
 		<port>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
@@ -522,90 +574,9 @@
 		</port>
 		<port>
 			<name>din_m_unvalidated_req</name>
-			<source_loc>14729</source_loc>
+			<source_loc>14715</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
-		</port>
-	</ios>
-	<ios>
-		<thread>gen_do_stall_reg</thread>
-		<port>
-			<name>clk</name>
-			<source_loc>1057</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.2072</value>
-			</ns_attrib>
-			<ns_attrib>
-				<name>preserve_io</name>
-				<value>1</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_data</name>
-			<source_loc>14662</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.1</value>
-			</ns_attrib>
-			<ns_attrib>
-				<name>preserve_io</name>
-				<value>1</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.3471</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.515325</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.2072</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>rst</name>
-			<source_loc>1058</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-			<ns_attrib>
-				<name>input_delay</name>
-				<value>0.1</value>
-			</ns_attrib>
-			<ns_attrib>
-				<name>preserve_io</name>
-				<value>1</value>
-			</ns_attrib>
-		</port>
-		<port>
-			<name>din_m_stall_reg</name>
-			<source_loc>14701</source_loc>
-			<direction>out</direction>
-			<datatype W="8">sc_uint</datatype>
 		</port>
 	</ios>
 	<ios>
@@ -617,7 +588,7 @@
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>preserve_io</name>
@@ -626,22 +597,22 @@
 		</port>
 		<port>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.3471</value>
+				<value>0.2152</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.515325</value>
+				<value>0.3615</value>
 			</ns_attrib>
 		</port>
 		<port>
@@ -660,7 +631,7 @@
 		</port>
 		<port>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -674,7 +645,7 @@
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>preserve_io</name>
@@ -683,7 +654,7 @@
 		</port>
 		<port>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
@@ -697,12 +668,12 @@
 		</port>
 		<port>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.3471</value>
+				<value>0.2152</value>
 			</ns_attrib>
 		</port>
 		<port>
@@ -721,7 +692,7 @@
 		</port>
 		<port>
 			<name>din_m_vld_reg</name>
-			<source_loc>14728</source_loc>
+			<source_loc>14714</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -730,32 +701,32 @@
 		<thread>gen_vld</thread>
 		<port>
 			<name>dout_m_unacked_req</name>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>dout_m_req_active</name>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2854</value>
+				<value>0.1848</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>dout_vld</name>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.6196</value>
+				<value>5.7456</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -776,7 +747,7 @@
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>preserve_io</name>
@@ -785,12 +756,12 @@
 		</port>
 		<port>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.4341</value>
+				<value>0.3</value>
 			</ns_attrib>
 		</port>
 		<port>
@@ -809,7 +780,7 @@
 		</port>
 		<port>
 			<name>dout_m_unacked_req</name>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -818,7 +789,7 @@
 		<thread>gen_stalling</thread>
 		<port>
 			<name>dout_busy</name>
-			<source_loc>14661</source_loc>
+			<source_loc>14647</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
@@ -832,12 +803,12 @@
 		</port>
 		<port>
 			<name>dout_vld</name>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.6196</value>
+				<value>5.7456</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -850,12 +821,12 @@
 		</port>
 		<port>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.5659</value>
+				<value>5.7</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -867,32 +838,32 @@
 		<thread>gen_active</thread>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>dout_m_req_m_prev_trig_req</name>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>dout_m_req_active</name>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.7146</value>
+				<value>5.8152</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>
@@ -909,7 +880,7 @@
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>preserve_io</name>
@@ -918,12 +889,12 @@
 		</port>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
@@ -942,7 +913,7 @@
 		</port>
 		<port>
 			<name>dout_m_req_m_prev_trig_req</name>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -951,22 +922,22 @@
 		<thread>gen_next_trig_reg</thread>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>input_delay</name>
-				<value>0.2072</value>
+				<value>0.114</value>
 			</ns_attrib>
 		</port>
 		<port>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 			<ns_attrib>
 				<name>output_delay</name>
-				<value>9.771</value>
+				<value>5.8666</value>
 			</ns_attrib>
 			<ns_attrib>
 				<name>output_options</name>

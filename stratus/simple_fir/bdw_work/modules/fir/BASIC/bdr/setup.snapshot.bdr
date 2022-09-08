@@ -23,7 +23,7 @@
 			<value>STRATUS_HLS=1</value>
 			<value>CYNTHESIZER</value>
 			<value>CYNTHHL</value>
-			<value>CLOCK_PERIOD=10</value>
+			<value>CLOCK_PERIOD=6</value>
 			<value>BASIC=1</value>
 			<value>BDW_RTL_fir_BASIC=1</value>
 			<value>ioConfig_PIN</value>
@@ -61,7 +61,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>message_detail</name>
-			<value>2</value>
+			<value>0</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_starc</name>
@@ -85,7 +85,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>rtl_annotation</name>
-			<value>op,stack</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>src_file</name>
@@ -121,7 +121,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>clock_period</name>
-			<value>10.000</value>
+			<value>6.000</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>comm_subexp_elim</name>
@@ -173,7 +173,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>flatten_arrays</name>
-			<value>all</value>
+			<value>none</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>fpga_dsp_latency</name>
@@ -249,7 +249,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_mux</name>
-			<value>expl_case</value>
+			<value>impl_case</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_pipelined_parts</name>
@@ -265,7 +265,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_reset_all_async</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_reset_all_sync</name>
@@ -277,11 +277,11 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_separate_memories</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_structure_only</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_two_part_fsm</name>
@@ -289,7 +289,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_ungroup_parts</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>Xoutput_language</name>
@@ -301,7 +301,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>path_delay_limit</name>
-			<value>120</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>path_delay_limit_unshare_regs</name>
@@ -417,7 +417,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>tech_lib</name>
-			<value>/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib</value>
+			<value>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>timing_aggression</name>

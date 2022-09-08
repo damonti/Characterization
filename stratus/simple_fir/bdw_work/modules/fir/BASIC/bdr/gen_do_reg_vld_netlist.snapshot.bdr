@@ -3,7 +3,7 @@
 	<module_name>gen_do_reg_vld</module_name>
 	<signal>
 		<name>MUX_N61</name>
-		<source_loc>5625</source_loc>
+		<source_loc>5590</source_loc>
 		<datatype W="1">bool</datatype>
 		<async/>
 	</signal>
@@ -15,13 +15,13 @@
 		</lhs>
 		<rhs>
 			<name>gen_do_reg_vld_din_m_vld_reg_next</name>
-			<name>ioread020</name>
+			<name>ioread019</name>
 		</rhs>
 		<cond>
-			<name>amtmp003</name>
+			<name>amtmp002</name>
 		</cond>
-		<mux_area>1.9492</mux_area>
-		<mux_delay>0.0812</mux_delay>
-		<control_delay>0.0812</control_delay>
+		<mux_area>2.8617</mux_area>
+		<mux_delay>0.0615</mux_delay>
+		<control_delay>0.0615</control_delay>
 	</thread>
 </netlist>

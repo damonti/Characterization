@@ -13,8 +13,44 @@ file: bdw_work/wrappers/fir_cosim.v
 file: bdw_work/modules/fir/BASIC/fir_rtl.v
 	module worklib.fir:v
 		errors: 0, warnings: 0
-file: bdw_work/modules/fir/BASIC/v_rtl/fir_logic_1.v
-	module worklib.fir_logic_1:v
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Mul_8Ux8U_11U_4.v
+	module worklib.fir_Mul_8Ux8U_11U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_N_Mux_8_8_12_4.v
+	module worklib.fir_N_Mux_8_8_12_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Add_11Ux11U_11U_4.v
+	module worklib.fir_Add_11Ux11U_11U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_gen_busy_r_1.v
+	module worklib.fir_gen_busy_r_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Add_3U_4_4.v
+	module worklib.fir_Add_3U_4_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Add_3Ux1U_4U_4.v
+	module worklib.fir_Add_3Ux1U_4U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_And_1Ux1U_1U_1.v
+	module worklib.fir_And_1Ux1U_1U_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Xor_1Ux1U_1U_1.v
+	module worklib.fir_Xor_1Ux1U_1U_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Not_1U_1U_1.v
+	module worklib.fir_Not_1U_1U_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_N_Muxb_1_2_11_4.v
+	module worklib.fir_N_Muxb_1_2_11_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_LessThan_1U_10_4.v
+	module worklib.fir_LessThan_1U_10_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_Or_1Ux1U_1U_4.v
+	module worklib.fir_Or_1Ux1U_1U_4:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/fir/BASIC/v_rtl/fir_RAM_8X8_1.v
+	module worklib.fir_RAM_8X8_1:v
 		errors: 0, warnings: 0
 ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
 	Total errors/warnings found outside modules and primitives:
@@ -26,22 +62,48 @@ ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
 		top
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.fir_logic_1:v <0x6aea39c2>
-			streams:  77, words: 20147
-		worklib.top:v <0x2368c621>
+		worklib.fir:v <0x7b7d36c5>
+			streams:  37, words: 18054
+		worklib.fir_Add_11Ux11U_11U_4:v <0x73e67895>
+			streams:   2, words:   296
+		worklib.fir_Add_3U_4_4:v <0x2fc15a88>
+			streams:   2, words:   256
+		worklib.fir_Add_3Ux1U_4U_4:v <0x069fdc5b>
+			streams:   2, words:   296
+		worklib.fir_And_1Ux1U_1U_1:v <0x0b181419>
+			streams:   0, words:     0
+		worklib.fir_LessThan_1U_10_4:v <0x43fd7193>
+			streams:   1, words:   151
+		worklib.fir_Mul_8Ux8U_11U_4:v <0x028e9f46>
+			streams:   2, words:   322
+		worklib.fir_N_Mux_8_8_12_4:v <0x5e02913f>
+			streams:   2, words:   613
+		worklib.fir_N_Muxb_1_2_11_4:v <0x590b8cc7>
+			streams:   1, words:   261
+		worklib.fir_Not_1U_1U_1:v <0x3c9dfa28>
+			streams:   0, words:     0
+		worklib.fir_Or_1Ux1U_1U_4:v <0x56a35764>
+			streams:   0, words:     0
+		worklib.fir_RAM_8X8_1:v <0x389c2b06>
+			streams:   2, words:   702
+		worklib.fir_Xor_1Ux1U_1U_1:v <0x6641df9a>
+			streams:   0, words:     0
+		worklib.fir_gen_busy_r_1:v <0x20971381>
+			streams:   1, words:   118
+		worklib.top:v <0x4f6e51c3>
 			streams: 122, words: 101519
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
-		Modules:                 4       4
-		Registers:             159     159
-		Scalar wires:           28       -
-		Vectored wires:         26       -
-		Always blocks:          36      36
+		Modules:                17      16
+		Registers:             157     157
+		Scalar wires:           34       -
+		Vectored wires:         32       -
+		Always blocks:          33      33
 		Initial blocks:          7       7
-		Cont. assignments:      34      41
-		Pseudo assignments:     13      13
+		Cont. assignments:      15      41
+		Pseudo assignments:     21      21
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: worklib.top:v
 Loading snapshot worklib.top:v .................... Done
@@ -56,11 +118,11 @@ ncsim> run
 NOTE: Cadence Design Systems Hub Simulation Platform : version 19.25-s100
 
 Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
-Latency for sample 0 is 3
+Latency for sample 0 is 40
 Testbench sink thread read 36 values.
 ncsim: ../../../../systemc-2.3.1a/src/sysc/kernel/sc_cor_qt.cpp:109: virtual void sc_core::sc_cor_qt::stack_protect(bool): Assertion `ret == 0' failed.
 ncsim: *F,INTERR: INTERNAL EXCEPTION
-Observed simulation time : 410 NS + 0
+Observed simulation time : 6978 NS + 0
 -----------------------------------------------------------------
 The tool has encountered an unexpected condition and must exit.
 Contact Cadence Design Systems customer support about this
@@ -74,11 +136,11 @@ including the logfile that contains this error message.
 System task:  $sslScheduleDelayedAssignments
   file:  /opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/tools.lnx86/stratus/lib/hub.v
   line:  476
-csi-ncsim - CSI: Cadence Support Investigation, sending details to /home/20200969/Estimation/stratus/simple_fir/ncsim_28121.err
-csi-ncsim - CSI: investigation complete, send /home/20200969/Estimation/stratus/simple_fir/ncsim_28121.err to Cadence Support
+csi-ncsim - CSI: Cadence Support Investigation, sending details to /home/20200969/Estimation/stratus/simple_fir/ncsim_25441.err
+csi-ncsim - CSI: investigation complete, send /home/20200969/Estimation/stratus/simple_fir/ncsim_25441.err to Cadence Support
 make[4]: Warning: File `bdw_work/objs/fir.d' has modification time 247 s in the future
 ****************************************
-Wed Sep 7 10:40:25 CEST 2022
+Wed Sep 7 16:44:10 CEST 2022
 Performing Simulation Results Comparison
 for BASIC_V Simulation...
   BASIC_V: SIMULATION PASSED

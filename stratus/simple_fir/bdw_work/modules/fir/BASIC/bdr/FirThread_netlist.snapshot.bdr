@@ -2,26 +2,47 @@
 <netlist>
 	<module_name>FirThread</module_name>
 	<signal>
-		<name>MUX_N739</name>
-		<source_loc>5506</source_loc>
+		<name>BITRANGE_N582</name>
+		<source_loc>14403</source_loc>
+		<datatype W="1">bool</datatype>
+		<async/>
+	</signal>
+	<assign>
+		<name>drive_BITRANGE_N582</name>
+		<lhs>
+			<name>BITRANGE_N582</name>
+		</lhs>
+		<rhs>
+			<name>s_reg_28</name>
+		</rhs>
+	</assign>
+	<signal>
+		<name>MUX_N1063</name>
+		<source_loc>5752</source_loc>
 		<datatype W="8">sc_uint</datatype>
 		<async/>
 	</signal>
 	<thread>
-		<name>MUX_N739</name>
+		<name>MUX_N1063</name>
 		<async/>
 		<lhs>
-			<name>MUX_N739</name>
+			<name>MUX_N1063</name>
 		</lhs>
 		<rhs>
-			<name>u_g_n_523</name>
 			<name>ioread001</name>
+			<name>ioread002</name>
+			<name>ioread003</name>
+			<name>ioread004</name>
+			<name>ioread005</name>
+			<name>ioread006</name>
+			<name>ioread007</name>
+			<name>ioread008</name>
 		</rhs>
 		<cond>
-			<name>amtmp001</name>
+			<name>dmux_ctrl_001</name>
 		</cond>
-		<mux_area>15.5938</mux_area>
-		<mux_delay>0.0814</mux_delay>
-		<control_delay>0.0814</control_delay>
+		<mux_area>110.9120</mux_area>
+		<mux_delay>0.2277</mux_delay>
+		<control_delay>0.2277</control_delay>
 	</thread>
 </netlist>

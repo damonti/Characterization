@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <cdfg>
 	<name>post_sched</name>
-	<thread>gen_do_stall_reg</thread>
+	<thread>gen_do_stall_reg_full</thread>
 	<control_flow>
-		<state_count>14</state_count>
+		<state_count>13</state_count>
 		<bb>
 			<id>0</id>
 			<loop>1</loop>
@@ -28,152 +28,95 @@
 		</bb>
 		<bb>
 			<id>3</id>
-			<loop>35</loop>
-			<loop_header/>
+			<loop>1</loop>
 			<basis_bb>3</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>4</succ>
 		</bb>
 		<bb>
 			<id>4</id>
-			<loop>35</loop>
-			<cycle_id>1</cycle_id>
+			<loop>1</loop>
 			<basis_bb>4</basis_bb>
-			<protocol_clk_edges>1</protocol_clk_edges>
-			<source_loc>5950</source_loc>
-			<state_name>PROTO_1</state_name>
+			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>5</succ>
 		</bb>
 		<bb>
 			<id>5</id>
-			<loop>35</loop>
+			<loop>1</loop>
 			<basis_bb>5</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>6</succ>
 		</bb>
 		<bb>
 			<id>6</id>
-			<loop>35</loop>
+			<loop>1</loop>
 			<basis_bb>6</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>7</succ>
 		</bb>
 		<bb>
 			<id>7</id>
-			<loop>35</loop>
+			<loop>38</loop>
+			<loop_header/>
 			<basis_bb>7</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
-			<succ>
-				<cond>10140,7</cond>
-				<id>9</id>
-				<value>1</value>
-			</succ>
-			<succ>
-				<cond>10140,7</cond>
-				<id>8</id>
-				<value>0</value>
-			</succ>
+			<succ>8</succ>
 		</bb>
 		<bb>
 			<id>8</id>
-			<loop>35</loop>
+			<loop>38</loop>
+			<cycle_id>1</cycle_id>
 			<basis_bb>8</basis_bb>
+			<protocol_clk_edges>1</protocol_clk_edges>
+			<source_loc>5941</source_loc>
+			<state_name>PROTO_1</state_name>
+			<succ>9</succ>
+		</bb>
+		<bb>
+			<id>9</id>
+			<loop>38</loop>
+			<basis_bb>9</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>10</succ>
 		</bb>
 		<bb>
 			<id>10</id>
-			<loop>35</loop>
-			<basis_bb>8</basis_bb>
-			<protocol_clk_edges>0</protocol_clk_edges>
-			<succ>12</succ>
-		</bb>
-		<bb>
-			<id>9</id>
-			<loop>35</loop>
-			<basis_bb>9</basis_bb>
+			<loop>38</loop>
+			<basis_bb>10</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>11</succ>
 		</bb>
 		<bb>
 			<id>11</id>
-			<loop>35</loop>
-			<basis_bb>10</basis_bb>
+			<loop>38</loop>
+			<basis_bb>11</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
 			<succ>12</succ>
 		</bb>
 		<bb>
 			<id>12</id>
-			<loop>35</loop>
+			<loop>38</loop>
 			<basis_bb>11</basis_bb>
 			<protocol_clk_edges>0</protocol_clk_edges>
-			<succ>13</succ>
-		</bb>
-		<bb>
-			<id>13</id>
-			<loop>35</loop>
-			<basis_bb>11</basis_bb>
-			<protocol_clk_edges>0</protocol_clk_edges>
-			<succ>3</succ>
+			<succ>7</succ>
 		</bb>
 	</control_flow>
 	<dataflow>
 		<df_arc>
-			<src>5924,0,12,,0,8,0</src>
-			<sink>5906,0,3,0,8,0</sink>
-			<lcd>35</lcd>
+			<const_ref>0</const_ref>
+			<sink>5831,0,5,0,1,0</sink>
 		</df_arc>
 		<df_arc>
-			<src>5906,0,3,,0,8,0</src>
-			<sink>5909,0,4,0,8,0</sink>
+			<src>5833,0,11,,0,1,0</src>
+			<sink>5834,0,11,0,1,0</sink>
 		</df_arc>
 		<df_arc>
-			<src>5910,0,7,,0,1,0</src>
-			<sink>5916,0,7,0,1,0</sink>
+			<src>5832,0,11,,0,1,0</src>
+			<sink>5834,0,11,1,1,0</sink>
 		</df_arc>
 		<df_arc>
-			<src>5913,0,7,,0,1,0</src>
-			<sink>5917,0,7,0,1,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5912,0,7,,0,1,0</src>
-			<sink>5917,0,7,1,1,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5917,0,7,,0,1,0</src>
-			<sink>5918,0,7,0,1,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5916,0,7,,0,1,0</src>
-			<sink>5918,0,7,1,1,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5921,0,9,,0,8,0</src>
-			<sink>5923,0,9,0,8,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5909,0,4,,0,8,0</src>
-			<sink>5905,0,8,0,8,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5909,0,4,,0,8,0</src>
-			<sink>5940,0,9,0,8,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5923,0,9,,0,8,0</src>
-			<sink>5940,0,9,1,8,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5905,0,8,,0,8,0</src>
-			<sink>5924,0,12,0,8,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5940,0,9,,0,8,0</src>
-			<sink>5924,0,12,0,8,0</sink>
-		</df_arc>
-		<df_arc>
-			<src>5918,0,7,,0,1,0</src>
-			<sink>5919,0,7,0,1,0</sink>
+			<src>5834,0,11,,0,1,0</src>
+			<sink>5835,0,11,0,1,0</sink>
 		</df_arc>
 	</dataflow>
 </cdfg>

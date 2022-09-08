@@ -3,7 +3,7 @@
 	<module_name>gen_unvalidated_req</module_name>
 	<signal>
 		<name>MUX_N61</name>
-		<source_loc>5565</source_loc>
+		<source_loc>5533</source_loc>
 		<datatype W="1">bool</datatype>
 		<async/>
 	</signal>
@@ -14,14 +14,14 @@
 			<name>MUX_N61</name>
 		</lhs>
 		<rhs>
-			<name>u_g_1299</name>
+			<name>u_g_1297</name>
 			<name>gen_unvalidated_req_din_m_unvalidated_req_next</name>
 		</rhs>
 		<cond>
-			<name>amtmp002</name>
+			<name>amtmp001</name>
 		</cond>
-		<mux_area>1.9492</mux_area>
-		<mux_delay>0.0812</mux_delay>
-		<control_delay>0.0812</control_delay>
+		<mux_area>2.8617</mux_area>
+		<mux_delay>0.0615</mux_delay>
+		<control_delay>0.0615</control_delay>
 	</thread>
 </netlist>

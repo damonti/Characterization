@@ -7,17 +7,17 @@
 		<name>gen_unvalidated_req</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.1267</delay>
-			<module_name>fir_N_Muxb_1_2_8_4</module_name>
+			<delay>0.0900</delay>
+			<module_name>fir_N_Muxb_1_2_11_4</module_name>
 			<resource_kind>MUX</resource_kind>
 			<module_origin>CYN_AUTOGEN</module_origin>
 			<count>1</count>
 			<label>MUX(2)</label>
-			<unit_area>1.7640</unit_area>
-			<comb_area>1.7640</comb_area>
+			<unit_area>2.3940</unit_area>
+			<comb_area>2.3940</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>1.7640</total_area>
+			<total_area>2.3940</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -28,19 +28,19 @@
 			<resource_kind>REGISTER</resource_kind>
 			<module_origin>ESTIMATE</module_origin>
 			<count>1</count>
-			<total_area>3.5280</total_area>
-			<unit_area>3.5280</unit_area>
+			<total_area>5.4720</total_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
-		<mux_area>1.9492</mux_area>
+		<mux_area>2.8617</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>7.2412</total_area>
-		<comb_area>3.7132</comb_area>
-		<seq_area>3.5280</seq_area>
+		<total_area>10.7277</total_area>
+		<comb_area>5.2557</comb_area>
+		<seq_area>5.4720</seq_area>
 		<total_bits>1</total_bits>
 		<state_count>2</state_count>
 		<timers>
@@ -113,19 +113,19 @@
 			<resource_kind>REGISTER</resource_kind>
 			<module_origin>ESTIMATE</module_origin>
 			<count>1</count>
-			<total_area>3.5280</total_area>
-			<unit_area>3.5280</unit_area>
+			<total_area>5.4720</total_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
-		<mux_area>1.9492</mux_area>
+		<mux_area>2.8617</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>5.4772</total_area>
-		<comb_area>1.9492</comb_area>
-		<seq_area>3.5280</seq_area>
+		<total_area>8.3337</total_area>
+		<comb_area>2.8617</comb_area>
+		<seq_area>5.4720</seq_area>
 		<total_bits>1</total_bits>
 		<state_count>2</state_count>
 		<timers>
@@ -193,16 +193,16 @@
 		<name>gen_busy</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.1399</delay>
+			<delay>0.1012</delay>
 			<module_name>fir_gen_busy_r_1</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_DPOPT</module_origin>
 			<count>1</count>
-			<unit_area>8.1144</unit_area>
-			<comb_area>8.1144</comb_area>
+			<unit_area>18.4680</unit_area>
+			<comb_area>18.4680</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>8.1144</total_area>
+			<total_area>18.4680</total_area>
 			<part_characterization>1</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -214,17 +214,17 @@
 			<module_origin>ESTIMATE</module_origin>
 			<count>0</count>
 			<total_area>0.0000</total_area>
-			<unit_area>3.5280</unit_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
 		<mux_area>0.0000</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>8.1144</total_area>
-		<comb_area>8.1144</comb_area>
+		<total_area>18.4680</total_area>
+		<comb_area>18.4680</comb_area>
 		<seq_area>0.0000</seq_area>
 		<total_bits>0</total_bits>
 		<state_count>2</state_count>
@@ -293,17 +293,17 @@
 		<name>gen_do_reg_vld</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.1267</delay>
-			<module_name>fir_N_Muxb_1_2_8_4</module_name>
+			<delay>0.0900</delay>
+			<module_name>fir_N_Muxb_1_2_11_4</module_name>
 			<resource_kind>MUX</resource_kind>
 			<module_origin>CYN_AUTOGEN</module_origin>
 			<count>1</count>
 			<label>MUX(2)</label>
-			<unit_area>1.7640</unit_area>
-			<comb_area>1.7640</comb_area>
+			<unit_area>2.3940</unit_area>
+			<comb_area>2.3940</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>1.7640</total_area>
+			<total_area>2.3940</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -314,19 +314,19 @@
 			<resource_kind>REGISTER</resource_kind>
 			<module_origin>ESTIMATE</module_origin>
 			<count>1</count>
-			<total_area>3.5280</total_area>
-			<unit_area>3.5280</unit_area>
+			<total_area>5.4720</total_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
-		<mux_area>1.9492</mux_area>
+		<mux_area>2.8617</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>7.2412</total_area>
-		<comb_area>3.7132</comb_area>
-		<seq_area>3.5280</seq_area>
+		<total_area>10.7277</total_area>
+		<comb_area>5.2557</comb_area>
+		<seq_area>5.4720</seq_area>
 		<total_bits>1</total_bits>
 		<state_count>2</state_count>
 		<timers>
@@ -394,17 +394,17 @@
 		<name>gen_active</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.0782</delay>
+			<delay>0.0708</delay>
 			<module_name>fir_Xor_1Ux1U_1U_1</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
 			<label>^</label>
-			<unit_area>5.6448</unit_area>
-			<comb_area>5.6448</comb_area>
+			<unit_area>4.4460</unit_area>
+			<comb_area>4.4460</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>5.6448</total_area>
+			<total_area>4.4460</total_area>
 			<part_characterization>1</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -416,17 +416,17 @@
 			<module_origin>ESTIMATE</module_origin>
 			<count>0</count>
 			<total_area>0.0000</total_area>
-			<unit_area>3.5280</unit_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
 		<mux_area>0.0000</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>5.6448</total_area>
-		<comb_area>5.6448</comb_area>
+		<total_area>4.4460</total_area>
+		<comb_area>4.4460</comb_area>
 		<seq_area>0.0000</seq_area>
 		<total_bits>0</total_bits>
 		<state_count>2</state_count>
@@ -495,17 +495,17 @@
 		<name>gen_vld</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.0950</delay>
+			<delay>0.0696</delay>
 			<module_name>fir_Or_1Ux1U_1U_4</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
 			<label>|</label>
-			<unit_area>1.0584</unit_area>
-			<comb_area>1.0584</comb_area>
+			<unit_area>1.3680</unit_area>
+			<comb_area>1.3680</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>1.0584</total_area>
+			<total_area>1.3680</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -517,17 +517,17 @@
 			<module_origin>ESTIMATE</module_origin>
 			<count>0</count>
 			<total_area>0.0000</total_area>
-			<unit_area>3.5280</unit_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
 		<mux_area>0.0000</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>1.0584</total_area>
-		<comb_area>1.0584</comb_area>
+		<total_area>1.3680</total_area>
+		<comb_area>1.3680</comb_area>
 		<seq_area>0.0000</seq_area>
 		<total_bits>0</total_bits>
 		<state_count>2</state_count>
@@ -555,7 +555,7 @@
 			<phase>
 				<name>scheduling</name>
 				<cpu_time>0</cpu_time>
-				<real_time>0</real_time>
+				<real_time>1</real_time>
 			</phase>
 			<phase>
 				<name>allocation</name>
@@ -596,17 +596,17 @@
 		<name>gen_stalling</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.0537</delay>
+			<delay>0.0456</delay>
 			<module_name>fir_And_1Ux1U_1U_1</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
 			<label>&amp;</label>
-			<unit_area>7.0560</unit_area>
-			<comb_area>7.0560</comb_area>
+			<unit_area>8.8920</unit_area>
+			<comb_area>8.8920</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>7.0560</total_area>
+			<total_area>8.8920</total_area>
 			<part_characterization>1</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -618,17 +618,17 @@
 			<module_origin>ESTIMATE</module_origin>
 			<count>0</count>
 			<total_area>0.0000</total_area>
-			<unit_area>3.5280</unit_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
 		<mux_area>0.0000</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>7.0560</total_area>
-		<comb_area>7.0560</comb_area>
+		<total_area>8.8920</total_area>
+		<comb_area>8.8920</comb_area>
 		<seq_area>0.0000</seq_area>
 		<total_bits>0</total_bits>
 		<state_count>2</state_count>
@@ -702,19 +702,19 @@
 			<resource_kind>REGISTER</resource_kind>
 			<module_origin>ESTIMATE</module_origin>
 			<count>1</count>
-			<total_area>3.5280</total_area>
-			<unit_area>3.5280</unit_area>
+			<total_area>5.4720</total_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
-		<mux_area>1.9492</mux_area>
+		<mux_area>2.8617</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>5.4772</total_area>
-		<comb_area>1.9492</comb_area>
-		<seq_area>3.5280</seq_area>
+		<total_area>8.3337</total_area>
+		<comb_area>2.8617</comb_area>
+		<seq_area>5.4720</seq_area>
 		<total_bits>1</total_bits>
 		<state_count>2</state_count>
 		<timers>
@@ -782,17 +782,17 @@
 		<name>gen_next_trig_reg</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.0218</delay>
+			<delay>0.0194</delay>
 			<module_name>fir_Not_1U_1U_1</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
 			<label>!</label>
-			<unit_area>1.5876</unit_area>
-			<comb_area>1.5876</comb_area>
+			<unit_area>4.1040</unit_area>
+			<comb_area>4.1040</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>1.5876</total_area>
+			<total_area>4.1040</total_area>
 			<part_characterization>1</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -804,17 +804,17 @@
 			<module_origin>ESTIMATE</module_origin>
 			<count>0</count>
 			<total_area>0.0000</total_area>
-			<unit_area>3.5280</unit_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
 		<mux_area>0.0000</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>1.5876</total_area>
-		<comb_area>1.5876</comb_area>
+		<total_area>4.1040</total_area>
+		<comb_area>4.1040</comb_area>
 		<seq_area>0.0000</seq_area>
 		<total_bits>0</total_bits>
 		<state_count>2</state_count>
@@ -876,231 +876,158 @@
 			</phase>
 		</timers>
 	</thread>
-	<loop>
-		<thread>FirThread</thread>
-		<id>24</id>
-		<cycle>
-			<cycle_id>4</cycle_id>
-			<start_cycle>0</start_cycle>
-			<extra_cycle/>
-		</cycle>
-	</loop>
-	<cycle>
-		<cycle_id>5</cycle_id>
-		<start_cycle>0</start_cycle>
-		<empty/>
-	</cycle>
-	<loop>
-		<thread>FirThread</thread>
-		<id>24</id>
-		<cycle>
-			<cycle_id>6</cycle_id>
-			<start_cycle>0</start_cycle>
-			<empty/>
-		</cycle>
-		<cycle>
-			<cycle_id>7</cycle_id>
-			<start_cycle>1</start_cycle>
-			<empty/>
-		</cycle>
-		<cycle>
-			<cycle_id>8</cycle_id>
-			<start_cycle>2</start_cycle>
-			<empty/>
-		</cycle>
-	</loop>
 	<reg_ops>
 		<thread>FirThread</thread>
+		<reg_op>
+			<id>5846</id>
+			<source_loc>5718</source_loc>
+			<name>stall0</name>
+			<datatype W="1">sc_uint</datatype>
+			<liveout>all</liveout>
+			<reg_deffed>2</reg_deffed>
+			<reg_purpose>output</reg_purpose>
+		</reg_op>
+		<reg_op>
+			<id>5847</id>
+			<source_loc>5748</source_loc>
+			<name>stall0</name>
+			<datatype W="1">sc_uint</datatype>
+			<liveout>all</liveout>
+			<reg_deffed>3</reg_deffed>
+			<reg_purpose>output</reg_purpose>
+		</reg_op>
 	</reg_ops>
 	<thread>
 		<name>FirThread</name>
 		<resource>
 			<latency>0</latency>
-			<delay>1.5301</delay>
+			<delay>0.9520</delay>
 			<module_name>fir_Mul_8Ux8U_11U_4</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
-			<count>8</count>
+			<count>1</count>
 			<label>*</label>
-			<unit_area>247.3128</unit_area>
-			<comb_area>247.3128</comb_area>
+			<unit_area>322.1640</unit_area>
+			<comb_area>322.1640</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>1978.5024</total_area>
+			<total_area>322.1640</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
 		<resource>
 			<latency>0</latency>
-			<delay>0.8718</delay>
-			<module_name>fir_Add_11Ux11U_11U_4</module_name>
-			<resource_kind>FUNCTION</resource_kind>
-			<module_origin>CYN_AUTO</module_origin>
-			<count>7</count>
-			<label>+</label>
-			<unit_area>58.0356</unit_area>
-			<comb_area>58.0356</comb_area>
-			<seq_area>0.0000</seq_area>
-			<reg_bits>0</reg_bits>
-			<total_area>406.2492</total_area>
-			<part_characterization>4</part_characterization>
-			<cynth_lib>cynthHL</cynth_lib>
-		</resource>
-		<resource>
-			<latency>0</latency>
-			<delay>0.1836</delay>
-			<module_name>fir_N_Mux_8_2_10_4</module_name>
+			<delay>0.3139</delay>
+			<module_name>fir_N_Mux_8_8_12_4</module_name>
 			<resource_kind>MUX</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
-			<label>MUX(2)</label>
-			<unit_area>13.2300</unit_area>
-			<comb_area>13.2300</comb_area>
+			<label>MUX(8)</label>
+			<unit_area>95.7600</unit_area>
+			<comb_area>95.7600</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>13.2300</total_area>
-			<part_characterization>4</part_characterization>
-			<cynth_lib>cynthHL</cynth_lib>
-		</resource>
-		<reg_bits>80</reg_bits>
-		<reg_count>18</reg_count>
-		<resource>
-			<module_name>reg_bit</module_name>
-			<resource_kind>REGISTER</resource_kind>
-			<module_origin>ESTIMATE</module_origin>
-			<count>80</count>
-			<total_area>282.2400</total_area>
-			<unit_area>3.5280</unit_area>
-			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
-			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
-		</resource>
-		<mux_area>103.3089</mux_area>
-		<control_area>0.0000</control_area>
-		<total_area>2783.5305</total_area>
-		<comb_area>2501.2905</comb_area>
-		<seq_area>282.2400</seq_area>
-		<total_bits>80</total_bits>
-		<state_count>9</state_count>
-		<timers>
-			<phase>
-				<name>front_end</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-			<phase>
-				<name>normalization</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-			<phase>
-				<name>part_characterization</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-			<phase>
-				<name>pattern_matching</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-			<phase>
-				<name>scheduling</name>
-				<cpu_time>0</cpu_time>
-				<real_time>1</real_time>
-			</phase>
-			<phase>
-				<name>allocation</name>
-				<cpu_time>0</cpu_time>
-				<real_time>0</real_time>
-			</phase>
-			<phase>
-				<name>pre_allocation</name>
-				<cpu_time>0</cpu_time>
-				<real_time>1</real_time>
-			</phase>
-			<phase>
-				<name>post_allocation</name>
-				<cpu_time>0</cpu_time>
-				<real_time>0</real_time>
-			</phase>
-			<phase>
-				<name>cleanup</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-			<phase>
-				<name>emit</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-			<phase>
-				<name>cynth</name>
-				<cpu_time>-1</cpu_time>
-				<real_time>-1</real_time>
-			</phase>
-		</timers>
-	</thread>
-	<reg_ops>
-		<thread>gen_do_stall_reg</thread>
-	</reg_ops>
-	<thread>
-		<name>gen_do_stall_reg</name>
-		<resource>
-			<latency>0</latency>
-			<delay>0.0785</delay>
-			<module_name>fir_And_1Ux1U_1U_4</module_name>
-			<resource_kind>FUNCTION</resource_kind>
-			<module_origin>CYN_AUTO</module_origin>
-			<count>2</count>
-			<label>&amp;</label>
-			<unit_area>1.0584</unit_area>
-			<comb_area>1.0584</comb_area>
-			<seq_area>0.0000</seq_area>
-			<reg_bits>0</reg_bits>
-			<total_area>2.1168</total_area>
+			<total_area>95.7600</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
 		<resource>
 			<latency>0</latency>
-			<delay>0.0332</delay>
-			<module_name>fir_Not_1U_1U_4</module_name>
+			<delay>0.5985</delay>
+			<module_name>fir_Add_11Ux11U_11U_4</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
-			<label>!</label>
-			<unit_area>0.5292</unit_area>
-			<comb_area>0.5292</comb_area>
+			<label>+</label>
+			<unit_area>85.1580</unit_area>
+			<comb_area>85.1580</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>0.5292</total_area>
+			<total_area>85.1580</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
-		<reg_bits>8</reg_bits>
-		<reg_count>1</reg_count>
+		<resource>
+			<latency>0</latency>
+			<delay>0.1353</delay>
+			<module_name>fir_Add_3U_4_4</module_name>
+			<resource_kind>FUNCTION</resource_kind>
+			<module_origin>CYN_AUTOGEN</module_origin>
+			<count>2</count>
+			<label>+</label>
+			<unit_area>6.8400</unit_area>
+			<comb_area>6.8400</comb_area>
+			<seq_area>0.0000</seq_area>
+			<reg_bits>0</reg_bits>
+			<total_area>13.6800</total_area>
+			<part_characterization>4</part_characterization>
+			<cynth_lib>cynthHL</cynth_lib>
+		</resource>
+		<resource>
+			<latency>0</latency>
+			<delay>0.2051</delay>
+			<module_name>fir_Add_3Ux1U_4U_4</module_name>
+			<resource_kind>FUNCTION</resource_kind>
+			<module_origin>CYN_AUTO</module_origin>
+			<count>1</count>
+			<label>+</label>
+			<unit_area>11.2860</unit_area>
+			<comb_area>11.2860</comb_area>
+			<seq_area>0.0000</seq_area>
+			<reg_bits>0</reg_bits>
+			<total_area>11.2860</total_area>
+			<part_characterization>4</part_characterization>
+			<cynth_lib>cynthHL</cynth_lib>
+		</resource>
+		<resource>
+			<latency>0</latency>
+			<delay>0.0756</delay>
+			<module_name>fir_LessThan_1U_10_4</module_name>
+			<resource_kind>FUNCTION</resource_kind>
+			<module_origin>CYN_AUTOGEN</module_origin>
+			<count>1</count>
+			<label>&lt;</label>
+			<unit_area>1.7100</unit_area>
+			<comb_area>1.7100</comb_area>
+			<seq_area>0.0000</seq_area>
+			<reg_bits>0</reg_bits>
+			<total_area>1.7100</total_area>
+			<part_characterization>4</part_characterization>
+			<cynth_lib>cynthHL</cynth_lib>
+		</resource>
+		<resource>
+			<latency>1</latency>
+			<setup_time>0.0655</setup_time>
+			<delay>0.1140</delay>
+			<module_name>fir_RAM_8X8_1</module_name>
+			<resource_kind>RAM</resource_kind>
+			<module_origin>CYN_AUTO</module_origin>
+			<count>1</count>
+			<part_characterization>4</part_characterization>
+			<cynth_lib>cynthHL</cynth_lib>
+		</resource>
+		<reg_bits>21</reg_bits>
+		<reg_count>6</reg_count>
 		<resource>
 			<module_name>reg_bit</module_name>
 			<resource_kind>REGISTER</resource_kind>
 			<module_origin>ESTIMATE</module_origin>
-			<count>8</count>
-			<total_area>28.2240</total_area>
-			<unit_area>3.5280</unit_area>
+			<count>21</count>
+			<total_area>114.9120</total_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
-		<mux_area>0.0000</mux_area>
+		<mux_area>208.2653</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>30.8700</total_area>
-		<comb_area>2.6460</comb_area>
-		<seq_area>28.2240</seq_area>
-		<total_bits>8</total_bits>
-		<state_count>2</state_count>
+		<total_area>852.9353</total_area>
+		<comb_area>737.0233</comb_area>
+		<seq_area>113.9120</seq_area>
+		<total_bits>21</total_bits>
+		<state_count>17</state_count>
 		<timers>
 			<phase>
 				<name>front_end</name>
@@ -1166,17 +1093,17 @@
 		<name>gen_do_stall_reg_full</name>
 		<resource>
 			<latency>0</latency>
-			<delay>0.0785</delay>
+			<delay>0.0714</delay>
 			<module_name>fir_And_1Ux1U_1U_4</module_name>
 			<resource_kind>FUNCTION</resource_kind>
 			<module_origin>CYN_AUTO</module_origin>
 			<count>1</count>
 			<label>&amp;</label>
-			<unit_area>1.0584</unit_area>
-			<comb_area>1.0584</comb_area>
+			<unit_area>1.3680</unit_area>
+			<comb_area>1.3680</comb_area>
 			<seq_area>0.0000</seq_area>
 			<reg_bits>0</reg_bits>
-			<total_area>1.0584</total_area>
+			<total_area>1.3680</total_area>
 			<part_characterization>4</part_characterization>
 			<cynth_lib>cynthHL</cynth_lib>
 		</resource>
@@ -1187,19 +1114,19 @@
 			<resource_kind>REGISTER</resource_kind>
 			<module_origin>ESTIMATE</module_origin>
 			<count>1</count>
-			<total_area>3.5280</total_area>
-			<unit_area>3.5280</unit_area>
+			<total_area>5.4720</total_area>
+			<unit_area>5.4720</unit_area>
 			<comb_area>0.0000</comb_area>
-			<seq_area>3.5280</seq_area>
+			<seq_area>5.4720</seq_area>
 			<latency>1</latency>
-			<delay>0.2072</delay>
-			<setup_time>0.0455</setup_time>
+			<delay>0.114</delay>
+			<setup_time>0.0655</setup_time>
 		</resource>
-		<mux_area>1.9492</mux_area>
+		<mux_area>2.8617</mux_area>
 		<control_area>0.0000</control_area>
-		<total_area>6.5356</total_area>
-		<comb_area>3.0076</comb_area>
-		<seq_area>3.5280</seq_area>
+		<total_area>9.7017</total_area>
+		<comb_area>4.2297</comb_area>
+		<seq_area>5.4720</seq_area>
 		<total_bits>1</total_bits>
 		<state_count>2</state_count>
 		<timers>
@@ -1261,13 +1188,6 @@
 		</timers>
 	</thread>
 	<phase_complete>alloc</phase_complete>
-	<message>
-		<code_num>3169</code_num>
-		<severity>WARNING</severity>
-		<message_text>--output_style_reset_all_async was specified in a design with only synchronous resets. This flag will have no effect.</message_text>
-		<phase>rtl</phase>
-		<order>1</order>
-	</message>
 	<state_encoding>
 		<thread>FirThread</thread>
 		<state_reg>
@@ -1278,293 +1198,334 @@
 			</value>
 			<value>
 				<encoded>1</encoded>
-				<cycle_id>5</cycle_id>
+				<cycle_id>87</cycle_id>
 			</value>
-			<state_reg>
-				<name>cycle2_state</name>
-				<value>
-					<encoded>0</encoded>
-					<cycle_id>3</cycle_id>
-				</value>
-				<value>
-					<encoded>1</encoded>
-					<cycle_id>8</cycle_id>
-				</value>
-			</state_reg>
-			<state_reg>
-				<name>cycle1_state</name>
-				<value>
-					<encoded>0</encoded>
-					<cycle_id>2</cycle_id>
-				</value>
-				<value>
-					<encoded>1</encoded>
-					<cycle_id>7</cycle_id>
-				</value>
-			</state_reg>
-			<state_reg>
-				<name>drain</name>
-				<value>
-					<encoded>0</encoded>
-					<cycle_id>4</cycle_id>
-				</value>
-				<value>
-					<encoded>1</encoded>
-					<cycle_id>6</cycle_id>
-				</value>
-			</state_reg>
+			<value>
+				<encoded>2</encoded>
+				<cycle_id>88</cycle_id>
+			</value>
+			<value>
+				<encoded>3</encoded>
+				<cycle_id>89</cycle_id>
+			</value>
+			<value>
+				<encoded>4</encoded>
+				<cycle_id>90</cycle_id>
+			</value>
+			<value>
+				<encoded>5</encoded>
+				<cycle_id>91</cycle_id>
+			</value>
+			<value>
+				<encoded>6</encoded>
+				<cycle_id>92</cycle_id>
+			</value>
+			<value>
+				<encoded>7</encoded>
+				<cycle_id>93</cycle_id>
+			</value>
+			<value>
+				<encoded>8</encoded>
+				<cycle_id>94</cycle_id>
+			</value>
+			<value>
+				<encoded>9</encoded>
+				<cycle_id>95</cycle_id>
+			</value>
+			<value>
+				<encoded>10</encoded>
+				<cycle_id>96</cycle_id>
+			</value>
+			<value>
+				<encoded>11</encoded>
+				<cycle_id>2</cycle_id>
+			</value>
+			<value>
+				<encoded>12</encoded>
+				<cycle_id>98</cycle_id>
+			</value>
+			<value>
+				<encoded>13</encoded>
+				<cycle_id>99</cycle_id>
+			</value>
+			<value>
+				<encoded>14</encoded>
+				<cycle_id>100</cycle_id>
+			</value>
+			<value>
+				<encoded>15</encoded>
+				<cycle_id>3</cycle_id>
+			</value>
 		</state_reg>
 	</state_encoding>
 	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_5</absorbed>
+		<survivor>fir_Add_3U_4_4_9_in1</survivor>
+		<absorbed>fir_LessThan_1U_10_4_10_in1</absorbed>
 	</reg_share>
 	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_6</absorbed>
+		<survivor>fir_gen_busy_r_1_2_in1</survivor>
+		<absorbed>fir_N_Muxb_1_2_11_4_1_in3</absorbed>
 	</reg_share>
 	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_7</absorbed>
+		<survivor>fir_gen_busy_r_1_2_in2</survivor>
+		<absorbed>fir_N_Muxb_1_2_11_4_1_ctrl1</absorbed>
 	</reg_share>
 	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_8</absorbed>
+		<survivor>fir_gen_busy_r_1_2_in3</survivor>
+		<absorbed>fir_N_Muxb_1_2_11_4_1_in2</absorbed>
 	</reg_share>
 	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_9</absorbed>
+		<survivor>fir_Xor_1Ux1U_1U_1_4_in2</survivor>
+		<absorbed>fir_Not_1U_1U_1_7_in1</absorbed>
 	</reg_share>
-	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_10</absorbed>
-	</reg_share>
-	<reg_share>
-		<survivor>t_1</survivor>
-		<absorbed>t_16</absorbed>
-	</reg_share>
-	<reg_share>
-		<survivor>t_2</survivor>
-		<absorbed>t_4</absorbed>
-	</reg_share>
-	<reg_share>
-		<survivor>t_15</survivor>
-		<absorbed>t_17</absorbed>
-	</reg_share>
-	<resource>
-		<module_name>fir_logic_1</module_name>
-		<resource_kind>PARTITION</resource_kind>
-		<module_origin>CYN_PARTITIONING</module_origin>
-		<cynth_lib>cynthHL</cynth_lib>
-	</resource>
+	<memory_mapping>
+		<array>
+			<name>shift_reg</name>
+			<dimension>8</dimension>
+			<word_count>8</word_count>
+			<bits_per_word>8</bits_per_word>
+			<total_bits>64</total_bits>
+			<simple_depth>8</simple_depth>
+			<compact_depth>8</compact_depth>
+			<flattened>0</flattened>
+		</array>
+		<module_inst>
+			<name>shift_reg</name>
+			<module_name>fir_RAM_8X8_1</module_name>
+			<word_count>8</word_count>
+			<bits_per_word>8</bits_per_word>
+			<total_bits>64</total_bits>
+			<source_loc>2469</source_loc>
+			<datatype>
+				<array>8</array>
+				<datatype W="8">sc_uint</datatype>
+			</datatype>
+		</module_inst>
+	</memory_mapping>
 	<resource>
 		<latency>0</latency>
-		<delay>1.5301</delay>
+		<delay>0.9520</delay>
 		<module_name>fir_Mul_8Ux8U_11U_4</module_name>
 		<resource_kind>FUNCTION</resource_kind>
 		<module_origin>CYN_AUTO</module_origin>
-		<count>8</count>
-		<not_in_use/>
+		<count>1</count>
 		<label>*</label>
-		<unit_area>247.3128</unit_area>
-		<comb_area>247.3128</comb_area>
+		<unit_area>322.1640</unit_area>
+		<comb_area>322.1640</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>1978.5024</total_area>
+		<total_area>322.1640</total_area>
 		<part_characterization>4</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.8718</delay>
-		<module_name>fir_Add_11Ux11U_11U_4</module_name>
-		<resource_kind>FUNCTION</resource_kind>
-		<module_origin>CYN_AUTO</module_origin>
-		<count>7</count>
-		<not_in_use/>
-		<label>+</label>
-		<unit_area>58.0356</unit_area>
-		<comb_area>58.0356</comb_area>
-		<seq_area>0.0000</seq_area>
-		<reg_bits>0</reg_bits>
-		<total_area>406.2492</total_area>
-		<part_characterization>4</part_characterization>
-		<cynth_lib>cynthHL</cynth_lib>
-	</resource>
-	<resource>
-		<latency>0</latency>
-		<delay>0.1836</delay>
-		<module_name>fir_N_Mux_8_2_10_4</module_name>
+		<delay>0.3139</delay>
+		<module_name>fir_N_Mux_8_8_12_4</module_name>
 		<resource_kind>MUX</resource_kind>
 		<module_origin>CYN_AUTO</module_origin>
 		<count>1</count>
-		<not_in_use/>
-		<label>MUX(2)</label>
-		<unit_area>13.2300</unit_area>
-		<comb_area>13.2300</comb_area>
+		<label>MUX(8)</label>
+		<unit_area>95.7600</unit_area>
+		<comb_area>95.7600</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>13.2300</total_area>
+		<total_area>95.7600</total_area>
 		<part_characterization>4</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.1399</delay>
+		<delay>0.5985</delay>
+		<module_name>fir_Add_11Ux11U_11U_4</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<count>1</count>
+		<label>+</label>
+		<unit_area>85.1580</unit_area>
+		<comb_area>85.1580</comb_area>
+		<seq_area>0.0000</seq_area>
+		<reg_bits>0</reg_bits>
+		<total_area>85.1580</total_area>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<latency>0</latency>
+		<delay>0.1012</delay>
 		<module_name>fir_gen_busy_r_1</module_name>
 		<resource_kind>FUNCTION</resource_kind>
 		<module_origin>CYN_DPOPT</module_origin>
 		<count>1</count>
-		<not_in_use/>
-		<unit_area>8.1144</unit_area>
-		<comb_area>8.1144</comb_area>
+		<unit_area>18.4680</unit_area>
+		<comb_area>18.4680</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>8.1144</total_area>
+		<total_area>18.4680</total_area>
 		<part_characterization>1</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.0537</delay>
+		<delay>0.1353</delay>
+		<module_name>fir_Add_3U_4_4</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTOGEN</module_origin>
+		<count>2</count>
+		<label>+</label>
+		<unit_area>6.8400</unit_area>
+		<comb_area>6.8400</comb_area>
+		<seq_area>0.0000</seq_area>
+		<reg_bits>0</reg_bits>
+		<total_area>13.6800</total_area>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<latency>0</latency>
+		<delay>0.2051</delay>
+		<module_name>fir_Add_3Ux1U_4U_4</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<count>1</count>
+		<label>+</label>
+		<unit_area>11.2860</unit_area>
+		<comb_area>11.2860</comb_area>
+		<seq_area>0.0000</seq_area>
+		<reg_bits>0</reg_bits>
+		<total_area>11.2860</total_area>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<latency>0</latency>
+		<delay>0.0456</delay>
 		<module_name>fir_And_1Ux1U_1U_1</module_name>
 		<resource_kind>FUNCTION</resource_kind>
 		<module_origin>CYN_AUTO</module_origin>
 		<count>1</count>
-		<not_in_use/>
 		<label>&amp;</label>
-		<unit_area>7.0560</unit_area>
-		<comb_area>7.0560</comb_area>
+		<unit_area>8.8920</unit_area>
+		<comb_area>8.8920</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>7.0560</total_area>
+		<total_area>8.8920</total_area>
 		<part_characterization>1</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.0782</delay>
+		<delay>0.0708</delay>
 		<module_name>fir_Xor_1Ux1U_1U_1</module_name>
 		<resource_kind>FUNCTION</resource_kind>
 		<module_origin>CYN_AUTO</module_origin>
 		<count>1</count>
-		<not_in_use/>
 		<label>^</label>
-		<unit_area>5.6448</unit_area>
-		<comb_area>5.6448</comb_area>
+		<unit_area>4.4460</unit_area>
+		<comb_area>4.4460</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>5.6448</total_area>
+		<total_area>4.4460</total_area>
 		<part_characterization>1</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.0785</delay>
-		<module_name>fir_And_1Ux1U_1U_4</module_name>
-		<resource_kind>FUNCTION</resource_kind>
-		<module_origin>CYN_AUTO</module_origin>
-		<count>3</count>
-		<not_in_use/>
-		<label>&amp;</label>
-		<unit_area>1.0584</unit_area>
-		<comb_area>1.0584</comb_area>
-		<seq_area>0.0000</seq_area>
-		<reg_bits>0</reg_bits>
-		<total_area>3.1752</total_area>
-		<part_characterization>4</part_characterization>
-		<cynth_lib>cynthHL</cynth_lib>
-	</resource>
-	<resource>
-		<latency>0</latency>
-		<delay>0.1267</delay>
-		<module_name>fir_N_Muxb_1_2_8_4</module_name>
-		<resource_kind>MUX</resource_kind>
-		<module_origin>CYN_AUTOGEN</module_origin>
-		<count>1</count>
-		<not_in_use/>
-		<label>MUX(2)</label>
-		<unit_area>1.7640</unit_area>
-		<comb_area>1.7640</comb_area>
-		<seq_area>0.0000</seq_area>
-		<reg_bits>0</reg_bits>
-		<total_area>1.7640</total_area>
-		<part_characterization>4</part_characterization>
-		<cynth_lib>cynthHL</cynth_lib>
-	</resource>
-	<resource>
-		<latency>0</latency>
-		<delay>0.0218</delay>
+		<delay>0.0194</delay>
 		<module_name>fir_Not_1U_1U_1</module_name>
 		<resource_kind>FUNCTION</resource_kind>
 		<module_origin>CYN_AUTO</module_origin>
 		<count>1</count>
-		<not_in_use/>
 		<label>!</label>
-		<unit_area>1.5876</unit_area>
-		<comb_area>1.5876</comb_area>
+		<unit_area>4.1040</unit_area>
+		<comb_area>4.1040</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>1.5876</total_area>
+		<total_area>4.1040</total_area>
 		<part_characterization>1</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.0950</delay>
-		<module_name>fir_Or_1Ux1U_1U_4</module_name>
-		<resource_kind>FUNCTION</resource_kind>
-		<module_origin>CYN_AUTO</module_origin>
+		<delay>0.0900</delay>
+		<module_name>fir_N_Muxb_1_2_11_4</module_name>
+		<resource_kind>MUX</resource_kind>
+		<module_origin>CYN_AUTOGEN</module_origin>
 		<count>1</count>
-		<not_in_use/>
-		<label>|</label>
-		<unit_area>1.0584</unit_area>
-		<comb_area>1.0584</comb_area>
+		<label>MUX(2)</label>
+		<unit_area>2.3940</unit_area>
+		<comb_area>2.3940</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>1.0584</total_area>
+		<total_area>2.3940</total_area>
 		<part_characterization>4</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
 	<resource>
 		<latency>0</latency>
-		<delay>0.0332</delay>
-		<module_name>fir_Not_1U_1U_4</module_name>
+		<delay>0.0756</delay>
+		<module_name>fir_LessThan_1U_10_4</module_name>
 		<resource_kind>FUNCTION</resource_kind>
-		<module_origin>CYN_AUTO</module_origin>
+		<module_origin>CYN_AUTOGEN</module_origin>
 		<count>1</count>
-		<not_in_use/>
-		<label>!</label>
-		<unit_area>0.5292</unit_area>
-		<comb_area>0.5292</comb_area>
+		<label>&lt;</label>
+		<unit_area>1.7100</unit_area>
+		<comb_area>1.7100</comb_area>
 		<seq_area>0.0000</seq_area>
 		<reg_bits>0</reg_bits>
-		<total_area>0.5292</total_area>
+		<total_area>1.7100</total_area>
 		<part_characterization>4</part_characterization>
 		<cynth_lib>cynthHL</cynth_lib>
 	</resource>
-	<reg_bits>85</reg_bits>
-	<reg_count>20</reg_count>
+	<resource>
+		<latency>0</latency>
+		<delay>0.0696</delay>
+		<module_name>fir_Or_1Ux1U_1U_4</module_name>
+		<resource_kind>FUNCTION</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<count>1</count>
+		<label>|</label>
+		<unit_area>1.3680</unit_area>
+		<comb_area>1.3680</comb_area>
+		<seq_area>0.0000</seq_area>
+		<reg_bits>0</reg_bits>
+		<total_area>1.3680</total_area>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<resource>
+		<latency>1</latency>
+		<setup_time>0.0655</setup_time>
+		<delay>0.1140</delay>
+		<module_name>fir_RAM_8X8_1</module_name>
+		<resource_kind>RAM</resource_kind>
+		<module_origin>CYN_AUTO</module_origin>
+		<count>1</count>
+		<part_characterization>4</part_characterization>
+		<cynth_lib>cynthHL</cynth_lib>
+	</resource>
+	<reg_bits>34</reg_bits>
+	<reg_count>14</reg_count>
 	<resource>
 		<module_name>reg_bit</module_name>
 		<resource_kind>REGISTER</resource_kind>
 		<module_origin>ESTIMATE</module_origin>
-		<count>85</count>
-		<total_area>442.7640</total_area>
-		<unit_area>5.2090</unit_area>
-		<comb_area>0.3279</comb_area>
-		<seq_area>4.8811</seq_area>
+		<count>34</count>
+		<total_area>271.5480</total_area>
+		<unit_area>7.9867</unit_area>
+		<comb_area>0.6438</comb_area>
+		<seq_area>7.3429</seq_area>
 		<latency>1</latency>
-		<delay>0.2072</delay>
-		<setup_time>0.0455</setup_time>
+		<delay>0.114</delay>
+		<setup_time>0.0655</setup_time>
 	</resource>
-	<mux_area>29.5210</mux_area>
-	<control_area>30.5741</control_area>
-	<total_area>2929.7704</total_area>
-	<comb_area>2514.8776</comb_area>
-	<seq_area>414.8928</seq_area>
-	<total_bits>85</total_bits>
-	<state_count>31</state_count>
+	<mux_area>162.2103</mux_area>
+	<control_area>101.6145</control_area>
+	<total_area>1104.8028</total_area>
+	<comb_area>855.1428</comb_area>
+	<seq_area>249.6600</seq_area>
+	<total_bits>34</total_bits>
+	<state_count>37</state_count>
 	<netlist>
 		<module_name>fir</module_name>
 		<port>
@@ -1584,149 +1545,1581 @@
 			<direction>in</direction>
 			<name>coeffs_table_0</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5765</source_loc>
+			<source_loc>5727</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_1</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5764</source_loc>
+			<source_loc>5728</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_2</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5763</source_loc>
+			<source_loc>5729</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_3</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5762</source_loc>
+			<source_loc>5730</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_4</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5761</source_loc>
+			<source_loc>5731</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_5</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5760</source_loc>
+			<source_loc>5732</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_6</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5759</source_loc>
+			<source_loc>5733</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>coeffs_table_7</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>5758</source_loc>
+			<source_loc>5734</source_loc>
 		</port>
+		<source_loc>
+			<id>5568</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14650,5564</sub_loc>
+		</source_loc>
 		<port>
 			<direction>out</direction>
 			<name>din_busy</name>
 			<datatype W="1">bool</datatype>
-			<source_loc>5604</source_loc>
+			<source_loc>5568</source_loc>
 			<async/>
 		</port>
+		<source_loc>
+			<id>5537</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14649,5529,5556,5586</sub_loc>
+		</source_loc>
 		<port>
 			<direction>in</direction>
 			<name>din_vld</name>
 			<datatype W="1">bool</datatype>
-			<source_loc>6042</source_loc>
+			<source_loc>5537</source_loc>
 		</port>
 		<port>
 			<direction>in</direction>
 			<name>din_data</name>
 			<datatype W="8">sc_uint</datatype>
-			<source_loc>6038</source_loc>
+			<source_loc>5720</source_loc>
 		</port>
+		<source_loc>
+			<id>5629</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14647,5625</sub_loc>
+		</source_loc>
 		<port>
 			<direction>in</direction>
 			<name>dout_busy</name>
 			<datatype W="1">bool</datatype>
-			<source_loc>5664</source_loc>
+			<source_loc>5629</source_loc>
 		</port>
+		<source_loc>
+			<id>5616</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14646,5614</sub_loc>
+		</source_loc>
 		<port>
 			<direction>out</direction>
 			<name>dout_vld</name>
 			<datatype W="1">bool</datatype>
-			<source_loc>6057</source_loc>
+			<source_loc>5616</source_loc>
 			<async/>
 		</port>
+		<source_loc>
+			<id>5863</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14397,5744,5765,5766,5767</sub_loc>
+		</source_loc>
 		<port>
 			<direction>out</direction>
 			<name>dout_data</name>
 			<datatype W="11">sc_uint</datatype>
-			<source_loc>5823</source_loc>
+			<source_loc>5863</source_loc>
+			<area>82.7640</area>
+			<comb_area>0.0000</comb_area>
+			<seq_area>82.7640</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1225</setup_time>
+			<module_name>regr_en_11</module_name>
 		</port>
 		<source_loc>
-			<id>1055</id>
-			<loc_kind>DECL</loc_kind>
-			<label>fir</label>
+			<id>5546</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14751,5543,5545</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>1056</id>
+			<id>5548</id>
 			<loc_kind>ARRAY</loc_kind>
-			<sub_loc>1054,1055</sub_loc>
+			<sub_loc>5546,5549,5550,5601</sub_loc>
+		</source_loc>
+		<signal>
+			<name>dout_m_req_m_prev_trig_req</name>
+			<datatype W="1">bool</datatype>
+			<source_loc>5548</source_loc>
+			<area>6.8400</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>5.4720</seq_area>
+			<delay>0.1140</delay>
+			<setup_time>0.1231</setup_time>
+			<module_name>regr_sc_1</module_name>
+		</signal>
+		<source_loc>
+			<id>5615</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14733,5612,5633,5635</sub_loc>
+		</source_loc>
+		<source_loc>
+			<id>5636</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5615,5637,5638</sub_loc>
+		</source_loc>
+		<signal>
+			<name>dout_m_unacked_req</name>
+			<datatype W="1">bool</datatype>
+			<source_loc>5636</source_loc>
+			<area>6.8400</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>5.4720</seq_area>
+			<delay>0.1140</delay>
+			<setup_time>0.1231</setup_time>
+			<module_name>regr_sc_1</module_name>
+		</signal>
+		<source_loc>
+			<id>5534</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14715,5525,5526,5531</sub_loc>
+		</source_loc>
+		<source_loc>
+			<id>5538</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5534,5539,5540,5557</sub_loc>
+		</source_loc>
+		<signal>
+			<name>din_m_unvalidated_req</name>
+			<datatype W="1">bool</datatype>
+			<source_loc>5538</source_loc>
+			<area>6.8400</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>5.4720</seq_area>
+			<delay>0.1140</delay>
+			<setup_time>0.1038</setup_time>
+			<module_name>regr_ss_1</module_name>
+		</signal>
+		<signal>
+			<name>global_state_next</name>
+			<datatype W="4">sc_uint</datatype>
+			<source_loc>2556</source_loc>
+			<async/>
+			<state_reg/>
+		</signal>
+		<signal>
+			<name>gs_ctrl4</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>2486</source_loc>
+			<state_reg/>
+			<area>8.8920</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>7.5240</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1771</setup_time>
+			<module_name>regr_en_sc_1</module_name>
+		</signal>
+		<signal>
+			<name>gs_ctrl3</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>2486</source_loc>
+			<state_reg/>
+			<area>8.8920</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>7.5240</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1771</setup_time>
+			<module_name>regr_en_sc_1</module_name>
+		</signal>
+		<signal>
+			<name>gs_ctrl2</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>2486</source_loc>
+			<state_reg/>
+			<area>8.8920</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>7.5240</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1578</setup_time>
+			<module_name>regr_en_ss_1</module_name>
+		</signal>
+		<signal>
+			<name>gs_ctrl1</name>
+			<datatype W="2">sc_uint</datatype>
+			<source_loc>2486</source_loc>
+			<state_reg/>
+			<area>17.7840</area>
+			<comb_area>2.7360</comb_area>
+			<seq_area>15.0480</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1771</setup_time>
+			<module_name>regr_en_ss_sc_2</module_name>
+		</signal>
+		<signal>
+			<name>gs_ctrl0</name>
+			<datatype W="2">sc_uint</datatype>
+			<source_loc>2486</source_loc>
+			<state_reg/>
+			<area>17.7840</area>
+			<comb_area>2.7360</comb_area>
+			<seq_area>15.0480</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1771</setup_time>
+			<module_name>regr_en_sc_2</module_name>
+		</signal>
+		<source_loc>
+			<id>5547</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14683,5544,5602,5642,5697,5746</sub_loc>
+		</source_loc>
+		<source_loc>
+			<id>5768</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5547,5769,5770</sub_loc>
+		</source_loc>
+		<signal>
+			<name>dout_m_req_m_trig_req</name>
+			<datatype W="1">bool</datatype>
+			<source_loc>5768</source_loc>
+			<area>8.8920</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>7.5240</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1771</setup_time>
+			<module_name>regr_en_sc_1</module_name>
+		</signal>
+		<source_loc>
+			<id>5536</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14678,5528,5558,5695,5716,5719</sub_loc>
+		</source_loc>
+		<source_loc>
+			<id>5760</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5536,5761,5762,5763</sub_loc>
+		</source_loc>
+		<signal>
+			<name>din_m_busy_req_0</name>
+			<datatype W="1">bool</datatype>
+			<source_loc>5760</source_loc>
+			<area>8.8920</area>
+			<comb_area>1.3680</comb_area>
+			<seq_area>7.5240</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1578</setup_time>
+			<module_name>regr_en_ss_1</module_name>
+		</signal>
+		<signal>
+			<name>sreg_1</name>
+			<datatype W="4">sc_uint</datatype>
+			<source_loc>5792</source_loc>
+			<area>30.0960</area>
+			<comb_area>0.0000</comb_area>
+			<seq_area>30.0960</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1225</setup_time>
+			<module_name>regr_en_4</module_name>
+		</signal>
+		<signal>
+			<name>global_state</name>
+			<datatype W="4">sc_uint</datatype>
+			<source_loc>2556</source_loc>
+			<state_reg/>
+			<area>35.5680</area>
+			<comb_area>5.4720</comb_area>
+			<seq_area>30.0960</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1771</setup_time>
+			<module_name>regr_en_sc_4</module_name>
+		</signal>
+		<source_loc>
+			<id>5839</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5696,5832,5718,5748,5846,5847</sub_loc>
+		</source_loc>
+		<signal>
+			<name>stall0</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5839</source_loc>
+			<async/>
+			<stall/>
+		</signal>
+		<signal>
+			<name>fir_N_Muxb_1_2_11_4_1_out1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5530</source_loc>
+		</signal>
+		<source_loc>
+			<id>5865</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>10717,5938</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_gen_busy_r_1_2_in1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5865</source_loc>
+			<async/>
+		</signal>
+		<source_loc>
+			<id>5866</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>10720,10629</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_gen_busy_r_1_2_in2</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5866</source_loc>
+			<async/>
+		</signal>
+		<source_loc>
+			<id>5867</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>10721,15050</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_gen_busy_r_1_2_in3</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5867</source_loc>
+			<async/>
+		</signal>
+		<source_loc>
+			<id>5570</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14692,5566,5717,5559</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_gen_busy_r_1_2_out1</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>5570</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Xor_1Ux1U_1U_1_4_in1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>8004</source_loc>
+			<async/>
+		</signal>
+		<signal>
+			<name>fir_Or_1Ux1U_1U_4_5_in2</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>8650</source_loc>
+			<async/>
+		</signal>
+		<source_loc>
+			<id>5605</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14732,5604,5611,5603</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_Xor_1Ux1U_1U_1_4_out1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5605</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Or_1Ux1U_1U_4_5_out1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5613</source_loc>
+		</signal>
+		<signal>
+			<name>fir_And_1Ux1U_1U_1_6_in2</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>8154</source_loc>
+			<async/>
+		</signal>
+		<signal>
+			<name>fir_And_1Ux1U_1U_1_6_in1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>8155</source_loc>
+			<async/>
+		</signal>
+		<source_loc>
+			<id>5630</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14700,5627,5634,5747,5626</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_And_1Ux1U_1U_1_6_out1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5630</source_loc>
+		</signal>
+		<source_loc>
+			<id>5868</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>8003,7232</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_Xor_1Ux1U_1U_1_4_in2</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5868</source_loc>
+			<async/>
+		</signal>
+		<source_loc>
+			<id>5645</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14712,5644,5745,5643</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_Not_1U_1U_1_7_out1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5645</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Add_11Ux11U_11U_4_14_out1</name>
+			<datatype W="11">sc_uint</datatype>
+			<source_loc>5766</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Add_3U_4_4_8_in1</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>14364</source_loc>
+			<async/>
+		</signal>
+		<signal>
+			<name>fir_Add_3U_4_4_8_out1</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>5710</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Add_3U_4_4_9_out1</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>5773</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Add_3Ux1U_4U_4_11_in2</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>14403</source_loc>
+			<async/>
+		</signal>
+		<signal>
+			<name>fir_Add_3Ux1U_4U_4_11_in1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>2540</source_loc>
+			<async/>
+		</signal>
+		<signal>
+			<name>fir_Add_3Ux1U_4U_4_11_out1</name>
+			<datatype W="4">sc_uint</datatype>
+			<source_loc>5792</source_loc>
+		</signal>
+		<source_loc>
+			<id>5864</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>14366,14359</sub_loc>
+		</source_loc>
+		<signal>
+			<name>fir_Add_3U_4_4_9_in1</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>5864</source_loc>
+			<async/>
+		</signal>
+		<signal>
+			<name>fir_LessThan_1U_10_4_10_out1</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>5714</source_loc>
+		</signal>
+		<signal>
+			<name>fir_Mul_8Ux8U_11U_4_13_out1</name>
+			<datatype W="11">sc_uint</datatype>
+			<source_loc>5738</source_loc>
+		</signal>
+		<source_loc>
+			<id>5795</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5772,5773,5774</sub_loc>
+		</source_loc>
+		<signal>
+			<name>s_reg_19</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>5795</source_loc>
+			<area>22.5720</area>
+			<comb_area>0.0000</comb_area>
+			<seq_area>22.5720</seq_area>
+			<delay>0.1120</delay>
+			<setup_time>0.1225</setup_time>
+			<module_name>regr_en_3</module_name>
+		</signal>
+		<signal>
+			<name>fir_N_Mux_8_8_12_4_12_out1</name>
+			<datatype W="8">sc_uint</datatype>
+			<source_loc>5737</source_loc>
+		</signal>
+		<source_loc>
+			<id>5325</id>
+			<loc_kind>HIER</loc_kind>
+			<sub_loc>11548,14379</sub_loc>
+		</source_loc>
+		<signal>
+			<name>shift_reg_DIN</name>
+			<datatype W="8">sc_uint</datatype>
+			<source_loc>5325</source_loc>
+			<async/>
+			<preserved/>
+		</signal>
+		<signal>
+			<name>shift_reg_CE</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>14363</source_loc>
+			<async/>
+			<preserved/>
+		</signal>
+		<signal>
+			<name>shift_reg_RW</name>
+			<datatype W="1">sc_uint</datatype>
+			<source_loc>14363</source_loc>
+			<async/>
+			<preserved/>
+		</signal>
+		<signal>
+			<name>shift_reg_in1</name>
+			<datatype W="3">sc_uint</datatype>
+			<source_loc>14398</source_loc>
+			<async/>
+			<preserved/>
+		</signal>
+		<signal>
+			<name>shift_reg_out1</name>
+			<datatype W="8">sc_uint</datatype>
+			<source_loc>5736</source_loc>
+		</signal>
+		<source_loc>
+			<id>5811</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5698,5699,5700,5701,5702,5703,5704,5705,5711,5712,5721,5736</sub_loc>
 		</source_loc>
 		<module_inst>
-			<module_name>fir_logic_1</module_name>
-			<name>fir_logic_1_1</name>
-			<instance_name>fir_logic_1_1</instance_name>
+			<module_name>fir_RAM_8X8_1</module_name>
+			<name>shift_reg</name>
+			<instance_name>shift_reg</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>DIN,shift_reg_DIN</port_conn>
+			<port_conn>CE,shift_reg_CE</port_conn>
+			<port_conn>RW,shift_reg_RW</port_conn>
+			<port_conn>in1,shift_reg_in1</port_conn>
+			<port_conn>out1,shift_reg_out1</port_conn>
 			<port_conn>clk,clk</port_conn>
-			<port_conn>rst,rst</port_conn>
-			<port_conn>coeffs_table_1,coeffs_table_1</port_conn>
-			<port_conn>coeffs_table_0,coeffs_table_0</port_conn>
-			<port_conn>coeffs_table_2,coeffs_table_2</port_conn>
-			<port_conn>coeffs_table_3,coeffs_table_3</port_conn>
-			<port_conn>coeffs_table_4,coeffs_table_4</port_conn>
-			<port_conn>coeffs_table_5,coeffs_table_5</port_conn>
-			<port_conn>coeffs_table_6,coeffs_table_6</port_conn>
-			<port_conn>din_data,din_data</port_conn>
-			<port_conn>coeffs_table_7,coeffs_table_7</port_conn>
-			<port_conn>din_busy,din_busy</port_conn>
-			<port_conn>din_vld,din_vld</port_conn>
-			<port_conn>dout_vld,dout_vld</port_conn>
-			<port_conn>dout_busy,dout_busy</port_conn>
-			<port_conn>dout_data,dout_data</port_conn>
-			<source_loc>1056</source_loc>
+			<source_loc>5811</source_loc>
 		</module_inst>
+		<source_loc>
+			<id>5810</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5737</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_N_Mux_8_8_12_4</module_name>
+			<name>fir_N_Mux_8_8_12_4_12</name>
+			<instance_name>fir_N_Mux_8_8_12_4_12</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in9,coeffs_table_7</port_conn>
+			<port_conn>in8,coeffs_table_6</port_conn>
+			<port_conn>in7,coeffs_table_5</port_conn>
+			<port_conn>in6,coeffs_table_4</port_conn>
+			<port_conn>in5,coeffs_table_3</port_conn>
+			<port_conn>in4,coeffs_table_2</port_conn>
+			<port_conn>in3,coeffs_table_1</port_conn>
+			<port_conn>in2,coeffs_table_0</port_conn>
+			<port_conn>ctrl1,s_reg_19</port_conn>
+			<port_conn>out1,fir_N_Mux_8_8_12_4_12_out1</port_conn>
+			<source_loc>5810</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5809</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5738</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Mul_8Ux8U_11U_4</module_name>
+			<name>fir_Mul_8Ux8U_11U_4_13</name>
+			<instance_name>fir_Mul_8Ux8U_11U_4_13</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in2,fir_N_Mux_8_8_12_4_12_out1</port_conn>
+			<port_conn>in1,shift_reg_out1</port_conn>
+			<port_conn>out1,fir_Mul_8Ux8U_11U_4_13_out1</port_conn>
+			<source_loc>5809</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5806</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5714</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_LessThan_1U_10_4</module_name>
+			<name>fir_LessThan_1U_10_4_10</name>
+			<instance_name>fir_LessThan_1U_10_4_10</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in1,fir_Add_3U_4_4_9_in1</port_conn>
+			<port_conn>out1,fir_LessThan_1U_10_4_10_out1</port_conn>
+			<source_loc>5806</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5803</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5792</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Add_3Ux1U_4U_4</module_name>
+			<name>fir_Add_3Ux1U_4U_4_11</name>
+			<instance_name>fir_Add_3Ux1U_4U_4_11</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in2,fir_Add_3Ux1U_4U_4_11_in2</port_conn>
+			<port_conn>in1,fir_Add_3Ux1U_4U_4_11_in1</port_conn>
+			<port_conn>out1,fir_Add_3Ux1U_4U_4_11_out1</port_conn>
+			<source_loc>5803</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5800</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5773</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Add_3U_4_4</module_name>
+			<name>fir_Add_3U_4_4_9</name>
+			<instance_name>fir_Add_3U_4_4_9</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in1,fir_Add_3U_4_4_9_in1</port_conn>
+			<port_conn>out1,fir_Add_3U_4_4_9_out1</port_conn>
+			<source_loc>5800</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5797</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5710</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Add_3U_4_4</module_name>
+			<name>fir_Add_3U_4_4_8</name>
+			<instance_name>fir_Add_3U_4_4_8</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in1,fir_Add_3U_4_4_8_in1</port_conn>
+			<port_conn>out1,fir_Add_3U_4_4_8_out1</port_conn>
+			<source_loc>5797</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5796</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5766</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Add_11Ux11U_11U_4</module_name>
+			<name>fir_Add_11Ux11U_11U_4_14</name>
+			<instance_name>fir_Add_11Ux11U_11U_4_14</instance_name>
+			<thread>FirThread</thread>
+			<port_conn>in2,fir_Mul_8Ux8U_11U_4_13_out1</port_conn>
+			<port_conn>in1,dout_data</port_conn>
+			<port_conn>out1,fir_Add_11Ux11U_11U_4_14_out1</port_conn>
+			<source_loc>5796</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5646</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5643</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Not_1U_1U_1</module_name>
+			<name>fir_Not_1U_1U_1_7</name>
+			<instance_name>fir_Not_1U_1U_1_7</instance_name>
+			<thread>gen_next_trig_reg</thread>
+			<port_conn>in1,fir_Xor_1Ux1U_1U_1_4_in2</port_conn>
+			<port_conn>out1,fir_Not_1U_1U_1_7_out1</port_conn>
+			<source_loc>5646</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5631</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5626</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_And_1Ux1U_1U_1</module_name>
+			<name>fir_And_1Ux1U_1U_1_6</name>
+			<instance_name>fir_And_1Ux1U_1U_1_6</instance_name>
+			<thread>gen_stalling</thread>
+			<port_conn>in2,fir_And_1Ux1U_1U_1_6_in2</port_conn>
+			<port_conn>in1,fir_And_1Ux1U_1U_1_6_in1</port_conn>
+			<port_conn>out1,fir_And_1Ux1U_1U_1_6_out1</port_conn>
+			<source_loc>5631</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5617</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5613</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Or_1Ux1U_1U_4</module_name>
+			<name>fir_Or_1Ux1U_1U_4_5</name>
+			<instance_name>fir_Or_1Ux1U_1U_4_5</instance_name>
+			<thread>gen_vld</thread>
+			<port_conn>in2,fir_Or_1Ux1U_1U_4_5_in2</port_conn>
+			<port_conn>in1,fir_Xor_1Ux1U_1U_1_4_out1</port_conn>
+			<port_conn>out1,fir_Or_1Ux1U_1U_4_5_out1</port_conn>
+			<source_loc>5617</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5606</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5603</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_Xor_1Ux1U_1U_1</module_name>
+			<name>fir_Xor_1Ux1U_1U_1_4</name>
+			<instance_name>fir_Xor_1Ux1U_1U_1_4</instance_name>
+			<thread>gen_active</thread>
+			<port_conn>in2,fir_Xor_1Ux1U_1U_1_4_in2</port_conn>
+			<port_conn>in1,fir_Xor_1Ux1U_1U_1_4_in1</port_conn>
+			<port_conn>out1,fir_Xor_1Ux1U_1U_1_4_out1</port_conn>
+			<source_loc>5606</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5571</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5559</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_gen_busy_r_1</module_name>
+			<name>fir_gen_busy_r_1_2</name>
+			<instance_name>fir_gen_busy_r_1_2</instance_name>
+			<thread>gen_busy</thread>
+			<port_conn>in1,fir_gen_busy_r_1_2_in1</port_conn>
+			<port_conn>in2,fir_gen_busy_r_1_2_in2</port_conn>
+			<port_conn>in3,fir_gen_busy_r_1_2_in3</port_conn>
+			<port_conn>out1,fir_gen_busy_r_1_2_out1</port_conn>
+			<source_loc>5571</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>5541</id>
+			<loc_kind>ARRAY</loc_kind>
+			<sub_loc>5530</sub_loc>
+		</source_loc>
+		<module_inst>
+			<module_name>fir_N_Muxb_1_2_11_4</module_name>
+			<name>fir_N_Muxb_1_2_11_4_1</name>
+			<instance_name>fir_N_Muxb_1_2_11_4_1</instance_name>
+			<thread>gen_unvalidated_req</thread>
+			<port_conn>in3,fir_gen_busy_r_1_2_in1</port_conn>
+			<port_conn>in2,fir_gen_busy_r_1_2_in3</port_conn>
+			<port_conn>ctrl1,fir_gen_busy_r_1_2_in2</port_conn>
+			<port_conn>out1,fir_N_Muxb_1_2_11_4_1_out1</port_conn>
+			<source_loc>5541</source_loc>
+		</module_inst>
+		<source_loc>
+			<id>2066</id>
+			<loc_kind>OP</loc_kind>
+			<file_id>2</file_id>
+			<line>50</line>
+			<col>25</col>
+		</source_loc>
+		<source_loc>
+			<id>5300</id>
+			<loc_kind>HIER</loc_kind>
+			<sub_loc>1058,2066</sub_loc>
+		</source_loc>
+		<thread>
+			<name>drive_dout_data</name>
+			<clock>clk</clock>
+			<module_name>mux_11bx3i1c</module_name>
+			<number_inputs>3</number_inputs>
+			<mux_area>33.2881</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.2741</controller_delay>
+			<rhs>
+				<value W="11">0</value>
+			</rhs>
+			<lhs>
+				<name>dout_data</name>
+			</lhs>
+			<rhs>
+				<bit_select>
+					<rhs>
+						<name>fir_Add_11Ux11U_11U_4_14_out1</name>
+					</rhs>
+					<lsb>4</lsb>
+					<msb>10</msb>
+				</bit_select>
+			</rhs>
+			<rhs>
+				<name>fir_Add_11Ux11U_11U_4_14_out1</name>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state</name>
+				<name>sreg_1</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_din_m_busy_req_0</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">1</value>
+				</rhs>
+			</reset>
+			<module_name>mux_1bx2i2c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>2.3284</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.2741</controller_delay>
+			<lhs>
+				<name>din_m_busy_req_0</name>
+			</lhs>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state</name>
+				<name>fir_LessThan_1U_10_4_10_out1</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_dout_m_req_m_trig_req</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">0</value>
+				</rhs>
+			</reset>
+			<controller_delay>0.2741</controller_delay>
+			<lhs>
+				<name>dout_m_req_m_trig_req</name>
+			</lhs>
+			<rhs>
+				<name>fir_Not_1U_1U_1_7_out1</name>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state</name>
+				<name>sreg_1</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_stall0</name>
+			<async/>
+			<module_name>mux_1bx3i1c</module_name>
+			<number_inputs>3</number_inputs>
+			<mux_area>3.8043</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.1313</controller_delay>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<lhs>
+				<name>stall0</name>
+			</lhs>
+			<rhs>
+				<bit_select>
+					<rhs>
+						<name>fir_gen_busy_r_1_2_out1</name>
+					</rhs>
+					<lsb>0</lsb>
+					<msb>0</msb>
+				</bit_select>
+			</rhs>
+			<rhs>
+				<name>fir_And_1Ux1U_1U_1_6_out1</name>
+			</rhs>
+			<cond>
+				<name>global_state</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_s_reg_19</name>
+			<clock>clk</clock>
+			<module_name>mux_3bx3i1c</module_name>
+			<number_inputs>3</number_inputs>
+			<mux_area>9.9864</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<rhs>
+				<value W="3">0</value>
+			</rhs>
+			<lhs>
+				<name>s_reg_19</name>
+			</lhs>
+			<rhs>
+				<name>fir_Add_3U_4_4_9_out1</name>
+			</rhs>
+			<rhs>
+				<bit_select>
+					<rhs>
+						<name>sreg_1</name>
+					</rhs>
+					<lsb>0</lsb>
+					<msb>2</msb>
+				</bit_select>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_shift_reg_in1</name>
+			<async/>
+			<module_name>mux_3bx11i8c</module_name>
+			<number_inputs>11</number_inputs>
+			<mux_area>33.3873</mux_area>
+			<mux_delay>0.1717</mux_delay>
+			<control_delay>0.1717</control_delay>
+			<controller_delay>0.1313</controller_delay>
+			<rhs>
+				<value W="3">0</value>
+			</rhs>
+			<lhs>
+				<name>shift_reg_in1</name>
+			</lhs>
+			<rhs>
+				<value W="3">1</value>
+			</rhs>
+			<rhs>
+				<value W="3">2</value>
+			</rhs>
+			<rhs>
+				<value W="3">3</value>
+			</rhs>
+			<rhs>
+				<value W="3">4</value>
+			</rhs>
+			<rhs>
+				<value W="3">5</value>
+			</rhs>
+			<rhs>
+				<value W="3">6</value>
+			</rhs>
+			<rhs>
+				<value W="3">7</value>
+			</rhs>
+			<rhs>
+				<name>fir_Add_3U_4_4_8_out1</name>
+			</rhs>
+			<rhs>
+				<name>s_reg_19</name>
+			</rhs>
+			<rhs>
+				<bit_select>
+					<rhs>
+						<name>sreg_1</name>
+					</rhs>
+					<lsb>0</lsb>
+					<msb>2</msb>
+				</bit_select>
+			</rhs>
+			<cond>
+				<name>global_state</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_shift_reg_DIN</name>
+			<async/>
+			<module_name>mux_8bx3i1c</module_name>
+			<number_inputs>3</number_inputs>
+			<mux_area>24.7283</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.0714</controller_delay>
+			<rhs>
+				<value W="8">0</value>
+			</rhs>
+			<lhs>
+				<name>shift_reg_DIN</name>
+			</lhs>
+			<rhs>
+				<name>shift_reg_out1</name>
+			</rhs>
+			<rhs>
+				<name>din_data</name>
+			</rhs>
+			<cond>
+				<name>gs_ctrl0</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_shift_reg_CE</name>
+			<async/>
+			<stall>
+				<async>1</async>
+				<name>stall0</name>
+			</stall>
+			<module_name>mux_1bx2i2c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>2.3284</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.2142</controller_delay>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<lhs>
+				<name>shift_reg_CE</name>
+			</lhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>gs_ctrl1</name>
+				<name>fir_LessThan_1U_10_4_10_out1</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_shift_reg_RW</name>
+			<async/>
+			<stall>
+				<async>1</async>
+				<name>stall0</name>
+			</stall>
+			<module_name>mux_1bx2i2c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>2.3284</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.0714</controller_delay>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<lhs>
+				<name>shift_reg_RW</name>
+			</lhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>gs_ctrl2</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_fir_Add_3U_4_4_8_in1</name>
+			<async/>
+			<module_name>mux_3bx2i1c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>8.1493</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.0000</controller_delay>
+			<rhs>
+				<name>s_reg_19</name>
+			</rhs>
+			<lhs>
+				<name>fir_Add_3U_4_4_8_in1</name>
+			</lhs>
+			<rhs>
+				<value W="3">0</value>
+			</rhs>
+			<cond>
+				<name>gs_ctrl3</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<assign>
+			<name>drive_fir_Add_3U_4_4_9_in1</name>
+			<lhs>
+				<name>fir_Add_3U_4_4_9_in1</name>
+			</lhs>
+			<rhs>
+				<name>s_reg_19</name>
+			</rhs>
+		</assign>
+		<thread>
+			<name>drive_fir_Add_3Ux1U_4U_4_11_in2</name>
+			<async/>
+			<module_name>mux_3bx2i1c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>8.1493</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.0000</controller_delay>
+			<rhs>
+				<bit_select>
+					<rhs>
+						<name>sreg_1</name>
+					</rhs>
+					<lsb>0</lsb>
+					<msb>2</msb>
+				</bit_select>
+			</rhs>
+			<lhs>
+				<name>fir_Add_3Ux1U_4U_4_11_in2</name>
+			</lhs>
+			<rhs>
+				<value W="3">0</value>
+			</rhs>
+			<cond>
+				<name>gs_ctrl4</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<assign>
+			<name>drive_fir_Add_3Ux1U_4U_4_11_in1</name>
+			<lhs>
+				<name>fir_Add_3Ux1U_4U_4_11_in1</name>
+			</lhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+		</assign>
+		<thread>
+			<name>drive_sreg_1</name>
+			<clock>clk</clock>
+			<controller_delay>0.2027</controller_delay>
+			<rhs>
+				<name>fir_Add_3Ux1U_4U_4_11_out1</name>
+			</rhs>
+			<lhs>
+				<name>sreg_1</name>
+			</lhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_global_state</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="4">0</value>
+				</rhs>
+			</reset>
+			<controller_delay>0.0288</controller_delay>
+			<lhs>
+				<name>global_state</name>
+			</lhs>
+			<rhs>
+				<name>global_state_next</name>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+			</cond>
+			<source_loc>5300</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_global_state_next</name>
+			<async/>
+			<module_name>mux_4bx4i3c</module_name>
+			<number_inputs>4</number_inputs>
+			<mux_area>15.8528</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<rhs>
+				<value W="4">1</value>
+				<name>global_state</name>
+			</rhs>
+			<lhs>
+				<name>global_state_next</name>
+			</lhs>
+			<rhs>
+				<value W="4">9</value>
+			</rhs>
+			<rhs>
+				<value W="4">13</value>
+			</rhs>
+			<rhs>
+				<value W="4">15</value>
+			</rhs>
+			<cond>
+				<name>global_state</name>
+				<name>fir_LessThan_1U_10_4_10_out1</name>
+				<name>sreg_1</name>
+			</cond>
+			<source_loc>2486</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_gs_ctrl0</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="2">0</value>
+				</rhs>
+			</reset>
+			<module_name>mux_2bx3i3c</module_name>
+			<number_inputs>3</number_inputs>
+			<mux_area>5.4471</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<lhs>
+				<name>gs_ctrl0</name>
+			</lhs>
+			<rhs>
+				<value W="2">0</value>
+			</rhs>
+			<rhs>
+				<value W="2">1</value>
+			</rhs>
+			<rhs>
+				<value W="2">2</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state_next</name>
+			</cond>
+			<source_loc>2486</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_gs_ctrl1</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="2">1</value>
+				</rhs>
+			</reset>
+			<module_name>mux_2bx3i3c</module_name>
+			<number_inputs>3</number_inputs>
+			<mux_area>5.4471</mux_area>
+			<mux_delay>0.0945</mux_delay>
+			<control_delay>0.0945</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<lhs>
+				<name>gs_ctrl1</name>
+			</lhs>
+			<rhs>
+				<value W="2">0</value>
+			</rhs>
+			<rhs>
+				<value W="2">1</value>
+			</rhs>
+			<rhs>
+				<value W="2">2</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state_next</name>
+			</cond>
+			<source_loc>2486</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_gs_ctrl2</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">1</value>
+				</rhs>
+			</reset>
+			<module_name>mux_1bx2i2c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>2.3284</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<lhs>
+				<name>gs_ctrl2</name>
+			</lhs>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state_next</name>
+			</cond>
+			<source_loc>2486</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_gs_ctrl3</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">0</value>
+				</rhs>
+			</reset>
+			<module_name>mux_1bx2i2c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>2.3284</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<lhs>
+				<name>gs_ctrl3</name>
+			</lhs>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state_next</name>
+			</cond>
+			<source_loc>2486</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<thread>
+			<name>drive_gs_ctrl4</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">0</value>
+				</rhs>
+			</reset>
+			<module_name>mux_1bx2i2c</module_name>
+			<number_inputs>2</number_inputs>
+			<mux_area>2.3284</mux_area>
+			<mux_delay>0.0615</mux_delay>
+			<control_delay>0.0615</control_delay>
+			<controller_delay>0.2027</controller_delay>
+			<lhs>
+				<name>gs_ctrl4</name>
+			</lhs>
+			<rhs>
+				<value W="1">0</value>
+			</rhs>
+			<rhs>
+				<value W="1">1</value>
+			</rhs>
+			<cond>
+				<name>stall0</name>
+				<name>global_state_next</name>
+			</cond>
+			<source_loc>2486</source_loc>
+			<thread>FirThread</thread>
+		</thread>
+		<assign>
+			<name>drive_din_busy</name>
+			<lhs>
+				<name>din_busy</name>
+			</lhs>
+			<rhs>
+				<bit_select>
+					<rhs>
+						<name>fir_gen_busy_r_1_2_out1</name>
+					</rhs>
+					<lsb>2</lsb>
+					<msb>2</msb>
+				</bit_select>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_gen_busy_r_1_2_in1</name>
+			<lhs>
+				<name>fir_gen_busy_r_1_2_in1</name>
+			</lhs>
+			<rhs>
+				<name>din_vld</name>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_gen_busy_r_1_2_in2</name>
+			<lhs>
+				<name>fir_gen_busy_r_1_2_in2</name>
+			</lhs>
+			<rhs>
+				<name>din_m_busy_req_0</name>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_gen_busy_r_1_2_in3</name>
+			<lhs>
+				<name>fir_gen_busy_r_1_2_in3</name>
+			</lhs>
+			<rhs>
+				<name>din_m_unvalidated_req</name>
+			</rhs>
+		</assign>
+		<thread>
+			<name>drive_din_m_unvalidated_req</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">1</value>
+				</rhs>
+			</reset>
+			<controller_delay>0.0000</controller_delay>
+			<lhs>
+				<name>din_m_unvalidated_req</name>
+			</lhs>
+			<rhs>
+				<name>fir_N_Muxb_1_2_11_4_1_out1</name>
+			</rhs>
+			<cond>
+			</cond>
+			<source_loc>10489</source_loc>
+			<thread>gen_unvalidated_req</thread>
+		</thread>
+		<assign>
+			<name>drive_dout_vld</name>
+			<lhs>
+				<name>dout_vld</name>
+			</lhs>
+			<rhs>
+				<name>fir_Or_1Ux1U_1U_4_5_out1</name>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_Or_1Ux1U_1U_4_5_in2</name>
+			<lhs>
+				<name>fir_Or_1Ux1U_1U_4_5_in2</name>
+			</lhs>
+			<rhs>
+				<name>dout_m_unacked_req</name>
+			</rhs>
+		</assign>
+		<thread>
+			<name>drive_dout_m_unacked_req</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">0</value>
+				</rhs>
+			</reset>
+			<controller_delay>0.0000</controller_delay>
+			<lhs>
+				<name>dout_m_unacked_req</name>
+			</lhs>
+			<rhs>
+				<name>fir_And_1Ux1U_1U_1_6_out1</name>
+			</rhs>
+			<cond>
+			</cond>
+			<source_loc>8504</source_loc>
+			<thread>gen_unacked_req</thread>
+		</thread>
+		<assign>
+			<name>drive_fir_And_1Ux1U_1U_1_6_in2</name>
+			<lhs>
+				<name>fir_And_1Ux1U_1U_1_6_in2</name>
+			</lhs>
+			<rhs>
+				<name>dout_busy</name>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_And_1Ux1U_1U_1_6_in1</name>
+			<lhs>
+				<name>fir_And_1Ux1U_1U_1_6_in1</name>
+			</lhs>
+			<rhs>
+				<name>dout_vld</name>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_Xor_1Ux1U_1U_1_4_in2</name>
+			<lhs>
+				<name>fir_Xor_1Ux1U_1U_1_4_in2</name>
+			</lhs>
+			<rhs>
+				<name>dout_m_req_m_trig_req</name>
+			</rhs>
+		</assign>
+		<assign>
+			<name>drive_fir_Xor_1Ux1U_1U_1_4_in1</name>
+			<lhs>
+				<name>fir_Xor_1Ux1U_1U_1_4_in1</name>
+			</lhs>
+			<rhs>
+				<name>dout_m_req_m_prev_trig_req</name>
+			</rhs>
+		</assign>
+		<thread>
+			<name>drive_dout_m_req_m_prev_trig_req</name>
+			<clock>clk</clock>
+			<reset>
+				<name>rst</name>
+				<polarity>0</polarity>
+				<rhs>
+					<value W="1">0</value>
+				</rhs>
+			</reset>
+			<controller_delay>0.0000</controller_delay>
+			<lhs>
+				<name>dout_m_req_m_prev_trig_req</name>
+			</lhs>
+			<rhs>
+				<name>dout_m_req_m_trig_req</name>
+			</rhs>
+			<cond>
+			</cond>
+			<source_loc>7822</source_loc>
+			<thread>gen_prev_trig_reg</thread>
+		</thread>
 	</netlist>
 	<phase_complete>rtl</phase_complete>
 	<phase_summary>
 		<phase_complete>rtl</phase_complete>
-		<summary>Synthesis complete: 0 errors, 1 warnings, area=2929, bits=85</summary>
+		<summary>Synthesis complete: 0 errors, 0 warnings, area=1104, bits=34</summary>
 	</phase_summary>
 	<message_counts>
 		<message_count>
-			<code_num>3169</code_num>
+			<code_num>260</code_num>
 			<count>1</count>
-		</message_count>
-		<message_count>
-			<code_num>300</code_num>
-			<count>2</count>
-		</message_count>
-		<message_count>
-			<code_num>472</code_num>
-			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>487</code_num>
-			<count>1</count>
-		</message_count>
-		<message_count>
-			<code_num>491</code_num>
-			<count>11</count>
-		</message_count>
-		<message_count>
-			<code_num>494</code_num>
 			<count>1</count>
 		</message_count>
 		<message_count>
@@ -1734,7 +3127,7 @@
 			<count>8</count>
 		</message_count>
 		<message_count>
-			<code_num>860</code_num>
+			<code_num>852</code_num>
 			<count>1</count>
 		</message_count>
 		<message_count>
@@ -1747,7 +3140,7 @@
 		</message_count>
 		<message_count>
 			<code_num>1437</code_num>
-			<count>9</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1483</code_num>
@@ -1763,7 +3156,7 @@
 		</message_count>
 		<message_count>
 			<code_num>116</code_num>
-			<count>32</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>144</code_num>
@@ -1783,23 +3176,23 @@
 		</message_count>
 		<message_count>
 			<code_num>258</code_num>
-			<count>2</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
-			<code_num>288</code_num>
+			<code_num>259</code_num>
+			<count>1</count>
+		</message_count>
+		<message_count>
+			<code_num>261</code_num>
 			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>289</code_num>
-			<count>1</count>
-		</message_count>
-		<message_count>
-			<code_num>305</code_num>
-			<count>141</count>
+			<count>3</count>
 		</message_count>
 		<message_count>
 			<code_num>306</code_num>
-			<count>141</count>
+			<count>10</count>
 		</message_count>
 		<message_count>
 			<code_num>481</code_num>
@@ -1807,7 +3200,7 @@
 		</message_count>
 		<message_count>
 			<code_num>802</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>803</code_num>
@@ -1815,7 +3208,7 @@
 		</message_count>
 		<message_count>
 			<code_num>805</code_num>
-			<count>52</count>
+			<count>8</count>
 		</message_count>
 		<message_count>
 			<code_num>807</code_num>
@@ -1823,27 +3216,31 @@
 		</message_count>
 		<message_count>
 			<code_num>808</code_num>
-			<count>13</count>
+			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>809</code_num>
-			<count>19</count>
+			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>810</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>811</code_num>
-			<count>13</count>
+			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>812</code_num>
-			<count>13</count>
+			<count>2</count>
 		</message_count>
 		<message_count>
-			<code_num>907</code_num>
-			<count>30</count>
+			<code_num>813</code_num>
+			<count>2</count>
+		</message_count>
+		<message_count>
+			<code_num>814</code_num>
+			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>967</code_num>
@@ -1859,7 +3256,7 @@
 		</message_count>
 		<message_count>
 			<code_num>970</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>971</code_num>
@@ -1867,63 +3264,43 @@
 		</message_count>
 		<message_count>
 			<code_num>1006</code_num>
-			<count>12</count>
-		</message_count>
-		<message_count>
-			<code_num>1117</code_num>
-			<count>2</count>
-		</message_count>
-		<message_count>
-			<code_num>1131</code_num>
 			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1158</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1159</code_num>
-			<count>12</count>
-		</message_count>
-		<message_count>
-			<code_num>1161</code_num>
 			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1166</code_num>
-			<count>12</count>
-		</message_count>
-		<message_count>
-			<code_num>1167</code_num>
-			<count>4</count>
-		</message_count>
-		<message_count>
-			<code_num>1168</code_num>
-			<count>4</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1170</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1171</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1218</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1219</code_num>
-			<count>10</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1220</code_num>
-			<count>13</count>
+			<count>6</count>
 		</message_count>
 		<message_count>
 			<code_num>1230</code_num>
-			<count>19</count>
+			<count>2</count>
 		</message_count>
 		<message_count>
 			<code_num>1279</code_num>
@@ -1935,23 +3312,11 @@
 		</message_count>
 		<message_count>
 			<code_num>1352</code_num>
-			<count>16</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1425</code_num>
 			<count>1</count>
-		</message_count>
-		<message_count>
-			<code_num>1429</code_num>
-			<count>4</count>
-		</message_count>
-		<message_count>
-			<code_num>1430</code_num>
-			<count>152</count>
-		</message_count>
-		<message_count>
-			<code_num>1431</code_num>
-			<count>4</count>
 		</message_count>
 		<message_count>
 			<code_num>1438</code_num>
@@ -1962,28 +3327,20 @@
 			<count>1</count>
 		</message_count>
 		<message_count>
-			<code_num>1442</code_num>
-			<count>1</count>
-		</message_count>
-		<message_count>
-			<code_num>1463</code_num>
-			<count>2</count>
-		</message_count>
-		<message_count>
 			<code_num>1472</code_num>
 			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>1677</code_num>
-			<count>36</count>
+			<count>3</count>
 		</message_count>
 		<message_count>
 			<code_num>1766</code_num>
-			<count>2</count>
+			<count>14</count>
 		</message_count>
 		<message_count>
 			<code_num>1767</code_num>
-			<count>2</count>
+			<count>14</count>
 		</message_count>
 		<message_count>
 			<code_num>1768</code_num>
@@ -1999,15 +3356,15 @@
 		</message_count>
 		<message_count>
 			<code_num>2080</code_num>
-			<count>72</count>
+			<count>6</count>
 		</message_count>
 		<message_count>
 			<code_num>2098</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>2361</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>2604</code_num>
@@ -2015,27 +3372,19 @@
 		</message_count>
 		<message_count>
 			<code_num>2788</code_num>
-			<count>23</count>
+			<count>35</count>
 		</message_count>
 		<message_count>
 			<code_num>2790</code_num>
-			<count>20</count>
+			<count>32</count>
 		</message_count>
 		<message_count>
-			<code_num>2826</code_num>
+			<code_num>2791</code_num>
 			<count>1</count>
 		</message_count>
 		<message_count>
-			<code_num>2831</code_num>
-			<count>3</count>
-		</message_count>
-		<message_count>
-			<code_num>2835</code_num>
-			<count>2</count>
-		</message_count>
-		<message_count>
 			<code_num>2917</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 		<message_count>
 			<code_num>2918</code_num>
@@ -2051,19 +3400,19 @@
 		</message_count>
 		<message_count>
 			<code_num>3257</code_num>
-			<count>12</count>
+			<count>1</count>
 		</message_count>
 	</message_counts>
-	<end_time>Wed Sep  7 10:39:56 2022</end_time>
+	<end_time>Wed Sep  7 16:24:57 2022</end_time>
 	<timers>
 		<phase>
 			<name>front_end</name>
-			<real_time>6</real_time>
-			<cpu_time>5</cpu_time>
+			<real_time>1</real_time>
+			<cpu_time>0</cpu_time>
 		</phase>
 		<phase>
 			<name>normalization</name>
-			<real_time>2</real_time>
+			<real_time>4</real_time>
 			<cpu_time>1</cpu_time>
 		</phase>
 		<phase>
@@ -2088,7 +3437,7 @@
 		</phase>
 		<phase>
 			<name>pre_allocation</name>
-			<real_time>1</real_time>
+			<real_time>0</real_time>
 			<cpu_time>0</cpu_time>
 		</phase>
 		<phase>
@@ -2108,16 +3457,16 @@
 		</phase>
 		<phase>
 			<name>cynth</name>
-			<real_time>17</real_time>
-			<cpu_time>8</cpu_time>
+			<real_time>15</real_time>
+			<cpu_time>3</cpu_time>
 		</phase>
 		<phase>
 			<name>total</name>
-			<real_time>17</real_time>
-			<cpu_time>8</cpu_time>
+			<real_time>15</real_time>
+			<cpu_time>3</cpu_time>
 		</phase>
 	</timers>
-	<footprint>472800</footprint>
-	<subprocess_footprint>632280</subprocess_footprint>
+	<footprint>480672</footprint>
+	<subprocess_footprint>640472</subprocess_footprint>
 	<exit_status>0</exit_status>
 </tool_log>

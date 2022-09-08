@@ -6,25 +6,25 @@
 		<region>
 			<region_kind>directive</region_kind>
 			<id>0</id>
-			<name>cynw_p2p_in_get</name>
-			<entry_bb>7</entry_bb>
-			<source_loc>11569</source_loc>
-			<parent_region>4</parent_region>
-			<basic_blocks>
-				<msb>18</msb>
-				<value>8064</value>
-			</basic_blocks>
-		</region>
-		<region>
-			<region_kind>directive</region_kind>
-			<id>1</id>
 			<name>region_0</name>
 			<entry_bb>2</entry_bb>
 			<source_loc>2477</source_loc>
 			<parent_region>3</parent_region>
 			<basic_blocks>
-				<msb>18</msb>
-				<value>524284</value>
+				<msb>21</msb>
+				<value>4194300</value>
+			</basic_blocks>
+		</region>
+		<region>
+			<region_kind>directive</region_kind>
+			<id>1</id>
+			<name>cynw_p2p_in_get</name>
+			<entry_bb>8</entry_bb>
+			<source_loc>11555</source_loc>
+			<parent_region>4</parent_region>
+			<basic_blocks>
+				<msb>21</msb>
+				<value>16128</value>
 			</basic_blocks>
 		</region>
 		<region>
@@ -33,9 +33,9 @@
 			<name>reset</name>
 			<entry_bb>3</entry_bb>
 			<source_loc>2478</source_loc>
-			<parent_region>1</parent_region>
+			<parent_region>0</parent_region>
 			<basic_blocks>
-				<msb>18</msb>
+				<msb>21</msb>
 				<value>24</value>
 			</basic_blocks>
 		</region>
@@ -45,33 +45,59 @@
 			<name>FirThread</name>
 			<entry_bb>0</entry_bb>
 			<basic_blocks>
-				<msb>18</msb>
-				<value>524287</value>
+				<msb>21</msb>
+				<value>4194303</value>
 			</basic_blocks>
 		</region>
 		<region>
 			<region_kind>loop</region_kind>
 			<id>4</id>
-			<name>main_loop</name>
+			<name>loop_1</name>
 			<loop>24</loop>
 			<entry_bb>6</entry_bb>
-			<source_loc>15781</source_loc>
-			<parent_region>1</parent_region>
+			<source_loc>14983</source_loc>
+			<parent_region>0</parent_region>
 			<basic_blocks>
-				<msb>18</msb>
-				<value>524224</value>
+				<msb>21</msb>
+				<value>4194240</value>
 			</basic_blocks>
 		</region>
 		<region>
 			<region_kind>directive</region_kind>
 			<id>5</id>
 			<name>cynw_p2p_out_put</name>
-			<entry_bb>14</entry_bb>
-			<source_loc>11787</source_loc>
+			<entry_bb>17</entry_bb>
+			<source_loc>11773</source_loc>
 			<parent_region>4</parent_region>
 			<basic_blocks>
-				<msb>18</msb>
-				<value>245760</value>
+				<msb>21</msb>
+				<value>1966080</value>
+			</basic_blocks>
+		</region>
+		<region>
+			<region_kind>loop</region_kind>
+			<id>6</id>
+			<name>loop_1_1</name>
+			<loop>7</loop>
+			<entry_bb>7</entry_bb>
+			<source_loc>14864</source_loc>
+			<parent_region>4</parent_region>
+			<basic_blocks>
+				<msb>21</msb>
+				<value>128</value>
+			</basic_blocks>
+		</region>
+		<region>
+			<region_kind>loop</region_kind>
+			<id>7</id>
+			<name>loop_1_2</name>
+			<loop>17</loop>
+			<entry_bb>15</entry_bb>
+			<source_loc>14917</source_loc>
+			<parent_region>4</parent_region>
+			<basic_blocks>
+				<msb>21</msb>
+				<value>32768</value>
 			</basic_blocks>
 		</region>
 	</regions>
@@ -82,7 +108,7 @@
 			<id>0</id>
 			<name>gen_busy</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14841</source_loc>
+			<source_loc>14827</source_loc>
 			<basic_blocks>
 				<msb>6</msb>
 				<value>127</value>
@@ -94,7 +120,7 @@
 			<name>loop_1</name>
 			<loop>27</loop>
 			<entry_bb>3</entry_bb>
-			<source_loc>15034</source_loc>
+			<source_loc>15020</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>6</msb>
@@ -109,7 +135,7 @@
 			<id>0</id>
 			<name>gen_unvalidated_req_method</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14842</source_loc>
+			<source_loc>14828</source_loc>
 			<basic_blocks>
 				<msb>12</msb>
 				<value>8063</value>
@@ -121,7 +147,7 @@
 			<name>loop_1</name>
 			<loop>30</loop>
 			<entry_bb>9</entry_bb>
-			<source_loc>15069</source_loc>
+			<source_loc>15055</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>12</msb>
@@ -133,7 +159,7 @@
 			<id>2</id>
 			<name>hls_reset_block_gen_unvalidated_req</name>
 			<entry_bb>7</entry_bb>
-			<source_loc>10614</source_loc>
+			<source_loc>10604</source_loc>
 			<parent_region>3</parent_region>
 			<basic_blocks>
 				<msb>12</msb>
@@ -159,7 +185,7 @@
 			<name>loop_1</name>
 			<loop>32</loop>
 			<entry_bb>1</entry_bb>
-			<source_loc>15095</source_loc>
+			<source_loc>15081</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>2</msb>
@@ -171,7 +197,7 @@
 			<id>1</id>
 			<name>gen_local_busy</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14843</source_loc>
+			<source_loc>14829</source_loc>
 			<basic_blocks>
 				<msb>2</msb>
 				<value>7</value>
@@ -185,7 +211,7 @@
 			<id>0</id>
 			<name>gen_do_stall_reg</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14844</source_loc>
+			<source_loc>14830</source_loc>
 			<basic_blocks>
 				<msb>9</msb>
 				<value>1023</value>
@@ -197,7 +223,7 @@
 			<name>loop_1</name>
 			<loop>35</loop>
 			<entry_bb>3</entry_bb>
-			<source_loc>15125</source_loc>
+			<source_loc>15111</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>9</msb>
@@ -222,7 +248,7 @@
 			<id>1</id>
 			<name>gen_do_stall_reg_full_method</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14845</source_loc>
+			<source_loc>14831</source_loc>
 			<basic_blocks>
 				<msb>10</msb>
 				<value>2015</value>
@@ -234,7 +260,7 @@
 			<name>loop_1</name>
 			<loop>38</loop>
 			<entry_bb>7</entry_bb>
-			<source_loc>15154</source_loc>
+			<source_loc>15140</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -246,7 +272,7 @@
 			<id>3</id>
 			<name>hls_reset_block_gen_do_stall_reg_full</name>
 			<entry_bb>5</entry_bb>
-			<source_loc>9792</source_loc>
+			<source_loc>9782</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -261,7 +287,7 @@
 			<id>0</id>
 			<name>gen_do_reg_data</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14846</source_loc>
+			<source_loc>14832</source_loc>
 			<basic_blocks>
 				<msb>9</msb>
 				<value>1023</value>
@@ -273,7 +299,7 @@
 			<name>loop_1</name>
 			<loop>41</loop>
 			<entry_bb>3</entry_bb>
-			<source_loc>15181</source_loc>
+			<source_loc>15167</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>9</msb>
@@ -288,7 +314,7 @@
 			<id>0</id>
 			<name>gen_do_reg_vld_method</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14847</source_loc>
+			<source_loc>14833</source_loc>
 			<basic_blocks>
 				<msb>12</msb>
 				<value>8063</value>
@@ -300,7 +326,7 @@
 			<name>loop_1</name>
 			<loop>44</loop>
 			<entry_bb>9</entry_bb>
-			<source_loc>15211</source_loc>
+			<source_loc>15197</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>12</msb>
@@ -312,7 +338,7 @@
 			<id>2</id>
 			<name>hls_reset_block_gen_do_reg_vld</name>
 			<entry_bb>7</entry_bb>
-			<source_loc>9125</source_loc>
+			<source_loc>9115</source_loc>
 			<parent_region>3</parent_region>
 			<basic_blocks>
 				<msb>12</msb>
@@ -338,7 +364,7 @@
 			<name>loop_1</name>
 			<loop>46</loop>
 			<entry_bb>1</entry_bb>
-			<source_loc>15215</source_loc>
+			<source_loc>15201</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>2</msb>
@@ -350,7 +376,7 @@
 			<id>1</id>
 			<name>gen_vld</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14848</source_loc>
+			<source_loc>14834</source_loc>
 			<basic_blocks>
 				<msb>2</msb>
 				<value>7</value>
@@ -374,7 +400,7 @@
 			<id>1</id>
 			<name>gen_unacked_req_method</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14849</source_loc>
+			<source_loc>14835</source_loc>
 			<basic_blocks>
 				<msb>10</msb>
 				<value>2015</value>
@@ -386,7 +412,7 @@
 			<name>loop_1</name>
 			<loop>49</loop>
 			<entry_bb>7</entry_bb>
-			<source_loc>15244</source_loc>
+			<source_loc>15230</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -398,7 +424,7 @@
 			<id>3</id>
 			<name>hls_reset_block_gen_unacked_req</name>
 			<entry_bb>5</entry_bb>
-			<source_loc>8629</source_loc>
+			<source_loc>8619</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -414,7 +440,7 @@
 			<name>loop_1</name>
 			<loop>51</loop>
 			<entry_bb>3</entry_bb>
-			<source_loc>15248</source_loc>
+			<source_loc>15234</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>4</msb>
@@ -426,7 +452,7 @@
 			<id>1</id>
 			<name>gen_stalling</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14850</source_loc>
+			<source_loc>14836</source_loc>
 			<basic_blocks>
 				<msb>4</msb>
 				<value>31</value>
@@ -441,7 +467,7 @@
 			<name>loop_1</name>
 			<loop>53</loop>
 			<entry_bb>3</entry_bb>
-			<source_loc>15260</source_loc>
+			<source_loc>15246</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>4</msb>
@@ -453,7 +479,7 @@
 			<id>1</id>
 			<name>gen_out_busy</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14851</source_loc>
+			<source_loc>14837</source_loc>
 			<basic_blocks>
 				<msb>4</msb>
 				<value>31</value>
@@ -468,7 +494,7 @@
 			<name>loop_1</name>
 			<loop>55</loop>
 			<entry_bb>1</entry_bb>
-			<source_loc>15266</source_loc>
+			<source_loc>15252</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>2</msb>
@@ -480,7 +506,7 @@
 			<id>1</id>
 			<name>gen_active</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14852</source_loc>
+			<source_loc>14838</source_loc>
 			<basic_blocks>
 				<msb>2</msb>
 				<value>7</value>
@@ -504,7 +530,7 @@
 			<id>1</id>
 			<name>gen_prev_trig_reg_method</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14853</source_loc>
+			<source_loc>14839</source_loc>
 			<basic_blocks>
 				<msb>10</msb>
 				<value>2015</value>
@@ -516,7 +542,7 @@
 			<name>loop_1</name>
 			<loop>58</loop>
 			<entry_bb>7</entry_bb>
-			<source_loc>15297</source_loc>
+			<source_loc>15283</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -528,7 +554,7 @@
 			<id>3</id>
 			<name>hls_reset_block_gen_prev_trig_reg</name>
 			<entry_bb>5</entry_bb>
-			<source_loc>7944</source_loc>
+			<source_loc>7934</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -553,7 +579,7 @@
 			<id>1</id>
 			<name>gen_next_trig_req_reg_method</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14854</source_loc>
+			<source_loc>14840</source_loc>
 			<basic_blocks>
 				<msb>10</msb>
 				<value>2015</value>
@@ -565,7 +591,7 @@
 			<name>loop_1</name>
 			<loop>61</loop>
 			<entry_bb>7</entry_bb>
-			<source_loc>15328</source_loc>
+			<source_loc>15314</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -577,7 +603,7 @@
 			<id>3</id>
 			<name>hls_reset_block_gen_next_trig_req_reg</name>
 			<entry_bb>5</entry_bb>
-			<source_loc>7586</source_loc>
+			<source_loc>7576</source_loc>
 			<parent_region>0</parent_region>
 			<basic_blocks>
 				<msb>10</msb>
@@ -593,7 +619,7 @@
 			<name>loop_1</name>
 			<loop>63</loop>
 			<entry_bb>1</entry_bb>
-			<source_loc>15333</source_loc>
+			<source_loc>15319</source_loc>
 			<parent_region>1</parent_region>
 			<basic_blocks>
 				<msb>2</msb>
@@ -605,7 +631,7 @@
 			<id>1</id>
 			<name>gen_next_trig_reg</name>
 			<entry_bb>0</entry_bb>
-			<source_loc>14855</source_loc>
+			<source_loc>14841</source_loc>
 			<basic_blocks>
 				<msb>2</msb>
 				<value>7</value>
@@ -617,6 +643,14 @@
 		<thread>FirThread</thread>
 		<loop>
 			<id>24</id>
+			<loop>
+				<id>7</id>
+				<loop_iterations>7</loop_iterations>
+			</loop>
+			<loop>
+				<id>17</id>
+				<loop_iterations>8</loop_iterations>
+			</loop>
 		</loop>
 	</loop>
 	<loop>
@@ -724,6 +758,14 @@
 			<id>63</id>
 		</loop>
 	</loop>
+	<array>
+		<name>shift_reg</name>
+		<source_loc>2469</source_loc>
+		<datatype>
+			<array>8</array>
+			<datatype W="8">sc_uint</datatype>
+		</datatype>
+	</array>
 	<port>
 		<name>clk</name>
 		<source_loc>1057</source_loc>
@@ -739,85 +781,85 @@
 	</port>
 	<port>
 		<name>coeffs_table_0</name>
-		<source_loc>15767</source_loc>
+		<source_loc>15323</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_1</name>
-		<source_loc>15768</source_loc>
+		<source_loc>15325</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_2</name>
-		<source_loc>15769</source_loc>
+		<source_loc>15327</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_3</name>
-		<source_loc>15770</source_loc>
+		<source_loc>15329</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_4</name>
-		<source_loc>15771</source_loc>
+		<source_loc>15331</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_5</name>
-		<source_loc>15772</source_loc>
+		<source_loc>15333</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_6</name>
-		<source_loc>15773</source_loc>
+		<source_loc>15335</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>coeffs_table_7</name>
-		<source_loc>15774</source_loc>
+		<source_loc>15337</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>din_busy</name>
-		<source_loc>14664</source_loc>
+		<source_loc>14650</source_loc>
 		<direction>out</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>din_vld</name>
-		<source_loc>14663</source_loc>
+		<source_loc>14649</source_loc>
 		<direction>in</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>din_data</name>
-		<source_loc>14662</source_loc>
+		<source_loc>14648</source_loc>
 		<direction>in</direction>
 		<datatype W="8">sc_uint</datatype>
 	</port>
 	<port>
 		<name>dout_busy</name>
-		<source_loc>14661</source_loc>
+		<source_loc>14647</source_loc>
 		<direction>in</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>dout_vld</name>
-		<source_loc>14660</source_loc>
+		<source_loc>14646</source_loc>
 		<direction>out</direction>
 		<datatype W="1">bool</datatype>
 	</port>
 	<port>
 		<name>dout_data</name>
-		<source_loc>14659</source_loc>
+		<source_loc>14645</source_loc>
 		<direction>out</direction>
 		<datatype W="11">sc_uint</datatype>
 	</port>
@@ -825,85 +867,73 @@
 		<thread>FirThread</thread>
 		<port>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
-			<name>coeffs_table_0</name>
-			<source_loc>15767</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-		</port>
-		<port>
-			<name>coeffs_table_1</name>
-			<source_loc>15768</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-		</port>
-		<port>
-			<name>coeffs_table_2</name>
-			<source_loc>15769</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-		</port>
-		<port>
-			<name>coeffs_table_3</name>
-			<source_loc>15770</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-		</port>
-		<port>
-			<name>coeffs_table_4</name>
-			<source_loc>15771</source_loc>
-			<direction>in</direction>
-			<datatype W="8">sc_uint</datatype>
-		</port>
-		<port>
-			<name>coeffs_table_5</name>
-			<source_loc>15772</source_loc>
+			<name>coeffs_table_7</name>
+			<source_loc>15337</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
 			<name>coeffs_table_6</name>
-			<source_loc>15773</source_loc>
+			<source_loc>15335</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
-			<name>coeffs_table_7</name>
-			<source_loc>15774</source_loc>
+			<name>coeffs_table_5</name>
+			<source_loc>15333</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
-			<name>din_m_stall_reg</name>
-			<source_loc>14701</source_loc>
+			<name>coeffs_table_4</name>
+			<source_loc>15331</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>coeffs_table_3</name>
+			<source_loc>15329</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>coeffs_table_2</name>
+			<source_loc>15327</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>coeffs_table_1</name>
+			<source_loc>15325</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>coeffs_table_0</name>
+			<source_loc>15323</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
 			<name>din_data</name>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
-			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-		</port>
-		<port>
 			<name>din_m_data_is_invalid</name>
-			<source_loc>14706</source_loc>
+			<source_loc>14692</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -921,25 +951,25 @@
 		</port>
 		<port>
 			<name>dout_data</name>
-			<source_loc>14659</source_loc>
+			<source_loc>14645</source_loc>
 			<direction>out</direction>
 			<datatype W="11">sc_uint</datatype>
 		</port>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -948,55 +978,55 @@
 		<thread>gen_busy</thread>
 		<port>
 			<name>din_m_vld_reg</name>
-			<source_loc>14728</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-		</port>
-		<port>
-			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
-			<direction>in</direction>
-			<datatype W="1">bool</datatype>
-		</port>
-		<port>
-			<name>din_m_unvalidated_req</name>
-			<source_loc>14729</source_loc>
+			<source_loc>14714</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>din_m_busy_req_0</name>
+			<source_loc>14678</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>din_m_unvalidated_req</name>
+			<source_loc>14715</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_data_is_invalid</name>
-			<source_loc>14706</source_loc>
+			<source_loc>14692</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_busy</name>
-			<source_loc>14664</source_loc>
+			<source_loc>14650</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1011,13 +1041,13 @@
 		</port>
 		<port>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1029,7 +1059,7 @@
 		</port>
 		<port>
 			<name>din_m_unvalidated_req</name>
-			<source_loc>14729</source_loc>
+			<source_loc>14715</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1047,25 +1077,25 @@
 		</port>
 		<port>
 			<name>din_data</name>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1074,12 +1104,6 @@
 			<source_loc>1058</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
-		</port>
-		<port>
-			<name>din_m_stall_reg</name>
-			<source_loc>14701</source_loc>
-			<direction>out</direction>
-			<datatype W="8">sc_uint</datatype>
 		</port>
 	</ios>
 	<ios>
@@ -1092,13 +1116,13 @@
 		</port>
 		<port>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1110,7 +1134,7 @@
 		</port>
 		<port>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1125,13 +1149,13 @@
 		</port>
 		<port>
 			<name>din_data</name>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<direction>in</direction>
 			<datatype W="8">sc_uint</datatype>
 		</port>
 		<port>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1152,13 +1176,13 @@
 		</port>
 		<port>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1170,7 +1194,7 @@
 		</port>
 		<port>
 			<name>din_m_vld_reg</name>
-			<source_loc>14728</source_loc>
+			<source_loc>14714</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1179,19 +1203,19 @@
 		<thread>gen_vld</thread>
 		<port>
 			<name>dout_m_unacked_req</name>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_m_req_active</name>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_vld</name>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1206,7 +1230,7 @@
 		</port>
 		<port>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1218,7 +1242,7 @@
 		</port>
 		<port>
 			<name>dout_m_unacked_req</name>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1227,19 +1251,19 @@
 		<thread>gen_stalling</thread>
 		<port>
 			<name>dout_busy</name>
-			<source_loc>14661</source_loc>
+			<source_loc>14647</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_vld</name>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1248,7 +1272,7 @@
 		<thread>gen_out_busy</thread>
 		<port>
 			<name>dout_busy</name>
-			<source_loc>14661</source_loc>
+			<source_loc>14647</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1257,19 +1281,19 @@
 		<thread>gen_active</thread>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_m_req_m_prev_trig_req</name>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_m_req_active</name>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1284,7 +1308,7 @@
 		</port>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1296,7 +1320,7 @@
 		</port>
 		<port>
 			<name>dout_m_req_m_prev_trig_req</name>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1311,7 +1335,7 @@
 		</port>
 		<port>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1326,13 +1350,13 @@
 		<thread>gen_next_trig_reg</thread>
 		<port>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<direction>in</direction>
 			<datatype W="1">bool</datatype>
 		</port>
 		<port>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<direction>out</direction>
 			<datatype W="1">bool</datatype>
 		</port>
@@ -1343,7 +1367,7 @@
 			<id>0</id>
 			<op_kind>output</op_kind>
 			<object>din_m_busy_req_0</object>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1356,7 +1380,7 @@
 			<id>2</id>
 			<op_kind>output</op_kind>
 			<object>din_m_stalling</object>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1369,238 +1393,273 @@
 			<id>4</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_req_m_trig_req</object>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
+			<in_widths>1,1</in_widths>
+		</op>
+		<op>
+			<id>5</id>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>6</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>1,1</in_widths>
+		</op>
+		<op>
+			<id>7</id>
+			<op_kind>const</op_kind>
+			<value>2</value>
+			<out_widths>2</out_widths>
 		</op>
 		<op>
 			<id>8</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>2,1</in_widths>
+		</op>
+		<op>
+			<id>9</id>
+			<op_kind>const</op_kind>
+			<value>3</value>
+			<out_widths>2</out_widths>
 		</op>
 		<op>
 			<id>10</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>2,1</in_widths>
+		</op>
+		<op>
+			<id>11</id>
+			<op_kind>const</op_kind>
+			<value>4</value>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>12</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3,1</in_widths>
+		</op>
+		<op>
+			<id>13</id>
+			<op_kind>const</op_kind>
+			<value>5</value>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>14</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3,1</in_widths>
+		</op>
+		<op>
+			<id>15</id>
+			<op_kind>const</op_kind>
+			<value>6</value>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>16</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3,1</in_widths>
+		</op>
+		<op>
+			<id>17</id>
+			<op_kind>const</op_kind>
+			<value>7</value>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>18</id>
-			<op_kind>mux</op_kind>
-			<in_widths>8,1</in_widths>
-			<out_widths>8</out_widths>
-		</op>
-		<op>
-			<id>19</id>
-			<op_kind>output</op_kind>
-			<object>din_m_busy_req_0</object>
-			<source_loc>14692</source_loc>
-			<in_widths>1,1</in_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3,1</in_widths>
 		</op>
 		<op>
 			<id>20</id>
-			<op_kind>output</op_kind>
-			<object>stall0</object>
-			<source_loc>2566</source_loc>
-			<in_widths>1,1</in_widths>
+			<op_kind>mux</op_kind>
+			<in_widths>3,1</in_widths>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>21</id>
-			<op_kind>input</op_kind>
-			<object>din_m_data_is_invalid</object>
-			<source_loc>14706</source_loc>
-			<out_widths>1</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3,8</in_widths>
 		</op>
 		<op>
 			<id>22</id>
-			<op_kind>output</op_kind>
-			<object>din_m_busy_req_0</object>
-			<source_loc>14692</source_loc>
-			<in_widths>1,1</in_widths>
+			<op_kind>add</op_kind>
+			<in_widths>3,1</in_widths>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>23</id>
-			<op_kind>input</op_kind>
-			<object>din_m_stall_reg_full</object>
-			<source_loc>14709</source_loc>
-			<out_widths>1</out_widths>
+			<op_kind>array_read</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3</in_widths>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>24</id>
-			<op_kind>input</op_kind>
-			<object>din_data</object>
-			<source_loc>14662</source_loc>
-			<out_widths>8</out_widths>
+			<op_kind>add</op_kind>
+			<in_widths>3,1</in_widths>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>25</id>
-			<op_kind>input</op_kind>
-			<object>din_m_stall_reg</object>
-			<source_loc>14701</source_loc>
-			<out_widths>8</out_widths>
+			<op_kind>lt</op_kind>
+			<in_widths>3,3</in_widths>
+			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>26</id>
-			<op_kind>mux</op_kind>
-			<in_widths>1,8,8</in_widths>
-			<out_widths>8</out_widths>
+			<op_kind>branch</op_kind>
+			<in_widths>1</in_widths>
 		</op>
 		<op>
 			<id>27</id>
-			<op_kind>input</op_kind>
-			<object>coeffs_table_7</object>
-			<source_loc>15774</source_loc>
-			<out_widths>8</out_widths>
+			<op_kind>output</op_kind>
+			<object>din_m_busy_req_0</object>
+			<source_loc>14678</source_loc>
+			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>28</id>
-			<op_kind>input</op_kind>
-			<object>coeffs_table_6</object>
-			<source_loc>15773</source_loc>
-			<out_widths>8</out_widths>
+			<op_kind>output</op_kind>
+			<object>stall0</object>
+			<source_loc>2556</source_loc>
+			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>29</id>
 			<op_kind>input</op_kind>
-			<object>coeffs_table_5</object>
-			<source_loc>15772</source_loc>
-			<out_widths>8</out_widths>
+			<object>din_m_data_is_invalid</object>
+			<source_loc>14692</source_loc>
+			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>30</id>
-			<op_kind>input</op_kind>
-			<object>coeffs_table_4</object>
-			<source_loc>15771</source_loc>
-			<out_widths>8</out_widths>
+			<op_kind>output</op_kind>
+			<object>din_m_busy_req_0</object>
+			<source_loc>14678</source_loc>
+			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>31</id>
 			<op_kind>input</op_kind>
-			<object>coeffs_table_3</object>
-			<source_loc>15770</source_loc>
+			<object>din_data</object>
+			<source_loc>14648</source_loc>
 			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>32</id>
-			<op_kind>input</op_kind>
-			<object>coeffs_table_2</object>
-			<source_loc>15769</source_loc>
-			<out_widths>8</out_widths>
+			<op_kind>array_write</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3,8</in_widths>
 		</op>
 		<op>
 			<id>33</id>
 			<op_kind>input</op_kind>
-			<object>coeffs_table_1</object>
-			<source_loc>15768</source_loc>
+			<object>coeffs_table_0</object>
+			<source_loc>15323</source_loc>
 			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>34</id>
 			<op_kind>input</op_kind>
-			<object>coeffs_table_0</object>
-			<source_loc>15767</source_loc>
+			<object>coeffs_table_1</object>
+			<source_loc>15325</source_loc>
 			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>35</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>input</op_kind>
+			<object>coeffs_table_2</object>
+			<source_loc>15327</source_loc>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>36</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>input</op_kind>
+			<object>coeffs_table_3</object>
+			<source_loc>15329</source_loc>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>37</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>input</op_kind>
+			<object>coeffs_table_4</object>
+			<source_loc>15331</source_loc>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>38</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>input</op_kind>
+			<object>coeffs_table_5</object>
+			<source_loc>15333</source_loc>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>39</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>input</op_kind>
+			<object>coeffs_table_6</object>
+			<source_loc>15335</source_loc>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>40</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
-		</op>
-		<op>
-			<id>41</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>input</op_kind>
+			<object>coeffs_table_7</object>
+			<source_loc>15337</source_loc>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>42</id>
-			<op_kind>mul</op_kind>
-			<in_widths>8,8</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>mux</op_kind>
+			<in_widths>4,1</in_widths>
+			<out_widths>4</out_widths>
 		</op>
 		<op>
 			<id>43</id>
-			<op_kind>add</op_kind>
-			<in_widths>11,11</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>array_read</op_kind>
+			<object>shift_reg</object>
+			<source_loc>2469</source_loc>
+			<in_widths>3</in_widths>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>44</id>
-			<op_kind>add</op_kind>
-			<in_widths>11,11</in_widths>
-			<out_widths>11</out_widths>
+			<op_kind>mux</op_kind>
+			<in_widths>3,8,8,8,8,8,8,8,8</in_widths>
+			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>45</id>
-			<op_kind>add</op_kind>
-			<in_widths>11,11</in_widths>
-			<out_widths>11</out_widths>
-		</op>
-		<op>
-			<id>46</id>
-			<op_kind>add</op_kind>
-			<in_widths>11,11</in_widths>
+			<op_kind>mul</op_kind>
+			<in_widths>8,8</in_widths>
 			<out_widths>11</out_widths>
 		</op>
 		<op>
 			<id>47</id>
-			<op_kind>add</op_kind>
-			<in_widths>11,11</in_widths>
+			<op_kind>mux</op_kind>
+			<in_widths>11,1</in_widths>
 			<out_widths>11</out_widths>
 		</op>
 		<op>
@@ -1612,42 +1671,47 @@
 		<op>
 			<id>49</id>
 			<op_kind>add</op_kind>
-			<in_widths>11,11</in_widths>
-			<out_widths>11</out_widths>
+			<in_widths>3,1</in_widths>
+			<out_widths>4</out_widths>
 		</op>
 		<op>
 			<id>50</id>
-			<op_kind>output</op_kind>
-			<object>dout_data</object>
-			<source_loc>14659</source_loc>
-			<in_widths>7,7</in_widths>
+			<op_kind>branch</op_kind>
+			<in_widths>1</in_widths>
 		</op>
 		<op>
 			<id>51</id>
 			<op_kind>output</op_kind>
-			<object>dout_m_req_m_trig_req</object>
-			<source_loc>14697</source_loc>
-			<in_widths>1,1</in_widths>
+			<object>dout_data</object>
+			<source_loc>14645</source_loc>
+			<in_widths>7,7</in_widths>
 		</op>
 		<op>
 			<id>52</id>
-			<op_kind>input</op_kind>
-			<object>dout_m_req_m_next_trig_req</object>
-			<source_loc>14726</source_loc>
-			<out_widths>1</out_widths>
-		</op>
-		<op>
-			<id>53</id>
 			<op_kind>output</op_kind>
-			<object>stall0</object>
-			<source_loc>2566</source_loc>
+			<object>dout_m_req_m_trig_req</object>
+			<source_loc>14683</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
+			<id>53</id>
+			<op_kind>input</op_kind>
+			<object>dout_m_req_m_next_trig_req</object>
+			<source_loc>14712</source_loc>
+			<out_widths>1</out_widths>
+		</op>
+		<op>
 			<id>54</id>
+			<op_kind>output</op_kind>
+			<object>stall0</object>
+			<source_loc>2556</source_loc>
+			<in_widths>1,1</in_widths>
+		</op>
+		<op>
+			<id>55</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_stalling</object>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 	</operations>
@@ -1657,63 +1721,56 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>din_vld</object>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>1</id>
 			<op_kind>input</op_kind>
-			<object>din_m_stall_reg_full</object>
-			<source_loc>14709</source_loc>
+			<object>din_m_unvalidated_req</object>
+			<source_loc>14715</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>2</id>
 			<op_kind>input</op_kind>
-			<object>din_m_unvalidated_req</object>
-			<source_loc>14729</source_loc>
+			<object>din_m_busy_req_0</object>
+			<source_loc>14678</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>3</id>
-			<op_kind>input</op_kind>
-			<object>din_m_busy_req_0</object>
-			<source_loc>14692</source_loc>
-			<out_widths>1</out_widths>
+			<op_kind>dpopt</op_kind>
+			<label>dpopt(gen_busy_r)</label>
+			<in_widths>1,1,1</in_widths>
+			<out_widths>3</out_widths>
 		</op>
 		<op>
 			<id>4</id>
-			<op_kind>dpopt</op_kind>
-			<label>dpopt(gen_busy_r)</label>
-			<in_widths>1,1,1,1</in_widths>
-			<out_widths>3</out_widths>
+			<op_kind>output</op_kind>
+			<object>din_m_busy_internal</object>
+			<source_loc>14717</source_loc>
+			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>5</id>
 			<op_kind>output</op_kind>
-			<object>din_m_busy_internal</object>
-			<source_loc>14731</source_loc>
+			<object>din_busy</object>
+			<source_loc>14650</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>6</id>
 			<op_kind>output</op_kind>
-			<object>din_busy</object>
-			<source_loc>14664</source_loc>
+			<object>din_m_data_is_valid</object>
+			<source_loc>14693</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
 			<id>7</id>
 			<op_kind>output</op_kind>
-			<object>din_m_data_is_valid</object>
-			<source_loc>14707</source_loc>
-			<in_widths>1,1</in_widths>
-		</op>
-		<op>
-			<id>8</id>
-			<op_kind>output</op_kind>
 			<object>din_m_data_is_invalid</object>
-			<source_loc>14706</source_loc>
+			<source_loc>14692</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 	</operations>
@@ -1723,7 +1780,7 @@
 			<id>0</id>
 			<op_kind>output</op_kind>
 			<object>din_m_unvalidated_req</object>
-			<source_loc>14729</source_loc>
+			<source_loc>14715</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1742,21 +1799,21 @@
 			<id>4</id>
 			<op_kind>input</op_kind>
 			<object>din_m_busy_req_0</object>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>5</id>
 			<op_kind>input</op_kind>
 			<object>din_vld</object>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>6</id>
 			<op_kind>output</op_kind>
 			<object>din_m_unvalidated_req</object>
-			<source_loc>14729</source_loc>
+			<source_loc>14715</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1775,21 +1832,21 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>din_m_stall_reg_full</object>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>1</id>
 			<op_kind>input</op_kind>
 			<object>din_m_stalling</object>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>2</id>
 			<op_kind>input</op_kind>
 			<object>din_m_data_is_valid</object>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
@@ -1831,18 +1888,11 @@
 			<id>9</id>
 			<op_kind>input</op_kind>
 			<object>din_data</object>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<out_widths>8</out_widths>
 		</op>
 		<op>
 			<id>10</id>
-			<op_kind>output</op_kind>
-			<object>din_m_stall_reg</object>
-			<source_loc>14701</source_loc>
-			<in_widths>8,8</in_widths>
-		</op>
-		<op>
-			<id>11</id>
 			<op_kind>mux</op_kind>
 			<in_widths>8,8</in_widths>
 			<out_widths>8</out_widths>
@@ -1854,7 +1904,7 @@
 			<id>0</id>
 			<op_kind>output</op_kind>
 			<object>din_m_stall_reg_full</object>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1867,21 +1917,21 @@
 			<id>2</id>
 			<op_kind>input</op_kind>
 			<object>din_m_stalling</object>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>3</id>
 			<op_kind>input</op_kind>
 			<object>din_m_data_is_valid</object>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>4</id>
 			<op_kind>output</op_kind>
 			<object>din_m_stall_reg_full</object>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1897,7 +1947,7 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>din_m_busy_internal</object>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
@@ -1921,7 +1971,7 @@
 			<id>4</id>
 			<op_kind>input</op_kind>
 			<object>din_data</object>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<out_widths>8</out_widths>
 		</op>
 		<op>
@@ -1937,7 +1987,7 @@
 			<id>0</id>
 			<op_kind>output</op_kind>
 			<object>din_m_vld_reg</object>
-			<source_loc>14728</source_loc>
+			<source_loc>14714</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1956,21 +2006,21 @@
 			<id>4</id>
 			<op_kind>input</op_kind>
 			<object>din_m_busy_internal</object>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>5</id>
 			<op_kind>input</op_kind>
 			<object>din_vld</object>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>6</id>
 			<op_kind>output</op_kind>
 			<object>din_m_vld_reg</object>
-			<source_loc>14728</source_loc>
+			<source_loc>14714</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -1986,21 +2036,21 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_req_active</object>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>1</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_unacked_req</object>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>2</id>
 			<op_kind>output</op_kind>
 			<object>dout_vld</object>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -2016,7 +2066,7 @@
 			<id>0</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_unacked_req</object>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -2029,14 +2079,14 @@
 			<id>2</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_stalling</object>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>3</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_unacked_req</object>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 	</operations>
@@ -2046,21 +2096,21 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>dout_vld</object>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>1</id>
 			<op_kind>input</op_kind>
 			<object>dout_busy</object>
-			<source_loc>14661</source_loc>
+			<source_loc>14647</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>2</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_stalling</object>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -2079,21 +2129,21 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_req_m_prev_trig_req</object>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>1</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_req_m_trig_req</object>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>2</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_req_active</object>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -2109,7 +2159,7 @@
 			<id>0</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_req_m_prev_trig_req</object>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -2122,14 +2172,14 @@
 			<id>2</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_req_m_trig_req</object>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>3</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_req_m_prev_trig_req</object>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 	</operations>
@@ -2145,7 +2195,7 @@
 			<id>1</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_req_m_next_trig_req</object>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 	</operations>
@@ -2155,14 +2205,14 @@
 			<id>0</id>
 			<op_kind>input</op_kind>
 			<object>dout_m_req_m_trig_req</object>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<out_widths>1</out_widths>
 		</op>
 		<op>
 			<id>1</id>
 			<op_kind>output</op_kind>
 			<object>dout_m_req_m_next_trig_req</object>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<in_widths>1,1</in_widths>
 		</op>
 		<op>
@@ -2175,7 +2225,7 @@
 	<cdfg>
 		<thread>FirThread</thread>
 		<control_flow>
-			<state_count>19</state_count>
+			<state_count>22</state_count>
 			<bb>
 				<id>0</id>
 				<loop>1</loop>
@@ -2192,7 +2242,7 @@
 			<bb>
 				<id>2</id>
 				<loop>1</loop>
-				<prim_region>1</prim_region>
+				<prim_region>0</prim_region>
 				<succ>3</succ>
 			</bb>
 			<bb>
@@ -2215,7 +2265,7 @@
 			<bb>
 				<id>5</id>
 				<loop>1</loop>
-				<prim_region>1</prim_region>
+				<prim_region>0</prim_region>
 				<succ>6</succ>
 			</bb>
 			<bb>
@@ -2227,77 +2277,91 @@
 			</bb>
 			<bb>
 				<id>7</id>
-				<loop>24</loop>
-				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>0</prim_region>
-				<succ>8</succ>
+				<loop>7</loop>
+				<loop_header/>
+				<prim_region>6</prim_region>
+				<succ>
+					<cond>14867,26</cond>
+					<id>7</id>
+					<value>1</value>
+				</succ>
+				<succ>
+					<cond>14867,26</cond>
+					<id>8</id>
+					<value>0</value>
+				</succ>
 			</bb>
 			<bb>
 				<id>8</id>
 				<loop>24</loop>
 				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>0</prim_region>
+				<prim_region>1</prim_region>
 				<succ>9</succ>
 			</bb>
 			<bb>
 				<id>9</id>
 				<loop>24</loop>
-				<cycle_id>2</cycle_id>
-				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>11661</source_loc>
-				<state_name>PROTO_2</state_name>
-				<prim_region>0</prim_region>
+				<protocol_clk_edges>0</protocol_clk_edges>
+				<prim_region>1</prim_region>
 				<succ>10</succ>
 			</bb>
 			<bb>
 				<id>10</id>
 				<loop>24</loop>
-				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>0</prim_region>
+				<cycle_id>2</cycle_id>
+				<protocol_clk_edges>1</protocol_clk_edges>
+				<source_loc>11647</source_loc>
+				<state_name>PROTO_2</state_name>
+				<prim_region>1</prim_region>
 				<succ>11</succ>
 			</bb>
 			<bb>
 				<id>11</id>
 				<loop>24</loop>
 				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>0</prim_region>
+				<prim_region>1</prim_region>
 				<succ>12</succ>
 			</bb>
 			<bb>
 				<id>12</id>
 				<loop>24</loop>
 				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>0</prim_region>
+				<prim_region>1</prim_region>
 				<succ>13</succ>
 			</bb>
 			<bb>
 				<id>13</id>
 				<loop>24</loop>
-				<prim_region>4</prim_region>
+				<protocol_clk_edges>0</protocol_clk_edges>
+				<prim_region>1</prim_region>
 				<succ>14</succ>
 			</bb>
 			<bb>
 				<id>14</id>
 				<loop>24</loop>
-				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>5</prim_region>
+				<prim_region>4</prim_region>
 				<succ>15</succ>
 			</bb>
 			<bb>
 				<id>15</id>
-				<loop>24</loop>
-				<protocol_clk_edges>0</protocol_clk_edges>
-				<prim_region>5</prim_region>
-				<succ>16</succ>
+				<loop>17</loop>
+				<loop_header/>
+				<prim_region>7</prim_region>
+				<succ>
+					<cond>14920,50</cond>
+					<id>16</id>
+					<value>-1</value>
+				</succ>
+				<succ>
+					<cond>14920,50</cond>
+					<id>15</id>
+					<value>0</value>
+				</succ>
 			</bb>
 			<bb>
 				<id>16</id>
 				<loop>24</loop>
-				<cycle_id>3</cycle_id>
-				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>12031</source_loc>
-				<state_name>PROTO_3</state_name>
-				<prim_region>5</prim_region>
+				<prim_region>4</prim_region>
 				<succ>17</succ>
 			</bb>
 			<bb>
@@ -2310,6 +2374,30 @@
 			<bb>
 				<id>18</id>
 				<loop>24</loop>
+				<protocol_clk_edges>0</protocol_clk_edges>
+				<prim_region>5</prim_region>
+				<succ>19</succ>
+			</bb>
+			<bb>
+				<id>19</id>
+				<loop>24</loop>
+				<cycle_id>3</cycle_id>
+				<protocol_clk_edges>1</protocol_clk_edges>
+				<source_loc>12017</source_loc>
+				<state_name>PROTO_3</state_name>
+				<prim_region>5</prim_region>
+				<succ>20</succ>
+			</bb>
+			<bb>
+				<id>20</id>
+				<loop>24</loop>
+				<protocol_clk_edges>0</protocol_clk_edges>
+				<prim_region>5</prim_region>
+				<succ>21</succ>
+			</bb>
+			<bb>
+				<id>21</id>
+				<loop>24</loop>
 				<prim_region>4</prim_region>
 				<succ>6</succ>
 			</bb>
@@ -2317,270 +2405,352 @@
 		<dataflow>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>11478,0,3,0</sink>
+				<sink>11468,0,3,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>11478,0,3,1</sink>
+				<sink>11468,0,3,1</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>3,0</const_ref>
-				<sink>11489,2,3,0</sink>
+				<sink>11479,2,3,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>3,0</const_ref>
-				<sink>11489,2,3,1</sink>
+				<sink>11479,2,3,1</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>3,0</const_ref>
-				<sink>11523,4,3,0</sink>
+				<sink>11513,4,3,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>3,0</const_ref>
-				<sink>11523,4,3,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>14997,8,6,0</src>
-				<sink>14997,6,6,0</sink>
-				<lcd>24</lcd>
+				<sink>11513,4,3,1</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>3,0</const_ref>
-				<sink>14997,6,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>14997,10,6,0</src>
-				<sink>14997,8,6,0</sink>
-				<lcd>24</lcd>
+				<sink>14356,5,5,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>3,0</const_ref>
-				<sink>14997,8,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>14997,12,6,0</src>
-				<sink>14997,10,6,0</sink>
-				<lcd>24</lcd>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>14997,10,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>14997,14,6,0</src>
-				<sink>14997,12,6,0</sink>
-				<lcd>24</lcd>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>14997,12,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>14997,16,6,0</src>
-				<sink>14997,14,6,0</sink>
-				<lcd>24</lcd>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>14997,14,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>14997,18,6,0</src>
-				<sink>14997,16,6,0</sink>
-				<lcd>24</lcd>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>14997,16,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>15775,26,12,0</src>
-				<sink>14997,18,6,0</sink>
-				<lcd>24</lcd>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>14997,18,6,1</sink>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>11602,19,7,0</sink>
-			</df_arc>
-			<df_arc>
-				<const_ref>3,0</const_ref>
-				<sink>11602,19,7,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>11655,21,9,0</src>
-				<sink>14894,20,9,0</sink>
-			</df_arc>
-			<df_arc>
-				<src>11655,21,9,0</src>
-				<sink>14894,20,9,1</sink>
+				<sink>14356,5,5,1</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>11691,22,10,0</sink>
+				<sink>14356,6,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,6,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,5,5,0</src>
+				<sink>14356,6,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<const_ref>7,2</const_ref>
+				<sink>14356,8,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,8,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,6,5,0</src>
+				<sink>14356,8,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<const_ref>9,3</const_ref>
+				<sink>14356,10,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,10,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,8,5,0</src>
+				<sink>14356,10,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<const_ref>11,4</const_ref>
+				<sink>14356,12,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,12,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,10,5,0</src>
+				<sink>14356,12,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<const_ref>13,5</const_ref>
+				<sink>14356,14,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,14,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,12,5,0</src>
+				<sink>14356,14,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<const_ref>15,6</const_ref>
+				<sink>14356,16,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,16,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,14,5,0</src>
+				<sink>14356,16,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<const_ref>17,7</const_ref>
+				<sink>14356,18,5,0</sink>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14356,18,5,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14356,16,5,0</src>
+				<sink>14356,18,5,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<src>2514,24,7,0</src>
+				<sink>14864,20,7,0</sink>
+				<lcd>7</lcd>
+			</df_arc>
+			<df_arc>
+				<const_ref>3,0</const_ref>
+				<sink>14864,20,7,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14864,20,7,0</src>
+				<sink>14360,21,7,0</sink>
+			</df_arc>
+			<df_arc>
+				<src>14363,23,7,0</src>
+				<sink>14360,21,7,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>14391,32,14,0</src>
+				<sink>14360,21,7,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<src>14356,18,5,0</src>
+				<sink>14360,21,7,2</sink>
+				<order_only/>
+			</df_arc>
+			<df_arc>
+				<src>14864,20,7,0</src>
+				<sink>2511,22,7,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>11691,22,10,1</sink>
+				<sink>2511,22,7,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>11721,23,12,0</src>
-				<sink>15775,26,12,0</sink>
+				<src>2511,22,7,0</src>
+				<sink>14363,23,7,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>11723,25,12,0</src>
-				<sink>15775,26,12,1</sink>
+				<src>14391,32,14,0</src>
+				<sink>14363,23,7,1</sink>
+				<order_only/>
 			</df_arc>
 			<df_arc>
-				<src>11733,24,12,0</src>
-				<sink>15775,26,12,2</sink>
+				<src>14360,21,7,0</src>
+				<sink>14363,23,7,1</sink>
+				<order_only/>
 			</df_arc>
 			<df_arc>
-				<src>15701,27,13,0</src>
-				<sink>15697,35,13,0</sink>
+				<src>14356,18,5,0</src>
+				<sink>14363,23,7,1</sink>
+				<order_only/>
 			</df_arc>
 			<df_arc>
-				<src>15775,26,12,0</src>
-				<sink>15697,35,13,1</sink>
+				<src>14864,20,7,0</src>
+				<sink>2514,24,7,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15677,28,13,0</src>
-				<sink>15673,36,13,0</sink>
+				<const_ref>1,1</const_ref>
+				<sink>2514,24,7,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>14997,18,6,0</src>
-				<sink>15673,36,13,1</sink>
+				<src>2514,24,7,0</src>
+				<sink>2504,25,7,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15653,29,13,0</src>
-				<sink>15649,37,13,0</sink>
+				<const_ref>17,7</const_ref>
+				<sink>2504,25,7,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>14997,16,6,0</src>
-				<sink>15649,37,13,1</sink>
+				<src>2504,25,7,0</src>
+				<sink>14867,26,7,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15629,30,13,0</src>
-				<sink>15625,38,13,0</sink>
+				<const_ref>3,0</const_ref>
+				<sink>11588,27,8,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>14997,14,6,0</src>
-				<sink>15625,38,13,1</sink>
+				<const_ref>3,0</const_ref>
+				<sink>11588,27,8,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15605,31,13,0</src>
-				<sink>15601,39,13,0</sink>
+				<src>11641,29,10,0</src>
+				<sink>14880,28,10,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>14997,12,6,0</src>
-				<sink>15601,39,13,1</sink>
+				<src>11641,29,10,0</src>
+				<sink>14880,28,10,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15581,32,13,0</src>
-				<sink>15577,40,13,0</sink>
+				<const_ref>1,1</const_ref>
+				<sink>11677,30,11,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>14997,10,6,0</src>
-				<sink>15577,40,13,1</sink>
+				<const_ref>1,1</const_ref>
+				<sink>11677,30,11,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15557,33,13,0</src>
-				<sink>15553,41,13,0</sink>
+				<const_ref>17,7</const_ref>
+				<sink>14391,32,14,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>14997,8,6,0</src>
-				<sink>15553,41,13,1</sink>
+				<src>11732,31,13,0</src>
+				<sink>14391,32,14,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15748,34,13,0</src>
-				<sink>15744,42,13,0</sink>
+				<src>14360,21,7,0</src>
+				<sink>14391,32,14,2</sink>
+				<order_only/>
 			</df_arc>
 			<df_arc>
-				<src>14997,6,6,0</src>
-				<sink>15744,42,13,1</sink>
+				<src>2540,49,15,0</src>
+				<sink>14917,42,15,0</sink>
+				<lcd>17</lcd>
 			</df_arc>
 			<df_arc>
-				<src>15744,42,13,0</src>
-				<sink>15551,43,13,0</sink>
+				<const_ref>3,0</const_ref>
+				<sink>14917,42,15,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15553,41,13,0</src>
-				<sink>15551,43,13,1</sink>
+				<src>14917,42,15,0</src>
+				<sink>14398,43,15,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15551,43,13,0</src>
-				<sink>15575,44,13,0</sink>
+				<src>14391,32,14,0</src>
+				<sink>14398,43,15,1</sink>
+				<order_only/>
 			</df_arc>
 			<df_arc>
-				<src>15577,40,13,0</src>
-				<sink>15575,44,13,1</sink>
+				<src>14917,42,15,0</src>
+				<sink>2534,44,15,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15575,44,13,0</src>
-				<sink>15599,45,13,0</sink>
+				<src>2534,39,15,0</src>
+				<sink>2534,44,15,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15601,39,13,0</src>
-				<sink>15599,45,13,1</sink>
+				<src>2534,38,15,0</src>
+				<sink>2534,44,15,2</sink>
 			</df_arc>
 			<df_arc>
-				<src>15599,45,13,0</src>
-				<sink>15623,46,13,0</sink>
+				<src>2534,37,15,0</src>
+				<sink>2534,44,15,3</sink>
 			</df_arc>
 			<df_arc>
-				<src>15625,38,13,0</src>
-				<sink>15623,46,13,1</sink>
+				<src>2534,36,15,0</src>
+				<sink>2534,44,15,4</sink>
 			</df_arc>
 			<df_arc>
-				<src>15623,46,13,0</src>
-				<sink>15647,47,13,0</sink>
+				<src>2534,35,15,0</src>
+				<sink>2534,44,15,5</sink>
 			</df_arc>
 			<df_arc>
-				<src>15649,37,13,0</src>
-				<sink>15647,47,13,1</sink>
+				<src>2534,34,15,0</src>
+				<sink>2534,44,15,6</sink>
 			</df_arc>
 			<df_arc>
-				<src>15647,47,13,0</src>
-				<sink>15671,48,13,0</sink>
+				<src>2534,33,15,0</src>
+				<sink>2534,44,15,7</sink>
 			</df_arc>
 			<df_arc>
-				<src>15673,36,13,0</src>
-				<sink>15671,48,13,1</sink>
+				<src>2534,40,15,0</src>
+				<sink>2534,44,15,8</sink>
 			</df_arc>
 			<df_arc>
-				<src>15671,48,13,0</src>
-				<sink>15695,49,13,0</sink>
+				<src>2534,44,15,0</src>
+				<sink>2538,45,15,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15697,35,13,0</src>
-				<sink>15695,49,13,1</sink>
+				<src>14398,43,15,0</src>
+				<sink>2538,45,15,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15695,49,13,0</src>
-				<sink>11980,50,14,0</sink>
+				<src>2554,48,15,0</src>
+				<sink>14917,47,15,0</sink>
+				<lcd>17</lcd>
 			</df_arc>
 			<df_arc>
-				<src>15695,49,13,0</src>
-				<sink>11980,50,14,1</sink>
+				<const_ref>3,0</const_ref>
+				<sink>14917,47,15,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>12001,52,14,0</src>
-				<sink>12000,51,14,0</sink>
+				<src>14917,47,15,0</src>
+				<sink>2554,48,15,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>12001,52,14,0</src>
-				<sink>12000,51,14,1</sink>
+				<src>2538,45,15,0</src>
+				<sink>2554,48,15,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>12027,54,16,0</src>
-				<sink>14989,53,16,0</sink>
+				<src>14917,42,15,0</src>
+				<sink>2540,49,15,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>12027,54,16,0</src>
-				<sink>14989,53,16,1</sink>
+				<const_ref>1,1</const_ref>
+				<sink>2540,49,15,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>2540,49,15,0</src>
+				<sink>14920,50,15,0</sink>
+			</df_arc>
+			<df_arc>
+				<src>2554,48,15,0</src>
+				<sink>11966,51,17,0</sink>
+			</df_arc>
+			<df_arc>
+				<src>2554,48,15,0</src>
+				<sink>11966,51,17,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>11987,53,17,0</src>
+				<sink>11986,52,17,0</sink>
+			</df_arc>
+			<df_arc>
+				<src>11987,53,17,0</src>
+				<sink>11986,52,17,1</sink>
+			</df_arc>
+			<df_arc>
+				<src>12013,55,19,0</src>
+				<sink>14975,54,19,0</sink>
+			</df_arc>
+			<df_arc>
+				<src>12013,55,19,0</src>
+				<sink>14975,54,19,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -2616,7 +2786,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5947</source_loc>
+				<source_loc>5937</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>1</prim_region>
 				<succ>4</succ>
@@ -2645,52 +2815,48 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>15776,0,3,0</src>
-				<sink>15780,4,5,0</sink>
+				<src>15321,0,3,0</src>
+				<sink>15341,3,5,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>10730,3,5,0</src>
-				<sink>15780,4,5,1</sink>
+				<src>10720,2,5,0</src>
+				<sink>15341,3,5,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>10731,2,5,0</src>
-				<sink>15780,4,5,2</sink>
+				<src>10721,1,5,0</src>
+				<sink>15341,3,5,2</sink>
 			</df_arc>
 			<df_arc>
-				<src>10708,1,5,0</src>
-				<sink>15780,4,5,3</sink>
+				<src>15341,3,5,0</src>
+				<sink>10737,4,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10747,5,6,0</sink>
+				<src>15341,3,5,0</src>
+				<sink>10737,4,6,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10747,5,6,1</sink>
+				<src>15341,3,5,0</src>
+				<sink>10740,5,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10750,6,6,0</sink>
+				<src>15341,3,5,0</src>
+				<sink>10740,5,6,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10750,6,6,1</sink>
+				<src>15341,3,5,0</src>
+				<sink>10760,6,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10770,7,6,0</sink>
+				<src>15341,3,5,0</src>
+				<sink>10760,6,6,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10770,7,6,1</sink>
+				<src>15341,3,5,0</src>
+				<sink>10763,7,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10773,8,6,0</sink>
-			</df_arc>
-			<df_arc>
-				<src>15780,4,5,0</src>
-				<sink>10773,8,6,1</sink>
+				<src>15341,3,5,0</src>
+				<sink>10763,7,6,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -2768,7 +2934,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5948</source_loc>
+				<source_loc>5938</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>1</prim_region>
 				<succ>10</succ>
@@ -2798,40 +2964,40 @@
 		<dataflow>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>10625,0,7,0</sink>
+				<sink>10615,0,7,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>10625,0,7,1</sink>
+				<sink>10615,0,7,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15778,7,12,0</src>
-				<sink>15069,3,9,0</sink>
+				<src>15339,7,12,0</src>
+				<sink>15055,3,9,0</sink>
 				<lcd>30</lcd>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,1</const_ref>
-				<sink>15069,3,9,1</sink>
+				<sink>15055,3,9,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15778,7,12,0</src>
-				<sink>10653,6,12,0</sink>
+				<src>15339,7,12,0</src>
+				<sink>10643,6,12,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15778,7,12,0</src>
-				<sink>10653,6,12,1</sink>
+				<src>15339,7,12,0</src>
+				<sink>10643,6,12,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>10639,4,12,0</src>
-				<sink>15778,7,12,0</sink>
+				<src>10629,4,12,0</src>
+				<sink>15339,7,12,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15069,3,9,0</src>
-				<sink>15778,7,12,1</sink>
+				<src>15055,3,9,0</src>
+				<sink>15339,7,12,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>10650,5,12,0</src>
-				<sink>15778,7,12,2</sink>
+				<src>10640,5,12,0</src>
+				<sink>15339,7,12,2</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -2853,7 +3019,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5949</source_loc>
+				<source_loc>5939</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>0</prim_region>
 				<succ>2</succ>
@@ -2899,7 +3065,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5950</source_loc>
+				<source_loc>5940</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>1</prim_region>
 				<succ>4</succ>
@@ -2924,12 +3090,12 @@
 				<protocol_clk_edges>0</protocol_clk_edges>
 				<prim_region>1</prim_region>
 				<succ>
-					<cond>15122,8</cond>
+					<cond>15108,8</cond>
 					<id>7</id>
 					<value>1</value>
 				</succ>
 				<succ>
-					<cond>15122,8</cond>
+					<cond>15108,8</cond>
 					<id>9</id>
 					<value>0</value>
 				</succ>
@@ -2958,40 +3124,32 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>10138,0,6,0</src>
-				<sink>10139,3,6,0</sink>
+				<src>10128,0,6,0</src>
+				<sink>10129,3,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>10135,2,6,0</src>
-				<sink>10137,4,6,0</sink>
+				<src>10125,2,6,0</src>
+				<sink>10127,4,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>10136,1,6,0</src>
-				<sink>10137,4,6,1</sink>
+				<src>10126,1,6,0</src>
+				<sink>10127,4,6,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>10137,4,6,0</src>
-				<sink>10140,5,6,0</sink>
+				<src>10127,4,6,0</src>
+				<sink>10130,5,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>10139,3,6,0</src>
-				<sink>10140,5,6,1</sink>
+				<src>10129,3,6,0</src>
+				<sink>10130,5,6,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>10140,5,6,0</src>
-				<sink>15122,8,6,0</sink>
+				<src>10130,5,6,0</src>
+				<sink>15108,8,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>10165,11,3,0</src>
-				<sink>10165,10,9,0</sink>
-			</df_arc>
-			<df_arc>
-				<src>10165,11,3,0</src>
-				<sink>10165,10,9,1</sink>
-			</df_arc>
-			<df_arc>
-				<src>10161,9,7,0</src>
-				<sink>10165,11,3,0</sink>
+				<src>10151,9,7,0</src>
+				<sink>10155,10,3,0</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3055,7 +3213,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5951</source_loc>
+				<source_loc>5941</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>2</prim_region>
 				<succ>8</succ>
@@ -3085,27 +3243,27 @@
 		<dataflow>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>9803,0,5,0</sink>
+				<sink>9793,0,5,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>9803,0,5,1</sink>
+				<sink>9793,0,5,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>9813,5,10,0</src>
-				<sink>9810,4,10,0</sink>
+				<src>9803,5,10,0</src>
+				<sink>9800,4,10,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>9813,5,10,0</src>
-				<sink>9810,4,10,1</sink>
+				<src>9803,5,10,0</src>
+				<sink>9800,4,10,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>9811,3,10,0</src>
-				<sink>9813,5,10,0</sink>
+				<src>9801,3,10,0</src>
+				<sink>9803,5,10,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>9812,2,10,0</src>
-				<sink>9813,5,10,1</sink>
+				<src>9802,2,10,0</src>
+				<sink>9803,5,10,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3141,7 +3299,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5952</source_loc>
+				<source_loc>5942</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>1</prim_region>
 				<succ>4</succ>
@@ -3166,12 +3324,12 @@
 				<protocol_clk_edges>0</protocol_clk_edges>
 				<prim_region>1</prim_region>
 				<succ>
-					<cond>15178,3</cond>
+					<cond>15164,3</cond>
 					<id>7</id>
 					<value>0</value>
 				</succ>
 				<succ>
-					<cond>15178,3</cond>
+					<cond>15164,3</cond>
 					<id>9</id>
 					<value>1</value>
 				</succ>
@@ -3200,12 +3358,12 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>9459,0,6,0</src>
-				<sink>15178,3,6,0</sink>
+				<src>9449,0,6,0</src>
+				<sink>15164,3,6,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>9474,4,7,0</src>
-				<sink>9473,5,3,0</sink>
+				<src>9464,4,7,0</src>
+				<sink>9463,5,3,0</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3283,7 +3441,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5953</source_loc>
+				<source_loc>5943</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>1</prim_region>
 				<succ>10</succ>
@@ -3313,40 +3471,40 @@
 		<dataflow>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>9136,0,7,0</sink>
+				<sink>9126,0,7,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>9136,0,7,1</sink>
+				<sink>9126,0,7,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15779,7,12,0</src>
-				<sink>15211,3,9,0</sink>
+				<src>15340,7,12,0</src>
+				<sink>15197,3,9,0</sink>
 				<lcd>44</lcd>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>15211,3,9,1</sink>
+				<sink>15197,3,9,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>15779,7,12,0</src>
-				<sink>9146,6,12,0</sink>
+				<src>15340,7,12,0</src>
+				<sink>9136,6,12,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15779,7,12,0</src>
-				<sink>9146,6,12,1</sink>
+				<src>15340,7,12,0</src>
+				<sink>9136,6,12,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>9143,4,12,0</src>
-				<sink>15779,7,12,0</sink>
+				<src>9133,4,12,0</src>
+				<sink>15340,7,12,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>15211,3,9,0</src>
-				<sink>15779,7,12,1</sink>
+				<src>15197,3,9,0</src>
+				<sink>15340,7,12,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>9147,5,12,0</src>
-				<sink>15779,7,12,2</sink>
+				<src>9137,5,12,0</src>
+				<sink>15340,7,12,2</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3368,7 +3526,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5954</source_loc>
+				<source_loc>5944</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>0</prim_region>
 				<succ>2</succ>
@@ -3383,20 +3541,20 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>8662,3,2,0</src>
-				<sink>8659,2,2,0</sink>
+				<src>8652,3,2,0</src>
+				<sink>8649,2,2,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8662,3,2,0</src>
-				<sink>8659,2,2,1</sink>
+				<src>8652,3,2,0</src>
+				<sink>8649,2,2,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>8660,1,2,0</src>
-				<sink>8662,3,2,0</sink>
+				<src>8650,1,2,0</src>
+				<sink>8652,3,2,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8661,0,2,0</src>
-				<sink>8662,3,2,1</sink>
+				<src>8651,0,2,0</src>
+				<sink>8652,3,2,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3460,7 +3618,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5955</source_loc>
+				<source_loc>5945</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>2</prim_region>
 				<succ>8</succ>
@@ -3490,19 +3648,19 @@
 		<dataflow>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>8640,0,5,0</sink>
+				<sink>8630,0,5,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>8640,0,5,1</sink>
+				<sink>8630,0,5,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>8648,2,10,0</src>
-				<sink>8647,3,10,0</sink>
+				<src>8638,2,10,0</src>
+				<sink>8637,3,10,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8648,2,10,0</src>
-				<sink>8647,3,10,1</sink>
+				<src>8638,2,10,0</src>
+				<sink>8637,3,10,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3538,7 +3696,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5956</source_loc>
+				<source_loc>5946</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>0</prim_region>
 				<succ>4</succ>
@@ -3553,20 +3711,20 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>8166,3,4,0</src>
-				<sink>8163,2,4,0</sink>
+				<src>8156,3,4,0</src>
+				<sink>8153,2,4,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8166,3,4,0</src>
-				<sink>8163,2,4,1</sink>
+				<src>8156,3,4,0</src>
+				<sink>8153,2,4,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>8164,1,4,0</src>
-				<sink>8166,3,4,0</sink>
+				<src>8154,1,4,0</src>
+				<sink>8156,3,4,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8165,0,3,0</src>
-				<sink>8166,3,4,1</sink>
+				<src>8155,0,3,0</src>
+				<sink>8156,3,4,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3602,7 +3760,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5957</source_loc>
+				<source_loc>5947</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>0</prim_region>
 				<succ>4</succ>
@@ -3634,7 +3792,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5959</source_loc>
+				<source_loc>5949</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>0</prim_region>
 				<succ>2</succ>
@@ -3649,20 +3807,20 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>8015,3,2,0</src>
-				<sink>8007,2,2,0</sink>
+				<src>8005,3,2,0</src>
+				<sink>7997,2,2,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8015,3,2,0</src>
-				<sink>8007,2,2,1</sink>
+				<src>8005,3,2,0</src>
+				<sink>7997,2,2,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>8013,1,2,0</src>
-				<sink>8015,3,2,0</sink>
+				<src>8003,1,2,0</src>
+				<sink>8005,3,2,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>8014,0,2,0</src>
-				<sink>8015,3,2,1</sink>
+				<src>8004,0,2,0</src>
+				<sink>8005,3,2,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3726,7 +3884,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5960</source_loc>
+				<source_loc>5950</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>2</prim_region>
 				<succ>8</succ>
@@ -3756,19 +3914,19 @@
 		<dataflow>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>7962,0,5,0</sink>
+				<sink>7952,0,5,0</sink>
 			</df_arc>
 			<df_arc>
 				<const_ref>1,0</const_ref>
-				<sink>7962,0,5,1</sink>
+				<sink>7952,0,5,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>7977,2,10,0</src>
-				<sink>7976,3,10,0</sink>
+				<src>7967,2,10,0</src>
+				<sink>7966,3,10,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>7977,2,10,0</src>
-				<sink>7976,3,10,1</sink>
+				<src>7967,2,10,0</src>
+				<sink>7966,3,10,1</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3832,7 +3990,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5961</source_loc>
+				<source_loc>5951</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>2</prim_region>
 				<succ>8</succ>
@@ -3878,7 +4036,7 @@
 				<loop_header/>
 				<cycle_id>1</cycle_id>
 				<protocol_clk_edges>1</protocol_clk_edges>
-				<source_loc>5962</source_loc>
+				<source_loc>5952</source_loc>
 				<state_name>PROTO_1</state_name>
 				<prim_region>0</prim_region>
 				<succ>2</succ>
@@ -3893,16 +4051,16 @@
 		</control_flow>
 		<dataflow>
 			<df_arc>
-				<src>7243,2,2,0</src>
-				<sink>7241,1,2,0</sink>
+				<src>7233,2,2,0</src>
+				<sink>7231,1,2,0</sink>
 			</df_arc>
 			<df_arc>
-				<src>7243,2,2,0</src>
-				<sink>7241,1,2,1</sink>
+				<src>7233,2,2,0</src>
+				<sink>7231,1,2,1</sink>
 			</df_arc>
 			<df_arc>
-				<src>7242,0,2,0</src>
-				<sink>7243,2,2,0</sink>
+				<src>7232,0,2,0</src>
+				<sink>7233,2,2,0</sink>
 			</df_arc>
 		</dataflow>
 	</cdfg>
@@ -3928,7 +4086,7 @@
 			<value>STRATUS_HLS=1</value>
 			<value>CYNTHESIZER</value>
 			<value>CYNTHHL</value>
-			<value>CLOCK_PERIOD=10</value>
+			<value>CLOCK_PERIOD=6</value>
 			<value>BASIC=1</value>
 			<value>BDW_RTL_fir_BASIC=1</value>
 			<value>ioConfig_PIN</value>
@@ -3966,7 +4124,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>message_detail</name>
-			<value>2</value>
+			<value>0</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_starc</name>
@@ -3990,7 +4148,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>rtl_annotation</name>
-			<value>op,stack</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>src_file</name>
@@ -4026,7 +4184,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>clock_period</name>
-			<value>10.000</value>
+			<value>6.000</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>comm_subexp_elim</name>
@@ -4078,7 +4236,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>flatten_arrays</name>
-			<value>all</value>
+			<value>none</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>fpga_dsp_latency</name>
@@ -4154,7 +4312,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_mux</name>
-			<value>expl_case</value>
+			<value>impl_case</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_pipelined_parts</name>
@@ -4170,7 +4328,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_reset_all_async</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_reset_all_sync</name>
@@ -4182,11 +4340,11 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_separate_memories</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_structure_only</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_two_part_fsm</name>
@@ -4194,7 +4352,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>output_style_ungroup_parts</name>
-			<value>on</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>Xoutput_language</name>
@@ -4206,7 +4364,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>path_delay_limit</name>
-			<value>120</value>
+			<value>off</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>path_delay_limit_unshare_regs</name>
@@ -4322,7 +4480,7 @@
 		</ns_attrib>
 		<ns_attrib>
 			<name>tech_lib</name>
-			<value>/home_old/tech/tsmc/40nm/TSMCHOME/digital/Front_End/timing_power_noise/ECSM/tcbn40lpbwp_120b/tcbn40lpbwpwc_ecsm.lib</value>
+			<value>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib</value>
 		</ns_attrib>
 		<ns_attrib>
 			<name>timing_aggression</name>
@@ -4365,14 +4523,6 @@
 					<name>regions</name>
 					<ns_node>
 						<kind>region</kind>
-						<name>cynw_p2p_in_get</name>
-						<ns_attrib>
-							<name>is_protocol</name>
-							<value>true</value>
-						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>region</kind>
 						<name>region_0</name>
 						<ns_attrib>
 							<name>stable_inputs</name>
@@ -4384,6 +4534,14 @@
 							<value>behavior_io:simple_fir/fir/BASIC/optim/FirThread/coeffs_table_2</value>
 							<value>behavior_io:simple_fir/fir/BASIC/optim/FirThread/coeffs_table_1</value>
 							<value>behavior_io:simple_fir/fir/BASIC/optim/FirThread/coeffs_table_0</value>
+						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>region</kind>
+						<name>cynw_p2p_in_get</name>
+						<ns_attrib>
+							<name>is_protocol</name>
+							<value>true</value>
 						</ns_attrib>
 					</ns_node>
 					<ns_node>
@@ -4416,31 +4574,29 @@
 					</ns_node>
 					<ns_node>
 						<kind>loop</kind>
-						<name>main_loop</name>
+						<name>loop_1</name>
 						<loop>24</loop>
 						<ns_attrib>
-							<name>is_latency_constrained</name>
-							<value>true</value>
+							<name>is_pipelined</name>
+							<value>false</value>
 						</ns_attrib>
-						<ns_attrib>
-							<name>min_latency</name>
-							<value>0</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>max_latency</name>
-							<value>-2</value>
-						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>loop</kind>
+						<name>loop_1_1</name>
+						<loop>7</loop>
 						<ns_attrib>
 							<name>is_pipelined</name>
-							<value>true</value>
+							<value>false</value>
 						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>loop</kind>
+						<name>loop_1_2</name>
+						<loop>17</loop>
 						<ns_attrib>
-							<name>pipeline_type</name>
-							<value>SOFT_STALL</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>pipeline_ii</name>
-							<value>1</value>
+							<name>is_pipelined</name>
+							<value>false</value>
 						</ns_attrib>
 					</ns_node>
 				</ns_scope>
@@ -4456,67 +4612,7 @@
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
-						<name>coeffs_table_0</name>
-						<ns_attrib>
-							<name>is_stable</name>
-							<value>true</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>width</name>
-							<value>8</value>
-						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>coeffs_table_1</name>
-						<ns_attrib>
-							<name>is_stable</name>
-							<value>true</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>width</name>
-							<value>8</value>
-						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>coeffs_table_2</name>
-						<ns_attrib>
-							<name>is_stable</name>
-							<value>true</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>width</name>
-							<value>8</value>
-						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>coeffs_table_3</name>
-						<ns_attrib>
-							<name>is_stable</name>
-							<value>true</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>width</name>
-							<value>8</value>
-						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>coeffs_table_4</name>
-						<ns_attrib>
-							<name>is_stable</name>
-							<value>true</value>
-						</ns_attrib>
-						<ns_attrib>
-							<name>width</name>
-							<value>8</value>
-						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>coeffs_table_5</name>
+						<name>coeffs_table_7</name>
 						<ns_attrib>
 							<name>is_stable</name>
 							<value>true</value>
@@ -4540,7 +4636,7 @@
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
-						<name>coeffs_table_7</name>
+						<name>coeffs_table_5</name>
 						<ns_attrib>
 							<name>is_stable</name>
 							<value>true</value>
@@ -4552,7 +4648,59 @@
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
-						<name>din_m_stall_reg</name>
+						<name>coeffs_table_4</name>
+						<ns_attrib>
+							<name>is_stable</name>
+							<value>true</value>
+						</ns_attrib>
+						<ns_attrib>
+							<name>width</name>
+							<value>8</value>
+						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>behavior_io</kind>
+						<name>coeffs_table_3</name>
+						<ns_attrib>
+							<name>is_stable</name>
+							<value>true</value>
+						</ns_attrib>
+						<ns_attrib>
+							<name>width</name>
+							<value>8</value>
+						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>behavior_io</kind>
+						<name>coeffs_table_2</name>
+						<ns_attrib>
+							<name>is_stable</name>
+							<value>true</value>
+						</ns_attrib>
+						<ns_attrib>
+							<name>width</name>
+							<value>8</value>
+						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>behavior_io</kind>
+						<name>coeffs_table_1</name>
+						<ns_attrib>
+							<name>is_stable</name>
+							<value>true</value>
+						</ns_attrib>
+						<ns_attrib>
+							<name>width</name>
+							<value>8</value>
+						</ns_attrib>
+					</ns_node>
+					<ns_node>
+						<kind>behavior_io</kind>
+						<name>coeffs_table_0</name>
+						<ns_attrib>
+							<name>is_stable</name>
+							<value>true</value>
+						</ns_attrib>
 						<ns_attrib>
 							<name>width</name>
 							<value>8</value>
@@ -4569,10 +4717,6 @@
 							<name>width</name>
 							<value>8</value>
 						</ns_attrib>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>din_m_stall_reg_full</name>
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
@@ -4721,6 +4865,18 @@
 						<kind>basic_block</kind>
 						<name>BB18</name>
 					</ns_node>
+					<ns_node>
+						<kind>basic_block</kind>
+						<name>BB19</name>
+					</ns_node>
+					<ns_node>
+						<kind>basic_block</kind>
+						<name>BB20</name>
+					</ns_node>
+					<ns_node>
+						<kind>basic_block</kind>
+						<name>BB21</name>
+					</ns_node>
 				</ns_scope>
 				<ns_scope>
 					<name>ops</name>
@@ -4746,7 +4902,15 @@
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
+						<name>OP5</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
 						<name>OP6</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
+						<name>OP7</name>
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
@@ -4754,7 +4918,15 @@
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
+						<name>OP9</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
 						<name>OP10</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
+						<name>OP11</name>
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
@@ -4762,7 +4934,15 @@
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
+						<name>OP13</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
 						<name>OP14</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
+						<name>OP15</name>
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
@@ -4770,11 +4950,11 @@
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
-						<name>OP18</name>
+						<name>OP17</name>
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
-						<name>OP19</name>
+						<name>OP18</name>
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
@@ -4862,10 +5042,6 @@
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
-						<name>OP41</name>
-					</ns_node>
-					<ns_node>
-						<kind>op</kind>
 						<name>OP42</name>
 					</ns_node>
 					<ns_node>
@@ -4879,10 +5055,6 @@
 					<ns_node>
 						<kind>op</kind>
 						<name>OP45</name>
-					</ns_node>
-					<ns_node>
-						<kind>op</kind>
-						<name>OP46</name>
 					</ns_node>
 					<ns_node>
 						<kind>op</kind>
@@ -4915,6 +5087,10 @@
 					<ns_node>
 						<kind>op</kind>
 						<name>OP54</name>
+					</ns_node>
+					<ns_node>
+						<kind>op</kind>
+						<name>OP55</name>
 					</ns_node>
 				</ns_scope>
 			</ns_node>
@@ -4961,15 +5137,15 @@
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
+						<name>din_m_stall_reg_full</name>
+					</ns_node>
+					<ns_node>
+						<kind>behavior_io</kind>
 						<name>din_m_busy_req_0</name>
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
 						<name>din_m_unvalidated_req</name>
-					</ns_node>
-					<ns_node>
-						<kind>behavior_io</kind>
-						<name>din_m_stall_reg_full</name>
 					</ns_node>
 					<ns_node>
 						<kind>behavior_io</kind>
@@ -5076,10 +5252,6 @@
 					<ns_node>
 						<kind>op</kind>
 						<name>OP7</name>
-					</ns_node>
-					<ns_node>
-						<kind>op</kind>
-						<name>OP8</name>
 					</ns_node>
 				</ns_scope>
 			</ns_node>
@@ -5387,7 +5559,7 @@
 						<name>din_m_stall_reg</name>
 						<ns_attrib>
 							<name>direction</name>
-							<value>output</value>
+							<value>none</value>
 						</ns_attrib>
 						<ns_attrib>
 							<name>width</name>
@@ -5483,10 +5655,6 @@
 					<ns_node>
 						<kind>op</kind>
 						<name>OP10</name>
-					</ns_node>
-					<ns_node>
-						<kind>op</kind>
-						<name>OP11</name>
 					</ns_node>
 				</ns_scope>
 			</ns_node>
@@ -6821,7 +6989,7 @@
 				<name>clk</name>
 				<ns_attrib>
 					<name>clock_period</name>
-					<value>10</value>
+					<value>6</value>
 				</ns_attrib>
 				<ns_attrib>
 					<name>is_clock</name>
@@ -6990,26 +7158,6 @@
 			</ns_node>
 			<ns_node>
 				<kind>module_io</kind>
-				<name>din_m_stall_reg</name>
-				<ns_attrib>
-					<name>direction</name>
-					<value>none</value>
-				</ns_attrib>
-				<ns_attrib>
-					<name>width</name>
-					<value>8</value>
-				</ns_attrib>
-			</ns_node>
-			<ns_node>
-				<kind>module_io</kind>
-				<name>din_m_stall_reg_full</name>
-				<ns_attrib>
-					<name>direction</name>
-					<value>none</value>
-				</ns_attrib>
-			</ns_node>
-			<ns_node>
-				<kind>module_io</kind>
 				<name>din_m_data_is_invalid</name>
 				<ns_attrib>
 					<name>direction</name>
@@ -7043,6 +7191,14 @@
 			<ns_node>
 				<kind>module_io</kind>
 				<name>din_m_vld_reg</name>
+				<ns_attrib>
+					<name>direction</name>
+					<value>none</value>
+				</ns_attrib>
+			</ns_node>
+			<ns_node>
+				<kind>module_io</kind>
+				<name>din_m_stall_reg_full</name>
 				<ns_attrib>
 					<name>direction</name>
 					<value>none</value>
@@ -7099,6 +7255,11 @@
 		</ns_scope>
 		<ns_scope>
 			<name>arrays</name>
+			<ns_node>
+				<kind>array</kind>
+				<name>shift_reg</name>
+				<source_loc>2469</source_loc>
+			</ns_node>
 		</ns_scope>
 	</ns_node>
 </snapshot>

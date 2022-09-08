@@ -39,7 +39,10 @@ BDW_fir_BASIC_BUILD_RTL_V =
 #
 
 BDW_fir_BASIC_RTL_O = $(addprefix objs/,  \
-	 fir_logic_1.o)
+	 fir_RAM_8X8_1.o fir_N_Mux_8_8_12_4.o fir_Xor_1Ux1U_1U_1.o fir_And_1Ux1U_1U_1.o \
+	 fir_Not_1U_1U_1.o fir_Or_1Ux1U_1U_4.o fir_Mul_8Ux8U_11U_4.o fir_N_Muxb_1_2_11_4.o \
+	 fir_Add_3Ux1U_4U_4.o fir_gen_busy_r_1.o fir_LessThan_1U_10_4.o fir_Add_3U_4_4.o \
+	 fir_Add_11Ux11U_11U_4.o)
 #
 # Build RTL Verilog models with stratus_vlg
 #

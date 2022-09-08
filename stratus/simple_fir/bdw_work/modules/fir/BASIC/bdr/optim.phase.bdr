@@ -2,72 +2,24 @@
 <tool_log>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>783</value>
+		<value>585</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>742</value>
-	</optim_nodes>
-	<message>
-		<code_num>300</code_num>
-		<severity>NOTE</severity>
-		<message_text>Detected stall condition: (dout_m_stalling == 1ULL)</message_text>
-		<source_path>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include/cynw_p2p.h</source_path>
-		<source_line>5072</source_line>
-		<phase>optim</phase>
-		<order>18</order>
-	</message>
-	<message>
-		<code_num>300</code_num>
-		<severity>NOTE</severity>
-		<message_text>Detected stall condition: (din_m_data_is_invalid == 1ULL)</message_text>
-		<source_path>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include/cynw_p2p.h</source_path>
-		<source_line>1464</source_line>
-		<phase>optim</phase>
-		<order>19</order>
-	</message>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>738</value>
+		<value>481</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>734</value>
+		<value>477</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>1021</value>
+		<value>473</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>766</value>
+		<value>473</value>
 	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>756</value>
-	</optim_nodes>
-	<memory_mapping>
-		<array>
-			<name>shift_reg</name>
-			<dimension>8</dimension>
-			<word_count>8</word_count>
-			<bits_per_word>8</bits_per_word>
-			<total_bits>64</total_bits>
-			<simple_depth>8</simple_depth>
-			<compact_depth>8</compact_depth>
-			<flattened>1</flattened>
-		</array>
-		<module_inst>
-			<word_count>8</word_count>
-			<bits_per_word>8</bits_per_word>
-			<total_bits>64</total_bits>
-			<source_loc>2469</source_loc>
-			<datatype>
-				<array>8</array>
-				<datatype W="8">sc_uint</datatype>
-			</datatype>
-		</module_inst>
-	</memory_mapping>
 	<memory_mapping>
 		<array>
 			<name>coeffs.table</name>
@@ -83,7 +35,7 @@
 			<word_count>8</word_count>
 			<bits_per_word>8</bits_per_word>
 			<total_bits>64</total_bits>
-			<source_loc>14665</source_loc>
+			<source_loc>14651</source_loc>
 			<datatype>
 				<array>8</array>
 				<datatype W="8">sc_uint</datatype>
@@ -92,176 +44,115 @@
 	</memory_mapping>
 	<baseline>
 		<source_loc>
-			<id>15518</id>
+			<id>15322</id>
 			<index>0</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15759</id>
+			<id>15323</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15518</sub_loc>
+			<sub_loc>1059,782,15322</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15338</id>
+			<id>15324</id>
 			<index>1</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15760</id>
+			<id>15325</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15338</sub_loc>
+			<sub_loc>1059,782,15324</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15362</id>
+			<id>15326</id>
 			<index>2</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15761</id>
+			<id>15327</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15362</sub_loc>
+			<sub_loc>1059,782,15326</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15388</id>
+			<id>15328</id>
 			<index>3</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15762</id>
+			<id>15329</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15388</sub_loc>
+			<sub_loc>1059,782,15328</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15414</id>
+			<id>15330</id>
 			<index>4</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15763</id>
+			<id>15331</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15414</sub_loc>
+			<sub_loc>1059,782,15330</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15440</id>
+			<id>15332</id>
 			<index>5</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15764</id>
+			<id>15333</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15440</sub_loc>
+			<sub_loc>1059,782,15332</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15466</id>
+			<id>15334</id>
 			<index>6</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15765</id>
+			<id>15335</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15466</sub_loc>
+			<sub_loc>1059,782,15334</sub_loc>
 		</source_loc>
 		<source_loc>
-			<id>15492</id>
+			<id>15336</id>
 			<index>7</index>
 			<loc_kind>INDEX</loc_kind>
 		</source_loc>
 		<source_loc>
-			<id>15766</id>
+			<id>15337</id>
 			<loc_kind>HIER</loc_kind>
-			<sub_loc>2469,15492</sub_loc>
-		</source_loc>
-	</baseline>
-	<baseline>
-		<source_loc>
-			<id>15767</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15518</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15768</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15338</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15769</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15362</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15770</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15388</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15771</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15414</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15772</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15440</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15773</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15466</sub_loc>
-		</source_loc>
-		<source_loc>
-			<id>15774</id>
-			<loc_kind>HIER</loc_kind>
-			<sub_loc>1059,782,15492</sub_loc>
+			<sub_loc>1059,782,15336</sub_loc>
 		</source_loc>
 	</baseline>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>678</value>
+		<value>501</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>675</value>
+		<value>501</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>675</value>
+		<value>501</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>675</value>
+		<value>520</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>FirThread</thread>
-		<value>627</value>
+		<value>520</value>
 	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>624</value>
-	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>623</value>
-	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>621</value>
-	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>595</value>
-	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>555</value>
-	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>580</value>
-	</optim_nodes>
-	<optim_nodes>
-		<thread>FirThread</thread>
-		<value>580</value>
-	</optim_nodes>
+	<message>
+		<code_num>260</code_num>
+		<severity>NOTE</severity>
+		<message_text>This is the first of 1 variable writes to shift_reg.</message_text>
+		<source_path>fir.cc</source_path>
+		<source_line>46</source_line>
+		<phase>optim</phase>
+		<order>6</order>
+	</message>
 	<optim_nodes>
 		<thread>gen_busy</thread>
 		<value>175</value>
@@ -378,15 +269,6 @@
 		<thread>gen_do_stall_reg</thread>
 		<value>168</value>
 	</optim_nodes>
-	<message>
-		<code_num>472</code_num>
-		<severity>NOTE</severity>
-		<message_text>Not converting control into datapath due to HLS_REMOVE_CONTROL directive.</message_text>
-		<source_path>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include/cynw_p2p.h</source_path>
-		<source_line>1826</source_line>
-		<phase>optim</phase>
-		<order>20</order>
-	</message>
 	<optim_nodes>
 		<thread>gen_do_stall_reg</thread>
 		<value>176</value>
@@ -451,15 +333,6 @@
 		<thread>gen_do_reg_data</thread>
 		<value>160</value>
 	</optim_nodes>
-	<message>
-		<code_num>472</code_num>
-		<severity>NOTE</severity>
-		<message_text>Not converting control into datapath due to HLS_REMOVE_CONTROL directive.</message_text>
-		<source_path>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include/cynw_p2p.h</source_path>
-		<source_line>1865</source_line>
-		<phase>optim</phase>
-		<order>21</order>
-	</message>
 	<optim_nodes>
 		<thread>gen_do_reg_data</thread>
 		<value>162</value>
@@ -746,40 +619,31 @@
 	</optim_nodes>
 	<optim_nodes>
 		<thread>gen_busy</thread>
-		<value>129</value>
+		<value>119</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>gen_busy</thread>
-		<value>153</value>
+		<value>143</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>gen_busy</thread>
-		<value>129</value>
+		<value>119</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>gen_busy</thread>
-		<value>129</value>
+		<value>119</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>gen_busy</thread>
-		<value>129</value>
+		<value>119</value>
 	</optim_nodes>
 	<optim_nodes>
 		<thread>gen_busy</thread>
-		<value>128</value>
+		<value>118</value>
 	</optim_nodes>
-	<message>
-		<code_num>494</code_num>
-		<severity>NOTE</severity>
-		<message_text>Created dpopt part for &quot;gen_busy_r&quot;.</message_text>
-		<source_path>/opt/tools/cadence/2019-20/RHELx86/STRATUS_19.25/share/stratus/include/cynw_p2p.h</source_path>
-		<source_line>1739</source_line>
-		<phase>optim</phase>
-		<order>22</order>
-	</message>
 	<thread>
 		<name>FirThread</name>
-		<source_loc>2566</source_loc>
+		<source_loc>2556</source_loc>
 		<stall>stall0</stall>
 		<reset>
 			<name>rst</name>
@@ -788,92 +652,82 @@
 		<clock>clk</clock>
 		<out_sig>
 			<name>dout_data</name>
-			<source_loc>14659</source_loc>
+			<source_loc>14645</source_loc>
 			<datatype>11,0</datatype>
 		</out_sig>
 		<out_sig>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<out_sig>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<out_sig>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
-			<name>coeffs_table_0</name>
-			<source_loc>15767</source_loc>
-			<datatype>8,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>coeffs_table_1</name>
-			<source_loc>15768</source_loc>
-			<datatype>8,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>coeffs_table_2</name>
-			<source_loc>15769</source_loc>
-			<datatype>8,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>coeffs_table_3</name>
-			<source_loc>15770</source_loc>
-			<datatype>8,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>coeffs_table_4</name>
-			<source_loc>15771</source_loc>
-			<datatype>8,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>coeffs_table_5</name>
-			<source_loc>15772</source_loc>
+			<name>coeffs_table_7</name>
+			<source_loc>15337</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>coeffs_table_6</name>
-			<source_loc>15773</source_loc>
+			<source_loc>15335</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
-			<name>coeffs_table_7</name>
-			<source_loc>15774</source_loc>
+			<name>coeffs_table_5</name>
+			<source_loc>15333</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
-			<name>din_m_stall_reg</name>
-			<source_loc>14701</source_loc>
+			<name>coeffs_table_4</name>
+			<source_loc>15331</source_loc>
+			<datatype>8,0</datatype>
+		</in_sig>
+		<in_sig>
+			<name>coeffs_table_3</name>
+			<source_loc>15329</source_loc>
+			<datatype>8,0</datatype>
+		</in_sig>
+		<in_sig>
+			<name>coeffs_table_2</name>
+			<source_loc>15327</source_loc>
+			<datatype>8,0</datatype>
+		</in_sig>
+		<in_sig>
+			<name>coeffs_table_1</name>
+			<source_loc>15325</source_loc>
+			<datatype>8,0</datatype>
+		</in_sig>
+		<in_sig>
+			<name>coeffs_table_0</name>
+			<source_loc>15323</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_data</name>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
-			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
-			<datatype>1,0</datatype>
-		</in_sig>
-		<in_sig>
 			<name>din_m_data_is_invalid</name>
-			<source_loc>14706</source_loc>
+			<source_loc>14692</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -889,57 +743,57 @@
 	</thread>
 	<thread>
 		<name>gen_busy</name>
-		<source_loc>14841</source_loc>
+		<source_loc>14827</source_loc>
 		<async/>
 		<out_sig>
 			<name>din_m_data_is_invalid</name>
-			<source_loc>14706</source_loc>
+			<source_loc>14692</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<out_sig>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<out_sig>
 			<name>din_busy</name>
-			<source_loc>14664</source_loc>
+			<source_loc>14650</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<out_sig>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
 			<name>din_m_vld_reg</name>
-			<source_loc>14728</source_loc>
-			<datatype>1,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
-			<datatype>1,0</datatype>
-		</in_sig>
-		<in_sig>
-			<name>din_m_unvalidated_req</name>
-			<source_loc>14729</source_loc>
+			<source_loc>14714</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
+			<datatype>1,0</datatype>
+		</in_sig>
+		<in_sig>
+			<name>din_m_busy_req_0</name>
+			<source_loc>14678</source_loc>
+			<datatype>1,0</datatype>
+		</in_sig>
+		<in_sig>
+			<name>din_m_unvalidated_req</name>
+			<source_loc>14715</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 	</thread>
 	<thread>
 		<name>gen_unvalidated_req</name>
-		<source_loc>14842</source_loc>
+		<source_loc>14828</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -947,7 +801,7 @@
 		<clock>clk</clock>
 		<out_sig>
 			<name>din_m_unvalidated_req</name>
-			<source_loc>14729</source_loc>
+			<source_loc>14715</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
@@ -957,12 +811,12 @@
 		</in_sig>
 		<in_sig>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_busy_req_0</name>
-			<source_loc>14692</source_loc>
+			<source_loc>14678</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -973,22 +827,17 @@
 	</thread>
 	<thread>
 		<name>gen_local_busy</name>
-		<source_loc>14843</source_loc>
+		<source_loc>14829</source_loc>
 		<async/>
 	</thread>
 	<thread>
 		<name>gen_do_stall_reg</name>
-		<source_loc>14844</source_loc>
+		<source_loc>14830</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
 		</reset>
 		<clock>clk</clock>
-		<out_sig>
-			<name>din_m_stall_reg</name>
-			<source_loc>14701</source_loc>
-			<datatype>8,0</datatype>
-		</out_sig>
 		<in_sig>
 			<name>clk</name>
 			<source_loc>1057</source_loc>
@@ -996,22 +845,22 @@
 		</in_sig>
 		<in_sig>
 			<name>din_data</name>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1022,7 +871,7 @@
 	</thread>
 	<thread>
 		<name>gen_do_stall_reg_full</name>
-		<source_loc>14845</source_loc>
+		<source_loc>14831</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -1030,7 +879,7 @@
 		<clock>clk</clock>
 		<out_sig>
 			<name>din_m_stall_reg_full</name>
-			<source_loc>14709</source_loc>
+			<source_loc>14695</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
@@ -1040,12 +889,12 @@
 		</in_sig>
 		<in_sig>
 			<name>din_m_data_is_valid</name>
-			<source_loc>14707</source_loc>
+			<source_loc>14693</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_stalling</name>
-			<source_loc>14696</source_loc>
+			<source_loc>14682</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1056,7 +905,7 @@
 	</thread>
 	<thread>
 		<name>gen_do_reg_data</name>
-		<source_loc>14846</source_loc>
+		<source_loc>14832</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -1069,12 +918,12 @@
 		</in_sig>
 		<in_sig>
 			<name>din_data</name>
-			<source_loc>14662</source_loc>
+			<source_loc>14648</source_loc>
 			<datatype>8,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1085,7 +934,7 @@
 	</thread>
 	<thread>
 		<name>gen_do_reg_vld</name>
-		<source_loc>14847</source_loc>
+		<source_loc>14833</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -1093,7 +942,7 @@
 		<clock>clk</clock>
 		<out_sig>
 			<name>din_m_vld_reg</name>
-			<source_loc>14728</source_loc>
+			<source_loc>14714</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
@@ -1103,12 +952,12 @@
 		</in_sig>
 		<in_sig>
 			<name>din_vld</name>
-			<source_loc>14663</source_loc>
+			<source_loc>14649</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>din_m_busy_internal</name>
-			<source_loc>14731</source_loc>
+			<source_loc>14717</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1119,27 +968,27 @@
 	</thread>
 	<thread>
 		<name>gen_vld</name>
-		<source_loc>14848</source_loc>
+		<source_loc>14834</source_loc>
 		<async/>
 		<out_sig>
 			<name>dout_vld</name>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
 			<name>dout_m_unacked_req</name>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>dout_m_req_active</name>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 	</thread>
 	<thread>
 		<name>gen_unacked_req</name>
-		<source_loc>14849</source_loc>
+		<source_loc>14835</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -1147,7 +996,7 @@
 		<clock>clk</clock>
 		<out_sig>
 			<name>dout_m_unacked_req</name>
-			<source_loc>14747</source_loc>
+			<source_loc>14733</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
@@ -1157,7 +1006,7 @@
 		</in_sig>
 		<in_sig>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1168,57 +1017,57 @@
 	</thread>
 	<thread>
 		<name>gen_stalling</name>
-		<source_loc>14850</source_loc>
+		<source_loc>14836</source_loc>
 		<async/>
 		<out_sig>
 			<name>dout_m_stalling</name>
-			<source_loc>14714</source_loc>
+			<source_loc>14700</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
 			<name>dout_busy</name>
-			<source_loc>14661</source_loc>
+			<source_loc>14647</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>dout_vld</name>
-			<source_loc>14660</source_loc>
+			<source_loc>14646</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 	</thread>
 	<thread>
 		<name>gen_out_busy</name>
-		<source_loc>14851</source_loc>
+		<source_loc>14837</source_loc>
 		<async/>
 		<in_sig>
 			<name>dout_busy</name>
-			<source_loc>14661</source_loc>
+			<source_loc>14647</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 	</thread>
 	<thread>
 		<name>gen_active</name>
-		<source_loc>14852</source_loc>
+		<source_loc>14838</source_loc>
 		<async/>
 		<out_sig>
 			<name>dout_m_req_active</name>
-			<source_loc>14746</source_loc>
+			<source_loc>14732</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
 			<name>dout_m_req_m_prev_trig_req</name>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 	</thread>
 	<thread>
 		<name>gen_prev_trig_reg</name>
-		<source_loc>14853</source_loc>
+		<source_loc>14839</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -1226,7 +1075,7 @@
 		<clock>clk</clock>
 		<out_sig>
 			<name>dout_m_req_m_prev_trig_req</name>
-			<source_loc>14765</source_loc>
+			<source_loc>14751</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
@@ -1236,7 +1085,7 @@
 		</in_sig>
 		<in_sig>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1247,7 +1096,7 @@
 	</thread>
 	<thread>
 		<name>gen_next_trig_req_reg</name>
-		<source_loc>14854</source_loc>
+		<source_loc>14840</source_loc>
 		<reset>
 			<name>rst</name>
 			<polarity>0</polarity>
@@ -1260,7 +1109,7 @@
 		</in_sig>
 		<in_sig>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 		<in_sig>
@@ -1271,243 +1120,46 @@
 	</thread>
 	<thread>
 		<name>gen_next_trig_reg</name>
-		<source_loc>14855</source_loc>
+		<source_loc>14841</source_loc>
 		<async/>
 		<out_sig>
 			<name>dout_m_req_m_next_trig_req</name>
-			<source_loc>14726</source_loc>
+			<source_loc>14712</source_loc>
 			<datatype>1,0</datatype>
 		</out_sig>
 		<in_sig>
 			<name>dout_m_req_m_trig_req</name>
-			<source_loc>14697</source_loc>
+			<source_loc>14683</source_loc>
 			<datatype>1,0</datatype>
 		</in_sig>
 	</thread>
 	<message>
 		<code_num>487</code_num>
 		<severity>NOTE</severity>
-		<message_text>Created 10 dpopt operator parts</message_text>
+		<message_text>Created 12 dpopt operator parts</message_text>
 		<phase>optim</phase>
-		<order>23</order>
+		<order>7</order>
 	</message>
 	<create_ops/>
 	<source_loc>
-		<id>15781</id>
+		<id>15321</id>
 		<loc_kind>ARRAY</loc_kind>
-		<sub_loc>14997,2509</sub_loc>
+		<sub_loc>10717,10749</sub_loc>
 	</source_loc>
 	<source_loc>
-		<id>15775</id>
-		<loc_kind>COMPOUND</loc_kind>
-		<sub_loc>14907,11736,11722</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15687</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[7]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15492</index>
-	</source_loc>
-	<source_loc>
-		<id>15701</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15687,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15663</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[6]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15466</index>
-	</source_loc>
-	<source_loc>
-		<id>15677</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15663,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15639</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[5]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15440</index>
-	</source_loc>
-	<source_loc>
-		<id>15653</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15639,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15615</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[4]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15414</index>
-	</source_loc>
-	<source_loc>
-		<id>15629</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15615,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15591</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[3]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15388</index>
-	</source_loc>
-	<source_loc>
-		<id>15605</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15591,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15567</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[2]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15362</index>
-	</source_loc>
-	<source_loc>
-		<id>15581</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15567,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15543</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[1]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15338</index>
-	</source_loc>
-	<source_loc>
-		<id>15557</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15543,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15736</id>
-		<loc_kind>LOOP_ITER</loc_kind>
-		<label>[0]</label>
-		<file_id>1</file_id>
-		<line>51</line>
-		<col>13</col>
-		<index>15518</index>
-	</source_loc>
-	<source_loc>
-		<id>15748</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15736,2544</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15697</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15687,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15673</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15663,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15649</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15639,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15625</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15615,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15601</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15591,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15577</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15567,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15553</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15543,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15744</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15736,2548</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15551</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15543,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15575</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15567,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15599</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15591,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15623</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15615,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15647</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15639,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15671</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15663,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15695</id>
-		<loc_kind>HIER</loc_kind>
-		<sub_loc>15687,2564</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15776</id>
+		<id>15341</id>
 		<loc_kind>ARRAY</loc_kind>
-		<sub_loc>10727,10759</sub_loc>
+		<sub_loc>10690,10689,10688,10687,10721,10720,10719,10723,10722,10717,10750,10753,10752,10751,10749,10762,10763,10765,10764</sub_loc>
 	</source_loc>
 	<source_loc>
-		<id>15780</id>
-		<loc_kind>ARRAY</loc_kind>
-		<sub_loc>10700,10699,10698,10697,10708,10731,10730,10729,10733,10732,10727,10740,10745,10741,10760,10768,10763,10762,10761,10759,10772,10773,10775,10774</sub_loc>
-	</source_loc>
-	<source_loc>
-		<id>15778</id>
+		<id>15339</id>
 		<loc_kind>COMPOUND</loc_kind>
-		<sub_loc>15064,10652</sub_loc>
+		<sub_loc>15050,10642</sub_loc>
 	</source_loc>
 	<source_loc>
-		<id>15779</id>
+		<id>15340</id>
 		<loc_kind>COMPOUND</loc_kind>
-		<sub_loc>15207,9145</sub_loc>
+		<sub_loc>15193,9135</sub_loc>
 	</source_loc>
 	<snapshot>
 		<path>bdr/optim.snapshot.bdr</path>
@@ -1516,6 +1168,6 @@
 	<phase_complete>optim</phase_complete>
 	<phase_summary>
 		<phase_complete>optim</phase_complete>
-		<summary>Optimization complete: 16 threads, 2063 nodes.</summary>
+		<summary>Optimization complete: 16 threads, 2021 nodes.</summary>
 	</phase_summary>
 </tool_log>
