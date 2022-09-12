@@ -50,7 +50,7 @@ y_pred_lr = lr.predict(X_test) #predicting the values of the test dataset
 ############################################
 #EXTREME GRADIENT BOOSTING
 params = {
-    "n_estimators": 100,
+    "n_estimators": 1000,
     "max_depth": 4,
     "min_samples_split": 5,
     "learning_rate": 0.1,
@@ -60,29 +60,29 @@ reg_xgb = ensemble.GradientBoostingRegressor(**params)
 reg_xgb.fit(X_train, y_train)
 y_pred_xgb = reg_xgb.predict(X_test)
 
-############################################
-#RANDOM FOREST
-reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
-reg_forest.fit(X_train, y_train)
-y_pred_forest = reg_forest.predict(X_test)
-
-# ###############################################################
-# #LASSO
-reg_lasso = linear_model.Lasso(alpha=0.1)
-reg_lasso.fit(X_train, y_train)
-y_pred_lasso = reg_lasso.predict(X_test)
-
-############################################
-#DECISION TREE REGRESSOR
-dc_regr = DecisionTreeRegressor(max_depth=10)
-dc_regr.fit(X_train, y_train)
-y_pred_dc = dc_regr.predict(X_test)
-
-############################################
-#SVR
-svr = SVR(kernel='rbf', C=1000, epsilon=1)
-svr.fit(X_train, y_train)
-y_pred_svr = svr.predict(X_test)
+#############################################
+##RANDOM FOREST
+#reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
+#reg_forest.fit(X_train, y_train)
+#y_pred_forest = reg_forest.predict(X_test)
+#
+## ###############################################################
+## #LASSO
+#reg_lasso = linear_model.Lasso(alpha=0.1)
+#reg_lasso.fit(X_train, y_train)
+#y_pred_lasso = reg_lasso.predict(X_test)
+#
+#############################################
+##DECISION TREE REGRESSOR
+#dc_regr = DecisionTreeRegressor(max_depth=10)
+#dc_regr.fit(X_train, y_train)
+#y_pred_dc = dc_regr.predict(X_test)
+#
+#############################################
+##SVR
+#svr = SVR(kernel='rbf', C=1000, epsilon=1)
+#svr.fit(X_train, y_train)
+#y_pred_svr = svr.predict(X_test)
 
 
 # fig, axs = plt.subplots(3, 2)
@@ -113,6 +113,9 @@ im = ax2.scatter(X_test[:,2], y_pred_xgb, s=s, c = X_test[:,1] , cmap='viridis')
 ax2.set_title("XGB regression")
 fig.tight_layout()
 cbar = fig.colorbar(im)
+cbar.set_ticks([8, 16, 24, 32])
+cbar.set_ticklabels(['8', '16', '24', '32'])
+cbar.set_label("datawidth")
 plt.savefig('x_test versus y_pred.pdf')
 
 
