@@ -20,7 +20,7 @@ import xgboost as xgb
 import scikitplot as skplt
 from sklearn.svm import SVR
 from sklearn.tree import DecisionTreeRegressor
-
+import pickle
 DF_PATH = os.path.expanduser("~/Estimation/sim/mux/dataframe/mux_configurations.csv")
 df = pd.read_csv(DF_PATH, sep=',')
 
@@ -43,22 +43,30 @@ X_train, X_test, y_train, y_test = train_test_split(X_list_energy, y_energy, tes
 
 ############################################
 #LINEAR REGRESSION
-lr = LinearRegression()
-lr.fit(X_train, y_train) #trainin the ML algorithm with the training dataset
+# lr = LinearRegression()
+# lr.fit(X_train, y_train) #trainin the ML algorithm with the training dataset
+with open ('./../temp/linear_model_mux', 'rb') as ml:
+    lr = pickle.load(ml)
+ml.close()
 y_pred_lr = lr.predict(X_test) #predicting the values of the test dataset
 
 ############################################
 #EXTREME GRADIENT BOOSTING
-params = {
-    "n_estimators": 1000,
-    "max_depth": 4,
-    "min_samples_split": 5,
-    "learning_rate": 0.1,
-    "loss": "squared_error",
-}
-reg_xgb = ensemble.GradientBoostingRegressor(**params)
-reg_xgb.fit(X_train, y_train)
+# params = {
+#     "n_estimators": 1000,
+#     "max_depth": 4,
+#     "min_samples_split": 5,
+#     "learning_rate": 0.1,
+#     "loss": "squared_error",
+# }
+# reg_xgb.fit(X_train, y_train)
+with open ('./../temp/xgb_model_mux', 'rb') as ml:
+    reg_xgb = pickle.load(ml)
+ml.close()
+
 y_pred_xgb = reg_xgb.predict(X_test)
+
+
 
 #############################################
 ##RANDOM FOREST
@@ -104,19 +112,23 @@ y_pred_xgb = reg_xgb.predict(X_test)
 # plt.savefig('x_test versus y_pred.pdf')
 
 
-fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2)
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, sharex=True, sharey=True)
 s=8
-fig.suptitle('x_test versus y_pred energy plots comparison for MUX')
+#fig.suptitle('x_test versus y_pred energy plots comparison for MUX')
 ax1.scatter(X_test[:,2], y_pred_lr, s=s, c = X_test[:,1] , cmap='viridis')
 ax1.set_title("Linear regression")
+ax1.set(ylabel='Energy [fJ]')
 im = ax2.scatter(X_test[:,2], y_pred_xgb, s=s, c = X_test[:,1] , cmap='viridis')
+
+fig.text(0.52,0.005, 'Toggle rate percentage', ha="center", va="center")
+
 ax2.set_title("XGB regression")
 fig.tight_layout()
 cbar = fig.colorbar(im)
 cbar.set_ticks([8, 16, 24, 32])
 cbar.set_ticklabels(['8', '16', '24', '32'])
 cbar.set_label("datawidth")
-plt.savefig('x_test versus y_pred.pdf')
+plt.savefig('x_test versus y_pred.pdf', bbox_inches = "tight")
 
 
 # ######################

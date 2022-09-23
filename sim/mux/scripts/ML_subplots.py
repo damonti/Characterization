@@ -21,6 +21,7 @@ import xgboost as xgb
 import scikitplot as skplt
 from sklearn.svm import SVR
 from sklearn.tree import DecisionTreeRegressor
+import pickle
 
 DF_PATH = os.path.expanduser("~/Estimation/sim/mux/dataframe/mux_configurations.csv")
 df = pd.read_csv(DF_PATH, sep=',')
@@ -43,131 +44,160 @@ X_train, X_test, y_train, y_test = train_test_split(X_list_energy, y_energy, tes
 
 ############################################
 #LINEAR REGRESSION
-lr = LinearRegression()
-lr.fit(X_train, y_train) #trainin the ML algorithm with the training dataset
+# lr = LinearRegression()
+# lr.fit(X_train, y_train) #trainin the ML algorithm with the training dataset
+with open ('./../temp/linear_model_mux', 'rb') as ml:
+    lr = pickle.load(ml)
+ml.close()
 y_pred_lr = lr.predict(X_test) #predicting the values of the test dataset
 
 
 
 ############################################
 #EXTREME GRADIENT BOOSTING
-params = {
-    "n_estimators": 100,
-    "max_depth": 4,
-    "min_samples_split": 5,
-    "learning_rate": 0.1,
-    "loss": "squared_error",
-}
+# params = {
+#     "n_estimators": 100,
+#     "max_depth": 4,
+#     "min_samples_split": 5,
+#     "learning_rate": 0.1,
+#     "loss": "squared_error",
+# }
 
-reg_xgb = ensemble.GradientBoostingRegressor(**params)
-reg_xgb.fit(X_train, y_train)
+# reg_xgb = ensemble.GradientBoostingRegressor(**params)
+# reg_xgb.fit(X_train, y_train)
+with open ('./../temp/xgb_model_mux', 'rb') as ml:
+    reg_xgb = pickle.load(ml)
+ml.close()
 y_pred_xgb = reg_xgb.predict(X_test)
 
 
 # ###############################################################
 # #LASSO
-reg_lasso = linear_model.Lasso(alpha=0.1)
-reg_lasso.fit(X_train, y_train)
+# reg_lasso = linear_model.Lasso(alpha=0.1)
+# reg_lasso.fit(X_train, y_train)
+with open ('./../temp/lasso_model_mux', 'rb') as ml:
+    reg_lasso = pickle.load(ml)
+ml.close()
 y_pred_lasso = reg_lasso.predict(X_test)
 
 ############################################
 #DECISION TREE REGRESSOR
-dc_regr = DecisionTreeRegressor(max_depth=10)
-dc_regr.fit(X_train, y_train)
+# dc_regr = DecisionTreeRegressor(max_depth=10)
+# dc_regr.fit(X_train, y_train)
+with open ('./../temp/DecisionTree_model_mux', 'rb') as ml:
+    dc_regr = pickle.load(ml)
+ml.close()
 y_pred_dc = dc_regr.predict(X_test)
 
 ############################################
 #RANDOM FOREST
-reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
-reg_forest.fit(X_train, y_train)
+# reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
+# reg_forest.fit(X_train, y_train)
+with open ('./../temp/RandomForest_model_mux', 'rb') as ml:
+    reg_forest = pickle.load(ml)
+ml.close()
 y_pred_forest = reg_forest.predict(X_test)
 
 ############################################
 #SVR
-svr = SVR(kernel='rbf', C=1000, epsilon=1)
-svr.fit(X_train, y_train)
+# svr = SVR(kernel='rbf', C=1000, epsilon=1)
+# svr.fit(X_train, y_train)
+with open ('./../temp/svr_model_mux', 'rb') as ml:
+    svr = pickle.load(ml)
+ml.close()
 y_pred_svr = svr.predict(X_test)
 
 #now plot the various predicted against the test data for the various algorithms into 4 subplots
 
-fig, axs = plt.subplots(3, 2)
+fig, axs = plt.subplots(3, 2, sharex=True, sharey=True)
 s=4
-fig.suptitle('y_test versus y_pred energy plots comparison for MUX')
+font_size=9 #subplot title font size
+pad_size=2 #subplot title distance from its subplot
+#fig.suptitle('y_test versus y_pred energy plots comparison for MUX')
 axs[0, 0].scatter(y_test, y_pred_lr, s=s)
-axs[0, 0].set_title("Linear regression")
-axs[1, 0].scatter(y_test, y_pred_xgb, s=s)
-axs[1, 0].set_title("XGB regression")
+axs[0, 0].set_title("Linear regression", fontsize=font_size, pad=pad_size)
+axs[2, 0].scatter(y_test, y_pred_xgb, s=s)
+axs[2, 0].set_title("XGB regression", fontsize=font_size, pad=pad_size)
 axs[0, 1].scatter(y_test, y_pred_svr, s=s)
-axs[0, 1].set_title("SVR regression")
+axs[0, 1].set_title("SVR regression", fontsize=font_size, pad=pad_size)
 axs[1, 1].scatter(y_test, y_pred_forest, s=s)
-axs[1, 1].set_title("Random forest regression")
-axs[2, 0].scatter(y_test, y_pred_lasso, s=s)
-axs[2, 0].set_title("Lasso regression")
+axs[1, 1].set_title("Random forest regression", fontsize=font_size, pad=pad_size)
+axs[1, 0].scatter(y_test, y_pred_lasso, s=s)
+axs[1, 0].set_title("Lasso regression", fontsize=font_size, pad=pad_size)
 axs[2, 1].scatter(y_test, y_pred_dc, s=s)
-axs[2, 1].set_title("Decision tree regression")
-fig.tight_layout()
-plt.savefig('y_test versus y_pred.pdf')
+axs[2, 1].set_title("Decision tree regression", fontsize=font_size, pad=pad_size)
+
+fig.text(0.5,0.04, "Energy training data [fJ]", ha="center", va="center")
+fig.text(0.05,0.5, "Energy testing data [fJ]", ha="center", va="center", rotation=90)
+#for ax in axs.flat:
+#    ax.set(xlabel='Energy training data [fJ]', ylabel='Energy testing data [fJ]')
+
+#to hide the values of internal axis
+for ax in axs.flat:
+    ax.label_outer()
+    
+plt.savefig('y_test versus y_pred.pdf', bbox_inches = "tight")
 
 
 ###################################################
 #AREA
 ##################################################
 
-X_train, X_test, y_train, y_test = train_test_split(X_list_area, y_area, test_size=0.3, random_state=4)
+# X_train, X_test, y_train, y_test = train_test_split(X_list_area, y_area, test_size=0.3, random_state=4)
 
-############################################
-#LINEAR REGRESSION
-lr = LinearRegression()
-lr.fit(X_train, y_train) #trainin the ML algorithm with the training dataset
-y_pred_lr = lr.predict(X_test) #predicting the values of the test dataset
-
-
-
-############################################
-#EXTREME GRADIENT BOOSTING
-params = {
-    "n_estimators": 100,
-    "max_depth": 4,
-    "min_samples_split": 5,
-    "learning_rate": 0.1,
-    "loss": "squared_error",
-}
-
-reg_xgb = ensemble.GradientBoostingRegressor(**params)
-reg_xgb.fit(X_train, y_train)
-y_pred_xgb = reg_xgb.predict(X_test)
+# ############################################
+# #LINEAR REGRESSION
+# lr = LinearRegression()
+# lr.fit(X_train, y_train) #trainin the ML algorithm with the training dataset
+# y_pred_lr = lr.predict(X_test) #predicting the values of the test dataset
 
 
 
+# ############################################
+# #EXTREME GRADIENT BOOSTING
+# params = {
+#     "n_estimators": 100,
+#     "max_depth": 4,
+#     "min_samples_split": 5,
+#     "learning_rate": 0.1,
+#     "loss": "squared_error",
+# }
 
-############################################
-#RANDOM FOREST
-reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
-reg_forest.fit(X_train, y_train)
-y_pred_forest = reg_forest.predict(X_test)
+# reg_xgb = ensemble.GradientBoostingRegressor(**params)
+# reg_xgb.fit(X_train, y_train)
+# y_pred_xgb = reg_xgb.predict(X_test)
 
 
-############################################
-#SVR
 
-svr = SVR(kernel='rbf', C=1000, epsilon=1)
-svr.fit(X_train, y_train)
-y_pred_svr = svr.predict(X_test)
 
-#now plot the various predicted against the test data for the various algorithms into 4 subplots
+# ############################################
+# #RANDOM FOREST
+# reg_forest = RandomForestRegressor(n_estimators = 100, random_state = 0)
+# reg_forest.fit(X_train, y_train)
+# y_pred_forest = reg_forest.predict(X_test)
 
-fig, axs = plt.subplots(2, 2)
-fig.suptitle('Area prediction ML algorithms comparison for MUX component')
-axs[0, 0].scatter(y_test, y_pred_lr, s=10)
-axs[0, 0].set_title("Linear regression")
-axs[1, 0].scatter(y_test, y_pred_xgb, s=10)
-axs[1, 0].set_title("XGB regression")
-axs[0, 1].scatter(y_test, y_pred_svr, s=10)
-axs[0, 1].set_title("SVG regression")
-axs[1, 1].scatter(y_test, y_pred_forest, s=10)
-axs[1, 1].set_title("Random forest regression")
-fig.tight_layout()
-plt.savefig('ML area mux.pdf')
+
+# ############################################
+# #SVR
+
+# svr = SVR(kernel='rbf', C=1000, epsilon=1)
+# svr.fit(X_train, y_train)
+# y_pred_svr = svr.predict(X_test)
+
+# #now plot the various predicted against the test data for the various algorithms into 4 subplots
+
+# fig, axs = plt.subplots(2, 2)
+# fig.suptitle('Area prediction ML algorithms comparison for MUX component')
+# axs[0, 0].scatter(y_test, y_pred_lr, s=10)
+# axs[0, 0].set_title("Linear regression")
+# axs[1, 0].scatter(y_test, y_pred_xgb, s=10)
+# axs[1, 0].set_title("XGB regression")
+# axs[0, 1].scatter(y_test, y_pred_svr, s=10)
+# axs[0, 1].set_title("SVG regression")
+# axs[1, 1].scatter(y_test, y_pred_forest, s=10)
+# axs[1, 1].set_title("Random forest regression")
+# fig.tight_layout()
+# plt.savefig('ML area mux.pdf')
 
 
 

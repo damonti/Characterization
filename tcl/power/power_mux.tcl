@@ -36,7 +36,7 @@ foreach PERCENT $listPERCENT {
     set START 2070
     set END 2260
     set TB "mux_${FACTOR}_${BW}_${PERCENT}percent"
-    read_stimulus -start ${START}ns -end ${END}ns -allow_n_nets -format vcd -file $SIM_PATH/dump_${TB}.vcd -dut_instance /mux_test/mux
+    read_stimulus -start ${START}ns -end ${END}ns -allow_n_nets -format vcd -file $SIM_PATH/dump_${TB}.tcf -dut_instance /mux_test/mux
     compute_power -mode time_based
     report_power  -levels all -by_hierarchy -indent_inst -levels all -header -cols "cells static internal switching dynamic total" -unit nW > ${REPORT_PATH}/mux.${TB}_payload.rpt
 }
