@@ -1,0 +1,19 @@
+**ENERGY METRICS**
+Linear Crossvalidation: 0.7146917626089149
+Linear regression MAE: 47.39586933874735
+Linear regression MAPE: 0.667495223406374
+SVG Cross validation 0.7072493683704251
+SVG regression MAE: 45.88775327830895
+SVG regression MAPE: 0.6727409137712871
+Decision tree Cross validation 0.9844683135763163
+Decision tree regression MAE: 9.651001913875598
+Decision tree regression MAPE: 0.062811733870151
+XGB Cross validation avg r-squared: 0.9961523005773412
+XGB regression MAE: 4.617918850997197
+XGB regression MAPE: 0.03505485129558553
+Random forest Cross validation avg r-squared: 0.9918869257248385
+Random forest regression MAE: 6.5674937224880345
+Random forest regression MAPE: 0.04602520095052976
+Lasso cross validation avg r-squared: 0.7146919333688018
+Lasso regression MAE: 47.394100817276936
+Lasso regression MAPE: 0.6674747334714557
