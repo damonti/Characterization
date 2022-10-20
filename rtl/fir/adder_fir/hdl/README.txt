@@ -1,0 +1,1 @@
+In the original FIR filter, there are 3 adders with different bitwidth. you should come up with a general power model for all 3 of them, so that you can compute power regardless of the bitwidth
