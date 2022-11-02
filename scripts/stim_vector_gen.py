@@ -1,3 +1,8 @@
+############################################################
+#Generate the input vectors for component characterization #
+#for any BW for 1%->100% with random interleaving          #
+############################################################
+
 from sympy import symbols, linsolve, Matrix
 from random import randint
 import math
@@ -59,14 +64,14 @@ def generate_transition(state, toggle_rate):
         state[position] = 0 if state[position] else 1
     return state
     
-# if len(sys.argv)!= 2:
-#     print("Usage: script.py <chosen_BW>")
-#     sys.exit(1)
+if len(sys.argv)!= 2:
+    print("Usage: script.py <toggle_rate_percentage> (integer)")
+    sys.exit(1)
 #DEFINE DESIGN
-# BW = sys.argv[1]
-BW = 8
-N_TRANSITIONS = 1000 #MUST BE AN EVEN NUMBER
-TOGGLES = list(range(1, 101))
+N = int(sys.argv[1])
+BW = 16
+N_TRANSITIONS = 42 #MUST BE AN EVEN NUMBER
+TOGGLES = list(range(N, N+1))
 #TODO: SWEEP THE TOGGLE ACTIVITY FROM 1 TO 0 TO GENERATE VARIOUS STIMULUS FOR THE GIVEN BW
 for TOGGLE in TOGGLES: 
 
@@ -95,4 +100,9 @@ for TOGGLE in TOGGLES:
         input_vector.append(merge(state))
         
     print('\n'.join(input_vector))
-    print("\n--------------------------------"+str(TOGGLE)+"\n")
+    
+    #print("\n--------------------------------"+str(TOGGLE)+"\n")
+
+f = open("/home/20200969/Estimation/rtl/fir_8bit/hdl/stimuli.txt", "w")
+f.write('\n'.join(input_vector))
+f.close()
