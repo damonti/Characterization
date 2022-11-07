@@ -1,12 +1,12 @@
 #HOW IT IS CALLED IN THE DIRECTORY TREE
-set UNIT multiplier
+set UNIT fir_8bit
 #HOW IT IS CALLED IN VERILOG
-set DESIGN mul 
+set DESIGN fir 
 set LOCAL_DIR "[exec pwd]/.."
 set SYNTH_DIR ${LOCAL_DIR}/work
 set SCRIPT_DIR ${LOCAL_DIR}/tcl
-set RTL_PATH ${LOCAL_DIR}/rtl/fir_8bit/components/${UNIT}
-set SIM_PATH ${LOCAL_DIR}/sim/fir_8bit/components/${UNIT}
+set RTL_PATH ${LOCAL_DIR}/rtl/${UNIT}/design
+set SIM_PATH ${LOCAL_DIR}/sim/${UNIT}/design
 set REPORTS_PATH ${SIM_PATH}/reports
 set TECH 40
 
@@ -31,7 +31,9 @@ set_attribute interconnect_mode ple
 #RTL
 
 #set_attribute init_hdl_search_path $RTL_PATH
-read_hdl -v2001 ${RTL_PATH}/${DESIGN}.v 
+read_hdl -v2001 ${RTL_PATH}/mul.v
+read_hdl -v2001 ${RTL_PATH}/adder.v 
+read_hdl -v2001 ${RTL_PATH}/fir.v
 
 set_attribute optimize_merge_flops false 
 set_attribute optimize_merge_latches false 
@@ -54,27 +56,31 @@ set_attr syn_generic_effort high
 syn_generic 
 
 #read_stimulus -format tcf -file ${SIM_PATH}/tcf/fir_8bit_50percent.tcf -report_missing_signals all -sdb_out ${SIM_PATH}/tcf/stimulus.sdb -resim_cg_enables 
-#for {set TOGGLE 1} {$TOGGLE < 101} {incr TOGGLE} {
-for {set REP 0} {$REP < 100} {incr REP} {
+# foreach TOGGLE {10 100} {
+# # for {set REP 0} {$REP < 100} {incr REP} {
+#     read_stimulus -dut_instance tb_fir -format tcf -file ${SIM_PATH}/tcf/${UNIT}_${TOGGLE}percent.tcf -report_missing_signals all -resim_cg_enables -append
+    
+# #     #-sdb_out ${SIM_PATH}/tcf/stimulus.sdb
+# # }
+# }
 
-    read_stimulus -format tcf -file ${SIM_PATH}/tcf/${UNIT}_${TOGGLE}percent_#${REP}.tcf -report_missing_signals all -resim_cg_enables -append
-    #-sdb_out ${SIM_PATH}/tcf/stimulus.sdb
-}
-#}
+# write_sdb -out ${SIM_PATH}/tcf/stimulus.sdb
+# syn_power
+# read_stimulus -format sdb -file ${SIM_PATH}/tcf/stimulus.sdb
+# puts stdout "compute_power -mode average"
+# compute_power -mode average
+# set LENGHT [llength $TOGGLES]
 
-write_sdb -out ${SIM_PATH}/tcf/stimulus.sdb
-syn_power
-read_stimulus -format sdb -file ${SIM_PATH}/tcf/stimulus.sdb
-puts stdout "compute_power -mode average"
-compute_power -mode average
+# #for {set i 1} {$i <= $LENGHT} {incr i} {
 
-for {set REP 0} {$REP < 100} {incr REP} {
+# report_power -stims /stim#1 -by_hierarchy -unit nW -cols "cells dynamic total" -out ${REPORTS_PATH}/${DESIGN}_10percent_avg.rpt 
+# report_power -stims /stim#2 -by_hierarchy -unit nW -cols "cells dynamic total" -out ${REPORTS_PATH}/${DESIGN}_100percent_avg.rpt 
 
-    report_power -stims /stim#${REP} -by_hierarchy -unit nW -cols "cells dynamic total" -out ${REPORTS_PATH}/multiplier_${TOGGLE}percent_#${REP}_avg.rpt 
-    #-sdb_out ${SIM_PATH}/tcf/stimulus.sdb
-}
+# #}
 
-report_area > ${REPORTS_PATH}/multiplier_area.rpt
-puts stdout "Done Reporting PPA"
+# #compute_power -mode vectorless
+# #report_power -by_hierarchy -unit nW -cols "cells dynamic total" -out ${REPORTS_PATH}/${DESIGN}_vectorless.rpt 
+# report_area > ${REPORTS_PATH}/${DESIGN}_area.rpt
+# #puts stdout "Done Reporting PPA"
 
 
