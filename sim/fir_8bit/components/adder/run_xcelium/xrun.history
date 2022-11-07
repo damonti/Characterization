@@ -1,0 +1,1 @@
+s1(07Nov2022:23:01:43):  xrun -clean -access rwc -input run.tcl -timescale 1ns/10ps -ALLOWREDEFINITION /home/20200969/Estimation/rtl/fir_8bit/components/adder/adder.v /home/20200969/Estimation/rtl/fir_8bit/components/adder/tb_adder.v 

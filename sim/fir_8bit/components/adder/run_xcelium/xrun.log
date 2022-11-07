@@ -1,0 +1,43 @@
+xrun: 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	19.03-s013: Started on Nov 07, 2022 at 23:01:43 CET
+xrun
+	-clean
+	-access rwc
+	-input run.tcl
+	-timescale 1ns/10ps
+	-ALLOWREDEFINITION
+	/home/20200969/Estimation/rtl/fir_8bit/components/adder/adder.v
+	/home/20200969/Estimation/rtl/fir_8bit/components/adder/tb_adder.v
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: /home/20200969/Estimation/rtl/fir_8bit/components/adder/adder.v
+	module worklib.adder:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/fir_8bit/components/adder/tb_adder.v
+            $fscanf(fd,"%b", inj_data);
+                  |
+xmvlog: *W,NOSYST (/home/20200969/Estimation/rtl/fir_8bit/components/adder/tb_adder.v,46|18): System function '$fscanf' invoked as a task. Return value will be ignored.
+	module worklib.tb_adder:v
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_adder
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.adder:v <0x4fe78680>
+			streams:   2, words:   253
+		worklib.tb_adder:v <0x35fd87ee>
+			streams:   9, words:  6385
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               7       7
+		Vectored wires:          4       -
+		Always blocks:           3       3
+		Initial blocks:          1       1
+		Cont. assignments:       2       2
+		Pseudo assignments:      2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_adder:v

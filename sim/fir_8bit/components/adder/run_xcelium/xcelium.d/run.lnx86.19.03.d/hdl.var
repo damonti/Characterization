@@ -1,0 +1,7 @@
+define XMSIMRC	( /opt/tools/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.tb_adder:v
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ( + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT worklib.tb_adder:v

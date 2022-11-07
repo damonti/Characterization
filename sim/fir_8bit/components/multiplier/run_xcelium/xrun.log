@@ -1,0 +1,158 @@
+xrun: 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun	19.03-s013: Started on Nov 07, 2022 at 05:44:00 CET
+xrun
+	-clean
+	-access rwc
+	-input run.tcl
+	-timescale 1ns/10ps
+	-ALLOWREDEFINITION
+	/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/mul.v
+	/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/tb_mul.v
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: /home/20200969/Estimation/rtl/fir_8bit/components/multiplier/mul.v
+	module worklib.mul:v
+		errors: 0, warnings: 0
+file: /home/20200969/Estimation/rtl/fir_8bit/components/multiplier/tb_mul.v
+            $fscanf(fd,"%b", inj_data);
+                  |
+xmvlog: *W,NOSYST (/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/tb_mul.v,61|18): System function '$fscanf' invoked as a task. Return value will be ignored.
+	module worklib.tb_mul:v
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_mul
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mul:v <0x733b3439>
+			streams:   2, words:   261
+		worklib.tb_mul:v <0x63bfd055>
+			streams:  10, words:  6818
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:                7       7
+		Vectored wires:           4       -
+		Always blocks:            3       3
+		Initial blocks:           1       1
+		Cont. assignments:        2       2
+		Pseudo assignments:       2       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.tb_mul:v
+Loading snapshot worklib.tb_mul:v .................... Done
+xcelium> source /opt/tools/cadence/2019-20/RHELx86/XCELIUM_19.03.013/tools/xcelium/files/xmsimrc
+xcelium> dumptcf -output /home/20200969/Estimation/sim/fir_8bit/components/multiplier/tcf/multiplier_99percent_#99.tcf -scope /tb_mul -dumpportsonly -overwrite 
+xcelium> run 
+in1={xxxxxxxx} in2={xxxxxxxx} out={xxxxxxxxxxxx} clk period count=           x
+in1={xxxxxxxx} in2={xxxxxxxx} out={xxxxxxxxxxxx} clk period count=           1
+Start clock           1 
+in1={xxxxxxxx} in2={xxxxxxxx} out={xxxxxxxxxxxx} clk period count=           2
+in1={11011011} in2={01100011} out={010010110001} clk period count=           3
+in1={00100100} in2={10011100} out={010111110000} clk period count=           4
+in1={11011011} in2={01100011} out={010010110001} clk period count=           5
+in1={00100100} in2={10011100} out={010111110000} clk period count=           6
+in1={11011011} in2={01100011} out={010010110001} clk period count=           7
+in1={00100100} in2={10011100} out={010111110000} clk period count=           8
+in1={11011011} in2={01100011} out={010010110001} clk period count=           9
+in1={00100100} in2={10011100} out={010111110000} clk period count=          10
+in1={11011011} in2={01100011} out={010010110001} clk period count=          11
+in1={00100100} in2={10011100} out={010111110000} clk period count=          12
+in1={11011011} in2={01100011} out={010010110001} clk period count=          13
+in1={00100100} in2={10011100} out={010111110000} clk period count=          14
+in1={11011011} in2={01100011} out={010010110001} clk period count=          15
+in1={00100100} in2={10011100} out={010111110000} clk period count=          16
+in1={11011011} in2={01100011} out={010010110001} clk period count=          17
+in1={00100100} in2={10011100} out={010111110000} clk period count=          18
+in1={11011011} in2={01100011} out={010010110001} clk period count=          19
+in1={00100100} in2={10011100} out={010111110000} clk period count=          20
+in1={11011011} in2={01100011} out={010010110001} clk period count=          21
+in1={00100100} in2={10011100} out={010111110000} clk period count=          22
+in1={11011011} in2={01100011} out={010010110001} clk period count=          23
+in1={00100100} in2={10011100} out={010111110000} clk period count=          24
+in1={11011011} in2={01100011} out={010010110001} clk period count=          25
+in1={00100100} in2={10011100} out={010111110000} clk period count=          26
+in1={11011011} in2={01100011} out={010010110001} clk period count=          27
+in1={00100100} in2={10011100} out={010111110000} clk period count=          28
+in1={11011011} in2={01100011} out={010010110001} clk period count=          29
+in1={00100100} in2={10011100} out={010111110000} clk period count=          30
+in1={11011011} in2={01100011} out={010010110001} clk period count=          31
+in1={00100100} in2={10011100} out={010111110000} clk period count=          32
+in1={11011011} in2={01100011} out={010010110001} clk period count=          33
+in1={00100100} in2={10011100} out={010111110000} clk period count=          34
+in1={11011011} in2={01100011} out={010010110001} clk period count=          35
+in1={00100100} in2={10011100} out={010111110000} clk period count=          36
+in1={11011011} in2={01100011} out={010010110001} clk period count=          37
+in1={00100100} in2={10011100} out={010111110000} clk period count=          38
+in1={11011011} in2={01100011} out={010010110001} clk period count=          39
+in1={00100100} in2={10011100} out={010111110000} clk period count=          40
+in1={11011011} in2={01100011} out={010010110001} clk period count=          41
+in1={00100100} in2={10011100} out={010111110000} clk period count=          42
+in1={11011011} in2={01100011} out={010010110001} clk period count=          43
+in1={00100100} in2={10011100} out={010111110000} clk period count=          44
+in1={11011011} in2={01100011} out={010010110001} clk period count=          45
+in1={00100100} in2={10011100} out={010111110000} clk period count=          46
+in1={11011011} in2={01100011} out={010010110001} clk period count=          47
+in1={00100100} in2={10011100} out={010111110000} clk period count=          48
+in1={11011011} in2={01100011} out={010010110001} clk period count=          49
+in1={00100100} in2={10011100} out={010111110000} clk period count=          50
+in1={11011011} in2={01100011} out={010010110001} clk period count=          51
+in1={00100100} in2={10011100} out={010111110000} clk period count=          52
+in1={11011011} in2={01100011} out={010010110001} clk period count=          53
+in1={00100100} in2={10011100} out={010111110000} clk period count=          54
+in1={11011011} in2={01100011} out={010010110001} clk period count=          55
+in1={00100100} in2={10011100} out={010111110000} clk period count=          56
+in1={11011011} in2={01100011} out={010010110001} clk period count=          57
+in1={00100100} in2={10011100} out={010111110000} clk period count=          58
+in1={11011011} in2={01100011} out={010010110001} clk period count=          59
+in1={00100100} in2={10011100} out={010111110000} clk period count=          60
+in1={11011011} in2={01100011} out={010010110001} clk period count=          61
+in1={00100100} in2={10011100} out={010111110000} clk period count=          62
+in1={11011011} in2={01100011} out={010010110001} clk period count=          63
+in1={00100100} in2={10011100} out={010111110000} clk period count=          64
+in1={11011011} in2={01100011} out={010010110001} clk period count=          65
+in1={00100100} in2={10011100} out={010111110000} clk period count=          66
+in1={11011011} in2={01100011} out={010010110001} clk period count=          67
+in1={00100100} in2={10011100} out={010111110000} clk period count=          68
+in1={11011011} in2={01100011} out={010010110001} clk period count=          69
+in1={00100100} in2={10011100} out={010111110000} clk period count=          70
+in1={11011011} in2={01100011} out={010010110001} clk period count=          71
+in1={00100100} in2={10011100} out={010111110000} clk period count=          72
+in1={11011011} in2={01100011} out={010010110001} clk period count=          73
+in1={00100100} in2={10011100} out={010111110000} clk period count=          74
+in1={11011011} in2={01100011} out={010010110001} clk period count=          75
+in1={00100100} in2={10011100} out={010111110000} clk period count=          76
+in1={11011011} in2={01100011} out={010010110001} clk period count=          77
+in1={00100100} in2={10011100} out={010111110000} clk period count=          78
+in1={11011011} in2={01100011} out={010010110001} clk period count=          79
+in1={00100100} in2={10011100} out={010111110000} clk period count=          80
+in1={11011011} in2={01100011} out={010010110001} clk period count=          81
+in1={00100100} in2={10011100} out={010111110000} clk period count=          82
+in1={11011011} in2={01100011} out={010010110001} clk period count=          83
+in1={00100100} in2={10011100} out={010111110000} clk period count=          84
+in1={11011011} in2={01100011} out={010010110001} clk period count=          85
+in1={00100100} in2={10011100} out={010111110000} clk period count=          86
+in1={11011011} in2={01101011} out={101110001001} clk period count=          87
+in1={00100100} in2={10000100} out={001010010000} clk period count=          88
+in1={11011111} in2={01111011} out={101100100101} clk period count=          89
+in1={00000000} in2={10000100} out={000000000000} clk period count=          90
+in1={11101111} in2={01111011} out={001011010101} clk period count=          91
+in1={00010010} in2={10000100} out={100101001000} clk period count=          92
+in1={01101101} in2={01111011} out={010001011111} clk period count=          93
+in1={10010011} in2={10000100} out={101111001100} clk period count=          94
+in1={01101100} in2={01011011} out={011001100100} clk period count=          95
+in1={10010011} in2={10100000} out={101111100000} clk period count=          96
+in1={01101100} in2={01111111} out={010110010100} clk period count=          97
+in1={10010011} in2={00000000} out={000000000000} clk period count=          98
+in1={01101110} in2={11111111} out={110110010010} clk period count=          99
+in1={10010001} in2={10000000} out={100010000000} clk period count=         100
+in1={01100110} in2={01111111} out={001010011010} clk period count=         101
+in1={10011001} in2={10000100} out={111011100100} clk period count=         102
+------------------------
+Stop clock         102 
+Simulation complete via $finish(1) at time 1035 NS + 0
+/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/tb_mul.v:70     $finish;
+xcelium> dumptcf -end 
+xcelium> exit
+TOOL:	xrun	19.03-s013: Exiting on Nov 07, 2022 at 05:44:01 CET  (total: 00:00:01)

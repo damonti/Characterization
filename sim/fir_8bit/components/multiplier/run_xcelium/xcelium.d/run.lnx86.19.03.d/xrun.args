@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-clean
+-access
+rwc
+-input
+run.tcl
+-timescale
+1ns/10ps
+-ALLOWREDEFINITION
+/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/mul.v
+/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/tb_mul.v
