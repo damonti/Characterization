@@ -9,9 +9,9 @@ module tb_fir;
     // Inputs
     reg clk, rst;
     reg  [N-1:0] Xin;
-    reg [7:0] H0, H1, H2, H3;
+    reg [N-1:0] H0, H1, H2, H3;
     // Outputs
-    wire  [11:0] Yout;
+    wire  [10:0] Yout;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
@@ -48,12 +48,7 @@ end
     #(STEP)
     rst <= {1'b0};
     $write("Start clock %d \n", count);
-    H0 <= {8'b00000001};
-    H1 <= {8'b00000001};
-    H2 <= {8'b00000001};
-    H3 <= {8'b00000001};
 
-    $dumpon;
     // Xin = {8'b00000001}; #STEP;
     // Xin = {8'b00000011};  #STEP;
     // Xin = {8'b00000111};  #STEP;
@@ -65,14 +60,22 @@ end
     // Xin = {8'b11111110};  #STEP;
     // Xin = {8'b11111100};  #STEP;
     $dumpon;
+    H0 <= {8'b11010011};
+    H1 <= {8'b11010011};
+    H2 <= {8'b11010011};
+    H3 <= {8'b11010011};
     fd = $fopen("/home/20200969/Estimation/rtl/fir_8bit/design/stimuli.txt", "r");
     if (!fd) $display("could not read file");
     while (!$feof(fd)) begin
             $fscanf(fd,"%b", inj_data);
             #(STEP)
             Xin <= inj_data;
-            //in1 <= inj_data[(N/2)-1:0];
-            //in2 <= inj_data[N-1:(N/2)];
+        //     Xin <= inj_data[N-1:0];
+        //     H0 <= inj_data[(N*2)-1:N];
+        //     H1 <= inj_data[(N*3)-1:(N*2)];
+        //     H2 <= inj_data[(N*4)-1:(N*3)];
+        //     H3 <= inj_data[(N*5)-1:(N*4)];
+        
     end
     $dumpoff;
     #(STEP)

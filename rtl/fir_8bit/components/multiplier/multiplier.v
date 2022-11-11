@@ -10,15 +10,15 @@
 *******************************************************************************/
 
 //module MUL #(parameter N=8)
-module mul
+module multiplier
     (
 	in2,
 	in1,
 	out
 	); /* architecture "behavioural" */ 
 input [7:0] in2,in1;
-output [11:0] out;
-wire [11:0] asc001;
+output [10:0] out;
+wire [10:0] asc001;
 
 assign asc001 = (in1 * in2);
 

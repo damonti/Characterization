@@ -1,7 +1,7 @@
 `timescale 1ns/10ps 
 module tb_adder;
 
-    parameter N = 16;
+    parameter N = 22;
     parameter STEP = 10;
     integer count, fd;
     reg [N-1:0] inj_data;
@@ -10,7 +10,7 @@ module tb_adder;
     reg clk, rst;
     reg  [(N/2)-1:0] in1, in2;
     // Outputs
-    wire  [8:0] out;
+    wire  [(N/2)-1:0] out;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
@@ -37,6 +37,7 @@ end
     #(STEP)
     #(STEP / 2)
     count = 0;
+    #(STEP)
     $write("Start clock %d \n", count);
 
     $dumpon;

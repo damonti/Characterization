@@ -1,5 +1,5 @@
 `timescale 1ns/10ps 
-module tb_mul;
+module tb_multiplier;
 
     parameter N = 16;
     parameter STEP = 10;
@@ -10,11 +10,11 @@ module tb_mul;
     reg clk, rst;
     reg  [(N/2)-1:0] in1, in2;
     // Outputs
-    wire  [11:0] out;
+    wire  [10:0] out;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
-    mul mul(
+    multiplier multiplier(
         .in1(in1),
         .in2(in2),  
         .out(out)
@@ -34,15 +34,14 @@ end
     //$dumpvars(0, tb_fir);    
     #0
     clk <= {1'b0};
-    rst <= {1'b0};
     #(STEP)
     #(STEP / 2)
     count = 0;
-    rst <= {1'b1};
     #(STEP)
-    rst <= {1'b0};
     $write("Start clock %d \n", count);
+
     $dumpon;
+    //in2[2:0] <= {3'b111};
     fd = $fopen("/home/20200969/Estimation/rtl/fir_8bit/components/multiplier/stimuli.txt", "r");
     if (!fd) $display("could not read file");
     while (!$feof(fd)) begin
