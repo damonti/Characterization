@@ -46,51 +46,51 @@ y_power = df_power['Power [nW]'].values
 
 X_train, X_test, y_train, y_test = train_test_split(x_list_power, y_power, test_size=0.2, random_state=4, shuffle=True)
 
-print("Tuning the hyperparameters on the dataframe... ")
-start = time.time()
+# print("Tuning the hyperparameters on the dataframe... ")
+# start = time.time()
 
-model_params = {
+# model_params = {
 
-    'XGB' : {
-        'model': GradientBoostingRegressor(),
-        'params': {
-            'n_estimators': [1200, 2000, 3000],
-            "max_depth": [3, 4],
-            "min_samples_split": [3],
-            "learning_rate": [0.1, 0.01],
-            "loss": ['squared_error' , 'huber'],
-            #"loss": ['squared_error', 'absolute_error', 'huber', 'quantile'],
-            #"criterion" : ['friedman_mse', 'squared_error', 'mse']
-        }
-    },
-}
-
-scores = []
-
-for model_name, mp in model_params.items():
-    rg =  GridSearchCV(mp['model'], mp['params'], cv=5, return_train_score=False, n_jobs=-1)
-    rg.fit(X_train, y_train)
-    scores.append({
-        'model': model_name,
-        'best_score': rg.best_score_,
-        'best_params': rg.best_params_
-    })
-
-stop = time.time()    
-print("Done. \n ")
-print(f"Hyperparameter tuning time: {stop - start}s")
-
-
-df = pd.DataFrame(scores,columns=['model','best_score','best_params'])
-df.to_csv(DF_PATH+'/'+UNIT+'_hp_tuning_XGB.csv', index=False)
-
-# params = {
-#     'n_estimators': 1200,
-#     "max_depth": 3,
-#     "min_samples_split": 3,
-#     "learning_rate": 0.1,
-#     "loss": 'huber',
+#     'XGB' : {
+#         'model': GradientBoostingRegressor(),
+#         'params': {
+#             'n_estimators': [1200, 2000, 3000],
+#             "max_depth": [3, 4],
+#             "min_samples_split": [3],
+#             "learning_rate": [0.1, 0.01],
+#             "loss": ['squared_error' , 'huber'],
+#             #"loss": ['squared_error', 'absolute_error', 'huber', 'quantile'],
+#             #"criterion" : ['friedman_mse', 'squared_error', 'mse']
+#         }
+#     },
 # }
+
+# scores = []
+
+# for model_name, mp in model_params.items():
+#     rg =  GridSearchCV(mp['model'], mp['params'], cv=5, return_train_score=False, n_jobs=-1)
+#     rg.fit(X_train, y_train)
+#     scores.append({
+#         'model': model_name,
+#         'best_score': rg.best_score_,
+#         'best_params': rg.best_params_
+#     })
+
+# stop = time.time()    
+# print("Done. \n ")
+# print(f"Hyperparameter tuning time: {stop - start}s")
+
+
+# df = pd.DataFrame(scores,columns=['model','best_score','best_params'])
+# df.to_csv(DF_PATH+'/'+UNIT+'_hp_tuning_XGB.csv', index=False)
+
+params = {
+    'n_estimators': 3000,
+    "max_depth": 3,
+    "min_samples_split": 3,
+    "learning_rate": 0.01,
+    "loss": 'huber',
+}
 
 VALUE = "power"
 DUMP_PATH = dump_xgb_model(UNIT, VALUE, DF_PATH, X_train, y_train, params)

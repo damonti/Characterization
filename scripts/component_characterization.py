@@ -7,7 +7,7 @@ if len(sys.argv)!= 4:
 
 DESIGN = str(sys.argv[1])
 UNIT = str(sys.argv[2])
-BW = 2*int(sys.argv[3]) #Remember: for add and mul the BW is double
+BW = int(sys.argv[3]) #Remember: for add and mul the BW is double
 
 
 SCRIPT_PATH = os.path.expanduser("~/Estimation/scripts")
@@ -22,16 +22,15 @@ if not isdir:
     print("Error, invalid arguments. Check directory tree. \nUsage: script.py <DESIGN> <UNIT> <BW>")
     sys.exit(1)
 
-sys.stdout = open(LOG_PATH+"/"+DESIGN+"_"+UNIT+"_log.txt", "w")
-
-REPETITIONS = list(range(0, 100))
-TOGGLES = list(range(1, 101))
+REPETITIONS = list(range(0, 10))
+#TOGGLES = list(range(11, 12))
+TOGGLES = [47.69]
 for TOGGLE in TOGGLES: #take one toggle rate
     for rep in REPETITIONS: #repeat each toggle rate 100 times so that interleaving is averaged
         
         
         #Generate stimuli for given toggle_rate and bitwidth
-        os.system("python3 "+SCRIPT_PATH+"/stim_vector_gen.py "+UNIT+" "+str(TOGGLE)+" "+str(BW))
+        os.system("python3 "+SCRIPT_PATH+"/component_stim_vector_gen.py "+UNIT+" "+str(TOGGLE)+" "+str(BW))
  
         #update run.tcl with the new toggle rate
         with open(SIM_PATH+'/run_xcelium/run.tcl', 'w') as wr:
@@ -58,17 +57,15 @@ print("Power and area reports saved in "+SIM_PATH+"\\reports \n")
 
 
 #RETURN DATAFRAME FOR THE COMPONENT
-os.system("python3 "+SCRIPT_PATH+"/compute_average_power_reports.py "+DESIGN+" "+UNIT)
+#os.system("python3 "+SCRIPT_PATH+"/compute_average_power_reports.py "+DESIGN+" "+UNIT+" "+str(BW))
 
 #DELETE TCF AND REPORTS
-print("Removing stimuli (.tcf) and reports... \n")
+#print("Removing stimuli (.tcf) and reports... \n")
 #os.system("rm "+SIM_PATH+"/reports/*.rpt")
 #os.system("rm "+SIM_PATH+"/tcf/*.tcf")
 
 #Hyperparameter tuning and choose the best to train model
-os.system("python3 "+SCRIPT_PATH+"/dump_model.py "+DESIGN+" "+UNIT)
-
-sys.stdout.close()
+#os.system("python3 "+SCRIPT_PATH+"/dump_model.py "+DESIGN+" "+UNIT)
 
 
 

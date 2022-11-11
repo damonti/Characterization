@@ -35,7 +35,7 @@ UNIT = str(sys.argv[2])
 BW = int(sys.argv[3])
 REPORTS_PATH = os.path.expanduser("~/Estimation/sim/"+DESIGN+"/components/"+UNIT+"/reports")
 DATAFRAME_PATH = os.path.expanduser("~/Estimation/sim/"+DESIGN+"/components/"+UNIT+"/dataframe")
-REPETITIONS = list(range(0, 100))
+REPETITIONS = list(range(1, 100))
 TOGGLES = list(range(1, 101))
 
 

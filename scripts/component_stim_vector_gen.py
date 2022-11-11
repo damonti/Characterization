@@ -64,13 +64,14 @@ def generate_transition(state, toggle_rate):
     return state
     
 if len(sys.argv)!= 4:
-    print("Usage: script.py <DESIGN> <toggle_rate_percentage> <BW>")
+    print("Usage: script.py <UNIT> <toggle_rate_percentage> <BW>")
     sys.exit(1)
     
-DESIGN = str(sys.argv[1])
-TOGGLE = int(sys.argv[2])
-BW = int(sys.argv[3])
-N_TRANSITIONS = 100 #MUST BE AN EVEN NUMBER
+UNIT = str(sys.argv[1])
+DESIGN = "fir_8bit"
+TOGGLE = round(float(sys.argv[2]),2)
+BW = int(sys.argv[3])*2
+N_TRANSITIONS = 1000 #MUST BE AN EVEN NUMBER
 
 #GENERATE POSSIBLE TOGGLING PERCENTAGE GIVEN THE BW
 steps = generate_toggles_percentage(BW)
@@ -79,7 +80,7 @@ steps = generate_toggles_percentage(BW)
 toggle_lower_bound = get_lower_bound(steps, TOGGLE)
 toggle_upper_bound = get_upper_bound(steps, TOGGLE)  
 
-#FIND OUT HOW MANY TRANSITIONS OF UPPER AND LOWER BOUNDS WE NEED TO HAVE (OUT OF 10) SUCH THAT THE SPECIFIED TOGGLE IS MET
+#FIND OUT HOW MANY TRANSITIONS OF UPPER AND LOWER BOUNDS WE NEED TO HAVE (OUT OF N_TRANSITIONS) SUCH THAT THE SPECIFIED TOGGLE IS MET
 [transitions_upper_bound, transitions_lower_bound] = compute_transitions(toggle_upper_bound, toggle_lower_bound, TOGGLE, N_TRANSITIONS)
 
 #GENERATE THE NUMBER OF TRANSITIONS FOUND FOR THE GIVEN BOUND
@@ -96,7 +97,7 @@ for i in range(round(transitions_lower_bound)):
     state = generate_transition(state, toggle_lower_bound)
     input_vector.append(merge(state))
         
-f = open("/home/20200969/Estimation/rtl/"+DESIGN+"/design/stimuli.txt", "w")
+f = open("/home/20200969/Estimation/rtl/fir_8bit/components/"+UNIT+"/stimuli.txt", "w")
 f.write('\n'.join(input_vector))
 f.close()
             
