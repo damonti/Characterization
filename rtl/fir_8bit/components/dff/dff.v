@@ -11,19 +11,21 @@
 
 //module ADD #(parameter N=8)(
 
-module adder(
-	in2,
-	in1,
-	out
+module dff(
+    in,
+	out,
+    clk
 	); /* architecture "behavioural" */ 
-input [15:0] in2,
-	in1;
+input [15:0] in;
 output [15:0] out;
-wire [16:0] asc001;
+input clk;
+reg [15:0] temp_out;
 
-assign asc001 = (in2)+(in1);
+assign out = temp_out;
 
-assign out = asc001;
+always@ (posedge clk)
+    temp_out <= in;
+
 endmodule
 
 /* CADENCE  urf5TQ4= : u9/ySgnWtBlWxVbRXgAU4eg= ** DO NOT EDIT THIS LINE ******/

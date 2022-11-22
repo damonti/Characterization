@@ -1,7 +1,7 @@
 `timescale 1ns/10ps 
-module tb_adder;
+module tb_multiplier;
 
-    parameter N = 32;
+    parameter N = 64;
     parameter STEP = 10;
     integer count, fd;
     reg [N-1:0] inj_data;
@@ -10,11 +10,11 @@ module tb_adder;
     reg clk, rst;
     reg  [(N/2)-1:0] in1, in2;
     // Outputs
-    wire  [(N/2):0] out;
+    wire  [N-1:0] out;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
-    adder adder(
+    multiplier multiplier(
         .in1(in1),
         .in2(in2),  
         .out(out)
@@ -41,7 +41,8 @@ end
     $write("Start clock %d \n", count);
 
     $dumpon;
-    fd = $fopen("/home/20200969/Estimation/rtl/fir_8bit/components/adder/stimuli.txt", "r");
+    //in2[2:0] <= {3'b111};
+    fd = $fopen("/home/20200969/Estimation/rtl/fir_32bit/components/multiplier/stimuli.txt", "r");
     if (!fd) $display("could not read file");
     while (!$feof(fd)) begin
             $fscanf(fd,"%b", inj_data);

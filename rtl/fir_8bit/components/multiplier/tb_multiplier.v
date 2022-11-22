@@ -10,7 +10,7 @@ module tb_multiplier;
     reg clk, rst;
     reg  [(N/2)-1:0] in1, in2;
     // Outputs
-    wire  [10:0] out;
+    wire  [N-1:0] out;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(

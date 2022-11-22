@@ -1,16 +1,16 @@
 //module fir#(parameter N=8)
 module fir
         (input clk, rst,
-        input  [7:0] Xin,
-        input [7:0] H0, H1, H2, H3,
-        output [15:0] out
+        input  [15:0] Xin,
+        input [15:0] H0, H1, H2, H3,
+        output [31:0] out
         );
     
 //Internal variables.
     
-    wire    [15:0] mul_out0, mul_out1, mul_out2, mul_out3; 
-    wire    [15:0] add_out0, add_out1, add_out2; 
-    reg     [15:0] Q0, Q1, Q2, Yout;
+    wire    [31:0] mul_out0, mul_out1, mul_out2, mul_out3; 
+    wire    [31:0] add_out0, add_out1, add_out2; 
+    reg     [31:0] Q0, Q1, Q2, Yout;
     // reg     [7:0] in;
     // reg     [7:0] C0, C1, C2, C3;
 
@@ -39,9 +39,9 @@ assign out = Yout;
 always @(posedge clk or posedge rst) begin
     if(rst) begin
         // in <= {8'b00000000};  
-        Q0 <= {16'b0000000000000000};
-        Q1 <= {16'b0000000000000000};
-        Q2 <= {16'b0000000000000000};     
+        Q0 <= {32'b00000000000000000000000000000000};
+        Q1 <= {32'b00000000000000000000000000000000};
+        Q2 <= {32'b00000000000000000000000000000000};     
     end else begin
         Q0 <= mul_out0;
         Q1 <= add_out0;

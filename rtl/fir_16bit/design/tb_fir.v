@@ -1,7 +1,7 @@
 `timescale 1ns/1ns 
 module tb_fir;
 
-    parameter N = 8;
+    parameter N = 16;
     parameter STEP = 10;
     integer count, fd;
     reg [N*5-1:0] inj_data;
@@ -11,7 +11,7 @@ module tb_fir;
     reg  [N-1:0] Xin;
     reg [N-1:0] H0, H1, H2, H3;
     // Outputs
-    wire  [15:0] out;
+    wire  [(N*2)-1:0] out;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
@@ -69,7 +69,7 @@ end
     // H2 <= $urandom%255;
     // H3 <= $urandom%255;
 
-    fd = $fopen("/home/20200969/Estimation/rtl/fir_8bit/design/stimuli.txt", "r");
+    fd = $fopen("/home/20200969/Estimation/rtl/fir_16bit/design/stimuli.txt", "r");
     if (!fd) $display("could not read file");
     while (!$feof(fd)) begin
             $fscanf(fd,"%b", inj_data);

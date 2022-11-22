@@ -11,15 +11,15 @@
 
 //module ADD #(parameter N=8)(
 
-module adder(
+module ADD(
 	in2,
 	in1,
 	out
 	); /* architecture "behavioural" */ 
-input [15:0] in2,
+input [63:0] in2,
 	in1;
-output [15:0] out;
-wire [16:0] asc001;
+output [63:0] out;
+wire [63:0] asc001;
 
 assign asc001 = (in2)+(in1);
 

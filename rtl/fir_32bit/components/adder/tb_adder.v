@@ -1,7 +1,7 @@
 `timescale 1ns/10ps 
 module tb_adder;
 
-    parameter N = 32;
+    parameter N = 128;
     parameter STEP = 10;
     integer count, fd;
     reg [N-1:0] inj_data;
@@ -41,7 +41,7 @@ end
     $write("Start clock %d \n", count);
 
     $dumpon;
-    fd = $fopen("/home/20200969/Estimation/rtl/fir_8bit/components/adder/stimuli.txt", "r");
+    fd = $fopen("/home/20200969/Estimation/rtl/fir_32bit/components/adder/stimuli.txt", "r");
     if (!fd) $display("could not read file");
     while (!$feof(fd)) begin
             $fscanf(fd,"%b", inj_data);

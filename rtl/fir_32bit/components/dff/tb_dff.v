@@ -1,22 +1,22 @@
 `timescale 1ns/10ps 
-module tb_adder;
+module tb_dff;
 
-    parameter N = 32;
+    parameter N = 64;
     parameter STEP = 10;
     integer count, fd;
     reg [N-1:0] inj_data;
 
     // Inputs
-    reg clk, rst;
-    reg  [(N/2)-1:0] in1, in2;
+    reg clk;
+    reg  [N-1:0] in;
     // Outputs
-    wire  [(N/2):0] out;
+    wire  [N-1:0] out;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
-    adder adder(
-        .in1(in1),
-        .in2(in2),  
+    dff dff(
+        .in(in),
+        .clk(clk),  
         .out(out)
     );
 
@@ -41,13 +41,12 @@ end
     $write("Start clock %d \n", count);
 
     $dumpon;
-    fd = $fopen("/home/20200969/Estimation/rtl/fir_8bit/components/adder/stimuli.txt", "r");
+    fd = $fopen("/home/20200969/Estimation/rtl/fir_32bit/components/dff/stimuli.txt", "r");
     if (!fd) $display("could not read file");
     while (!$feof(fd)) begin
             $fscanf(fd,"%b", inj_data);
             #(STEP)
-            in1 <= inj_data[(N/2)-1:0];
-            in2 <= inj_data[N-1:(N/2)];
+            in <= inj_data;
     end
     $dumpoff;
     #(STEP)
@@ -58,8 +57,7 @@ end
 
 always #( STEP ) begin 
         //$write("inj_data=%b ", inj_data);
-        $write("in1={%b} ", in1);
-        $write("in2={%b} ", in2);
+        $write("in={%b} ", in);
         $write("out={%b} ", out);
         $write("clk period count= %d", count);
         $write("\n"); 

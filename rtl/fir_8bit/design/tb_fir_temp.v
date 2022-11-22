@@ -1,4 +1,4 @@
-`timescale 1ns/1ns 
+`timescale 1ns/10ps 
 module tb_fir;
 
     parameter N = 8;
@@ -11,7 +11,7 @@ module tb_fir;
     reg  [N-1:0] Xin;
     reg [N-1:0] H0, H1, H2, H3;
     // Outputs
-    wire  [15:0] out;
+    wire  [15:0] Yout;
     
     // Instantiate the Unit Under Test (UUT)
     //fir#(.N(N)) fir(
@@ -23,7 +23,7 @@ module tb_fir;
         .H1(H1),
         .H2(H2),
         .H3(H3),
-        .out(out)
+        .Yout(Yout)
     );
 
     
@@ -92,7 +92,7 @@ end
 always #( STEP ) begin 
         //$write("inj_data=%b ", inj_data);
         $write("Xin={%b} ", Xin);
-        $write("out={%b} ", out);
+        $write("Yout={%b} ", Yout);
         $write("Coefficients are: H0=%b; H1=%b; H2=%b; H3=%b; \n", H0, H1, H2, H3);
         $write("clk period count= %d", count);
         $write("\n"); 

@@ -16,10 +16,10 @@ module ADD(
 	in1,
 	out
 	); /* architecture "behavioural" */ 
-input [10:0] in2,
+input [15:0] in2,
 	in1;
-output [10:0] out;
-wire [10:0] asc001;
+output [15:0] out;
+wire [15:0] asc001;
 
 assign asc001 = (in2)+(in1);
 
