@@ -44,7 +44,7 @@ with open(file_to_parse,'r') as f:
         if line.startswith("\tinstance(\""):
             instance_name = line.split("\"")[1]
             if not ((instance_name.startswith("tb")) or (instance_name.startswith("fir") )): #in case there's a tb in the tcf, we ignore it
-                print("Instance name: " + instance_name)
+                #print("Instance name: " + instance_name)
                 #print("First bitline: " +str(lines[i+2].split("\"")[1]))
         #  print( [m for m in line if m.startswith("fir_Mul_")])
             #if line[1] in list_of_multipliers:
@@ -83,7 +83,7 @@ with open(file_to_parse,'r') as f:
                 input_instance_activity = round(((input_value/((how_many_input)*clock_toggles))*100),2)
                 output_instance_activity = round(((output_value/((how_many_output)*clock_toggles))*100),2)
                 inputoutput_instance_activity = round((((input_value+output_value)/((how_many_input+how_many_output)*clock_toggles))*100),2)
-                print("input_instance_activity = "+ str(input_instance_activity))
+                #print("input_instance_activity = "+ str(input_instance_activity))
                 #print("output_instance_activity = "+ str(output_instance_activity))
                 #print("inputoutput_instance_activity = "+ str(inputoutput_instance_activity))
                 instances_tuple.append([instance_name, input_instance_activity])

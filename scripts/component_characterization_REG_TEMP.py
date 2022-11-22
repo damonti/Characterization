@@ -38,7 +38,7 @@ for TOGGLE in TOGGLES: #take one toggle rate
 
         #execute simulation
         os.chdir(SIM_PATH+"/run_xcelium")
-        os.system("xrun -clean -access rwc -input run.tcl -timescale 1ns/1ns -ALLOWREDEFINITION "+RTL_PATH+"/"+UNIT+".v "+RTL_PATH+"/tb_"+UNIT+".v")
+        os.system("xrun -clean -access rwc -input run.tcl -timescale 1ns/10ps -ALLOWREDEFINITION "+RTL_PATH+"/"+UNIT+".v "+RTL_PATH+"/tb_"+UNIT+".v")
 
     os.chdir(WORK_PATH)
 

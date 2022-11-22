@@ -70,7 +70,7 @@ if len(sys.argv)!= 4:
 DESIGN = str(sys.argv[1])
 TOGGLE = int(sys.argv[2])
 BW = int(sys.argv[3])
-N_TRANSITIONS = 1000 #MUST BE AN EVEN NUMBER
+N_TRANSITIONS = 10000 #MUST BE AN EVEN NUMBER
 
 #GENERATE POSSIBLE TOGGLING PERCENTAGE GIVEN THE BW
 steps = generate_toggles_percentage(BW)
@@ -100,7 +100,7 @@ f = open("/home/20200969/Estimation/rtl/"+DESIGN+"/design/stimuli.txt", "w")
 f.write('\n'.join(input_vector))
 f.close()
             
-print('\n'.join(input_vector))
+#print('\n'.join(input_vector))
     
     #print("\n--------------------------------"+str(TOGGLE)+"\n")
 

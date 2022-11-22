@@ -44,7 +44,7 @@ with open(file_to_parse,'r') as f:
         if line.startswith("\tinstance(\""):
             instance_name = line.split("\"")[1]
             if not ((instance_name.startswith("tb")) or (instance_name.startswith("fir") )): #in case there's a tb in the tcf, we ignore it
-                print("Instance name: " + instance_name)
+                #print("Instance name: " + instance_name)
                 #print("First bitline: " +str(lines[i+2].split("\"")[1]))
         #  print( [m for m in line if m.startswith("fir_Mul_")])
             #if line[1] in list_of_multipliers:
@@ -77,15 +77,15 @@ with open(file_to_parse,'r') as f:
                     temp = lines[i+2+how_many_input+j].split("\"")[-2]
                     #print(temp.split("  ")[-1])
                     output_value += int(temp.split(" ")[-1])
-                print("Output total toggles = " + str(output_value))
+                #print("Output total toggles = " + str(output_value))
                     
            
                 input_instance_activity = round(((input_value/((how_many_input)*clock_toggles))*100),2)
                 output_instance_activity = round(((output_value/((how_many_output)*clock_toggles))*100),2)
                 inputoutput_instance_activity = round((((input_value+output_value)/((how_many_input+how_many_output)*clock_toggles))*100),2)
-                print("input_instance_activity = "+ str(input_instance_activity))
-                print("output_instance_activity = "+ str(output_instance_activity))
-                print("inputoutput_instance_activity = "+ str(inputoutput_instance_activity))
+                #print("input_instance_activity = "+ str(input_instance_activity))
+                #print("output_instance_activity = "+ str(output_instance_activity))
+                #print("inputoutput_instance_activity = "+ str(inputoutput_instance_activity))
                 instances_tuple.append([instance_name, output_instance_activity])
    
         i +=1 #this keeps track of which element_index of the list (line of lines) we currently are parsing
@@ -96,10 +96,10 @@ with open(file_to_parse,'r') as f:
     #print("Instance: "+str(element[0])+"; activity = "+str(element[1])+"%\n")
 
 
-#df = pd.DataFrame(instances_tuple, columns=['Components', 'alpha_out'])
-#df = df.set_index("Components")
-#print(df)
-#df.to_csv(where_to_dump+"/design_toggle_out.csv", sep=',')
+df = pd.DataFrame(instances_tuple, columns=['Components', 'alpha_out'])
+df = df.set_index("Components")
+print(df)
+df.to_csv(where_to_dump+"/design_toggle_out.csv", sep=',')
 
 
 

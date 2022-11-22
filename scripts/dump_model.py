@@ -8,14 +8,14 @@ import sys
 from sklearn.model_selection import GridSearchCV
 
 
-def dump_xgb_model(UNIT, VALUE, DF_PATH, X_train, y_train, params):
+def dump_xgb_model(UNIT, DF_PATH, X_train, y_train, params):
     reg_xgb = GradientBoostingRegressor(**params)
     print("Started training... \n")
     start = time.time()
     reg_xgb.fit(X_train, y_train)
     stop = time.time()
     print(f"Training time: {stop - start}s \n")
-    DUMP_PATH = DF_PATH+"/"+UNIT+"_"+VALUE+"_model"
+    DUMP_PATH = DF_PATH+"/"+UNIT+"_pwr_model"
     with open(DUMP_PATH, 'wb') as f:
         pickle.dump(reg_xgb, f)
     f.close()
@@ -27,6 +27,7 @@ if len(sys.argv)!= 3:
     print("Usage: script.py <DESIGN> <UNIT>")
     sys.exit(1)
 DESIGN = str(sys.argv[1])
+BIT = DESIGN.split("_")[1]
 UNIT = str(sys.argv[2])
 
 
@@ -37,10 +38,10 @@ WORK_PATH = os.path.expanduser("~/Estimation/work")
 TCL_PATH = os.path.expanduser("~/Estimation/tcl")
 
 
-DF_PATH = SIM_PATH+"/dataframe"
-df = pd.read_csv(DF_PATH+'/'+UNIT+'.csv', sep=',')
+DF_PATH = os.path.expanduser("~/Estimation/tables/"+DESIGN)
+df = pd.read_csv(DF_PATH+'/'+UNIT+'_'+BIT+'_table.csv', sep=',')
 
-df_power = df[['alpha', 'Power [nW]']].copy()
+df_power = df[['alpha_in', 'alpha_out', 'Power [nW]']].copy()
 x_list_power = df_power.drop('Power [nW]', axis=1).values
 y_power = df_power['Power [nW]'].values 
 
@@ -92,6 +93,5 @@ params = {
     "loss": 'huber',
 }
 
-VALUE = "power"
-DUMP_PATH = dump_xgb_model(UNIT, VALUE, DF_PATH, X_train, y_train, params)
+DUMP_PATH = dump_xgb_model(UNIT, DF_PATH, X_train, y_train, params)
 print("Model dumped in: "+DUMP_PATH)

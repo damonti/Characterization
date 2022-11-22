@@ -63,14 +63,14 @@ def generate_transition(state, toggle_rate):
         state[position] = 0 if state[position] else 1
     return state
     
-if len(sys.argv)!= 4:
-    print("Usage: script.py <UNIT> <toggle_rate_percentage> <BW>")
+if len(sys.argv)!= 5:
+    print("Usage: script.py <DESIGN> <UNIT> <toggle_rate_percentage> <BW>")
     sys.exit(1)
     
-UNIT = str(sys.argv[1])
-DESIGN = "fir_8bit"
-TOGGLE = round(float(sys.argv[2]),2)
-BW = int(sys.argv[3])*2
+UNIT = str(sys.argv[2])
+DESIGN = str(sys.argv[1])
+TOGGLE = round(float(sys.argv[3]),2)
+BW = int(sys.argv[4])
 N_TRANSITIONS = 1000 #MUST BE AN EVEN NUMBER
 
 #GENERATE POSSIBLE TOGGLING PERCENTAGE GIVEN THE BW
@@ -97,11 +97,11 @@ for i in range(round(transitions_lower_bound)):
     state = generate_transition(state, toggle_lower_bound)
     input_vector.append(merge(state))
         
-f = open("/home/20200969/Estimation/rtl/fir_8bit/components/"+UNIT+"/stimuli.txt", "w")
+f = open("/home/20200969/Estimation/rtl/"+DESIGN+"/components/"+UNIT+"/stimuli.txt", "w")
 f.write('\n'.join(input_vector))
 f.close()
             
-#    print('\n'.join(input_vector))
+print('\n'.join(input_vector))
     
     #print("\n--------------------------------"+str(TOGGLE)+"\n")
 
