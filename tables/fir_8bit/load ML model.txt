@@ -1,0 +1,7 @@
+load ML models
+
+>>> import pickle
+>>> with open ('path_component_pwr_model', 'rb') as ml:
+...     component_ml = pickle.load(ml)
+...     ml.close()
+component_ml.predict([[in, out], [in, out]])
