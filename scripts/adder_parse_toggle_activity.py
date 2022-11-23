@@ -6,7 +6,8 @@ import pandas as pd
 REPS = list(range(1, 10))
 TOGGLES = list(range(1, 101))
 UNIT = "adder"
-DATAFRAMEPATH = "/home/20200969/Estimation/sim/fir_8bit/components/"+UNIT+"/dataframe"
+DESIGN = "fir_16bit"
+DATAFRAMEPATH = "/home/20200969/Estimation/sim/"+DESIGN+"/components/"+UNIT+"/dataframe"
 instances_tuple = []
 for TOGGLE in TOGGLES:
     for REP in REPS:
@@ -132,7 +133,7 @@ n_reps = len(REPS)
 for i in range(0, len(df_original.index), n_reps):
     temp_df = df_original.iloc[i:i+n_reps, :-1].mean(axis=0) #temp_df will store the average of same input activity runs
     temp_df_list_activity.append(temp_df)
-    power_offset = df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) - (df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) * 0.115)
+    power_offset = df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) - (df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) * 0.12)
     temp_df_list_power.append(power_offset)
 
 
@@ -147,7 +148,7 @@ print("final")
 print(pd.DataFrame(df_new))
 
 
-where_to_dump = "/home/20200969/Estimation/tables/"
-df_new.to_csv(where_to_dump+"/"+UNIT+"_8bit_table.csv", sep=',')
+where_to_dump = "/home/20200969/Estimation/tables/"+DESIGN
+df_new.to_csv(where_to_dump+"/"+UNIT+"_16bit_table.csv", sep=',')
     
                 

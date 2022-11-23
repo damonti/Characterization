@@ -6,7 +6,8 @@ import pandas as pd
 TOGGLES = list(range(1,101))
 REPS = list(range(1,10))
 UNIT = "dff"
-DATAFRAMEPATH = "/home/20200969/Estimation/sim/fir_16bit/components/"+UNIT+"/dataframe"
+DESIGN= "fir_32bit"
+DATAFRAMEPATH = "/home/20200969/Estimation/sim/"+DESIGN+"/components/"+UNIT+"/dataframe"
 instances_tuple = []
 for TOGGLE in TOGGLES:
     for REP in REPS:
@@ -146,7 +147,7 @@ print("final")
 print(pd.DataFrame(df_new))
 
 
-where_to_dump = "/home/20200969/Estimation/tables/"
-df_new.to_csv(where_to_dump+"/"+UNIT+"_16bit_table.csv", sep=',')
+where_to_dump = "/home/20200969/Estimation/tables/"+DESIGN
+df_new.to_csv(where_to_dump+"/"+UNIT+"_32bit_table.csv", sep=',')
     
                 

@@ -7,7 +7,8 @@ import pandas as pd
 TOGGLES = list(range(1, 101))
 REPS = list(range(1,10))
 UNIT = "multiplier"
-DATAFRAMEPATH = "/home/20200969/Estimation/sim/fir_8bit/components/"+UNIT+"/dataframe"
+DESIGN = "fir_32bit"
+DATAFRAMEPATH = "/home/20200969/Estimation/sim/"+DESIGN+"/components/"+UNIT+"/dataframe"
 instances_tuple = []
 for TOGGLE in TOGGLES:
     for REP in REPS:
@@ -68,17 +69,17 @@ for TOGGLE in TOGGLES:
                             input_value += int(temp.split(" ")[-1])
                         #print("Input total toggles = " + str(input_value))
                         
-                        if instance_name.startswith("mul"):
-                            weights = [0.56, 0.67, 0.79, 0.88, 1, 0.96, 0.85, 0.69]
-                            for j in range(0, how_many_input):
-                                weight_index = j%(int((how_many_input)/2))
-                                # print("how_many_inputs = "+str(how_many_input))
-                                # print("j%how_many_inputs = "+str(weight_index))
-                                #print("current weight = "+str(weights[weight_index]))
-                                temp = lines[i+2+j].split("\"")[-2]
-                                #print("bitline toggles = "+str(temp))
-                                #print(temp.split("  ")[-1])
-                                input_value_weighted += round(int(temp.split(" ")[-1])*weights[weight_index],4)
+                        # if instance_name.startswith("mul"):
+                        #     weights = [0.56, 0.67, 0.79, 0.88, 1, 0.96, 0.85, 0.69]
+                        #     for j in range(0, how_many_input):
+                        #         weight_index = j%(int((how_many_input)/2))
+                        #         # print("how_many_inputs = "+str(how_many_input))
+                        #         # print("j%how_many_inputs = "+str(weight_index))
+                        #         #print("current weight = "+str(weights[weight_index]))
+                        #         temp = lines[i+2+j].split("\"")[-2]
+                        #         #print("bitline toggles = "+str(temp))
+                        #         #print(temp.split("  ")[-1])
+                        #         input_value_weighted += round(int(temp.split(" ")[-1])*weights[weight_index],4)
                             
                         for j in range(0, how_many_output):
                             temp = lines[i+2+how_many_input+j].split("\"")[-2]
@@ -91,10 +92,10 @@ for TOGGLE in TOGGLES:
                         output_instance_activity = round(((output_value/((how_many_output)*clock_toggles))*100),2)
                         inputoutput_instance_activity = round((((input_value+output_value)/((how_many_input+how_many_output)*clock_toggles))*100),2)
                         
-                        if instance_name.startswith("mul"):
-                            inputoutput_weighted_instance_activity = round((((input_value_weighted+output_value)/((how_many_input+how_many_output)*clock_toggles))*100),2)
-                        else:
-                            inputoutput_weighted_instance_activity = inputoutput_instance_activity
+                        # if instance_name.startswith("mul"):
+                        #     inputoutput_weighted_instance_activity = round((((input_value_weighted+output_value)/((how_many_input+how_many_output)*clock_toggles))*100),2)
+                        # else:
+                        #     inputoutput_weighted_instance_activity = inputoutput_instance_activity
                                 
                         # print("input_instance_activity = "+ str(input_instance_activity))
                         # print("output_instance_activity = "+ str(output_instance_activity))
@@ -118,12 +119,12 @@ for TOGGLE in TOGGLES:
                         
                         #power
 
-                        instances_tuple.append([instance_name, input_instance_activity, output_instance_activity, inputoutput_instance_activity, inputoutput_weighted_instance_activity, pwr])
+                        instances_tuple.append([instance_name, input_instance_activity, output_instance_activity, inputoutput_instance_activity, pwr])
                 
                 i +=1
                     
                         
-df_original = pd.DataFrame(instances_tuple, columns=['Components', 'alpha_in', 'alpha_out', 'alpha_inout', 'alpha_inout_weight', 'Power [nW]'])
+df_original = pd.DataFrame(instances_tuple, columns=['Components', 'alpha_in', 'alpha_out', 'alpha_inout', 'Power [nW]'])
 #cmpute mean before 
 temp_df_list_activity = []
 temp_df_list_power = []
@@ -131,7 +132,7 @@ n_reps = len(REPS)
 for i in range(0, len(df_original.index), n_reps):
     temp_df = df_original.iloc[i:i+n_reps, :-1].mean(axis=0) #temp_df will store the average of same input activity runs
     temp_df_list_activity.append(temp_df)
-    power_offset = df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) - (df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) * 0.082)
+    power_offset = df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) - (df_original.iloc[i:i+n_reps, [-1]].mean(axis=0) * 0)
     temp_df_list_power.append(power_offset)
 
 #df = df.set_index("Components")
@@ -145,7 +146,7 @@ print("final")
 print(pd.DataFrame(df_new))
 
 
-where_to_dump = "/home/20200969/Estimation/tables/"
-df_new.to_csv(where_to_dump+"/multiplier_16bit_table.csv", sep=',')
+where_to_dump = "/home/20200969/Estimation/tables/"+DESIGN
+df_new.to_csv(where_to_dump+"/"+UNIT+"_32bit_table.csv", sep=',')
     
                 
