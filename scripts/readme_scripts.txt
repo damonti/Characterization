@@ -10,7 +10,7 @@ design_gt.py: it takes the top.v and tb_top.v designs and returns the ground tru
     It runs:
     - stim_vector_gen_design.py for stims gen
 
-design_estimation.py: it dumps a database out of the GT and estimated power 
+design_dump_csv.py: it dumps a database out of the GT and estimated power 
     and area numbers previously computed.
 
 Once the component characterization is performed, the steps are:
@@ -18,6 +18,6 @@ Once the component characterization is performed, the steps are:
 
 2) dump_model: read component.csv (name, in, out, pwr) of that component and dump the trained power model
 
-3) inference: parse the specified fir dataframe with activity, estimate power feeding the model with the parsed activity, 
+3) inference: parse the dataframe from design_dump_csv.py and perform the inference from specified fir dataframe with activity, estimate power feeding the model with the parsed activity, 
     and return estimated power and error wrt ground truth
 

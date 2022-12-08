@@ -1,12 +1,21 @@
 import os
 import re
 import pandas as pd
+import sys
 #TAKE AS INPUT ALL THE RPT AND TCF, AVERAGE THE REPETITIONS (10 REPS FOR EACH INPUT%), BUILD A 100 ENTRIES DATAFRAME THAT CAN BE USED FOR TRAINING (ALTHOUGH A BIT FEW ENTRIES)
 # AVERAGING IS NEEDED TO AVERAGE OUT THE OUTLINERS DUE TO RANDOM INTERLEAVING BETWEEN SUBSEQUENT CYCLES THAT AFFECT POWER IN DIFFERENT WAYS 
+if len(sys.argv)!= 3:
+    print("Usage: script.py <DESIGN> <UNIT> ")
+    sys.exit(1)
+
+DESIGN = str(sys.argv[1])
+UNIT = str(sys.argv[2])
+BIT = DESIGN.split("_")[1]
+
+
 TOGGLES = list(range(1,101))
 REPS = list(range(1,10))
-UNIT = "dff"
-DESIGN= "fir_32bit"
+
 DATAFRAMEPATH = "/home/20200969/Estimation/sim/"+DESIGN+"/components/"+UNIT+"/dataframe"
 instances_tuple = []
 for TOGGLE in TOGGLES:
@@ -148,6 +157,6 @@ print(pd.DataFrame(df_new))
 
 
 where_to_dump = "/home/20200969/Estimation/tables/"+DESIGN
-df_new.to_csv(where_to_dump+"/"+UNIT+"_32bit_table.csv", sep=',')
+df_new.to_csv(where_to_dump+"/"+UNIT+"_"+BIT+"_table.csv", sep=',')
     
                 

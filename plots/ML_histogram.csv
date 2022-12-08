@@ -1,19 +1,19 @@
 Component,ML,Score
-mux, Linear, 0.815595644
-mux, DT, 0.945188318
-mux, XGB, 0.986056193
-mux, RF, 0.979179962
-mux, Lasso, 0.816415992
-mux, SVG, 0.97144361
-adder, Linear, 0.332504777
-adder, DT, 0.934343978
-adder, XGB, 0.964065666
-adder, RF, 0.9538105
-adder, Lasso, 0.332525267
-adder, SVG, 0.958713546
-multiplier, Linear, 0.690128787
-multiplier, DT, 0.945357947
-multiplier, XGB, 0.983950075
-multiplier, RF, 0.957243093
-multiplier, Lasso, 0.690129344
-multiplier, SVG, 0.850643438
+mux,Linear,81.56
+mux,Lasso,81.65
+mux,SVG,82.75
+mux,DT,94.56
+mux, RF,98.01
+mux,XGB,98.61
+adder,Linear,33.69
+adder,Lasso,33.69
+adder,SVG,41.87
+adder,DT,95.87
+adder, RF,95.38
+adder,XGB,96.5
+multiplier,Linear,69
+multiplier,Lasso,69.02
+multiplier,SVG,71.07
+multiplier,DT,94.54
+multiplier, RF,95.73
+multiplier,XGB,98.4

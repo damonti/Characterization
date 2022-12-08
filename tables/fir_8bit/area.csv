@@ -1,0 +1,31 @@
+,Components,area [um],est_area [um2],err_est [%]
+0,add0,45.864,67.914,
+1,add1,45.864,67.914,
+2,add2,45.864,67.914,
+3,mul0,225.263,285.768,  
+4,mul1,225.263,285.768,
+5,mul2,225.263,285.768,
+6,mul3,225.263,285.768,
+7,reg_Q0,45.864,56.448,
+8,reg_Q1,45.864,56.448,
+9,reg_Q2,45.864,56.448,
+10,reg_Y,45.864,56.448,
+11,zfir_8bit,1400,1573,
+,,,,,,,,,,,,,,,,,,,,,,,
+cell count,component,design
+adder,11,16
+multiplier,116,142
+reg,13,16
+
+0,add0
+1,add1
+2,add2
+3,mul0
+4,mul1
+5,mul2
+6,mul3
+7,reg_Q0
+8,reg_Q1
+9,reg_Q2
+10,reg_Y
+11,zfir_8bit
