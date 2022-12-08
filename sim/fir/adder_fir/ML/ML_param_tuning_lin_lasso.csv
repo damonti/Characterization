@@ -1,3 +1,0 @@
-model,best_score,best_params
-lasso,0.748718516289868,"{'alpha': 0.13, 'fit_intercept': True}"
-linear,0.7487185095941691,{'fit_intercept': True}

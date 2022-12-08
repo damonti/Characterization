@@ -1,4 +1,4 @@
-# Digital flow for power/area component characterization.
+# Automated flow for power modelling based on component's features
 
 General guideline for characterization:
 1) Parametrize component's features

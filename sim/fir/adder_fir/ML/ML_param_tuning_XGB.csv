@@ -1,2 +1,0 @@
-model,best_score,best_params
-XGB,0.9912455144970174,"{'learning_rate': 0.1, 'loss': 'huber', 'max_depth': 3, 'min_samples_split': 3, 'n_estimators': 2000}"

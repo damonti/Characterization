@@ -1,9 +1,0 @@
-- tb_gen: generate the testbenches (from the templates in /rtl/${design}/hdl/ for the various the parameters
-- tb_sim: simulate it to retrieve the power reports of the component from the available testbenches
-- parser_pwr_area.py: build a DataFrame out of the power and area reports in /reports
-- table_gen.py: produces energy tables (.csv) out of the power reports in /reports for Accelergy implementation
-- ML_models: use the DataFrame for various ML regression models 
-- dump_models: dump the trained models
-- ML_metrics: evaluate the regressors
-- ML_plots/subplots: display the metrics with plots and histograms
-- param_tuning: run grid search for finding the best hyperparameter tuning
